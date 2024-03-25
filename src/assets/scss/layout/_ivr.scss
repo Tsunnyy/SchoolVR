@@ -1,0 +1,126 @@
+@use "../config/" as *;
+
+.ivr-section {
+    padding-top: 3rem;
+    padding-inline: 2rem;
+
+    &-list {
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        margin-bottom: 0.6rem;
+        font-size: 3.6rem;
+    }
+
+    .section-sub-title {
+        margin-bottom: 1.6rem;
+    }
+
+    .hero-banner {
+        margin-top: 3rem;
+    }
+
+    .svs {
+        margin-bottom: 4rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 0.1rem;
+            background-color: #DFDFDF;
+            position: absolute;
+            left: 0;
+            bottom: -2rem;
+        }
+    }
+
+    .svi .hero-banner {
+        width: 80%;
+    }
+
+    .card {
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+        }
+
+        &-item {
+            width: calc(50% - 0.6rem);
+            border-radius: 1.4rem;
+            padding: 1.2rem;
+            background: linear-gradient(139.6deg, #373A3A 4.41%, #191B1B 96.51%);
+        }
+
+        &-icon {
+            width: 3.5rem;
+            margin-bottom: 1.2rem;
+        }
+
+        &-title {
+            margin-bottom: 0.6rem;
+            line-height: 1.2;
+        }
+    }
+}
+
+@include mq(lg) {
+    .ivr-section {
+
+        .ivr-section-list {
+            display: flex;
+        }
+
+        .ivr-item {
+            width: 50%;
+            flex-shrink: 0;
+            margin-bottom: 4rem;
+            position: relative;
+
+            &::after {
+                content: '';
+                width: 80%;
+                height: 0.1rem;
+                background-color: #DFDFDF;
+                position: absolute;
+                bottom: 0;
+            }
+
+            .hero-banner {
+                width: 100%;
+                aspect-ratio: 1.259;
+                object-fit: contain;
+                object-position: bottom;
+                padding-inline: 2rem;
+            }
+        }
+
+        .svs {
+            border-right: 0.1rem solid #DFDFDF;
+
+            &::after {
+                left: unset;
+                right: 0;
+            }
+        }
+
+        .svi::after {
+            left: 0;
+        }
+        .card-item {
+            padding: 3.5rem;
+            width: calc(33.33% - 4rem);
+        }
+        .card-icon{
+            width: 5.5rem;
+            margin-bottom: 2rem;
+        }
+        .card-list{
+            max-width: 117rem;
+            margin-inline: auto;
+            gap: 6rem;
+        }
+    }
+}

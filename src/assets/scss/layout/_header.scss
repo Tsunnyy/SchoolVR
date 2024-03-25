@@ -1,0 +1,170 @@
+@use "../config/" as *;
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding-inline: 2rem;
+    padding-top: 6rem;
+    display: flex;
+    z-index: 10;
+    justify-content: space-between;
+
+    .logo {
+        width: 4.5rem;
+    }
+
+    .secondary-navbar {
+        display: none;
+    }
+
+
+    .menu-title,
+    .hamburger {
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+
+        &-icon {
+            width: 3rem;
+            height: 3rem;
+            margin-right: 1.2rem;
+        }
+    }
+
+    .explore-tray {
+
+        display: none;
+        position: absolute;
+        width: 80vw;
+        top: 5rem;
+        left: 0;
+        background: linear-gradient(151.22deg, rgba(236, 194, 67, 0.5) 9.45%, rgba(255, 255, 255, 0.1) 94.83%),
+            linear-gradient(0deg, rgba(236, 194, 67, 0.4), rgba(236, 194, 67, 0.4));
+        padding: 2rem 4.7rem 4rem;
+        backdrop-filter: blur(10px);
+        border-radius: 0 1.3rem 1.3rem 0;
+
+        &.navbar-active {
+            display: block;
+        }
+
+        .get-in-touch {
+            margin-top: 2.5rem;
+        }
+    }
+
+    .product-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.6rem;
+        margin-bottom: 2rem;
+
+        .navlink-item {
+            width: calc(50% - 0.8rem);
+            background: #FFFFFF33;
+            border-radius: 1.35rem;
+            padding: 2.6rem 1.4rem 1.5rem;
+        }
+
+        .icon {
+            width: 3rem;
+            height: 3rem;
+            object-fit: contain;
+            margin-bottom: 2rem;
+        }
+
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 0.95rem;
+        }
+    }
+
+    .menu-title {
+        margin-bottom: 2.7rem;
+        font-size: 1.7rem;
+    }
+
+    .sub-menu {
+        a {
+            font-size: 1.4rem;
+        }
+
+        .navlink-item:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+}
+
+@include mq(md) {
+    header {
+        padding-top: 3.2rem;
+
+        .secondary-navbar {
+            margin-left: auto;
+
+            .sub-menu {
+                display: flex;
+            }
+
+            .navlink-item {
+                margin-right: 3rem;
+            }
+
+            .sub-menu a {
+                font-size: 1.2rem;
+            }
+        }
+
+        .navlink-item-dropdown .sub-menu {
+            display: none;
+        }
+
+        .menu-title,
+        .hamburger {
+            font-size: 1.2rem;
+        }
+
+        .logo-wrap {
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: max-content;
+            height: max-content;
+            margin-top: 3.2rem;
+        }
+    }
+}
+
+@include mq(lg) {
+    header {
+        .secondary-navbar {
+            display: flex;
+        }
+
+        .explore-tray {
+            width: 40vw;
+            top: 3rem;
+            .product-list {
+                gap: 2.5rem;
+                a {
+                    font-size: 1.4rem;
+                }
+                .navlink-item{
+                    width: calc(33.33% - 1.7rem);
+                }
+                .icon {
+                    width: 4.5rem;
+                    height: 4.5rem;
+                }
+            }
+        }
+    }
+}

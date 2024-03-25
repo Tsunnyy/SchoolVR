@@ -1,0 +1,140 @@
+@use "../config/" as *;
+
+.hero-section {
+    background: url("/img/banner-bg-m.webp") center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .hero-image {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .bag {
+        inset: 0;
+        margin-inline: auto;
+        top: 9%;
+        position: absolute;
+        width: 55%;
+        height: auto;
+        animation-name: floating;
+        animation-duration: 3500ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -20%;
+        z-index: 1;
+    }
+
+    .hero-title {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: var(--secondary);
+        letter-spacing: 0.4rem;
+        word-spacing: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    @keyframes floating {
+        0% {
+            top: 9%;
+        }
+
+        50% {
+            top: 3%;
+        }
+
+        100% {
+            top: 9%;
+        }
+    }
+
+}
+
+@include mq(md) {
+    .hero-section {
+        padding-top: 15%;
+        background: url("/img/banner-bg.webp") center/cover;
+
+        .hero-image {
+            picture {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .hero-banner {
+            width: 70%;
+        }
+
+        .hero-content {
+            margin-top: 2%;
+        }
+
+        .bag {
+            top: -8rem;
+            width: 21rem;
+        }
+
+        @keyframes floating {
+            0% {
+                top: -8rem;
+            }
+
+            50% {
+                top: -6rem;
+            }
+
+            100% {
+                top: -8rem;
+            }
+        }
+    }
+
+
+}
+
+@include mq(lg) {
+    .hero-section {
+        .hero-banner {
+            width: 55%;
+        }
+    }
+}
+
+@include mq(xl) {
+    .hero-section {
+        padding-top: 10%;
+
+        .hero-banner {
+            width: 55%;
+        }
+
+        .bag {
+            top: -2rem;
+            width: 21rem;
+        }
+
+        @keyframes floating {
+            0% {
+                top: -2rem;
+            }
+
+            50% {
+                top: 2rem;
+            }
+
+            100% {
+                top: -2rem;
+            }
+        }
+    }
+}

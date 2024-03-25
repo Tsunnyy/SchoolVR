@@ -1,0 +1,108 @@
+@use "../config/" as *;
+
+#root {
+  overflow: hidden;
+}
+
+.container {
+  max-width: var(--container);
+  margin: auto;
+  width: 100%;
+
+  @include mq(md) {
+    padding-left: 15rem;
+  }
+
+  @include mq(lg) {
+    padding-left: 10rem;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.relative {
+  position: relative;
+}
+
+img {
+  width: 100%;
+  border-radius: 0.5rem;
+  display: block;
+  background-color: transparent;
+}
+
+.mobile {
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+  }
+}
+
+svg {
+  width: 100%;
+}
+
+.section-sub-title {
+  font-size: 1.4rem;
+  display: block;
+}
+
+.section-title {
+  font-size: 3rem;
+}
+
+.section-sub-title,
+.section-title {
+  color: var(--secondary);
+  text-align: center;
+}
+
+.full-height {
+  height: 100vh;
+  min-height: 50rem;
+}
+.gradient-wrap {
+  background: linear-gradient(103.92deg, #FFFFFF 35.34%, #ECECEC 97.13%);
+}
+.text-justify {
+  text-align: justify;
+}
+
+@include mq(lg) {
+  .section-sub-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-title {
+    font-size: 5rem;
+  }
+  
+}

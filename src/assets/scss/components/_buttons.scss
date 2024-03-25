@@ -1,0 +1,58 @@
+@use "../config/" as *;
+@use "sass:color" as *;
+.btn {
+  padding: var(--space-2) var(--space-6);
+  border-radius: var(--btn-radius, 50vmax);
+  background-color: var(--white);
+  color: var(--secondary);
+  transition: 0.3s;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-transform: capitalize;
+  width: max-content;
+  svg , path {
+    transition: 0.3s;
+  }
+  &:hover,:focus {
+    background-color: var(--secondary);
+    color: var(--primary);
+  }
+  &.btn-outline{
+    border: 0.1rem solid var(--secondary);
+    &:hover,:focus {
+      color: var(--white);;
+    }
+  }
+  &.btn-primary {
+    background-color: var(--primary);
+    color: var(--secondary);
+
+  }
+  
+  &.btn-secondary{
+    background-color: var(--secondary);
+    color: #9EA0A8;
+    &:hover,:focus {
+      color: var(--white);
+      background: linear-gradient(106.57deg, #ECC243 8.33%, #C6830E 91.69%);
+      svg path {
+        stroke: #ffffff;
+      }
+    }
+  }
+  &.btn-secondary-light{
+    background-color: var(--secondary);
+    color: #9EA0A8;
+    &:hover,:focus {
+      color: var(--primary);
+      background-color:var(--white);
+    }
+  }
+  &.btn-sq {
+    border-radius: 1rem;
+  }
+}
+
+

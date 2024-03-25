@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'Atyp Kido TRIAL';
+    src: url('AtypKidoTRIAL-Light.eot');
+    src: url('AtypKidoTRIAL-Light.eot?#iefix') format('embedded-opentype'),
+        url('AtypKidoTRIAL-Light.woff2') format('woff2'),
+        url('AtypKidoTRIAL-Light.woff') format('woff'),
+        url('AtypKidoTRIAL-Light.ttf') format('truetype'),
+        url('AtypKidoTRIAL-Light.svg#AtypKidoTRIAL-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display TRIAL';
+    src: url('AtypDisplayTRIAL-SemiboldItalic.eot');
+    src: url('AtypDisplayTRIAL-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('AtypDisplayTRIAL-SemiboldItalic.woff2') format('woff2'),
+        url('AtypDisplayTRIAL-SemiboldItalic.woff') format('woff'),
+        url('AtypDisplayTRIAL-SemiboldItalic.ttf') format('truetype'),
+        url('AtypDisplayTRIAL-SemiboldItalic.svg#AtypDisplayTRIAL-SemiboldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Kido TRIAL';
+    src: url('AtypKidoTRIAL-Bold.eot');
+    src: url('AtypKidoTRIAL-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AtypKidoTRIAL-Bold.woff2') format('woff2'),
+        url('AtypKidoTRIAL-Bold.woff') format('woff'),
+        url('AtypKidoTRIAL-Bold.ttf') format('truetype'),
+        url('AtypKidoTRIAL-Bold.svg#AtypKidoTRIAL-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Kido TRIAL';
+    src: url('AtypKidoTRIAL-Medium.eot');
+    src: url('AtypKidoTRIAL-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AtypKidoTRIAL-Medium.woff2') format('woff2'),
+        url('AtypKidoTRIAL-Medium.woff') format('woff'),
+        url('AtypKidoTRIAL-Medium.ttf') format('truetype'),
+        url('AtypKidoTRIAL-Medium.svg#AtypKidoTRIAL-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Text TRIAL';
+    src: url('AtypTextTRIAL-Bold.eot');
+    src: url('AtypTextTRIAL-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AtypTextTRIAL-Bold.woff2') format('woff2'),
+        url('AtypTextTRIAL-Bold.woff') format('woff'),
+        url('AtypTextTRIAL-Bold.ttf') format('truetype'),
+        url('AtypTextTRIAL-Bold.svg#AtypTextTRIAL-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Text TRIAL';
+    src: url('AtypTextTRIAL-Italic.eot');
+    src: url('AtypTextTRIAL-Italic.eot?#iefix') format('embedded-opentype'),
+        url('AtypTextTRIAL-Italic.woff2') format('woff2'),
+        url('AtypTextTRIAL-Italic.woff') format('woff'),
+        url('AtypTextTRIAL-Italic.ttf') format('truetype'),
+        url('AtypTextTRIAL-Italic.svg#AtypTextTRIAL-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Text TRIAL';
+    src: url('AtypTextTRIAL-LightItalic.eot');
+    src: url('AtypTextTRIAL-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('AtypTextTRIAL-LightItalic.woff2') format('woff2'),
+        url('AtypTextTRIAL-LightItalic.woff') format('woff'),
+        url('AtypTextTRIAL-LightItalic.ttf') format('truetype'),
+        url('AtypTextTRIAL-LightItalic.svg#AtypTextTRIAL-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Text TRIAL';
+    src: url('AtypTextTRIAL-Regular.eot');
+    src: url('AtypTextTRIAL-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AtypTextTRIAL-Regular.woff2') format('woff2'),
+        url('AtypTextTRIAL-Regular.woff') format('woff'),
+        url('AtypTextTRIAL-Regular.ttf') format('truetype'),
+        url('AtypTextTRIAL-Regular.svg#AtypTextTRIAL-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Kido TRIAL';
+    src: url('AtypKidoTRIAL-Regular.eot');
+    src: url('AtypKidoTRIAL-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AtypKidoTRIAL-Regular.woff2') format('woff2'),
+        url('AtypKidoTRIAL-Regular.woff') format('woff'),
+        url('AtypKidoTRIAL-Regular.ttf') format('truetype'),
+        url('AtypKidoTRIAL-Regular.svg#AtypKidoTRIAL-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Text TRIAL';
+    src: url('AtypTextTRIAL-Medium.eot');
+    src: url('AtypTextTRIAL-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AtypTextTRIAL-Medium.woff2') format('woff2'),
+        url('AtypTextTRIAL-Medium.woff') format('woff'),
+        url('AtypTextTRIAL-Medium.ttf') format('truetype'),
+        url('AtypTextTRIAL-Medium.svg#AtypTextTRIAL-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Text TRIAL';
+    src: url('AtypTextTRIAL-MediumItalic.eot');
+    src: url('AtypTextTRIAL-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('AtypTextTRIAL-MediumItalic.woff2') format('woff2'),
+        url('AtypTextTRIAL-MediumItalic.woff') format('woff'),
+        url('AtypTextTRIAL-MediumItalic.ttf') format('truetype'),
+        url('AtypTextTRIAL-MediumItalic.svg#AtypTextTRIAL-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Kido TRIAL';
+    src: url('AtypKidoTRIAL-Thin.eot');
+    src: url('AtypKidoTRIAL-Thin.eot?#iefix') format('embedded-opentype'),
+        url('AtypKidoTRIAL-Thin.woff2') format('woff2'),
+        url('AtypKidoTRIAL-Thin.woff') format('woff'),
+        url('AtypKidoTRIAL-Thin.ttf') format('truetype'),
+        url('AtypKidoTRIAL-Thin.svg#AtypKidoTRIAL-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp TEST Variable';
+    src: url('AtypTEST-Variable.eot');
+    src: url('AtypTEST-Variable.eot?#iefix') format('embedded-opentype'),
+        url('AtypTEST-Variable.woff2') format('woff2'),
+        url('AtypTEST-Variable.woff') format('woff'),
+        url('AtypTEST-Variable.ttf') format('truetype'),
+        url('AtypTEST-Variable.svg#AtypTEST-Variable') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Text TRIAL';
+    src: url('AtypTextTRIAL-Semibold.eot');
+    src: url('AtypTextTRIAL-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('AtypTextTRIAL-Semibold.woff2') format('woff2'),
+        url('AtypTextTRIAL-Semibold.woff') format('woff'),
+        url('AtypTextTRIAL-Semibold.ttf') format('truetype'),
+        url('AtypTextTRIAL-Semibold.svg#AtypTextTRIAL-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Text TRIAL';
+    src: url('AtypTextTRIAL-BoldItalic.eot');
+    src: url('AtypTextTRIAL-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('AtypTextTRIAL-BoldItalic.woff2') format('woff2'),
+        url('AtypTextTRIAL-BoldItalic.woff') format('woff'),
+        url('AtypTextTRIAL-BoldItalic.ttf') format('truetype'),
+        url('AtypTextTRIAL-BoldItalic.svg#AtypTextTRIAL-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Kido TRIAL';
+    src: url('AtypKidoTRIAL-Semibold.eot');
+    src: url('AtypKidoTRIAL-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('AtypKidoTRIAL-Semibold.woff2') format('woff2'),
+        url('AtypKidoTRIAL-Semibold.woff') format('woff'),
+        url('AtypKidoTRIAL-Semibold.ttf') format('truetype'),
+        url('AtypKidoTRIAL-Semibold.svg#AtypKidoTRIAL-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Text TRIAL';
+    src: url('AtypTextTRIAL-SemiboldItalic.eot');
+    src: url('AtypTextTRIAL-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('AtypTextTRIAL-SemiboldItalic.woff2') format('woff2'),
+        url('AtypTextTRIAL-SemiboldItalic.woff') format('woff'),
+        url('AtypTextTRIAL-SemiboldItalic.ttf') format('truetype'),
+        url('AtypTextTRIAL-SemiboldItalic.svg#AtypTextTRIAL-SemiboldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Text TRIAL';
+    src: url('AtypTextTRIAL-Light.eot');
+    src: url('AtypTextTRIAL-Light.eot?#iefix') format('embedded-opentype'),
+        url('AtypTextTRIAL-Light.woff2') format('woff2'),
+        url('AtypTextTRIAL-Light.woff') format('woff'),
+        url('AtypTextTRIAL-Light.ttf') format('truetype'),
+        url('AtypTextTRIAL-Light.svg#AtypTextTRIAL-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display TRIAL';
+    src: url('AtypDisplayTRIAL-Bold.eot');
+    src: url('AtypDisplayTRIAL-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AtypDisplayTRIAL-Bold.woff2') format('woff2'),
+        url('AtypDisplayTRIAL-Bold.woff') format('woff'),
+        url('AtypDisplayTRIAL-Bold.ttf') format('truetype'),
+        url('AtypDisplayTRIAL-Bold.svg#AtypDisplayTRIAL-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display TRIAL';
+    src: url('AtypDisplayTRIAL-Light.eot');
+    src: url('AtypDisplayTRIAL-Light.eot?#iefix') format('embedded-opentype'),
+        url('AtypDisplayTRIAL-Light.woff2') format('woff2'),
+        url('AtypDisplayTRIAL-Light.woff') format('woff'),
+        url('AtypDisplayTRIAL-Light.ttf') format('truetype'),
+        url('AtypDisplayTRIAL-Light.svg#AtypDisplayTRIAL-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display TRIAL';
+    src: url('AtypDisplayTRIAL-Semibold.eot');
+    src: url('AtypDisplayTRIAL-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('AtypDisplayTRIAL-Semibold.woff2') format('woff2'),
+        url('AtypDisplayTRIAL-Semibold.woff') format('woff'),
+        url('AtypDisplayTRIAL-Semibold.ttf') format('truetype'),
+        url('AtypDisplayTRIAL-Semibold.svg#AtypDisplayTRIAL-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display TRIAL';
+    src: url('AtypDisplayTRIAL-MediumItalic.eot');
+    src: url('AtypDisplayTRIAL-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('AtypDisplayTRIAL-MediumItalic.woff2') format('woff2'),
+        url('AtypDisplayTRIAL-MediumItalic.woff') format('woff'),
+        url('AtypDisplayTRIAL-MediumItalic.ttf') format('truetype'),
+        url('AtypDisplayTRIAL-MediumItalic.svg#AtypDisplayTRIAL-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display TRIAL';
+    src: url('AtypDisplayTRIAL-BoldItalic.eot');
+    src: url('AtypDisplayTRIAL-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('AtypDisplayTRIAL-BoldItalic.woff2') format('woff2'),
+        url('AtypDisplayTRIAL-BoldItalic.woff') format('woff'),
+        url('AtypDisplayTRIAL-BoldItalic.ttf') format('truetype'),
+        url('AtypDisplayTRIAL-BoldItalic.svg#AtypDisplayTRIAL-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display TRIAL';
+    src: url('AtypDisplayTRIAL-Regular.eot');
+    src: url('AtypDisplayTRIAL-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AtypDisplayTRIAL-Regular.woff2') format('woff2'),
+        url('AtypDisplayTRIAL-Regular.woff') format('woff'),
+        url('AtypDisplayTRIAL-Regular.ttf') format('truetype'),
+        url('AtypDisplayTRIAL-Regular.svg#AtypDisplayTRIAL-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display TRIAL';
+    src: url('AtypDisplayTRIAL-LightItalic.eot');
+    src: url('AtypDisplayTRIAL-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('AtypDisplayTRIAL-LightItalic.woff2') format('woff2'),
+        url('AtypDisplayTRIAL-LightItalic.woff') format('woff'),
+        url('AtypDisplayTRIAL-LightItalic.ttf') format('truetype'),
+        url('AtypDisplayTRIAL-LightItalic.svg#AtypDisplayTRIAL-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display TRIAL';
+    src: url('AtypDisplayTRIAL-Italic.eot');
+    src: url('AtypDisplayTRIAL-Italic.eot?#iefix') format('embedded-opentype'),
+        url('AtypDisplayTRIAL-Italic.woff2') format('woff2'),
+        url('AtypDisplayTRIAL-Italic.woff') format('woff'),
+        url('AtypDisplayTRIAL-Italic.ttf') format('truetype'),
+        url('AtypDisplayTRIAL-Italic.svg#AtypDisplayTRIAL-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display TRIAL';
+    src: url('AtypDisplayTRIAL-Medium.eot');
+    src: url('AtypDisplayTRIAL-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AtypDisplayTRIAL-Medium.woff2') format('woff2'),
+        url('AtypDisplayTRIAL-Medium.woff') format('woff'),
+        url('AtypDisplayTRIAL-Medium.ttf') format('truetype'),
+        url('AtypDisplayTRIAL-Medium.svg#AtypDisplayTRIAL-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

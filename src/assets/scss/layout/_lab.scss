@@ -1,0 +1,83 @@
+@use "../config/" as *;
+
+.lab-section {
+    padding-top: 4rem;
+
+    .section-title {
+        line-height: 1.2;
+    }
+
+    .lab-image-section {
+        position: relative;
+        margin-top: 10rem;
+
+        a {
+            position: absolute;
+            inset: 0;
+            margin: auto auto 3rem;
+            width: max-content;
+            height: max-content;
+        }
+    }
+
+    .book {
+        position: absolute;
+        top: -16%;
+        left: 15%;
+        width: 35%;
+        animation-name: rotateing;
+        animation-duration: 9000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    .scope {
+        position: absolute;
+        top: 7%;
+        right: 14%;
+        width: 27%;
+        animation-name: rotateing;
+        animation-duration: 9000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes rotateing {
+    0% {
+        rotate: 0deg;
+    }
+
+    50% {
+        rotate: 35deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}
+
+@include mq(lg) {
+    .lab-section {
+        padding-top: 8rem;
+        .lab-image-section{
+            margin-top: auto;
+            width: 70%;
+            margin-inline: auto;
+            a {
+                margin-bottom: 5rem;
+            }
+        }
+        .book{
+            width: 23%;
+            top: -5%;
+            left: 12%;
+        }
+        
+        .scope{
+            width: 18%;
+            top: 7%;
+            right: 10%;
+        }
+    }
+}

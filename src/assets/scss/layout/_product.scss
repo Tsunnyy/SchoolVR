@@ -1,0 +1,115 @@
+@use "../config/" as *;
+
+.product-section {
+    background: radial-gradient(110.73% 221.19% at -4.65% 0%, #292D32 0%, #151519 30.5%, #292D32 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    padding-top: 6.5rem;
+    position: relative;
+    isolation: isolate;
+
+    .product-content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        &.product-bio-verse::before {
+            background: url("/img/bio-verse-bg-m.webp") center/cover;
+        }
+
+        &.product-chem-verse::before {
+            background: url("/img/chem-verse-bg-m.webp") center/cover;
+        }
+
+        &.product-atom-verse::before {
+            background: url("/img/atom-verse-bg-m.webp") center/cover;
+        }
+
+        &.product-space-verse::before {
+            background: url("/img/space-verse-bg-m.webp") center/cover;
+        }
+
+        &.product-geo-verse::before {
+            background: url("/img/geo-verse-bg-m.webp") center/cover;
+        }
+
+        &.product-bio-verse {
+            display: flex;
+        }
+
+    }
+
+
+    .icon {
+        width: 2.3rem;
+        height: 2.3rem;
+        object-fit: contain;
+    }
+
+    .product-banner {
+        margin-bottom: 5.4rem;
+    }
+
+    .navlink-item {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .product-list {
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-sub-title,
+    .section-title {
+        color: var(--white);
+    }
+
+    .section-sub-title {
+        margin-bottom: 5rem;
+    }
+
+    .product-item {
+        flex-direction: column;
+    }
+}
+
+@include mq(lg) {
+    .product-section {
+        .product-item {
+            width: 70%;
+            margin-inline: auto;
+        }
+    .product-content {
+    
+        &.product-bio-verse::before {
+            background: url("/img/bio-verse-bg.webp") center/cover;
+        }
+
+        &.product-chem-verse::before {
+            background: url("/img/chem-verse-bg.webp") center/cover;
+        }
+
+        &.product-atom-verse::before {
+            background: url("/img/atom-verse-bg.webp") center/cover;
+        }
+
+        &.product-space-verse::before {
+            background: url("/img/space-verse-bg.webp") center/cover;
+        }
+
+        &.product-geo-verse::before {
+            background: url("/img/geo-verse-bg.webp") center/cover;
+        }
+    }
+    }
+}
