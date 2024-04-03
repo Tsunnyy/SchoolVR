@@ -62,7 +62,7 @@ export const Ivr = () => {
 		<div className="ivr-section">
 			<div className="ivr-section-list">
 				{ivrData.map((ivr) => (
-					<div className={`ivr-item flex-col-center ${ivr.class}`}>
+					<div key={ivr.id} className={`ivr-item flex-col-center ${ivr.class}`}>
 						<h4 className="section-title">
 							{ivr.name}
 						</h4>
@@ -74,22 +74,21 @@ export const Ivr = () => {
 								Know More
 							</span>
 						</NavLink>
-						<img className="hero-banner" src={`/img/${ivr.class}.webp`} alt="bannerVR" />
+						<img className="hero-banner" src={`/img/students/${ivr.class}.webp`} alt="bannerVR" />
 					</div>
 				))}
-
 			</div>
 			<div className="card-list">
 				{cardData.map((card) => (
-					<div className="card-item">
+					<div className="card-item" key={card.id}>
 						<div className="card-icon">
-							<img src={`/img/${card.class}.svg`} alt={`${card.class}`} />
+							<img src={`/img/icon/${card.class}.svg`} alt={`${card.class}`} />
 						</div>
 						<div className="card-title">
 							<h3>{card.name}</h3>
 						</div>
 						<div className="card-content">
-							<p className="text-justify">
+							<p className="text-justifys">
 								${card.content}
 							</p>
 						</div>

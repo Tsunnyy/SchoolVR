@@ -90,7 +90,7 @@ let infoLinks = [
 		path: "/",
 	},
 	{
-		id: 1,
+		id: 4,
 		name: "Giridh, Jharkhand 815301",
 		img: "location",
 		path: "/",
@@ -101,7 +101,6 @@ export const Footer = () => {
 	return (
 		<footer className="footer">
 			<div className="footer-top">
-
 				<ul className="footer-link-list">
 					<span className="footer-link-title">quick links</span>
 					{quickLinks.map((link) => (
@@ -132,13 +131,11 @@ export const Footer = () => {
 						</li>
 					))}
 				</ul>
-
-
 				<ul className="footer-link-list">
 					{infoLinks.map((link) => (
 						<li key={link.id} >
 							<NavLink to={link.path}>
-								<img className="icon" src={`/img/${link.img}.svg`} alt={`${link.img}`} />
+								<img className="icon" src={`/img/icon/${link.img}.svg`} alt={`${link.img}`} />
 								{link.name}
 							</NavLink>
 						</li>

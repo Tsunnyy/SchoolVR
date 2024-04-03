@@ -3,7 +3,10 @@
 .feature-section {
     background: url("/img/feature-m.webp") center/cover;
     padding: 4rem 2rem;
-
+    position: relative;
+    .btn{
+        display: none;
+    }
     .card {
         &-list {
             display: flex;
@@ -58,11 +61,14 @@
     .feature-section {
         background: url("/img/feature.webp") center/cover;
         min-height: 100vh;
-
+        padding-inline: unset;
+        .btn{
+            display: flex;
+        }
         .card-list {
             gap: 8rem;
             justify-content: center;
-            max-width: 117rem;
+            max-width: var(--max-width);
             margin-inline: auto;
         }
 

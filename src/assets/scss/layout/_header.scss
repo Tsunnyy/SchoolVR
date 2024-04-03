@@ -6,7 +6,7 @@ header {
     left: 0;
     width: 100vw;
     padding-inline: 2rem;
-    padding-top: 6rem;
+    padding-top: 4rem;
     display: flex;
     z-index: 10;
     justify-content: space-between;
@@ -38,12 +38,12 @@ header {
         display: none;
         position: absolute;
         width: 80vw;
-        top: 5rem;
+        top: 0;
         left: 0;
-        background: linear-gradient(151.22deg, rgba(236, 194, 67, 0.5) 9.45%, rgba(255, 255, 255, 0.1) 94.83%),
-            linear-gradient(0deg, rgba(236, 194, 67, 0.4), rgba(236, 194, 67, 0.4));
+        // background: linear-gradient(151.22deg, rgba(236, 194, 67, 0.5) 9.45%, rgba(255, 255, 255, 0.1) 94.83%),
+        //     linear-gradient(0deg, rgba(236, 194, 67, 0.4), rgba(236, 194, 67, 0.4));
         padding: 2rem 4.7rem 4rem;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(2rem);
         border-radius: 0 1.3rem 1.3rem 0;
 
         &.navbar-active {
@@ -106,6 +106,7 @@ header {
 @include mq(md) {
     header {
         padding-top: 3.2rem;
+        padding-inline: 4rem;
 
         .secondary-navbar {
             margin-left: auto;

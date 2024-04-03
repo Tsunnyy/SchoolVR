@@ -59,6 +59,53 @@
 
 }
 
+.offer-section {
+    margin: 2rem auto;
+    width: 17.6rem;
+    padding: 1rem 1.4rem;
+    background-color: var(--secondary);
+    border-radius: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-close {
+        background-color: var(--white);
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        overflow: hidden;
+        padding: 0.1rem;
+        margin: -2.5rem -2.5rem 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            width: 55%;
+        }
+    }
+
+    .offer-text {
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+    }
+
+    .note {
+        margin-top: 0.7rem;
+        font-size: 1rem;
+        opacity: 0.7;
+    }
+
+    .btn-primary {
+        width: 100%;
+        justify-content: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
+
 @include mq(md) {
     .hero-section {
         padding-top: 15%;
@@ -107,6 +154,13 @@
         .hero-banner {
             width: 55%;
         }
+    }
+
+    .offer-section {
+        position: absolute;
+        bottom: 4rem;
+        right: 4rem;
+        z-index: 1;
     }
 }
 

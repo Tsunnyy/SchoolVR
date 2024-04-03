@@ -1,15 +1,65 @@
 @use "../config/" as *;
 
 .product-section {
-    background: radial-gradient(110.73% 221.19% at -4.65% 0%, #292D32 0%, #151519 30.5%, #292D32 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    padding-top: 6.5rem;
+    overflow: hidden;
+    background: radial-gradient(110.73% 221.19% at -4.65% 0%, #292D32 0%, #151519 30.5%, #292D32 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
     position: relative;
     isolation: isolate;
 
+    .swiper {
+        &-slide {
+            height: 100vh;
+            padding-top: 10rem;
+        }
+
+        &-button-next,
+        &-button-prev {
+            display: none;
+        }
+
+        &-pagination {
+            bottom: unset;
+            top: 6.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            &-bullet {
+                width: 4.5rem;
+                height: 4.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: unset;
+                opacity: unset;
+
+                &-active .icon{
+                    filter: grayscale(0);
+                }
+            }
+        }
+    }
+
+    .section-sub-title{
+        padding-inline: 2rem;
+    }
+
+    .icon {
+        width: 2.3rem;
+        height: 2.3rem;
+        object-fit: contain;
+        filter: grayscale(1);
+        transition: filter ease-in 300ms;
+    }
+
     .product-content {
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
 
         &::before {
             content: '';
@@ -21,52 +71,45 @@
         }
 
         &.product-bio-verse::before {
-            background: url("/img/bio-verse-bg-m.webp") center/cover;
+            background: url("/img/product/item-bg/bio-verse-bg-m.webp") center/cover;
         }
 
         &.product-chem-verse::before {
-            background: url("/img/chem-verse-bg-m.webp") center/cover;
+            background: url("/img/product/item-bg/chem-verse-bg-m.webp") center/cover;
         }
 
         &.product-atom-verse::before {
-            background: url("/img/atom-verse-bg-m.webp") center/cover;
+            background: url("/img/product/item-bg/atom-verse-bg-m.webp") center/cover;
         }
 
         &.product-space-verse::before {
-            background: url("/img/space-verse-bg-m.webp") center/cover;
+            background: url("/img/product/item-bg/space-verse-bg-m.webp") center/cover;
         }
 
         &.product-geo-verse::before {
-            background: url("/img/geo-verse-bg-m.webp") center/cover;
+            background: url("/img/product/item-bg/geo-verse-bg-m.webp") center/cover;
         }
 
-        &.product-bio-verse {
+        a {
             display: flex;
+            justify-content: center;
         }
-
+    }
+    .product-geo-verse {
+        .section-sub-title {
+            text-transform: uppercase;
+            letter-spacing: 0.9rem;
+            word-spacing: 0.5rem;
+            font-weight: 500;
+        }
     }
 
 
-    .icon {
-        width: 2.3rem;
-        height: 2.3rem;
-        object-fit: contain;
-    }
+
+
 
     .product-banner {
-        margin-bottom: 5.4rem;
-    }
-
-    .navlink-item {
-        width: 4.5rem;
-        height: 4.5rem;
-    }
-
-    .product-list {
-        display: flex;
-        justify-content: center;
-        gap: 1.2rem;
-        margin-bottom: 2rem;
+        // margin-bottom: 5.4rem;
     }
 
     .section-sub-title,
@@ -75,10 +118,11 @@
     }
 
     .section-sub-title {
-        margin-bottom: 5rem;
+        min-height: 6.8rem;
     }
 
     .product-item {
+        height: 100%;
         flex-direction: column;
     }
 }
@@ -86,30 +130,31 @@
 @include mq(lg) {
     .product-section {
         .product-item {
-            width: 70%;
             margin-inline: auto;
         }
-    .product-content {
-    
-        &.product-bio-verse::before {
-            background: url("/img/bio-verse-bg.webp") center/cover;
-        }
 
-        &.product-chem-verse::before {
-            background: url("/img/chem-verse-bg.webp") center/cover;
-        }
+        .product-content {
+            width: 70%;
+            margin-inline: auto;
+            &.product-bio-verse::before {
+                background: url("/img/product/item-bg/bio-verse-bg.webp") center/cover;
+            }
 
-        &.product-atom-verse::before {
-            background: url("/img/atom-verse-bg.webp") center/cover;
-        }
+            &.product-chem-verse::before {
+                background: url("/img/product/item-bg/chem-verse-bg.webp") center/cover;
+            }
 
-        &.product-space-verse::before {
-            background: url("/img/space-verse-bg.webp") center/cover;
-        }
+            &.product-atom-verse::before {
+                background: url("/img/product/item-bg/atom-verse-bg.webp") center/cover;
+            }
 
-        &.product-geo-verse::before {
-            background: url("/img/geo-verse-bg.webp") center/cover;
+            &.product-space-verse::before {
+                background: url("/img/product/item-bg/space-verse-bg.webp") center/cover;
+            }
+
+            &.product-geo-verse::before {
+                background: url("/img/product/item-bg/geo-verse-bg.webp") center/cover;
+            }
         }
-    }
     }
 }

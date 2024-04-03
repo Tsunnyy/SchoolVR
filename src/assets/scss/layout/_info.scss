@@ -1,0 +1,163 @@
+@use "../config/" as *;
+
+.space-verse-page .product-info-section {
+    .card {
+        &-item {
+           
+        }
+        &-count {
+            font-size: 3.4rem;
+            &::after{
+                content: unset;
+            }
+        }
+        &-text {
+            font-size: 1.2rem;
+            text-transform: none;
+            letter-spacing:normal;
+        }
+    }
+
+}
+
+.product-info-section {
+    padding: 5rem 2rem;
+
+    .counter-section {
+        border: 0.1rem solid #ffffff;
+        border-radius: 2rem;
+        padding: 4.5rem 2.5rem;
+    }
+
+    .card {
+        &-item {
+            width: 100%;
+            display: flex;
+            padding-block: 3rem;
+            position: relative;
+
+            &:not(:last-child):after {
+                content: '';
+                width: 50%;
+                height: 0.1rem;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-color: #ffffff;
+            }
+            
+        }
+
+        &-icon {
+            width: 6rem;
+            height: 6rem;
+            flex-shrink: 0;
+            margin-right: 2rem;
+        }
+
+        &-count {
+            font-size: 6rem;
+            line-height: 1;
+            display: flex;
+
+            &::after {
+                content: '+';
+                font-size: 4rem;
+                color: #ECC243;
+                font-weight: 400;
+                margin-left: 0.5rem;
+            }
+        }
+
+        &-text {
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.7rem;
+            margin-top: 0.5rem;
+        }
+    }
+
+    .section-title {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .section-sub-title {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+        text-align: justify;
+    }
+
+    .section-sub-title,
+    .section-title {
+        color: #ffffff;
+    }
+
+    .get-in-touch {
+        margin-top: 4.5rem;
+    }
+
+}
+
+@include mq(md) {
+    .product-info-section {
+        .section-title {
+            font-size: 6rem;
+        }
+
+        .section-sub-title {
+            width: 60%;
+            margin-inline: auto;
+        }
+
+        .card-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card-item {
+            
+            justify-content: center;
+            align-items: center;
+
+           
+         
+        }
+
+        .section-sub-title {
+            margin-bottom: 5rem;
+        }
+
+        .get-in-touch {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@include mq(lg) {
+    .product-info-section {
+        .info-wrapper {
+            max-width: var(--max-width);
+            margin-inline: auto;
+        }
+        .card-item {
+            width: 33.33%;
+            min-width: max-content;
+            &:not(:last-child)::after {
+                height: 100%;
+                width: 0.1rem;
+                left: 100%;
+            }
+            &:first-child{
+                padding-right: 4rem;
+            }
+            &:nth-child(2){
+                padding-inline: 4rem;
+            }
+            &:nth-child(3){
+                padding-left: 4rem;
+            }
+        }
+    }
+}

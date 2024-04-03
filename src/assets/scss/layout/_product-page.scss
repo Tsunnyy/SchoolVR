@@ -1,0 +1,157 @@
+@use "../config/" as *;
+.product-page-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    gap: 5%;
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4.5rem 4.5rem 8.5rem;
+        background-color: #ffffff40;
+        backdrop-filter: blur(0.55rem);
+        -webkit-backdrop-filter: blur(0.55rem);
+        -webkit-mask-image: url("/img/product/page-bg/vr.png");
+        mask-image: url("/img/product/page-bg/vr.png");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: cover;
+    }
+
+    .section-sub-title, .section-title {
+        color: #ffffff;
+    }
+    .icon {
+        width: 2.3rem;
+        height: 2.3rem;
+        object-fit: contain;
+        opacity: 0.4;
+        transition: opacity ease-in 300ms;
+    }
+
+    .product-list {
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+    }
+
+    .navlink-item a {
+        width: 4.5rem;
+        height: 4.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: unset;
+        &:hover .icon, &.active .icon {
+            opacity: 1;
+        }
+    }
+
+    .back-btn {
+        position: absolute;
+        top: 10rem;
+        left: 4rem;
+
+        a {
+            display: flex;
+        }
+    }
+
+    .play-btn {
+        width: 7rem;
+        height: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #ffffff40;
+        backdrop-filter: blur(0.55rem);
+        -webkit-backdrop-filter: blur(0.55rem);
+        transition: background-color ease-in 300ms, stroke ease-in 300ms;
+        margin-inline: auto;
+        margin-top: -2rem;
+
+        &:hover {
+            background-color: #ffffff;
+
+            path {
+                stroke: #000000;
+            }
+        }
+
+    }
+
+    &.product-bio-verse {
+        background: url("/img/product/page-bg/bio-verse-bg-m.webp") center/cover;
+    }
+
+    &.product-chem-verse {
+        background: url("/img/product/page-bg/chem-verse-bg-m.webp") center/cover;
+    }
+
+    &.product-atom-verse {
+        background: url("/img/product/page-bg/atom-verse-bg-m.webp") center/cover;
+    }
+
+    &.product-space-verse {
+        background: url("/img/product/page-bg/space-verse-bg-m.webp") center/cover;
+    }
+
+    &.product-geo-verse {
+        background: url("/img/product/page-bg/geo-verse-bg-m.webp") center/cover;
+    }
+
+    .section-title {
+        font-size: 4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-sub-title {
+        min-height: unset;
+        margin-bottom: 3.5rem;
+    }
+}
+
+@include mq(md) {
+    .product-page-section {
+        .hero-content {
+            width: 70%;
+            margin-inline: auto ;
+            -webkit-mask-image: url("/img/product/page-bg/vr.png");
+            mask-image: url("/img/product/page-bg/vr.png");
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: contain;
+        }
+
+        &.product-bio-verse {
+            background: url("/img/product/page-bg/bio-verse-bg.webp") center/cover;
+        }
+
+        &.product-chem-verse {
+            background: url("/img/product/page-bg/chem-verse-bg.webp") center/cover;
+        }
+
+        &.product-atom-verse {
+            background: url("/img/product/page-bg/atom-verse-bg.webp") center/cover;
+        }
+
+        &.product-space-verse {
+            background: url("/img/product/page-bg/space-verse-bg.webp") center/cover;
+        }
+
+        &.product-geo-verse {
+            background: url("/img/product/page-bg/geo-verse-bg.webp") center/cover;
+        }
+        .section-title{
+            font-size: 6rem;
+        }
+    }
+}

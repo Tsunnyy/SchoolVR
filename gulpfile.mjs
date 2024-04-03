@@ -16,10 +16,10 @@ function imgTask() {
     .pipe(dest("public/images"));
 }
 function filterImg() {
-  return src("public/images/**/**.+(webp)").pipe(dest("public/img"));
+  return src("public/images/**/**.+(webp|svg)").pipe(dest("public/img"));
 }
 function cleanData() {
-  return src("public/images/**/*").pipe(clean());
+  return src("public/images/").pipe(clean());
 }
 export const compressImage = series(imgTask, filterImg, cleanData);
 export default series(compressImage);

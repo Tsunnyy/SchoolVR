@@ -3,20 +3,23 @@ import { NavLink } from "react-router-dom";
 
 export const Lab = () => {
 	return (
-		<div class="lab-section">
-			<span class="section-sub-title">
+		<div className="lab-section">
+			<span className="line top dark"></span>
+			<span className="line bottom dark"></span>
+
+			<span className="section-sub-title">
 				With the knowledge of both the Labs
 			</span>
-			<h4 class="section-title">
+			<h4 className="section-title">
 				LABS
 			</h4>
-			<div class="lab-image-section">
+			<div className="lab-image-section">
 				<picture>
-					<source media="(min-width:768px)" srcset="/img/student-1.png" />
-					<img className="lab-image" src="/img/student-2.png" alt="bannerVR" />
+					<source media="(min-width:768px)" srcSet="/img/students/student-1.webp" />
+					<img className="lab-image" src="/img/students/student-2.webp" alt="bannerVR" />
 				</picture>
-				<img class="book" src="/img/book.png" alt="book" />
-				<img class="scope" src="/img/lab.png" alt="scope" />
+				<img className="book" src="/img/elements/book.webp" alt="book" />
+				<img className="scope" src="/img/elements/lab.webp" alt="scope" />
 				<NavLink to={'/lab'}>
 					<span className="btn btn-secondary">
 						Know More

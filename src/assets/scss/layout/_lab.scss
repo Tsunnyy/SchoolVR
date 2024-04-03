@@ -1,7 +1,8 @@
 @use "../config/" as *;
 
 .lab-section {
-    padding-top: 4rem;
+    padding-top: 6rem;
+    position: relative;
 
     .section-title {
         line-height: 1.2;

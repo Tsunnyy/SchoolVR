@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo from "/img/logo.png";
+import logo from "/img/logos/logo.png";
 import { useState } from "react";
 let subMenuLinks = [
   {
@@ -28,37 +28,37 @@ let subMenuLinks = [
   },
 ];
 let productLinks = [
-  {
-    id: 1,
-    name: "BioVerse",
-    class: "bio-verse",
-    path: "/bio-verse",
-  },
-  {
-    id: 2,
-    name: "ChemVerse",
-    class: "chem-verse",
-    path: "/chem-verse",
-  },
-  {
-    id: 3,
-    name: "AtomVerse",
-    class: "atom-verse",
-    path: "/atom-verse",
-  },
-  {
-    id: 4,
-    name: "SpaceVerse",
-    class: "space-verse",
-    path: "/space-verse",
-  },
-  {
-    id: 5,
-    name: "GeoVerse",
-    class: "geo-verse",
-    path: "/geo-verse",
-  }
-];
+	{
+	  id: 1,
+	  name: "BioVerse",
+	  class: "bio-verse",
+	  path: "/BioVerse",
+	},
+	{
+	  id: 2,
+	  name: "ChemVerse",
+	  class: "chem-verse",
+	  path: "/ChemVerse",
+	},
+	{
+	  id: 3,
+	  name: "AtomVerse",
+	  class: "atom-verse",
+	  path: "/AtomVerse",
+	},
+	{
+	  id: 4,
+	  name: "SpaceVerse",
+	  class: "space-verse",
+	  path: "/SpaceVerse",
+	},
+	{
+	  id: 5,
+	  name: "GeoVerse",
+	  class: "geo-verse",
+	  path: "/GeoVerse",
+	}
+  ];
 export const Header = ({ setModalActive }) => {
   const [hamburger, setHamburger] = useState(false);
   const openHamburger = () => {
@@ -75,13 +75,10 @@ export const Header = ({ setModalActive }) => {
       </button>
       <nav className={`navbar explore-tray ${hamburger ? "navbar-active" : ""}`}>
         <div className="flex navbar-top">
-          <div className="menu-title">
+          <div className="menu-title" onClick={closeHamburger}>
             <img className="menu-title-icon" src={'/img/menu.svg'} alt="menuIcon" />
             Explore
           </div>
-          <button class="btn-close" onClick={closeHamburger}>
-            <svg width="20" height="20" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 11L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 11L1 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-            </button>
         </div>
         <ul className="product-list">
           {productLinks.map((link) => (
@@ -90,7 +87,7 @@ export const Header = ({ setModalActive }) => {
               className={`navlink-item navlink-item-${link.class}`}
             >
               <NavLink to={link.path}>
-                <img className="icon" src={`/img/${link.class}.svg`} alt="menuIcon" />
+                <img className="icon" src={`/img/product/icon/${link.class}.svg`} alt="menuIcon" />
                 {link.name}
               </NavLink>
             </li>
@@ -142,7 +139,7 @@ export const Header = ({ setModalActive }) => {
           </li>
         </ul>
       </nav>
-      <div className="navlink-item get-in-touch">
+      <div className="navlink-item get-in-touch desktop">
         <button className="btn">
           Get in Touch
         </button>

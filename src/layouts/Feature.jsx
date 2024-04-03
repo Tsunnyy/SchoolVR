@@ -31,24 +31,25 @@ let cardData = [
 
 export const Feature = () => {
 	return (
-		<div class="feature-section flex-col-center">
-			<div class="card-list">
+		<div className="feature-section flex-col-center">
+			<span className="line top"></span>
+			<div className="card-list">
 				{cardData.map((card) => (
-					<div class="card-item">
-						<div class="card-icon">
-							<img src={`/img/${card.class}.svg`} alt={`${card.class}`} />
+					<div className="card-item" key={card.id} >
+						<div className="card-icon">
+							<img src={`/img/icon/${card.class}.svg`} alt={`${card.class}`} />
 						</div>
-						<div class="card-title">
+						<div className="card-title">
 							<h3>{card.name}</h3>
 						</div>
-						<div class="card-content">
-							<p class="text-justify">{card.content}</p>
+						<div className="card-content">
+							<p className="text-justify">{card.content}</p>
 						</div>
 					</div>
 				))}
 			</div>
 			<NavLink to={''}>
-				<span className="btn btn-secondary-light">
+				<span className="btn btn-secondary-light ">
 					Know More
 				</span>
 			</NavLink>

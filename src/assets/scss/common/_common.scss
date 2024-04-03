@@ -47,7 +47,7 @@
 
 img {
   width: 100%;
-  border-radius: 0.5rem;
+  // border-radius: 0.5rem;
   display: block;
   background-color: transparent;
 }
@@ -92,10 +92,31 @@ svg {
 .gradient-wrap {
   background: linear-gradient(103.92deg, #FFFFFF 35.34%, #ECECEC 97.13%);
 }
+.dark-gradient-wrap{
+  background: linear-gradient(139.6deg, #373A3A 4.41%, #191B1B 96.51%);
+
+}
 .text-justify {
   text-align: justify;
 }
-
+.line{
+  width: 0.1rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50);
+  background-color: #ffffff;
+  z-index: 1;
+  &.top{
+    top: 0;
+  }
+  &.bottom{
+    bottom: 0;
+  }
+  &.dark{
+    background-color: #292D32;
+  }
+}
 @include mq(lg) {
   .section-sub-title {
     font-size: 1.8rem;
@@ -103,6 +124,10 @@ svg {
   
   .section-title {
     font-size: 5rem;
+  }
+  .dark-gradient-wrap{
+    background: linear-gradient(139.6deg, #373A3A 4.41%, #191B1B 96.51%);
+
   }
   
 }

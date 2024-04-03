@@ -29,6 +29,9 @@ export const FormField = ({
           <label className="form-label" htmlFor={name}>
             {placeholder}
           </label>
+          <div className="input-wrap">
+
+          </div>
           <input
             type={type}
             placeholder={placeholder}
