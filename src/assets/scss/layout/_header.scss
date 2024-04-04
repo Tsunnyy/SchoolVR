@@ -64,7 +64,7 @@ header {
   .navlink-item {
     width: max-content;
     flex-shrink: 0;
-    button {
+    button.demo {
       transition: 300ms ease-in-out;
       &:hover {
         color: var(--secondary);

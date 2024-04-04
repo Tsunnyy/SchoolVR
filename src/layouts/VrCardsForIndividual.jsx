@@ -147,20 +147,20 @@ export const VrCardsForIndividual = () => {
           </div>
           <div className="icon-list">
             <div className="icon-wrap">
-              <img className="icon" src="/img/quest-2.webp" alt="" />
+              <img className="icon" src="/img/icon/quest-2.svg" alt="" />
               <div className="card-text">Oculus Quest 2</div>
             </div>
             <div className="icon-wrap">
-              <img className="icon" src="/img/quest-3.webp" alt="" />
+              <img className="icon" src="/img/icon/quest-3.svg" alt="" />
               <div className="card-text">Oculus Quest 3</div>
             </div>
             <div className="icon-wrap">
-              <img className="icon" src="/img/pico-vr.webp" alt="" />
+              <img className="icon" src="/img/icon/pico-vr.svg" alt="" />
               <div className="card-text">Pico VR</div>
             </div>
           </div>
           <button className="btn btn-secondary btn-download">
-            <img className="icon" src="/img/download.webp" alt="" />
+            <img className="icon" src="/img/icon/download.svg" alt="" />
             Download the app for Free
           </button>
         </div>

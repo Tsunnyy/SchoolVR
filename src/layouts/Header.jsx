@@ -154,7 +154,9 @@ export const Header = () => {
       <nav className="navbar secondary-navbar">
         <ul className="sub-menu">
           <li className="navlink-item">
-            <button onClick={() => setModalActive(true)}>Book A Demo</button>
+            <button className="demo" onClick={() => setModalActive(true)}>
+              Book A Demo
+            </button>
           </li>
           {/* <li className="navlink-item navlink-item-dropdown active">
             <button className="btn-dropdown">

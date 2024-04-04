@@ -32,7 +32,7 @@ let cardData = [
 let productData = {
   title: "BioVerse",
   subTitle:
-    "BioVerse Section 1 BioVerse in SchoolVR is an immersive virtual reality environment dedicated to the biological sciences. It serves as a dynamic platform where students can explore intricate concepts in biology through interactive 3D models and simulations. BioVerse brings textbooks to life, allowing students to delve into the fascinating world of living organisms, ecosystems, and cellular structures. This virtual realm offers an engaging and practical approach to learning biology, making complex topics more comprehensible and memorable for students. With BioVerse, students can visualize biological processes, conduct virtual experiments, and deepen their understanding of the natural world.",
+    "BioVerse in SchoolVR is an immersive virtual reality environment dedicated to the biological sciences. It serves as a dynamic platform where students can explore intricate concepts in biology through interactive 3D models and simulations. BioVerse brings textbooks to life, allowing students to delve into the fascinating world of living organisms, ecosystems, and cellular structures. This virtual realm offers an engaging and practical approach to learning biology, making complex topics more comprehensible and memorable for students. With BioVerse, students can visualize biological processes, conduct virtual experiments, and deepen their understanding of the natural world.",
 };
 let accordianData = [
   {

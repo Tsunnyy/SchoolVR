@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { MyContext } from "../mycontext";
 
 let productLinks = [
   {
@@ -35,6 +36,8 @@ let productLinks = [
 ];
 
 export const ProductBanner = (props) => {
+  const { setModalActive } = useContext(MyContext);
+  const [modal, setModal] = useState(false);
   return (
     <div className={`product-page-section full-height ${props.class}`}>
       <div className="back-btn desktop">
@@ -52,10 +55,15 @@ export const ProductBanner = (props) => {
           <h4 className="section-title">{props.title}</h4>
           <span className="section-sub-title">{props.subTitle}</span>
           <div className="navlink-item get-in-touch">
-            <button className="btn btn-transperent">book a demo</button>
+            <button
+              className="btn btn-transperent"
+              onClick={() => setModalActive(true)}
+            >
+              book a demo
+            </button>
           </div>
         </div>
-        <div className="play-btn">
+        <div className="play-btn" onClick={() => setModal(true)}>
           <svg
             width="24"
             height="24"
@@ -91,6 +99,19 @@ export const ProductBanner = (props) => {
           </li>
         ))}
       </ul>
+      <div
+        className={`modal modal-greyscale ${modal ? "active" : ""}`}
+        onClick={() => setModal(false)}
+      >
+        <div
+          className="video-section"
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+        >
+          <video src={`/videos/${props.title}.mp4`} controls></video>
+        </div>
+      </div>
     </div>
   );
 };

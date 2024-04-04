@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { MyContext } from "../mycontext";
 
 export const VrCards = () => {
+  const { setModalActive } = useContext(MyContext);
+
   return (
     <div className="vr-card-section">
       <div className="card-list card-list-svs">
@@ -48,7 +51,9 @@ export const VrCards = () => {
         <div className="card card-light text-dark card-2">
           <div className="flex">
             <h3 className="card-title">Kit</h3>
-            <button className="btn">Order Now</button>
+            <button className="btn" onClick={() => setModalActive(true)}>
+              Order Now
+            </button>
           </div>
           <div className="card-text">
             Choose from a range of SchoolVR Kits based on the number of headsets
@@ -186,7 +191,9 @@ export const VrCards = () => {
               utilization.
             </p>
           </div>
-          <button className="btn">Book A Demo</button>
+          <button className="btn" onClick={() => setModalActive(true)}>
+            Book A Demo
+          </button>
         </div>
       </div>
     </div>

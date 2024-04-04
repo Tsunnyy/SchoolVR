@@ -11,8 +11,8 @@ export const Svs = () => {
   const { setExtraClass, setModalActive } = useContext(MyContext);
 
   useEffect(() => {
-    setExtraClass;
-    return setExtraClass("svs-page");
+    window.scrollTo(0, 0);
+    setExtraClass("svs-page");
   }, []);
   return (
     <>
