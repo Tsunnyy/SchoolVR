@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Header } from "../layouts/Header";
 import { Banner } from "../layouts/Banner";
 import { Product } from "../layouts/Product";
@@ -8,17 +8,18 @@ import { Feature } from "../layouts/Feature";
 import { About } from "../layouts/About";
 import { Modal } from "../layouts/Modal";
 import { Footer } from "../layouts/Footer";
+import { MyContext } from "../mycontext";
 
 export const Home = () => {
-  const [modalActive, setModalActive] = useState(false);
-
+  const { setExtraClass, setModalActive } = useContext(MyContext);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setExtraClass("home-page");
+  }, []);
   return (
-    <div>
-      <Header />
+    <>
       <div className="main-wrap">
-        <Banner
-          setModalActive={setModalActive}
-        />
+        <Banner setModalActive={setModalActive} />
         <Product />
         <div className="gradient-wrap">
           <Ivr />
@@ -30,7 +31,6 @@ export const Home = () => {
         <About />
       </div>
       <Footer />
-      <Modal modalActive={modalActive} setModalActive={setModalActive} />
-    </div>
+    </>
   );
 };

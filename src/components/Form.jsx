@@ -2,6 +2,7 @@ import React from "react";
 import { FormField } from "../components/FormField";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import {useNavigate} from 'react-router-dom'
 
 let initialVal = {
     name: "",

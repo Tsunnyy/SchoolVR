@@ -1,194 +1,196 @@
 @use "../config/" as *;
-
+.home-page .hero-section picture {
+  transform: translateY(0%);
+}
 .hero-section {
-    background: url("/img/banner-bg-m.webp") center/cover;
+  background: url("/img/banner-bg-m.webp") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  picture {
+    transition: 1000ms ease-in-out;
+    transform: translateY(100%);
+  }
+  .hero-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .bag {
+    inset: 0;
+    margin-inline: auto;
+    top: 9%;
+    position: absolute;
+    width: 55%;
+    height: auto;
+    animation-name: floating;
+    animation-duration: 3500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 2;
+  }
+
+  .hero-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-top: -20%;
+    z-index: 1;
+  }
 
-    .hero-image {
-        position: relative;
-        display: flex;
-        align-items: center;
+  .hero-title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--secondary);
+    letter-spacing: 0.4rem;
+    word-spacing: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  @keyframes floating {
+    0% {
+      top: 9%;
     }
 
-    .bag {
-        inset: 0;
-        margin-inline: auto;
-        top: 9%;
-        position: absolute;
-        width: 55%;
-        height: auto;
-        animation-name: floating;
-        animation-duration: 3500ms;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
+    50% {
+      top: 3%;
     }
 
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: -20%;
-        z-index: 1;
+    100% {
+      top: 9%;
     }
-
-    .hero-title {
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        color: var(--secondary);
-        letter-spacing: 0.4rem;
-        word-spacing: 0.5rem;
-        margin-bottom: 2rem;
-    }
-
-    @keyframes floating {
-        0% {
-            top: 9%;
-        }
-
-        50% {
-            top: 3%;
-        }
-
-        100% {
-            top: 9%;
-        }
-    }
-
+  }
 }
 
 .offer-section {
-    margin: 2rem auto;
-    width: 17.6rem;
-    padding: 1rem 1.4rem;
-    background-color: var(--secondary);
-    border-radius: 1.4rem;
+  margin: 2rem auto;
+  width: 17.6rem;
+  padding: 1rem 1.4rem;
+  background-color: var(--secondary);
+  border-radius: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .btn-close {
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+    padding: 0.1rem;
+    margin: -2.5rem -2.5rem 0 auto;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
-    .btn-close {
-        background-color: var(--white);
-        border-radius: 50%;
-        width: 3rem;
-        height: 3rem;
-        overflow: hidden;
-        padding: 0.1rem;
-        margin: -2.5rem -2.5rem 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        svg {
-            width: 55%;
-        }
+    svg {
+      width: 55%;
     }
+  }
 
-    .offer-text {
-        font-size: 1rem;
-        text-transform: uppercase;
-        margin-bottom: 0.4rem;
-    }
+  .offer-text {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
 
-    .note {
-        margin-top: 0.7rem;
-        font-size: 1rem;
-        opacity: 0.7;
-    }
+  .note {
+    margin-top: 0.7rem;
+    font-size: 1rem;
+    opacity: 0.7;
+  }
 
-    .btn-primary {
-        width: 100%;
-        justify-content: center;
-        font-size: 1.4rem;
-        font-weight: 600;
-    }
+  .btn-primary {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
 }
 
 @include mq(md) {
-    .hero-section {
-        padding-top: 15%;
-        background: url("/img/banner-bg.webp") center/cover;
+  .hero-section {
+    padding-top: 15%;
+    background: url("/img/banner-bg.webp") center/cover;
 
-        .hero-image {
-            picture {
-                display: flex;
-                justify-content: center;
-            }
-        }
-
-        .hero-banner {
-            width: 70%;
-        }
-
-        .hero-content {
-            margin-top: 2%;
-        }
-
-        .bag {
-            top: -8rem;
-            width: 21rem;
-        }
-
-        @keyframes floating {
-            0% {
-                top: -8rem;
-            }
-
-            50% {
-                top: -6rem;
-            }
-
-            100% {
-                top: -8rem;
-            }
-        }
+    .hero-image {
+      picture {
+        display: flex;
+        justify-content: center;
+      }
     }
 
+    .hero-banner {
+      width: 70%;
+    }
 
+    .hero-content {
+      margin-top: 2%;
+    }
+
+    .bag {
+      top: -8rem;
+      width: 21rem;
+    }
+
+    @keyframes floating {
+      0% {
+        top: -8rem;
+      }
+
+      50% {
+        top: -6rem;
+      }
+
+      100% {
+        top: -8rem;
+      }
+    }
+  }
 }
 
 @include mq(lg) {
-    .hero-section {
-        .hero-banner {
-            width: 55%;
-        }
+  .hero-section {
+    .hero-banner {
+      width: 55%;
     }
+  }
 
-    .offer-section {
-        position: absolute;
-        bottom: 4rem;
-        right: 4rem;
-        z-index: 1;
-    }
+  .offer-section {
+    position: absolute;
+    bottom: 4rem;
+    right: 4rem;
+    z-index: 1;
+  }
 }
 
 @include mq(xl) {
-    .hero-section {
-        padding-top: 10%;
+  .hero-section {
+    padding-top: 6rem;
 
-        .hero-banner {
-            width: 55%;
-        }
-
-        .bag {
-            top: -2rem;
-            width: 21rem;
-        }
-
-        @keyframes floating {
-            0% {
-                top: -2rem;
-            }
-
-            50% {
-                top: 2rem;
-            }
-
-            100% {
-                top: -2rem;
-            }
-        }
+    .hero-banner {
+      width: 55%;
     }
+
+    .bag {
+      top: -2rem;
+      width: 21rem;
+    }
+
+    @keyframes floating {
+      0% {
+        top: -2rem;
+      }
+
+      50% {
+        top: 2rem;
+      }
+
+      100% {
+        top: -2rem;
+      }
+    }
+  }
 }

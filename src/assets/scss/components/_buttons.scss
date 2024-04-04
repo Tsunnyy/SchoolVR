@@ -3,68 +3,71 @@
 .btn {
   padding: var(--space-2) var(--space-6);
   border-radius: var(--btn-radius, 50vmax);
-  background-color: var(--white);
+  background-color: #f8f8f8;
   color: var(--secondary);
-  transition: all linear .4s;
+  transition: all linear 0.4s;
   font-size: 1.2rem;
   display: flex;
   gap: 0.5rem;
   align-items: center;
   text-transform: capitalize;
   width: max-content;
-  svg , path {
+  svg,
+  path {
     transition: 0.4s;
   }
-  &:hover,:focus {
+  &:hover,
+  :focus {
     background-color: var(--secondary);
     color: var(--primary);
   }
-  &.btn-outline{
+  &.btn-outline {
     border: 0.1rem solid var(--secondary);
-    &:hover,:focus {
-      color: var(--white);;
+    &:hover,
+    :focus {
+      color: var(--white);
     }
   }
   &.btn-primary {
     background-color: var(--primary);
     color: var(--secondary);
-
   }
   &.btn-transperent {
     background-color: transparent;
     border: 0.1rem solid var(--white);
     color: var(--white);
 
-    &:hover,:focus {
+    &:hover,
+    :focus {
       background-color: var(--secondary);
       color: var(--primary);
     }
   }
-  
-  &.btn-secondary{
-    background-color: var(--secondary);
-    color: #9EA0A8;
-    transition: all linear .5s;
 
-    &:hover,:focus {
+  &.btn-secondary {
+    background-color: var(--secondary);
+    color: #9ea0a8;
+    transition: all linear 0.5s;
+
+    &:hover,
+    :focus {
       color: var(--white);
-      background: linear-gradient(106.57deg, #ECC243 8.33%, #C6830E 91.69%);
+      background: linear-gradient(106.57deg, #ecc243 8.33%, #c6830e 91.69%);
       svg path {
         stroke: #ffffff;
       }
     }
   }
-  &.btn-secondary-light{
+  &.btn-secondary-light {
     background-color: var(--secondary);
-    color: #9EA0A8;
-    &:hover,:focus {
+    color: #9ea0a8;
+    &:hover,
+    :focus {
       color: var(--primary);
-      background-color:var(--white);
+      background-color: var(--white);
     }
   }
   &.btn-sq {
     border-radius: 1rem;
   }
 }
-
-

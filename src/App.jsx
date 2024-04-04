@@ -6,62 +6,56 @@ import { BioVerse } from "./pages/BioVerse";
 import { ChemVerse } from "./pages/ChemVerse";
 import { GeoVerse } from "./pages/GeoVerse";
 import { SpaceVerse } from "./pages/SpaceVerse";
-import { useEffect, useState } from "react";
+import { Svs } from "./pages/Svs";
+import { useContext, useEffect, useState } from "react";
 import Loader from "./components/Loader";
+import { MyContext } from "./mycontext";
+import { Header } from "./layouts/Header";
+import { RotateDevice } from "./layouts/RotateDevcice";
+import { Svi } from "./pages/Svi";
+import { Modal } from "./layouts/Modal";
 
 function App() {
   const [loader, setLoader] = useState(true);
+  const [extraClass, setExtraClass] = useState("");
+  const [modalActive, setModalActive] = useState(false);
+
   useEffect(() => {
     window.onload = () => {
       setLoader(false);
-    }
+    };
   }, []);
   return (
-    <>
-      {loader && (
-        <Loader loader={loader}/>
-      )}
-      <BrowserRouter>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Home />
-            }
-          />
-          <Route
-            path="/AtomVerse"
-            element={
-              <AtomVerse />
-            }
-          />
-          <Route
-            path="/BioVerse"
-            element={
-              <BioVerse />
-            }
-          />
-          <Route
-            path="/ChemVerse"
-            element={
-              <ChemVerse />
-            }
-          />
-          <Route
-            path="/GeoVerse"
-            element={
-              <GeoVerse />
-            }
-          />
-          <Route
-            path="/SpaceVerse"
-            element={
-              <SpaceVerse />
-            }
-          />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <div className={extraClass}>
+      <RotateDevice />
+
+      <MyContext.Provider
+        value={{
+          loader,
+          setLoader,
+          setExtraClass,
+          modalActive,
+          setModalActive,
+        }}
+      >
+        {loader && <Loader loader={{ loader, setLoader }} />}
+
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/AtomVerse" element={<AtomVerse />} />
+            <Route path="/BioVerse" element={<BioVerse />} />
+            <Route path="/ChemVerse" element={<ChemVerse />} />
+            <Route path="/GeoVerse" element={<GeoVerse />} />
+            <Route path="/SpaceVerse" element={<SpaceVerse />} />
+            <Route path="/Svs" element={<Svs />} />
+            <Route path="/Svi" element={<Svi />} />
+          </Routes>
+        </BrowserRouter>
+      </MyContext.Provider>
+      <Modal modalActive={modalActive} setModalActive={setModalActive} />
+    </div>
   );
 }
 

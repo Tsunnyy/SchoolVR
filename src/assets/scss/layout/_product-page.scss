@@ -1,157 +1,212 @@
 @use "../config/" as *;
+.product-page .product-page-section .product-list::after {
+  rotate: 0deg;
+}
 .product-page-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  gap: 5%;
+  padding-top: 10rem;
+  .product-coming {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: -3rem;
+    font-size: 2rem;
+  }
+  .hero-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 4.5rem 4.5rem 8.5rem;
+    background-color: #ffffff40;
+    backdrop-filter: blur(0.55rem);
+    -webkit-backdrop-filter: blur(0.55rem);
+    -webkit-mask-image: url("/img/product/page-bg/vr.png");
+    mask-image: url("/img/product/page-bg/vr.png");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+  }
+
+  .section-sub-title,
+  .section-title {
+    color: #ffffff;
+  }
+  .icon {
+    width: 2.3rem;
+    height: 2.3rem;
+    object-fit: contain;
+    opacity: 0.4;
+    transition: opacity ease-in 300ms;
+  }
+
+  .product-list {
+    display: flex;
     justify-content: center;
+    gap: 1.2rem;
     position: relative;
-    gap: 5%;
-
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 4.5rem 4.5rem 8.5rem;
-        background-color: #ffffff40;
-        backdrop-filter: blur(0.55rem);
-        -webkit-backdrop-filter: blur(0.55rem);
-        -webkit-mask-image: url("/img/product/page-bg/vr.png");
-        mask-image: url("/img/product/page-bg/vr.png");
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        -webkit-mask-position: center;
-        -webkit-mask-repeat: no-repeat;
-        -webkit-mask-size: cover;
+    @include mq(md) {
+      gap: 2rem;
     }
+    &::after {
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      inset: -2rem 2rem -3rem;
+      border-radius: 50%;
+      max-width: 80rem;
+      margin: auto;
+      border-bottom: 0.1rem solid rgba(white, 0.8);
+      pointer-events: none;
+      rotate: 180deg;
+      transform-origin: bottom;
 
-    .section-sub-title, .section-title {
-        color: #ffffff;
+      transition: 1000ms;
+      @include mq(md) {
+        bottom: -2rem;
+      }
     }
-    .icon {
-        width: 2.3rem;
-        height: 2.3rem;
-        object-fit: contain;
-        opacity: 0.4;
-        transition: opacity ease-in 300ms;
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(100% + 3rem);
+      height: 7rem;
+      inset-inline: 0;
+      margin: auto;
+      background-color: white;
+      pointer-events: none;
+      width: 0.1rem;
+      @include mq(md) {
+        top: calc(100% + 2rem);
+      }
     }
+  }
 
-    .product-list {
-        display: flex;
-        justify-content: center;
-        gap: 1.2rem;
+  .navlink-item a {
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: unset;
+    &:hover .icon,
+    &.active .icon {
+      opacity: 1;
     }
+  }
 
-    .navlink-item a {
-        width: 4.5rem;
-        height: 4.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: unset;
-        &:hover .icon, &.active .icon {
-            opacity: 1;
-        }
+  .back-btn {
+    position: absolute;
+    top: 10rem;
+    left: 4rem;
+
+    a {
+      display: flex;
     }
+  }
 
-    .back-btn {
-        position: absolute;
-        top: 10rem;
-        left: 4rem;
+  .play-btn {
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ffffff40;
+    backdrop-filter: blur(0.55rem);
+    -webkit-backdrop-filter: blur(0.55rem);
+    transition: background-color ease-in 300ms, stroke ease-in 300ms;
+    margin-inline: auto;
+    margin-top: -2rem;
 
-        a {
-            display: flex;
-        }
+    &:hover {
+      background-color: #ffffff;
+
+      path {
+        stroke: #000000;
+      }
     }
+  }
 
-    .play-btn {
-        width: 7rem;
-        height: 7rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        background-color: #ffffff40;
-        backdrop-filter: blur(0.55rem);
-        -webkit-backdrop-filter: blur(0.55rem);
-        transition: background-color ease-in 300ms, stroke ease-in 300ms;
-        margin-inline: auto;
-        margin-top: -2rem;
+  &.product-bio-verse {
+    background: url("/img/product/page-bg/bio-verse-bg-m.webp") center/cover;
+  }
 
-        &:hover {
-            background-color: #ffffff;
+  &.product-chem-verse {
+    background: url("/img/product/page-bg/chem-verse-bg-m.webp") center/cover;
+  }
 
-            path {
-                stroke: #000000;
-            }
-        }
+  &.product-atom-verse {
+    background: url("/img/product/page-bg/atom-verse-bg-m.webp") center/cover;
+  }
 
-    }
+  &.product-space-verse {
+    background: url("/img/product/page-bg/space-verse-bg-m.webp") center/cover;
+  }
 
-    &.product-bio-verse {
-        background: url("/img/product/page-bg/bio-verse-bg-m.webp") center/cover;
-    }
+  &.product-geo-verse {
+    background: url("/img/product/page-bg/geo-verse-bg-m.webp") center/cover;
+  }
 
-    &.product-chem-verse {
-        background: url("/img/product/page-bg/chem-verse-bg-m.webp") center/cover;
-    }
+  .section-title {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
 
-    &.product-atom-verse {
-        background: url("/img/product/page-bg/atom-verse-bg-m.webp") center/cover;
-    }
-
-    &.product-space-verse {
-        background: url("/img/product/page-bg/space-verse-bg-m.webp") center/cover;
-    }
-
-    &.product-geo-verse {
-        background: url("/img/product/page-bg/geo-verse-bg-m.webp") center/cover;
-    }
-
-    .section-title {
-        font-size: 4rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .section-sub-title {
-        min-height: unset;
-        margin-bottom: 3.5rem;
-    }
+  .section-sub-title {
+    min-height: unset;
+    margin-bottom: 3.5rem;
+  }
 }
 
 @include mq(md) {
-    .product-page-section {
-        .hero-content {
-            width: 70%;
-            margin-inline: auto ;
-            -webkit-mask-image: url("/img/product/page-bg/vr.png");
-            mask-image: url("/img/product/page-bg/vr.png");
-            -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
-            -webkit-mask-position: center;
-            -webkit-mask-repeat: no-repeat;
-            -webkit-mask-size: contain;
-        }
-
-        &.product-bio-verse {
-            background: url("/img/product/page-bg/bio-verse-bg.webp") center/cover;
-        }
-
-        &.product-chem-verse {
-            background: url("/img/product/page-bg/chem-verse-bg.webp") center/cover;
-        }
-
-        &.product-atom-verse {
-            background: url("/img/product/page-bg/atom-verse-bg.webp") center/cover;
-        }
-
-        &.product-space-verse {
-            background: url("/img/product/page-bg/space-verse-bg.webp") center/cover;
-        }
-
-        &.product-geo-verse {
-            background: url("/img/product/page-bg/geo-verse-bg.webp") center/cover;
-        }
-        .section-title{
-            font-size: 6rem;
-        }
+  .product-page-section {
+    .hero-content {
+      width: 90%;
+      margin-inline: auto;
+      -webkit-mask-image: url("/img/product/page-bg/vr.png");
+      mask-image: url("/img/product/page-bg/vr.png");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
     }
+
+    &.product-bio-verse {
+      background: url("/img/product/page-bg/bio-verse-bg.webp") center/cover;
+    }
+
+    &.product-chem-verse {
+      background: url("/img/product/page-bg/chem-verse-bg.webp") center/cover;
+    }
+
+    &.product-atom-verse {
+      background: url("/img/product/page-bg/atom-verse-bg.webp") center/cover;
+    }
+
+    &.product-space-verse {
+      background: url("/img/product/page-bg/space-verse-bg.webp") center/cover;
+    }
+
+    &.product-geo-verse {
+      background: url("/img/product/page-bg/geo-verse-bg.webp") center/cover;
+    }
+    .section-title {
+      font-size: 6rem;
+    }
+  }
+}
+@include mq(lg) {
+  .product-page-section {
+    .hero-content {
+      width: 70%;
+    }
+  }
 }

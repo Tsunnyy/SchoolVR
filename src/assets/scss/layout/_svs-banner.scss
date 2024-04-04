@@ -1,0 +1,28 @@
+@use "../config/" as *;
+.svs-banner {
+  margin-top: 12rem;
+  color: #292d32;
+  position: relative;
+  text-align: center;
+  h3 {
+    color: #292d32;
+    font-size: 4.6rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  .content {
+    margin-bottom: 2rem;
+    padding-inline: 2rem;
+    max-width: 100rem;
+    margin: auto;
+  }
+  .btn {
+    position: absolute;
+    bottom: 2rem;
+    inset-inline: 0;
+    margin-inline: auto;
+  }
+}

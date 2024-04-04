@@ -1,0 +1,27 @@
+.tabs {
+  display: flex;
+  margin-block: 20px;
+  border-radius: 50vmax;
+  background-color: rgba(black, 0.1);
+  color: white;
+  overflow: hidden;
+  width: max-content;
+  max-width: 100%;
+  &-item {
+    padding: 5px 20px;
+    border-radius: 50vmax;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  &-active {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  &-container-item {
+    display: none;
+    &-active {
+      display: block;
+    }
+  }
+}
