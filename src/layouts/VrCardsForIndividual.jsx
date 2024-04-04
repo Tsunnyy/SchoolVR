@@ -64,8 +64,9 @@ export const VrCardsForIndividual = () => {
                 return (
                   <div
                     key={item.id}
-                    className={`tabs-item ${pricing === item.id ? "tabs-active" : ""
-                      }`}
+                    className={`tabs-item ${
+                      pricing === item.id ? "tabs-active" : ""
+                    }`}
                     onClick={() => setpricing(item.id)}
                   >
                     {item.name}
@@ -79,8 +80,9 @@ export const VrCardsForIndividual = () => {
               return (
                 <div
                   key={item.id}
-                  className={`tabs-container-item ${pricing === item.id ? "tabs-container-item-active" : ""
-                    }`}
+                  className={`tabs-container-item ${
+                    pricing === item.id ? "tabs-container-item-active" : ""
+                  }`}
                 >
                   <div className="price-wrap">
                     <div className="price-per-verse">
@@ -145,21 +147,22 @@ export const VrCardsForIndividual = () => {
           </div>
           <div className="icon-list">
             <div className="icon-wrap">
-              <img className="icon" src="/img/quest-2.png" alt="" />
+              <img className="icon" src="/img/quest-2.webp" alt="" />
               <div className="card-text">Oculus Quest 2</div>
             </div>
             <div className="icon-wrap">
-              <img className="icon" src="/img/quest-3.png" alt="" />
+              <img className="icon" src="/img/quest-3.webp" alt="" />
               <div className="card-text">Oculus Quest 3</div>
             </div>
             <div className="icon-wrap">
-              <img className="icon" src="/img/pico-vr.png" alt="" />
+              <img className="icon" src="/img/pico-vr.webp" alt="" />
               <div className="card-text">Pico VR</div>
             </div>
           </div>
           <button className="btn btn-secondary btn-download">
-            <img className="icon" src="/img/download.png" alt="" />
-            Download the app for Free</button>
+            <img className="icon" src="/img/download.webp" alt="" />
+            Download the app for Free
+          </button>
         </div>
       </div>
     </div>
