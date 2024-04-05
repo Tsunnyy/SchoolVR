@@ -13,7 +13,6 @@ import { MyContext } from "../mycontext";
 export const Home = () => {
   const { setExtraClass, setModalActive } = useContext(MyContext);
   useEffect(() => {
-    window.scrollTo(0, 0);
     setExtraClass("home-page");
   }, []);
   return (

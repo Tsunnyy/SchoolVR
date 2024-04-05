@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { MyContext } from "../mycontext";
 
 export const VrCards = () => {
   const { setModalActive } = useContext(MyContext);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="vr-card-section">
       <div className="card-list card-list-svs">

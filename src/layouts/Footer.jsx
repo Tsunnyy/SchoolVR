@@ -46,7 +46,7 @@ let productLinks = [
     path: "/GeoVerse",
   },
   {
-    id: 3,
+    id: 5,
     name: "SpaceVerse",
     path: "/SpaceVerse",
   },
@@ -119,7 +119,14 @@ export const Footer = () => {
         <ul className="footer-link-list">
           <span className="footer-link-title">products</span>
           {productLinks.map((link) => (
-            <li key={link.id}>
+            <li
+              key={link.id}
+              onClick={() => {
+                setTimeout(() => {
+                  window.scrollTo(0, 0);
+                }, 10);
+              }}
+            >
               <NavLink to={link.path}>{link.name}</NavLink>
             </li>
           ))}
@@ -127,7 +134,14 @@ export const Footer = () => {
         <ul className="footer-link-list">
           <span className="footer-link-title">our solutions</span>
           {solutionsLinks.map((link) => (
-            <li key={link.id}>
+            <li
+              key={link.id}
+              onClick={() => {
+                setTimeout(() => {
+                  window.scrollTo(0, 0);
+                }, 10);
+              }}
+            >
               <NavLink to={link.path}>{link.name}</NavLink>
             </li>
           ))}

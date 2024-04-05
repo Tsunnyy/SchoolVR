@@ -13,6 +13,7 @@ export const Svi = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+
     setExtraClass("svs-page");
   }, []);
   return (

@@ -70,7 +70,6 @@ export const SpaceVerse = () => {
   const { setExtraClass, setModalActive } = useContext(MyContext);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
     setExtraClass("product-page");
   }, []);
   return (

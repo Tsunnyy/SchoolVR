@@ -30,7 +30,7 @@ export const SchoolVrForSchool = () => {
         mobile="students/page/svs-m.webp"
         desktop="students/page/svs.webp"
       />
-      <button class="btn" onClick={() => setModalActive(true)}>
+      <button className="btn" onClick={() => setModalActive(true)}>
         book a demo
       </button>
     </div>

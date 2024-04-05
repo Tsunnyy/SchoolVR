@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { Image } from "../components/Image";
+import { MyContext } from "../mycontext";
 
 export const SchoolVrForIndividual = () => {
+  const { setModalActive } = useContext(MyContext);
   return (
     <div className="text-center text-dark svs-banner">
       <div className="content">
@@ -28,7 +30,14 @@ export const SchoolVrForIndividual = () => {
         mobile="students/page/svi-m.webp"
         desktop="students/page/svi.webp"
       />
-      <button class="btn">book a demo</button>
+      <button
+        className="btn"
+        onClick={() => {
+          setModalActive(true);
+        }}
+      >
+        book a demo
+      </button>
     </div>
   );
 };

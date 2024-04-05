@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 let price = [
   {
     id: 1,
@@ -20,6 +20,9 @@ let price = [
 ];
 export const VrCardsForIndividual = () => {
   const [pricing, setpricing] = useState(1);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="vr-card-section">
       <div className="card-list card-list-svi">

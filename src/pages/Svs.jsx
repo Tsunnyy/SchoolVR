@@ -12,6 +12,7 @@ export const Svs = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+
     setExtraClass("svs-page");
   }, []);
   return (

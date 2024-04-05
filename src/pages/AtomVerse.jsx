@@ -74,7 +74,6 @@ export const AtomVerse = () => {
   const { setExtraClass, setModalActive } = useContext(MyContext);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
     setExtraClass("product-page");
   }, []);
   return (

@@ -14,6 +14,7 @@ import { Header } from "./layouts/Header";
 import { RotateDevice } from "./layouts/RotateDevcice";
 import { Svi } from "./pages/Svi";
 import { Modal } from "./layouts/Modal";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [loader, setLoader] = useState(true);
@@ -41,6 +42,7 @@ function App() {
         {loader && <Loader loader={{ loader, setLoader }} />}
 
         <BrowserRouter>
+          <ScrollToTop />
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
