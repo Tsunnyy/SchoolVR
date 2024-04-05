@@ -47,7 +47,7 @@ let productData = [
     name: "GeoVerse",
     class: "geo-verse",
     path: "/GeoVerse",
-    video: false,
+    video: true,
     content: "Coming Soon",
   },
 ];

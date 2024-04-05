@@ -24,14 +24,11 @@
     padding: 4.5rem 4.5rem 8.5rem;
     background-color: #ffffff40;
     backdrop-filter: blur(0.55rem);
-    -webkit-backdrop-filter: blur(0.55rem);
-    -webkit-mask-image: url("/img/product/page-bg/vr.png");
     mask-image: url("/img/product/page-bg/vr.png");
-    -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: cover;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
   }
 
   .section-sub-title,

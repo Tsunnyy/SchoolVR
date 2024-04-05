@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import logo from "/img/logos/logo-fill.webp";
+import logo from "/img/logos/logo.webp";
+import logo2 from "/img/logos/logo-fill.webp";
 import { useContext, useEffect, useState } from "react";
 import { MyContext } from "../mycontext";
 let subMenuLinks = [
@@ -149,6 +150,7 @@ export const Header = () => {
 
       <NavLink to="/" className="logo-wrap">
         <img className="logo" src={logo} alt="SchoolVR" />
+        <img className="logo logo-2" src={logo2} alt="SchoolVR" />
       </NavLink>
 
       <nav className="navbar secondary-navbar">

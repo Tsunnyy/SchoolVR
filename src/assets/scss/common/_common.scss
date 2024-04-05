@@ -39,7 +39,6 @@
 .flex-start {
   display: flex;
   justify-content: space-between;
-
 }
 
 .wrap {
@@ -76,11 +75,13 @@ svg {
 }
 
 .section-sub-title {
+  font-weight: 500;
   font-size: 1.4rem;
   display: block;
 }
 
 .section-title {
+  font-weight: 600;
   font-size: 3rem;
 }
 
@@ -133,5 +134,15 @@ svg {
   }
   .dark-gradient-wrap {
     background: linear-gradient(139.6deg, #373a3a 4.41%, #191b1b 96.51%);
+  }
+}
+@include mq(md) {
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .col-2 {
+    grid-column: span 2;
   }
 }

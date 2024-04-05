@@ -9,7 +9,9 @@ export const ProductInfo = ({ cardData, productData }) => {
       <div className="info-wrapper">
         <div className="info-content">
           <h4 className="section-title">{productData.title}</h4>
-          <span className="section-sub-title">{productData.subTitle}</span>
+          <span className="section-sub-title text-center">
+            {productData.subTitle}
+          </span>
         </div>
         <div className="counter-section">
           <div className="card-list">

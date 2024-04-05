@@ -1,75 +1,75 @@
 @use "../config/" as *;
 
 .faq-section {
-    padding: 4rem 2rem;
+  padding: 4rem 2rem;
 
-    .section-title {
-        font-size: 6rem;
+  .section-title {
+    font-size: 6rem;
+    @include mq(md) {
+      text-align: left;
+    }
+  }
+
+  .arrow {
+    width: 2rem;
+  }
+
+  .faq {
+    &-question,
+    &-answer {
+      color: var(--secondary);
     }
 
-    .arrow {
-        width: 2rem;
+    &-list {
+      display: flex;
+      flex-direction: column;
     }
 
-    .faq {
-
-        &-question,
-        &-answer {
-            color: var(--secondary);
-        }
-
-        &-list {
-            display: flex;
-            flex-direction: column;
-        }
-
-        &-question {
-            font-size: 1.4rem;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        &-answer {
-            color: #646464;
-            font-size: 1.4rem;
-            margin-top: 2rem;
-            padding-right: 2rem;
-        }
-
-        &-item {
-            padding-block: 2rem;
-
-            &:not(:last-child) {
-                border-bottom: 0.1rem solid #BDBDBD;
-            }
-        }
+    &-question {
+      font-size: 1.4rem;
+      display: flex;
+      justify-content: space-between;
     }
 
+    &-answer {
+      color: #646464;
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      padding-right: 2rem;
+    }
+
+    &-item {
+      padding-block: 2rem;
+
+      &:not(:last-child) {
+        border-bottom: 0.1rem solid #bdbdbd;
+      }
+    }
+  }
 }
 
 @include mq(md) {
-    .faq-section{
-        padding: 4rem 4rem 8rem;
-        .faq{
-            &-logo {
-                width: 45%;
-                flex-shrink: 0;
-                .fill-logo{
-                    margin-inline: auto;
-                    max-width: 25rem;
-                }
-            }
-            &-list{
-            width: 55%;
-
-            }
-            &-wrapper {
-                display: flex;
-                align-items: center;
-            }
+  .faq-section {
+    padding: 4rem 4rem 8rem;
+    .faq {
+      &-logo {
+        width: 45%;
+        flex-shrink: 0;
+        .fill-logo {
+          margin-inline: auto;
+          max-width: 25rem;
         }
+      }
+      &-list {
+        width: 55%;
+      }
+      &-wrapper {
+        display: flex;
+        align-items: center;
+      }
     }
-
+  }
 }
 
-@include mq(lg) {}
+@include mq(lg) {
+}

@@ -7,14 +7,16 @@ export const FormField = ({
   onChange,
   value,
   name,
+  className,
 }) => {
   return (
-    <div className="form-group">
+    <div className={"form-group " + className}>
       {type == "textarea" ? (
         <div className="form-wrap">
           <label className="form-label" htmlFor={name}>
             {placeholder}
           </label>
+
           <textarea
             type={type}
             placeholder={placeholder}
@@ -29,9 +31,7 @@ export const FormField = ({
           <label className="form-label" htmlFor={name}>
             {placeholder}
           </label>
-          <div className="input-wrap">
-
-          </div>
+          <div className="input-wrap"></div>
           <input
             type={type}
             placeholder={placeholder}

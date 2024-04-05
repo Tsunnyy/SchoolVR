@@ -1,71 +1,77 @@
 @use "../config/" as *;
 
-.about-section{
-    background: linear-gradient(112.35deg, #E9E9E9 13.45%, #FFFFFF 100.43%);
-    padding: 3rem 2rem;
-    .head-title{
-        color: var(--secondary);
-        font-size: 1.8rem;
-        font-weight: 300;
-    }
-    .text-logo{
-        width: calc(100% - 4rem);
-        margin-bottom: 3.7rem;
-    }
-    .section-sub-title{
-        font-size: 1.2rem;
-        margin-bottom: 3rem;
-    }
-    .about-logo{
-        width: 40%;
-    }
-    .about-content{
-        width: 100%;
-    }
-    .fill-logo{
-        margin-bottom: 3rem;
-    }
-    .form-label{
-        display: none;
-    }
-    .form-section{
-        width: 100%;
-        border-radius: 3rem;
-        background-color: var(--white);
-        padding: 4.8rem 2.5rem 2.5rem;
-        z-index: 1;
-    }
-    .form-title{
-        font-size: 2.4rem;
-        color: var(--secondary);
-        font-weight: normal;
-        line-height: 1;
-    }
+.about-section {
+  background: linear-gradient(112.35deg, #e9e9e9 13.45%, #ffffff 100.43%);
+  padding: 3rem 2rem;
+  .head-title {
+    color: var(--secondary);
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+  .text-logo {
+    width: calc(100% - 4rem);
+    margin-bottom: 3.7rem;
+  }
+  .section-sub-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+  }
+  .about-logo {
+    width: 40%;
+  }
+  .about-content {
+    width: 100%;
+  }
+  .fill-logo {
+    margin-bottom: 3rem;
+  }
+  .form-label {
+    display: none;
+  }
+  .form-section {
+    width: 100%;
+    border-radius: 3rem;
+    background-color: var(--white);
+    padding: 4.8rem 2.5rem 2.5rem;
+    z-index: 1;
+  }
+  .form-title {
+    font-size: 2.4rem;
+    color: var(--secondary);
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+  form {
+    display: grid;
+    gap: 2rem;
+  }
 }
 @include mq(lg) {
-    .about-section{
-        padding-inline: unset;
-        flex-direction: row-reverse;
-        .about-logo{
-            width: 45%;
-            flex-shrink: 0;
-            .fill-logo{
-                margin-inline: auto;
-                max-width: 25rem;
-            }
-        }
-        .section-sub-title{
-            margin-bottom: 6.5rem;
-        }
-        .about-content{
-            align-items: flex-start;
-            padding-left: 4rem;
-        }
-        .text-logo{
-            height: 3rem;
-            width: auto;
-            margin-top: 0.5rem;
-            margin-bottom: 2rem
-        }
+  .about-section {
+    padding-inline: unset;
+    flex-direction: row-reverse;
+    .about-logo {
+      width: 45%;
+      flex-shrink: 0;
+      .fill-logo {
+        margin-inline: auto;
+        max-width: 25rem;
+      }
     }
+    .section-sub-title {
+      margin-bottom: 6.5rem;
+    }
+    .about-content {
+      align-items: flex-start;
+      padding-left: 4rem;
+    }
+    .text-logo {
+      height: 3rem;
+      width: auto;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+    }
+  }
 }
