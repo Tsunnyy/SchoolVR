@@ -127,7 +127,7 @@ export const Footer = () => {
                 }, 10);
               }}
             >
-              <NavLink to={link.path}>{link.name}</NavLink>
+              <a href={link.path}>{link.name}</a>
             </li>
           ))}
         </ul>
@@ -142,21 +142,21 @@ export const Footer = () => {
                 }, 10);
               }}
             >
-              <NavLink to={link.path}>{link.name}</NavLink>
+              <a href={link.path}>{link.name}</a>
             </li>
           ))}
         </ul>
         <ul className="footer-link-list">
           {infoLinks.map((link) => (
             <li key={link.id}>
-              <NavLink to={link.path}>
+              <a href={link.path}>
                 <img
                   className="icon"
                   src={`/img/icon/${link.img}.svg`}
                   alt={`${link.img}`}
                 />
                 {link.name}
-              </NavLink>
+              </a>
             </li>
           ))}
         </ul>
