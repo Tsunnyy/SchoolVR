@@ -110,9 +110,9 @@ export const Footer = () => {
 					<span className="footer-link-title">quick links</span>
 					{quickLinks.map((link) => (
 						<li key={link.id} >
-							<NavLink to={link.path}>
+							<a href={link.path}>
 								{link.name}
-							</NavLink>
+							</a>
 						</li>
 					))}
 				</ul> */}
