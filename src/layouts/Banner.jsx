@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { ModalEarlyBird } from "./ModalEarlyBird";
 
 export const Banner = ({ setModalActive }) => {
   const [offerActive, setOfferActive] = useState(true);
+  const [earlyBird, setearlyBird] = useState(false);
+
   return (
     <div className="hero-section full-height">
       <div className="hero-image">
@@ -60,7 +63,7 @@ export const Banner = ({ setModalActive }) => {
           <span className="offer-text">Early Adopter </span>
           <button
             className="btn btn-sq btn-primary"
-            onClick={() => setModalActive(true)}
+            onClick={() => setearlyBird(true)}
           >
             Offer
           </button>
@@ -68,6 +71,7 @@ export const Banner = ({ setModalActive }) => {
         </div>
       )}
       <span className="line bottom dark"></span>
+      <ModalEarlyBird modalActive={earlyBird} setModalActive={setearlyBird} />
     </div>
   );
 };

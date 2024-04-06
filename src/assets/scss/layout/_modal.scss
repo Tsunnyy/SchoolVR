@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   display: none;
+  padding: 2rem;
   &.modal-greyscale {
     backdrop-filter: blur(1rem);
     background-color: rgba(black, 0.5);
@@ -51,14 +52,14 @@
   }
 
   .form-section {
-    max-height: 80vh;
+    max-height: calc(100vh - 5rem);
     overflow: auto;
     border: 0.1rem solid #fff;
     padding: 2rem 2.5rem;
     border-radius: 2.5rem;
     backdrop-filter: blur(2rem);
     width: calc(100% - 4rem);
-    background-color: rgba(white, 0.2);
+    background-color: rgba(white, 0.5);
   }
   .btn.btn-secondary {
     border-radius: 1rem;
@@ -82,6 +83,111 @@
       max-width: 70vw;
       width: 100%;
       height: 100%;
+    }
+  }
+  .early-bird-form {
+    width: 100%;
+    max-width: 90rem;
+    @include mq(md) {
+      display: flex;
+      .early-bird {
+        width: 40rem;
+        flex-shrink: 0;
+        margin-right: -5rem;
+        padding: 2rem 8rem 2rem 4rem;
+        .btn-fill {
+          display: none;
+        }
+        hr {
+          margin-block: 5rem;
+        }
+      }
+      .form-section {
+        padding-inline: 3rem;
+        background: white;
+      }
+    }
+    .form-section {
+      width: 100%;
+      display: none;
+      background: white;
+
+      @include mq(md) {
+        display: block;
+      }
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      .col-2 {
+        grid-column: span 2;
+      }
+    }
+    &.step-2 {
+      .early-bird {
+        display: none;
+        @include mq(md) {
+          display: block;
+        }
+      }
+      .form-section {
+        display: block;
+      }
+    }
+  }
+  .early-bird {
+    background-color: rgba(black, 0.5);
+    backdrop-filter: blur(2rem);
+    padding: 2rem;
+    border-radius: 2rem;
+    hr {
+      color: white;
+      margin: 2rem 0;
+    }
+    h3 {
+      font-weight: 400;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      font-size: 2rem;
+      margin-top: 4rem;
+      margin-bottom: 1rem;
+    }
+    li {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 2rem;
+      line-height: 1;
+      margin-block: 2rem;
+      font-weight: 400;
+      svg {
+        width: 2.5rem;
+        flex-shrink: 0;
+      }
+    }
+    .btn-fill {
+      border-radius: 0.5rem;
+      width: 100%;
+      justify-content: center;
+      font-weight: 500;
+      position: relative;
+      text-transform: uppercase;
+      svg {
+        position: absolute;
+        right: 0;
+        width: 3rem;
+      }
+    }
+    .btn-offer {
+      background: #ecc243;
+      border-radius: 1rem;
+      font-weight: 600;
+      pointer-events: none;
+
+      width: max-content;
+      padding-inline: 3rem;
     }
   }
 }

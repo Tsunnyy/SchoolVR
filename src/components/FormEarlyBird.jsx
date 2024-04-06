@@ -8,9 +8,14 @@ let initialVal = {
   name: "",
   email: "",
   message: "",
+  school: "",
+  country: "",
+  state: "",
+  designation: "",
+  phone: "",
 };
 
-export const Form = () => {
+export const FormEarlyBird = () => {
   let [form, setForm] = useState(initialVal);
   let [error, setError] = useState(initialVal);
   let [global, setGlobal] = useState("");
@@ -33,17 +38,18 @@ export const Form = () => {
       !form.email.includes(".")
     ) {
       setError((prevError) => ({ ...prevError, email: "Email is invalid" }));
-    } else if (form.message === "") {
+    } else if (form.phone === "") {
       setError((prevError) => ({
         ...prevError,
-        message: "Message is required",
+        phone: "Phone is required",
       }));
     } else {
+      let msg = `Country: ${form.country}\n\n State: ${form.state}\n\n Phone: ${form.phone}\n\n Designation: ${form.designation}\n\n School: ${form.school}\n\n `;
       emailjs
         .send(
           import.meta.env.VITE_SERVICE_ID,
           import.meta.env.VITE_TEMPLATE_ID,
-          form,
+          { name: form.name, email: form.email, message: msg },
           import.meta.env.VITE_PUBLIC_KEY
         )
         .then(() => {
@@ -62,18 +68,59 @@ export const Form = () => {
         placeholder="Name*"
         name="name"
         value={form.name}
+        className="col-2"
         onChange={handleChange}
         errorMessage={error.name}
       />
       <FormField
         placeholder="Email*"
         name="email"
+        className="col-2"
         value={form.email}
         onChange={handleChange}
         errorMessage={error.email}
       />
+      <FormField
+        placeholder="Phone No*"
+        name="phone"
+        value={form.phone}
+        className="col-2"
+        onChange={handleChange}
+        errorMessage={error.phone}
+      />
+      <FormField
+        placeholder="School Name"
+        name="school"
+        value={form.school}
+        onChange={handleChange}
+        errorMessage={error.school}
+        className="col-2"
+      />
+      <FormField
+        placeholder="Designation"
+        name="designation"
+        className="col-2"
+        value={form.designation}
+        onChange={handleChange}
+        errorMessage={error.designation}
+      />
 
       <FormField
+        placeholder="Country"
+        name="country"
+        value={form.country}
+        onChange={handleChange}
+        errorMessage={error.country}
+      />
+      <FormField
+        placeholder="State"
+        name="state"
+        value={form.state}
+        onChange={handleChange}
+        errorMessage={error.state}
+      />
+
+      {/* <FormField
         type="textarea"
         placeholder="Message* "
         name="message"
@@ -81,8 +128,8 @@ export const Form = () => {
         className="col-2"
         onChange={handleChange}
         errorMessage={error.message}
-      />
-      <div className="form-btn">
+      /> */}
+      <div className="form-btn col-2    ">
         <button className="btn btn-secondary">
           Send
           <svg

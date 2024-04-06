@@ -1,4 +1,4 @@
-import { Form } from "../components/Form";
+import { FormDemo } from "../components/FormDemo";
 
 export const Modal = ({ modalActive, setModalActive }) => {
   return (
@@ -45,7 +45,7 @@ export const Modal = ({ modalActive, setModalActive }) => {
             </svg>
           </button>
         </div>
-        <Form />
+        <FormDemo />
       </div>
     </div>
   );
