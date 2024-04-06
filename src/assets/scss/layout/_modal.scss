@@ -34,7 +34,7 @@
   .form-control {
     border: unset;
     background-color: #7c7c7c4d;
-    color: #ffffff;
+    color: black;
     &::placeholder {
       color: transparent;
     }
@@ -58,12 +58,7 @@
     border-radius: 2.5rem;
     backdrop-filter: blur(2rem);
     width: calc(100% - 4rem);
-    background: linear-gradient(
-        151.22deg,
-        #fde086 9.45%,
-        rgba(255, 255, 255, 0.2) 94.83%
-      ),
-      linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+    background-color: rgba(white, 0.2);
   }
   .btn.btn-secondary {
     border-radius: 1rem;

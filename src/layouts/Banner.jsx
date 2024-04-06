@@ -58,7 +58,12 @@ export const Banner = ({ setModalActive }) => {
             </svg>
           </button>
           <span className="offer-text">Early Adopter </span>
-          <button className="btn btn-sq btn-primary">Offer</button>
+          <button
+            className="btn btn-sq btn-primary"
+            onClick={() => setModalActive(true)}
+          >
+            Offer
+          </button>
           <span className="note">Click Here to Avail.</span>
         </div>
       )}
