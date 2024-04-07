@@ -206,7 +206,9 @@ export const ModalEarlyBird = ({ modalActive, setModalActive }) => {
               />
             </svg>
           </button>
-          <p className="text">*Limited Time Only</p>
+          <p className="text" style={{ fontSize: "1.8rem", marginTop: "2rem" }}>
+            *Limited Time Only
+          </p>
         </div>
         {
           <div className="form-section">
