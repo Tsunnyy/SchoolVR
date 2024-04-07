@@ -26,25 +26,25 @@ export const VrCards = () => {
             </div>
             <div className="feature-item">
               <div className="feature-icon">
-                <img className="icon" src="/img/icon/experiential.svg" alt="" />
+                <img className="icon" src="/img/icon/engagement.svg" alt="" />
               </div>
               <div className="feature-content">
-                <div className="card-sub-title">Enrichment</div>
+                <div className="card-sub-title">Engagement</div>
                 <div className="card-text">
-                  Elevate traditional teaching methods with immersive
-                  experiences for a richer and more effective learning journey.
+                  Energize classrooms by transforming theoretical concepts into
+                  captivating 3D experiences, fostering student curiosity.
                 </div>
               </div>
             </div>
             <div className="feature-item">
               <div className="feature-icon">
-                <img className="icon" src="/img/icon/experiential.svg" alt="" />
+                <img className="icon" src="/img/icon/empowerment.svg" alt="" />
               </div>
               <div className="feature-content">
-                <div className="card-sub-title">Enrichment</div>
+                <div className="card-sub-title">Empowerment</div>
                 <div className="card-text">
-                  Elevate traditional teaching methods with immersive
-                  experiences for a richer and more effective learning journey.
+                  Equip educators with cutting-edge tools to enhance teaching
+                  strategies, providing a holistic and student-centric approach.
                 </div>
               </div>
             </div>
@@ -62,13 +62,27 @@ export const VrCards = () => {
             you need
           </div>
           <div className="range-list">
-            <div className="range-item">05</div>
-            <div className="range-item">15</div>
-            <div className="range-item">20</div>
-            <div className="range-item">25</div>
-            <div className="range-item">30</div>
-            <div className="range-item">35</div>
-            <div className="range-item">Need More?</div>
+            <button onClick={() => setModalActive(true)} className="range-item">
+              05
+            </button>
+            <button onClick={() => setModalActive(true)} className="range-item">
+              15
+            </button>
+            <button onClick={() => setModalActive(true)} className="range-item">
+              20
+            </button>
+            <button onClick={() => setModalActive(true)} className="range-item">
+              25
+            </button>
+            <button onClick={() => setModalActive(true)} className="range-item">
+              30
+            </button>
+            <button onClick={() => setModalActive(true)} className="range-item">
+              35
+            </button>
+            <button onClick={() => setModalActive(true)} className="range-item">
+              Need More?
+            </button>
           </div>
           <div className="card-wrap">
             <div className="card-text w-50">

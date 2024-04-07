@@ -92,7 +92,7 @@ export const Ivr = () => {
               <h3>{card.name}</h3>
             </div>
             <div className="card-content">
-              <p className="text-justify">${card.content}</p>
+              <p className="text-justify">{card.content}</p>
             </div>
           </div>
         ))}

@@ -82,6 +82,10 @@
   .section-sub-title {
     font-size: 1.2rem;
     margin-bottom: 3rem;
+    max-width: 80rem;
+    @include mq(md) {
+      font-size: 1.6rem;
+    }
   }
 
   .section-sub-title,
@@ -101,7 +105,6 @@
     }
 
     .section-sub-title {
-      width: 60%;
       margin-inline: auto;
     }
 

@@ -156,6 +156,7 @@
   .range-item {
     padding: 1rem 0.9rem;
     background-color: #f8f8f8;
+    color: inherit;
     border-radius: 0.8rem;
     width: max-content;
     font-size: 2.4rem;
@@ -165,8 +166,8 @@
 
   .card-1 {
     .icon {
-      width: 2.8rem;
-      height: 2.8rem;
+      width: 4rem;
+      height: 4rem;
       object-fit: contain;
       object-position: center;
       margin-right: 1.2rem;
@@ -365,6 +366,9 @@
       @include mq(lg) {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
       }
     }
     .price-per-verse {
@@ -374,7 +378,7 @@
       }
     }
     .price {
-      font-size: 4rem;
+      font-size: 3.2rem;
       display: flex;
       align-items: baseline;
       gap: 1rem;
@@ -435,6 +439,12 @@
           font-size: 1.4rem;
         }
       }
+    }
+    select {
+      padding: 0.5rem;
+      font-weight: 800;
+      font-size: 1.4rem;
+      width: 10rem;
     }
   }
 

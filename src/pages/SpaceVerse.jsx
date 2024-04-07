@@ -55,7 +55,7 @@ let accordianData = [
   },
   {
     id: 3,
-    question: ". Is Spaceverse suitable for all age groups?",
+    question: "Is Spaceverse suitable for all age groups?",
     answer: `Yes, Spaceverse is designed to cater to a wide range of age groups, making astronomy education
     accessible and enjoyable for students at various educational levels.`,
   },

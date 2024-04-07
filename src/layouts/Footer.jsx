@@ -127,7 +127,7 @@ export const Footer = () => {
                 }, 10);
               }}
             >
-              <a href={link.path}>{link.name}</a>
+              <NavLink to={link.path}>{link.name}</NavLink>
             </li>
           ))}
         </ul>
@@ -142,7 +142,7 @@ export const Footer = () => {
                 }, 10);
               }}
             >
-              <a href={link.path}>{link.name}</a>
+              <NavLink to={link.path}>{link.name}</NavLink>
             </li>
           ))}
         </ul>

@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
@@ -113,9 +113,9 @@ export const Product = () => {
                 </div>
                 <h4 className="section-title">{product.name}</h4>
                 <span className="section-sub-title">{product.content}</span>
-                <NavLink to={product.path}>
+                <Link preventScrollReset={true} to={product.path}>
                   <span className="btn btn-secondary">Know More</span>
-                </NavLink>
+                </Link>
               </div>
             </SwiperSlide>
           ))}

@@ -22,7 +22,7 @@ let cardData = [
     name: "Quizzes",
     class: "quiz",
     content:
-      "Quizzes in SchoolVR are interactive assessments designed to evaluate students' understanding of various subjects. These gamified quizzes not only provide a means for assessment but also make the learning process engaging. Students can test their knowledge, receive immediate feedback, and reinforce their understanding of key concepts.",
+      "Quizzes in SchoolVR are interactive assessments designed to evaluate student's understanding of various subjects. These gamified quizzes not only provide a means for assessment but also make the learning process engaging. Students can test their knowledge, receive immediate feedback, and reinforce their understanding of key concepts.",
   },
   {
     id: 4,

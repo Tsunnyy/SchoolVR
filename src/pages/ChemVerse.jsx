@@ -39,41 +39,41 @@ let accordianData = [
   {
     id: 0,
     question: "Why should I use Chemverse for my chemistry studies?",
-    answer: `Atomverse revolutionizes physics education by providing an immersive learning experience. Through
-    interactive 3D models, theoretical labs, and engaging quizzes, Atomverse makes physics concepts come
-    tolife, fostering a deeper understanding of the subject.
+    answer: `Chemverse provides an innovative approach to chemistry education. Through interactive 3D models,
+    guided practical experiments, and engaging quizzes, Chemverse transforms the way you learn chemistry. It
+    ensures a deeper understanding of concepts and makes learning chemistry enjoyable and effective.
     `,
   },
   {
     id: 1,
-    question: "How does Atomverse make physics learning more engaging?",
-    answer: `Atomverse ensures active engagement in physics learning through its experiential understanding
-    approach. Theoretical labs, practical experiments, and interactive quizzes create an engaging environment
-    that goes beyond traditional textbooks, making physics interesting and enjoyable`,
+    question:
+      " How does Chemverse enhance the traditional chemistry learning experience?",
+    answer: `Chemverse takes chemistry learning beyond textbooks by offering experiential understanding. With its
+    theoretical labs, practical experiments, and gamified quizzes, Chemverse ensures active engagement
+    andpersonalized learning, making it an essential tool for mastering chemistry.`,
   },
   {
     id: 2,
-    question:
-      "Can Atomverse help me understand complex physics theories practically?",
-    answer: `Absolutely! Atomverse offers a platform for theoretical labs where you can explore and understand
-    complex physics theories practically. The 3D models and interactive simulations provide a hands-on
-    experience, enhancing your comprehension of intricate physics concepts.`,
+    question: "Can Chemverse help me perform chemistry experiments safely?",
+    answer: `Absolutely! Chemverse provides a safe virtual environment for performing chemistry experiments. You
+    can explore various reactions, reactions, and processes without any risks. It's a valuable resource for hands-on
+    learning without the need for a physical lab setup.`,
   },
   {
     id: 3,
     question:
-      "What motivates students in their physics studies through Atomverse?",
-    answer: `Atomverse introduces gamified elements, including quizzes and interactive simulations, to motivate
-    students in their physics studies. The platform combines fun and learning, making physics education more
-    enjoyable and encouraging students to stay engaged.`,
+      "How does Chemverse motivate students in their chemistry studies?",
+    answer: `Chemverse introduces gamified elements to keep students motivated in their chemistry studies. Quizzes,
+    interactive experiments, and personalized learning experiences make the journey enjoyable, ensuring students
+    stay engaged and motivated throughout their chemistry learning process.
+    `,
   },
   {
     id: 4,
-    question:
-      "Does Atomverse cover a wide range of physics topics and experiments?",
-    answer: `Yes, Atomverse is designed to cover a comprehensive range of physics topics and experiments. With
-    over 100 topics, quizzes, and practical experiments, Atomverse caters to diverse areas of physics, ensuring
-    students can explore and grasp various concepts effectively`,
+    question: "Is Chemverse suitable for all chemistry topics and experiments?",
+    answer: `Yes, Chemverse covers a comprehensive range of chemistry topics and experiments. With over 100
+    topics, quizzes, and practical experiments, it caters to various levels of complexity, ensuring that students can
+    explore and understand a wide array of chemistry concepts.`,
   },
 ];
 export const ChemVerse = () => {
