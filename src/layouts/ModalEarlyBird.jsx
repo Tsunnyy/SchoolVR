@@ -53,6 +53,7 @@ export const ModalEarlyBird = ({ modalActive, setModalActive }) => {
             </svg>
           </button>
           <button className="btn btn-offer">Offer</button>
+
           <hr />
           <ul>
             <li>
@@ -205,6 +206,7 @@ export const ModalEarlyBird = ({ modalActive, setModalActive }) => {
               />
             </svg>
           </button>
+          <p className="text">*Limited Time Only</p>
         </div>
         {
           <div className="form-section">

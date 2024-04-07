@@ -67,7 +67,7 @@ export const Banner = ({ setModalActive }) => {
           >
             Offer
           </button>
-          <span className="note">Click Here to Avail.</span>
+          <span className="note">*Limited Time Only</span>
         </div>
       )}
       <span className="line bottom dark"></span>
