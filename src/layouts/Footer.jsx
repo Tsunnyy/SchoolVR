@@ -162,7 +162,7 @@ export const Footer = () => {
         </ul>
       </div>
       <div className="footer-bottom">
-        <span className="footer-text">Copyright © 2022 - AONIX</span>
+        <span className="footer-text">Copyright © 2024 - AONIX</span>
       </div>
     </footer>
   );

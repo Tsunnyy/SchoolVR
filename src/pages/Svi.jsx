@@ -28,7 +28,7 @@ let accordianData = [
   {
     id: 2,
     question: "What subjects are covered in SVI?",
-    answer: `: SVI covers a broad spectrum of subjects, including biology, chemistry, physics, astronomy,
+    answer: `SVI covers a broad spectrum of subjects, including biology, chemistry, physics, astronomy,
     Geography, history and more, providing a comprehensive educational platform.
     `,
   },

@@ -1,8 +1,11 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { MyContext } from "../mycontext";
+import { ModalOrder } from "./ModalOrder";
 
 export const VrCards = () => {
   const { setModalActive } = useContext(MyContext);
+  const [ordermodal, setOrderModal] = useState(false);
+  const [num, setNum] = useState("");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -10,7 +13,7 @@ export const VrCards = () => {
     <div className="vr-card-section">
       <div className="card-list card-list-svs">
         <div className="card card-orange text-light card-1">
-          <h3 className="card-title">Features</h3>
+          <h3 className="card-title">Key Benefits</h3>
           <div className="feature-list text-justify">
             <div className="feature-item">
               <div className="feature-icon">
@@ -53,7 +56,13 @@ export const VrCards = () => {
         <div className="card card-light text-dark card-2">
           <div className="flex">
             <h3 className="card-title">Kit</h3>
-            <button className="btn" onClick={() => setModalActive(true)}>
+            <button
+              className="btn"
+              onClick={() => {
+                setOrderModal(true);
+                setNum("");
+              }}
+            >
               Order Now
             </button>
           </div>
@@ -62,25 +71,67 @@ export const VrCards = () => {
             you need
           </div>
           <div className="range-list">
-            <button onClick={() => setModalActive(true)} className="range-item">
+            <button
+              onClick={() => {
+                setOrderModal(true);
+                setNum(5);
+              }}
+              className="range-item"
+            >
               05
             </button>
-            <button onClick={() => setModalActive(true)} className="range-item">
+            <button
+              onClick={() => {
+                setOrderModal(true);
+                setNum(15);
+              }}
+              className="range-item"
+            >
               15
             </button>
-            <button onClick={() => setModalActive(true)} className="range-item">
+            <button
+              onClick={() => {
+                setOrderModal(true);
+                setNum(20);
+              }}
+              className="range-item"
+            >
               20
             </button>
-            <button onClick={() => setModalActive(true)} className="range-item">
+            <button
+              onClick={() => {
+                setOrderModal(true);
+                setNum(25);
+              }}
+              className="range-item"
+            >
               25
             </button>
-            <button onClick={() => setModalActive(true)} className="range-item">
+            <button
+              onClick={() => {
+                setOrderModal(true);
+                setNum(30);
+              }}
+              className="range-item"
+            >
               30
             </button>
-            <button onClick={() => setModalActive(true)} className="range-item">
+            <button
+              onClick={() => {
+                setOrderModal(true);
+                setNum(35);
+              }}
+              className="range-item"
+            >
               35
             </button>
-            <button onClick={() => setModalActive(true)} className="range-item">
+            <button
+              onClick={() => {
+                setOrderModal(true);
+                setNum("");
+              }}
+              className="range-item"
+            >
               Need More?
             </button>
           </div>
@@ -212,6 +263,11 @@ export const VrCards = () => {
           </button>
         </div>
       </div>
+      <ModalOrder
+        modalActive={ordermodal}
+        setModalActive={setOrderModal}
+        num={num}
+      />
     </div>
   );
 };

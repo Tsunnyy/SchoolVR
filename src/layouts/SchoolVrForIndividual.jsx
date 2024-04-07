@@ -30,14 +30,14 @@ export const SchoolVrForIndividual = () => {
         mobile="students/page/svi-m.webp"
         desktop="students/page/svi.webp"
       />
-      <button
+      {/* <button
         className="btn"
         onClick={() => {
           setModalActive(true);
         }}
       >
         book a demo
-      </button>
+      </button> */}
     </div>
   );
 };

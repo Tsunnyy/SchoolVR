@@ -9,7 +9,7 @@ export const ModalEarlyBird = ({ modalActive, setModalActive }) => {
       style={{
         opacity: modalActive ? 1 : 0,
         pointerEvents: modalActive ? "all" : "none",
-        display: modalActive ? "flex" : "none",
+        display: "flex",
         transition: "opacity 0.3s",
       }}
       onClick={() => {

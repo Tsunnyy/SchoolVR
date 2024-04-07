@@ -84,10 +84,6 @@
       line-height: 1;
       font-weight: 600;
       color: inherit;
-
-      @include mq(xl) {
-        font-size: 6rem;
-      }
     }
 
     &-list {
@@ -176,7 +172,7 @@
 
   .card-2 {
     .icon {
-      width: 2rem;
+      height: 2rem;
       margin-bottom: 0.6rem;
     }
 

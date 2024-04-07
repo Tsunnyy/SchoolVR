@@ -92,6 +92,7 @@ export const Product = () => {
                           src={`/videos/${product.name}.mp4`}
                           autoPlay
                           muted
+                          playsInline
                         ></video>
                       </div>
                     </>

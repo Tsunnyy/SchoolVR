@@ -1,6 +1,7 @@
 import { FormDemo } from "../components/FormDemo";
+import { FormOrder } from "../components/FormOrder";
 
-export const Modal = ({ modalActive, setModalActive }) => {
+export const ModalOrder = ({ modalActive, setModalActive, num }) => {
   return (
     <div
       className="modal"
@@ -14,7 +15,7 @@ export const Modal = ({ modalActive, setModalActive }) => {
     >
       <div className="form-section" onClick={(e) => e.stopPropagation()}>
         <div className="head">
-          <h3 className="form-title">Book a demo</h3>
+          <h3 className="form-title">Order Now</h3>
           <button
             className="btn-close"
             onClick={() => {
@@ -45,7 +46,7 @@ export const Modal = ({ modalActive, setModalActive }) => {
             </svg>
           </button>
         </div>
-        <FormDemo />
+        <FormOrder num={num} />
       </div>
     </div>
   );

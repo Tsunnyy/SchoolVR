@@ -20,7 +20,6 @@ export const Svs = () => {
       <div className="main-wrap">
         <SchoolVrForSchool />
         <VrCards />
-
         <About />
       </div>
       <Footer />
