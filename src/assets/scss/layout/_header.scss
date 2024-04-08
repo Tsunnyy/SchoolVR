@@ -160,6 +160,17 @@ header {
   .logo-2 {
     display: block;
   }
+  .secondary-navbar {
+    .demo {
+      color: black;
+    }
+  }
+  .get-in-touch {
+    .btn {
+      background-color: black;
+      color: #ecc243;
+    }
+  }
 }
 @include mq(md) {
   header {

@@ -445,6 +445,8 @@
   }
 
   .card-8 {
+    position: relative;
+    padding-top: 4rem;
     .icon-list {
       display: flex;
     }
@@ -453,7 +455,11 @@
       display: flex;
       align-items: center;
       margin-inline: auto;
-      margin-bottom: -4rem;
+      margin-top: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      top: 0;
 
       .icon {
         width: 2.4rem;
