@@ -191,14 +191,15 @@ export const Header = () => {
         </ul>
       </nav>
       <div className="navlink-item get-in-touch desktop">
-        <button
+        <a
+          href="#contact"
           className="btn"
-          onClick={() => {
-            setModalActive(true);
-          }}
+          // onClick={() => {
+          //   setModalActive(true);
+          // }}
         >
           Get in Touch
-        </button>
+        </a>
       </div>
     </header>
   );
