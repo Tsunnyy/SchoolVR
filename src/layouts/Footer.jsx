@@ -78,7 +78,7 @@ let solutionsLinks = [
 let infoLinks = [
   {
     id: 1,
-    name: "Admin@Aonix.in",
+    name: "admin@Aonix.in",
     img: "sms",
     path: "mailto:admin@aonix.in",
   },
@@ -88,18 +88,18 @@ let infoLinks = [
     img: "mobile",
     path: "tel:+919508382971",
   },
-  {
-    id: 3,
-    name: "Arunoday, Sihodih",
-    img: "building",
-    path: "/",
-  },
-  {
-    id: 4,
-    name: "Giridh, Jharkhand 815301",
-    img: "location",
-    path: "/",
-  },
+  // {
+  //   id: 3,
+  //   name: "Arunoday, Sihodih",
+  //   img: "building",
+  //   path: "/",
+  // },
+  // {
+  //   id: 4,
+  //   name: "Giridh, Jharkhand 815301",
+  //   img: "location",
+  //   path: "/",
+  // },
 ];
 
 export const Footer = () => {

@@ -183,7 +183,12 @@ export const VrCards = () => {
                 <div className="card-text">Teachers</div>
                 <div className="icon-list-wrap">
                   <img className="icon" src="/img/icon/vr.svg" alt="" />
-                  <img className="icon" src="/img/icon/mobile.svg" alt="" />
+                  <img
+                    className="icon"
+                    style={{ height: 20 }}
+                    src="/img/icon/mobile.svg"
+                    alt=""
+                  />
                   <img className="icon" src="/img/icon/tab.svg" alt="" />
                   <img className="icon" src="/img/icon/laptop.svg" alt="" />
                 </div>
@@ -191,7 +196,12 @@ export const VrCards = () => {
               <div className="icon-wrap">
                 <div className="card-text">Parents</div>
                 <div className="icon-list-wrap">
-                  <img className="icon" src="/img/icon/mobile.svg" alt="" />
+                  <img
+                    className="icon"
+                    style={{ height: 20 }}
+                    src="/img/icon/mobile.svg"
+                    alt=""
+                  />
                   <img className="icon" src="/img/icon/tab.svg" alt="" />
                   <img className="icon" src="/img/icon/laptop.svg" alt="" />
                 </div>
