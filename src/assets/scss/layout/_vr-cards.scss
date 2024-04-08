@@ -48,7 +48,9 @@
     margin-bottom: 2rem;
     gap: 2rem;
     display: flex;
+    backdrop-filter: blur(2rem);
     flex-direction: column;
+    box-shadow: 0px 0px 20px 0px #0000001a;
 
     &-blue {
       background-color: #19addde5;
@@ -84,6 +86,9 @@
       line-height: 1;
       font-weight: 600;
       color: inherit;
+      @include mq(md) {
+        font-size: 6rem;
+      }
     }
 
     &-list {
@@ -98,7 +103,7 @@
       }
       padding: 2rem;
       @include mq(md) {
-        padding-inline: 4rem;
+        padding-inline: max(4rem, (100vw - 130rem) / 2);
       }
     }
 
@@ -158,6 +163,11 @@
     font-size: 2.4rem;
     font-weight: 600;
     line-height: 1;
+    transition: 400ms ease;
+    &:hover {
+      background-color: #191b1b;
+      color: var(--primary);
+    }
   }
 
   .card-1 {
@@ -175,6 +185,9 @@
       height: 2rem;
       margin-bottom: 0.6rem;
     }
+    > .card-text {
+      max-width: 40rem;
+    }
 
     .card-wrap {
       background-color: #f8f8f8;
@@ -183,12 +196,29 @@
       row-gap: 2rem;
       display: flex;
       flex-direction: column;
+      @include mq(lg) {
+        flex-direction: row;
+        gap: 2rem;
+        > .card-text {
+          width: 17rem;
+        }
+        .icon-list {
+          flex: 1;
+        }
+      }
     }
 
     .icon-list {
       display: flex;
       flex-wrap: wrap;
       row-gap: 2.5rem;
+      @include mq(lg) {
+        flex-wrap: nowrap;
+        .icon-wrap {
+          width: auto;
+          flex: 1;
+        }
+      }
     }
 
     .icon-wrap {
@@ -205,7 +235,9 @@
 
   .feature-item {
     display: flex;
-    margin-bottom: 1.6rem;
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
   }
 
   .card-3 {
