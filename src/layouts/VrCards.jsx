@@ -176,34 +176,19 @@ export const VrCards = () => {
               <div className="icon-wrap">
                 <div className="card-text">Students</div>
                 <div className="icon-list-wrap">
-                  <img className="icon" src="/img/icon/vr.svg" alt="" />
+                  <img className="icon" src="/img/icon/student.svg" alt="" />
                 </div>
               </div>
               <div className="icon-wrap">
                 <div className="card-text">Teachers</div>
                 <div className="icon-list-wrap">
-                  <img className="icon" src="/img/icon/vr.svg" alt="" />
-                  <img
-                    className="icon"
-                    style={{ height: 20 }}
-                    src="/img/icon/mobile.svg"
-                    alt=""
-                  />
-                  <img className="icon" src="/img/icon/tab.svg" alt="" />
-                  <img className="icon" src="/img/icon/laptop.svg" alt="" />
+                  <img className="icon" src="/img/icon/teacher.svg" alt="" />
                 </div>
               </div>
               <div className="icon-wrap">
                 <div className="card-text">Parents</div>
                 <div className="icon-list-wrap">
-                  <img
-                    className="icon"
-                    style={{ height: 20 }}
-                    src="/img/icon/mobile.svg"
-                    alt=""
-                  />
-                  <img className="icon" src="/img/icon/tab.svg" alt="" />
-                  <img className="icon" src="/img/icon/laptop.svg" alt="" />
+                  <img className="icon" src="/img/icon/parent.svg" alt="" />
                 </div>
               </div>
             </div>
