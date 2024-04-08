@@ -129,6 +129,8 @@ export const FormEarlyBird = () => {
         onChange={handleChange}
         errorMessage={error.message}
       /> */}
+      <p className="form-success col-2">{global}</p>
+
       <div className="form-btn col-2    ">
         <button className="btn btn-secondary">
           Send

@@ -144,6 +144,8 @@ export const FormOrder = ({ num }) => {
         onChange={handleChange}
         errorMessage={error.message}
       />
+      <p className="form-success col-2">{global}</p>
+
       <div className="form-btn">
         <button className="btn btn-secondary">
           Send
