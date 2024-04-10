@@ -30,7 +30,7 @@ let cardData = [
 ];
 let productData = {
   title: "SpaceVerse",
-  subTitle: "",
+  subTitle: "SpaceVerse, an integral part of SchoolVR, propels astronomy education to new heights by offering an immersive and interactive virtual reality experience. It provides students with a captivating journey through the cosmos, allowing them to explore celestial bodies, astronomical phenomena, and cosmic concepts in a three-dimensional virtual space. SpaceVerse transforms abstract astronomical theories into a visually rich and interactive learning adventure, fostering a deep understanding of the universe. With its engaging content and dynamic simulations, SpaceVerse enables students to embark on an educational odyssey through the vastness of space, making astronomy an accessible and exciting subject.",
 };
 
 let accordianData = [

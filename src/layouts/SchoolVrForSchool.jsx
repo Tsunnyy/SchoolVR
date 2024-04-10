@@ -9,7 +9,7 @@ export const SchoolVrForSchool = () => {
       <div className="content">
         <p>SchoolVR for </p>
         <h3>Schools</h3>
-        <p className="text-justify">
+        <p className="text-center">
           SVS, or SchoolVR for Schools, is a unique VR (Virtual Reality)
           education platform designed for schools, particularly grades 5 through
           12. Unlike other VR platforms that offer passive 360-degree videos,

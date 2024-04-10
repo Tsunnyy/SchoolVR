@@ -4,6 +4,10 @@
   position: relative;
   isolation: isolate;
   padding-inline: 2rem;
+  .footer-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
   &::before {
     content: "";
     width: 100%;

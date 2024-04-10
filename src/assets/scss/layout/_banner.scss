@@ -134,6 +134,19 @@
       top: -8rem;
       width: 21rem;
     }
+    .offer-section{
+      padding: 2.5rem 2.7rem 2rem;
+      .btn-primary{
+        font-size: 2rem;
+      }
+      .btn-close{
+        margin: -3.5rem -3.5rem 0 auto;
+      }
+    }
+    .offer-text {
+      font-size: 1.4rem;
+      margin-bottom: 0.7rem;
+    }
 
     @keyframes floating {
       0% {

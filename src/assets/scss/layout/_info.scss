@@ -17,9 +17,35 @@
     }
   }
 }
-
+.atom-verse-page .info-wrapper{
+  background: url("/img/product/icon-dark/atom-verse.png") center/contain;
+  background-repeat: no-repeat;
+  background-position-y: 10%;
+}
+.bio-verse-page .info-wrapper{
+  background: url("/img/product/icon-dark/bio-verse.png") center/contain;
+  background-repeat: no-repeat;
+  background-position-y: 10%;
+}
+.chem-verse-page .info-wrapper{
+  background: url("/img/product/icon-dark/chem-verse.png") center/contain;
+  background-repeat: no-repeat;
+  background-position-y: 10%;
+}
+.space-verse-page .info-wrapper{
+  background: url("/img/product/icon-dark/space-verse.png") center/contain;
+  background-repeat: no-repeat;
+  background-position-y: 10%;
+}
+@include mq(md){
+  .product-info-section .info-wrapper{
+    background-position-y: 15%;
+    background-size: 40rem;
+  }
+}
 .product-info-section {
   padding: 5rem 2rem;
+  
 
   .counter-section {
     border: 0.1rem solid #ffffff;

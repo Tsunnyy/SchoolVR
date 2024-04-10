@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "/img/logos/logo.webp";
 import logo2 from "/img/logos/logo-fill.webp";
 import { useContext, useEffect, useState } from "react";
@@ -65,6 +65,7 @@ let productLinks = [
 export const Header = () => {
   const { setExtraClass, setModalActive } = useContext(MyContext);
   const [hamburger, setHamburger] = useState(false);
+  const [services, setServices] = useState(false);
   const navigate = useNavigate();
   const openHamburger = () => {
     setHamburger(true);
@@ -160,34 +161,42 @@ export const Header = () => {
               Book A Demo
             </button>
           </li>
-          {/* <li className="navlink-item navlink-item-dropdown active">
-            <button className="btn-dropdown">
-              Our Solutions
-              <svg
-                width="12"
-                height="7"
-                viewBox="0 0 12 7"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.6199 1.22083L6.81655 5.02416C6.36738 5.47333 5.63238 5.47333 5.18322 5.02416L1.37988 1.22083"
-                  stroke="white"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+          <li
+            className={
+              "navlink-item navlink-submenu" +
+              (services ? " navlink-active" : "")
+            }
+          >
+            <button to={"/about"} onClick={() => setServices(!services)}>
+              Our Services
+              <div className="icon">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.38012 8.7793L6.18345 4.97596C6.63262 4.5268 7.36762 4.5268 7.81678 4.97596L11.6201 8.7793"
+                    stroke={services ? "#000" : "#fff"}
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
             </button>
-            <ul className="sub-menu">
-              <li className="sub-menu-link">School VR For Schools</li>
-              <li className="sub-menu-link">School VR For Individuals</li>
+            <ul className="submenu-list">
+              <li className="submenu-item">
+                <Link to="/svs">SchoolVR for Schools</Link>
+              </li>
+              <li className="submenu-item">
+                <Link to="/svi">SchoolVR for Individuals</Link>
+              </li>
             </ul>
-          </li> */}
-          {/* <li className="navlink-item">
-            <NavLink to={"/about"}>Blogs</NavLink>
-          </li> */}
+          </li>
         </ul>
       </nav>
       <div className="navlink-item get-in-touch desktop">

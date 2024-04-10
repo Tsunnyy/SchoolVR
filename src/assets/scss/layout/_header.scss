@@ -1,5 +1,17 @@
 @use "../config/" as *;
 
+.home-page,
+.svs-page {
+  .explore-tray {
+    background: linear-gradient(
+        151.22deg,
+        rgba(236, 194, 67, 0.5) 9.45%,
+        rgba(255, 255, 255, 0.1) 94.83%
+      ),
+      linear-gradient(0deg, rgba(236, 194, 67, 0.4), rgba(236, 194, 67, 0.4));
+  }
+}
+
 header {
   position: absolute;
   top: 0;
@@ -40,15 +52,11 @@ header {
 
   .explore-tray {
     position: absolute;
-    width: 80vw;
+    width: 100%;
+    max-width: 30rem;
     top: 4rem;
     left: -100%;
-    background: linear-gradient(
-        151.22deg,
-        rgba(236, 194, 67, 0.5) 9.45%,
-        rgba(255, 255, 255, 0.1) 94.83%
-      ),
-      linear-gradient(0deg, rgba(236, 194, 67, 0.4), rgba(236, 194, 67, 0.4));
+
     padding: 2rem 4.7rem 4rem;
     backdrop-filter: blur(2rem);
     border-radius: 0 1.3rem 1.3rem 0;
@@ -74,11 +82,59 @@ header {
       }
     }
   }
+  .navlink-submenu {
+    position: relative;
+    > button {
+      height: 2rem;
+      align-items: center;
+      display: flex;
+      gap: 0.5rem;
+      width: max-content;
+      padding-inline: 3rem;
+    }
+    .icon {
+      rotate: 180deg;
+      transition: 300ms;
+      width: max-content;
+      height: max-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .submenu-list {
+      background: white;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      * {
+        color: #292d32;
+      }
+    }
+    .submenu-item {
+      padding: 0.5rem;
+      text-align: center;
+    }
+  }
+  .navlink-active {
+    background: white;
+    border-radius: 0.3rem;
+    > * {
+      color: #292d32;
+    }
+    .icon {
+      rotate: unset;
+    }
+    .submenu-list {
+      display: block;
+    }
+  }
   .btn-dropdown {
     width: max-content;
     display: flex;
   }
-
+  .submenu-list {
+    display: none;
+  }
   .product-list {
     list-style: none;
     display: flex;
@@ -144,15 +200,16 @@ header {
       font-size: 1.4rem;
     }
 
-    .navlink-item:not(:last-child) {
-      margin-bottom: 1rem;
-    }
+    // .navlink-item:not(:last-child) {
+    //   margin-bottom: 1rem;
+    // }
   }
 }
 .svs-page header {
   .hamburger {
     filter: invert(1);
   }
+
   .logo {
     filter: unset;
     display: none;
@@ -164,6 +221,11 @@ header {
     .demo {
       color: black;
       display: none;
+    }
+    .navlink-item:not(.navlink-active) {
+      button {
+        filter: invert(1);
+      }
     }
   }
   .get-in-touch {
@@ -177,6 +239,12 @@ header {
   header {
     padding-top: 3.2rem;
     padding-inline: 4rem;
+    .product-list .navlink-item .coming-soon {
+      font-size: 1rem;
+      width: max-content;
+      padding-inline: 1.5rem;
+      margin-inline: auto;
+    }
 
     .secondary-navbar {
       margin-left: auto;
@@ -223,7 +291,7 @@ header {
     }
 
     .explore-tray {
-      width: 40vw;
+      max-width: 46rem;
       top: 3rem;
       .product-list {
         gap: 2.5rem;
