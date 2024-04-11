@@ -17,30 +17,28 @@
     scale: 1.1;
   }
   .vr-video {
-    max-width: 70rem;
+    max-width: 80rem;
     margin-top: 2rem;
     padding-top: 2rem;
     position: relative;
     width: 100%;
     isolation: isolate;
-    &::after {
+    .line {
       pointer-events: none;
-      content: "";
-      top: 0;
-      inset-inline: -30%;
+      top: -2rem;
+      inset-inline: 0;
+      width: auto;
       height: 20rem;
       z-index: -1;
       position: absolute;
       border-radius: 50%;
-      border-top: 0.1rem solid #ecc243;
-      mask-image: linear-gradient(
-        to right,
-        transparent 10%,
-        #000 10%,
-        #000 90%,
-        transparent 90%,
-        transparent 100%
-      );
+      background-color: transparent;
+      @include mq(md) {
+        left: 50%;
+        right: auto;
+        width: 100rem;
+        transform: translateX(-50%);
+      }
     }
   }
   .video {
@@ -86,7 +84,8 @@
         background-color: unset;
         opacity: unset;
 
-        &-active .icon {
+        &-active .icon,
+        &:hover .icon {
           filter: grayscale(0);
         }
       }
@@ -165,6 +164,7 @@
   }
 
   .section-sub-title {
+    font-weight: 400;
     min-height: 6.8rem;
   }
 

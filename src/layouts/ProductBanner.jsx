@@ -84,6 +84,21 @@ export const ProductBanner = (props) => {
         {props.coming && <h3 className="product-coming">Coming Soon</h3>}
       </div>
       <ul className="product-list">
+        <div className="cuvee-line">
+          <svg
+            width="1018"
+            height="228"
+            viewBox="0 0 1018 228"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M509 69V228" stroke="white" />
+            <path
+              d="M1017 1C620.455 91.5 398 91.4999 1.00001 0.999911"
+              stroke="white"
+            />
+          </svg>
+        </div>
         {productLinks.map((link) => (
           <li
             key={link.id}

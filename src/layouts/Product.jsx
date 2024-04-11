@@ -111,6 +111,20 @@ export const Product = () => {
                       </picture>
                     </>
                   )}
+                  <div className="line">
+                    <svg
+                      width="1018"
+                      height="70"
+                      viewBox="0 0 1018 70"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 68.875C397.545 -21.625 620 -21.625 1017 68.875"
+                        stroke="#ECC243"
+                      />
+                    </svg>
+                  </div>
                 </div>
                 <h4 className="section-title">{product.name}</h4>
                 <span className="section-sub-title">{product.content}</span>

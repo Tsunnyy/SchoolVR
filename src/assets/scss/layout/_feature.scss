@@ -56,7 +56,9 @@
       font-size: 1.2rem;
     }
   }
-
+  h3{
+    font-weight: 600;
+  }
   .btn {
     margin-top: 2rem;
   }
@@ -93,7 +95,7 @@
     .card-item {
       width: 40%;
       padding: 3.5rem 5.5rem;
-
+border-radius: 2.2rem;
       &:nth-child(3) {
         margin-right: auto;
       }

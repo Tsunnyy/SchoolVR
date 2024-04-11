@@ -4,7 +4,7 @@
   &-group {
     textarea {
       resize: none;
-      min-height: 16rem;
+      min-height: 7rem;
     }
   }
 
@@ -45,5 +45,8 @@
     padding-left: 1rem;
     margin-top: 0.2rem;
     color: #00a700;
+    &:empty {
+      display: none;
+    }
   }
 }

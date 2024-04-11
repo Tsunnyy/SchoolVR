@@ -31,10 +31,13 @@
     color: var(--black);
     font-size: 2rem;
     font-weight: 400;
+    letter-spacing: 1rem;
+    margin-bottom: 1rem;
   }
   .form-control {
     border: unset;
-    background-color: #7c7c7c4d;
+    background-color: rgba(89, 89, 89, 0.16);
+    backdrop-filter: blur(2rem);
     color: black;
     &::placeholder {
       color: transparent;
@@ -48,7 +51,8 @@
     font-size: 1.4rem;
     color: black;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 450;
+    margin-bottom: 0;
   }
 
   .form-section {
@@ -57,14 +61,14 @@
     border: 0.1rem solid #fff;
     padding: 2rem 2.5rem;
     border-radius: 2.5rem;
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(4rem);
     width: calc(100% - 4rem);
     background-color: rgba(white, 0.5);
   }
   .btn.btn-secondary {
     border-radius: 1rem;
     width: 100%;
-    padding: 2rem;
+    padding: 1.4rem;
     font-size: 1.4rem;
     color: #ffffff;
     text-transform: uppercase;
@@ -119,7 +123,7 @@
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      gap: 1rem;
       .col-2 {
         grid-column: span 2;
       }
@@ -198,9 +202,12 @@
 @include mq(lg) {
   .modal {
     .form-section {
-      padding: 4rem;
+      padding: 2rem;
       width: 100%;
       max-width: 70rem;
+    }
+    .form-btn {
+      grid-column: span 2;
     }
   }
 }

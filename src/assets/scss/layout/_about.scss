@@ -1,7 +1,7 @@
 @use "../config/" as *;
 
 .about-section {
-  background: linear-gradient(112.35deg, #e9e9e9 13.45%, #ffffff 100.43%);
+  background: linear-gradient(-112.35deg, #e9e9e9 13.45%, #ffffff 100.43%);
   padding: 3rem 2rem;
   .head-title {
     color: var(--secondary);

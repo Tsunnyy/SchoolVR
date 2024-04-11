@@ -23,7 +23,7 @@
     align-items: center;
     padding: 4.5rem 4.5rem 8.5rem;
     background-color: #ffffff40;
-    backdrop-filter: blur(0.55rem);
+    backdrop-filter: blur(2rem);
     mask-image: url("/img/product/page-bg/vr.png");
     mask-repeat: no-repeat;
     mask-position: center;
@@ -51,36 +51,23 @@
     @include mq(md) {
       gap: 2rem;
     }
-    &::after {
-      content: "";
+    .cuvee-line {
       border-radius: 50%;
+      overflow: hidden;
       position: absolute;
-      inset: -2rem 2rem -3rem;
+      top: calc(100% - 7rem);
       border-radius: 50%;
-      max-width: 80rem;
+      height: 30vh;
+      max-width: 180rem;
       margin: auto;
-      border-bottom: 0.1rem solid rgba(white, 0.8);
       pointer-events: none;
-      // rotate: 180deg;
       transform-origin: bottom;
-
-      transition: 1000ms;
+      display: flex;
+      align-items: flex-start;
+      width: calc(100% - 3rem);
       @include mq(md) {
-        bottom: -2rem;
-      }
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      top: calc(100% + 3rem);
-      height: 7rem;
-      inset-inline: 0;
-      margin: auto;
-      background-color: white;
-      pointer-events: none;
-      width: 0.1rem;
-      @include mq(md) {
-        top: calc(100% + 2rem);
+        top: calc(100% - 6rem);
+        height: 23vh;
       }
     }
   }
@@ -158,6 +145,7 @@
 
   .section-sub-title {
     min-height: unset;
+    font-weight: 400;
     margin-bottom: 3.5rem;
   }
 }
@@ -203,7 +191,7 @@
 @include mq(lg) {
   .product-page-section {
     .hero-content {
-      width: 70%;
+      width: 80%;
     }
   }
 }

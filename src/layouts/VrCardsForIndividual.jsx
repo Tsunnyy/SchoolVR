@@ -19,7 +19,7 @@ export const VrCardsForIndividual = () => {
             seamless learning experience.
           </div>
         </div>
-        <div className="card card-orange text-light card-6">
+        <div className="card card-dark-orange text-light card-6">
           <div className="icon">
             <img src="/img/icon/infinite-canvas.svg" alt="" />
           </div>

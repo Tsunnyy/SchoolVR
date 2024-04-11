@@ -7,6 +7,12 @@
   .section-title {
     font-weight: 600;
     line-height: 1.2;
+    @include mq(md) {
+      font-size: 5.2rem;
+    }
+  }
+  .section-sub-title {
+font-weight: 400;
   }
 
   .lab-image-section {
@@ -65,7 +71,7 @@
     padding-top: 8rem;
     .lab-image-section {
       margin-top: auto;
-      width: 70%;
+      width: 80%;
       margin-inline: auto;
       a {
         margin-bottom: 5rem;
