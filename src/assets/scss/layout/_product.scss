@@ -25,12 +25,12 @@
     isolation: isolate;
     .line {
       pointer-events: none;
-      top: -2rem;
+      top: 19vh;
       inset-inline: 0;
       width: auto;
       height: 20rem;
       z-index: -1;
-      position: absolute;
+      position: fixed;
       border-radius: 50%;
       background-color: transparent;
       @include mq(md) {
@@ -78,15 +78,25 @@
       &-bullet {
         width: 4.5rem;
         height: 4.5rem;
+        padding: 0.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: unset;
         opacity: unset;
-
-        &-active .icon,
-        &:hover .icon {
-          filter: grayscale(0);
+        border: 0.1rem solid transparent;
+        transition: 300ms;
+        opacity: 0.5;
+        &-active {
+          opacity: 1;
+          .icon {
+            filter: grayscale(0);
+          }
+        }
+        &:hover {
+          border: 0.1rem solid var(--white);
+          border-radius: 50%;
+          opacity: 1;
         }
       }
     }
@@ -108,7 +118,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
 
     &::before {
@@ -176,6 +186,7 @@
 
 @include mq(lg) {
   .product-section {
+    min-height: 65rem;
     .product-item {
       margin-inline: auto;
     }
