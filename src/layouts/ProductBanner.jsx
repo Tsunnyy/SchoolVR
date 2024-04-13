@@ -92,7 +92,7 @@ export const ProductBanner = (props) => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M509 69V228" stroke="white" />
+            <path d="M509 69V400" stroke="white" />
             <path
               d="M1017 1C620.455 91.5 398 91.4999 1.00001 0.999911"
               stroke="white"
