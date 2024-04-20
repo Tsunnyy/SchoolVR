@@ -199,10 +199,10 @@ export const ModalEarlyBird = ({ modalActive, setModalActive }) => {
               <path
                 d="M1 1.08004L7.52 7.60004C8.29 8.37004 8.29 9.63004 7.52 10.4L1 16.92"
                 stroke="#292D32"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>

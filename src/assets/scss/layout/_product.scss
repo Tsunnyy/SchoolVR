@@ -18,14 +18,13 @@
   }
   .vr-video {
     max-width: 80rem;
-    margin-top: 2rem;
     padding-top: 2rem;
     position: relative;
     width: 100%;
     isolation: isolate;
     .line {
       pointer-events: none;
-      top: 19vh;
+      top: 20%;
       inset-inline: 0;
       width: auto;
       height: 20rem;
@@ -60,7 +59,8 @@
   .swiper {
     &-slide {
       height: 100vh;
-      padding-top: 10rem;
+      min-height: 70rem;
+      padding-top: 16rem;
     }
 
     &-button-next,
@@ -118,10 +118,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     height: 100%;
     gap: 2rem;
-    @include mq(md){
+    @include mq(md) {
       gap: 0;
     }
     &::before {
@@ -189,7 +189,7 @@
 
 @include mq(lg) {
   .product-section {
-    min-height: 65rem;
+    min-height: 70rem;
     .product-item {
       margin-inline: auto;
     }

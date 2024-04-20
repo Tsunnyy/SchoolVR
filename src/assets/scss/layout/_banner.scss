@@ -72,6 +72,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
 
   .btn-close {
     background-color: var(--white);

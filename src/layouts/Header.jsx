@@ -62,6 +62,26 @@ let productLinks = [
     coming: true,
   },
 ];
+
+function useOutsideAlerter(ref) {
+  useEffect(() => {
+    /**
+     * Alert if clicked on outside of element
+     */
+    function handleClickOutside(event) {
+      if (ref.current && !ref.current.contains(event.target)) {
+        alert("You clicked outside of me!");
+      }
+    }
+    // Bind the event listener
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [ref]);
+}
+
 export const Header = () => {
   const { setExtraClass, setModalActive } = useContext(MyContext);
   const [hamburger, setHamburger] = useState(false);
@@ -94,6 +114,13 @@ export const Header = () => {
         <img className="hamburger-icon" src={"/img/menu.svg"} alt="menuIcon" />
         Explore
       </button>
+      <div
+        className="overlay"
+        onClick={closeHamburger}
+        style={{
+          display: hamburger ? "block" : "none",
+        }}
+      ></div>
       <nav
         className={`navbar explore-tray ${hamburger ? "navbar-active" : ""}`}
       >
@@ -180,10 +207,10 @@ export const Header = () => {
                   <path
                     d="M2.38012 8.7793L6.18345 4.97596C6.63262 4.5268 7.36762 4.5268 7.81678 4.97596L11.6201 8.7793"
                     stroke={services ? "#000" : "#fff"}
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>

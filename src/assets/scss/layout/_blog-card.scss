@@ -1,0 +1,235 @@
+@use "../config/" as *;
+
+.blog-section {
+    .card {
+        color: #000000;
+
+        .read-more {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+
+            @include mq(lg) {
+                font-size: 1.4rem;
+            }
+
+
+            svg {
+                width: 1.6rem;
+            }
+        }
+        .blog-content{
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-height: 5.7rem;
+        }
+
+        .blog-date {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-block: 0.3rem;
+        }
+
+        .date-wrap {
+            display: flex;
+            gap: 1.4rem;
+        }
+
+        .tag {
+            border-radius: 50vmax;
+            background-color: #EEEEEE;
+            font-size: 1rem;
+            font-weight: 400;
+            padding: 0.3rem 0.5rem;
+            min-width: 6.5rem;
+            display: block;
+            text-align: center;
+
+            &-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.8rem;
+            }
+        }
+    }
+
+    .latest-blog {
+        z-index: 2;
+
+        .read-more {
+            color: #ECC243;
+
+            svg {
+                path {
+                    fill: #ECC243;
+                }
+            }
+        }
+
+        .card {
+            padding: 1.1rem;
+            width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0 0 1.3rem 0 #0000001A;
+            background-color: #ffffff;
+            z-index: 1;
+            position: relative;
+
+            @include mq(lg) {
+                padding: 2rem;
+                border-radius: 2rem;
+
+            }
+
+        }
+
+        .blog {
+            &-content {
+                font-size: 1.2rem;
+                font-weight: 400;
+                text-align: justify;
+                margin-bottom: 1.6rem;
+            }
+
+            &-title {
+                display: flex;
+                flex-direction: column;
+                font-size: 1.4rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+
+                @include mq(lg) {
+                    font-size: 1.8rem;
+                }
+
+                &::before {
+                    content: 'Lates Blog';
+                    font-size: 1.8rem;
+                    font-weight: 300;
+                    margin-bottom: 1rem;
+
+                    @include mq(lg) {
+                        font-size: 2.6rem;
+                    }
+
+                }
+            }
+
+            &-head-content {
+                display: flex;
+                flex-direction: column;
+                width: calc(70% - 1rem);
+
+                @include mq(lg) {
+                    width: 50%;
+                }
+            }
+
+            &-head {
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 1.2rem;
+                position: relative;
+            }
+
+            &-body {
+                display: flex;
+                flex-direction: column;
+
+                @include mq(md) {
+                    width: calc(70% - 1rem);
+                }
+
+                @include mq(lg) {
+                    width: 50%;
+                }
+            }
+
+            &-thumbnail {
+                width: 30%;
+                flex-shrink: 0;
+                aspect-ratio: 1/1;
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                @include mq(md) {
+                    width: 23%;
+                }
+
+                @include mq(lg) {
+                    width: 40%;
+                }
+
+                img {
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                    background: #EEEEEE;
+                    border-radius: 0.8rem;
+                }
+            }
+        }
+    }
+
+    .blog-list {
+        .card{
+            border: 0.1rem solid #D1D1D1;
+            padding: 1.8rem;
+            border-radius: 2rem;
+        }
+        .date-wrap{
+            margin-block: 1rem 1.6rem;
+        }
+        .read-more {
+            color: #292D32;
+            font-size: 1.4rem;
+        }   
+        .blog {
+            &-thumb{
+                border-radius: 1rem;
+                aspect-ratio: 21/9;
+                object-fit: cover;
+                object-position: top;
+            }
+            
+
+            &-title {
+                font-size: 1.6rem;
+                margin-bottom: 0.4rem;
+                font-weight: 600;
+            }
+
+            &-content {
+                font-size: 1.4rem;
+                margin-bottom: 0.4rem;
+                max-height: 6.7rem;
+                margin-bottom: 2rem;
+            }
+
+            &-head-content {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            &-head {}
+
+            &-body {}
+
+            &-thumbnail {}
+        }
+    }
+
+   
+}
+
+@include mq(lg) {
+    .latest-blog {
+        width: 45%;
+        flex-shrink: 0;
+    }
+}

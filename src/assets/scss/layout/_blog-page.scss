@@ -1,0 +1,175 @@
+@use "../config/" as *;
+
+.blog-section {
+  padding-top: 10rem;
+  padding-inline: 2.5rem;
+
+  .blog-list-head {
+    padding: 2rem;
+    position: relative;
+    background: linear-gradient(139.6deg, #373A3A 4.41%, #191B1B 96.51%);
+    margin-inline: -2.5rem;
+    padding: 2.5rem;
+    padding-top: 7rem;
+    margin-top: -4rem;
+    @include mq(lg) {
+      margin-inline: calc(-1 * (100vw - var(--container))/2);
+      padding: 5.4rem calc((100vw - var(--container))/2) 4.8rem;
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+      margin-top: unset;
+    
+    }
+   
+
+    .blog-list-title {
+      color: #ffffff;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      @include mq(lg) {
+        margin: unset;
+      }
+    }
+    .input-wrap{
+      display: flex;
+      border-radius: 50vmax;
+      overflow: hidden;
+      border: 1px solid #9D9D9D;
+      padding-inline: 1rem;
+ 
+      gap: 1rem;
+      @include mq(lg) {
+        width: 25%;
+      }
+
+    }
+    .search-icon{
+      width: 2.4rem;
+    }
+    .search-input{
+      background-color: transparent;
+      outline: unset;
+      border: unset;
+      width: 100%;
+      height: 3.8rem;
+      color: #ffffff;
+      font-size: 1.4rem;
+    }
+  }
+
+  .back-btn {
+    position: absolute;
+    top: 10rem;
+    left: 4rem;
+
+    a {
+      display: flex;
+      filter: invert(1);
+    }
+  }
+
+  .section-title {
+    font-size: 4.6rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+
+    @include mq(lg) {
+      font-size: 6rem;
+    }
+  }
+
+  .section-sub-title {
+    color: #646464;
+    text-align: left;
+    margin-bottom: 3rem;
+    font-weight: 300;
+
+    @include mq(lg) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .btn {
+    margin-bottom: 2.9rem;
+
+    @include mq(lg) {
+      margin-bottom: unset;
+
+    }
+
+    svg {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
+    &:hover {
+      svg path {
+        stroke: #ffffff
+      }
+
+    }
+  }
+
+  .blog-list-wrap{
+    padding-block: 3rem;
+    gap: 1.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include mq(md) {
+      gap: 2.2rem;
+    
+    }
+  }
+  .blog-list{
+    .card{
+      width: 100%;
+      flex-shrink: 0;
+      @include mq(md) {
+       width: calc(50% - 1.1rem);
+      }
+      @include mq(lg) {
+        width: calc(33.33% - 1.6rem);
+      }
+    }
+  }
+  .banner-section{
+    margin-inline: -2.5rem;
+  }
+
+}
+
+@include mq(md) {
+  .blog-section {
+    padding-top: 14rem;
+  }
+}
+
+@include mq(lg) {
+  .blog-section {
+    .page-head {
+      display: flex;
+      align-items: flex-end;
+      gap: 10%;
+    }
+    .head-wrap{
+      padding-bottom: 3.7rem;
+    }
+    .latest-blog{
+      margin-bottom: -2rem;
+    }
+    .blog-list-body{
+      display: flex;
+      gap: 2.4rem;
+    }
+    .blog-list-wrap{
+      width: 75%;
+    }
+    .banner-section{
+      margin-inline: unset;
+    }
+
+  }
+}

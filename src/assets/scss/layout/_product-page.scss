@@ -67,8 +67,7 @@
       width: calc(100% - 3rem);
       bottom: -5%;
       @include mq(md) {
-        bottom: unset;
-        top: calc(100% - 6rem);
+        bottom: -7%;
         height: 23vh;
       }
     }
@@ -199,7 +198,7 @@
 @include mq(lg) {
   .product-page-section {
     .hero-content {
-      width: 80%;
+      width: 75%;
     }
   }
 }

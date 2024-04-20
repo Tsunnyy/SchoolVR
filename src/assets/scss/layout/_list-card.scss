@@ -1,0 +1,61 @@
+@use "../config/" as *;
+.blog-list-related{
+    display: none;
+}
+
+@include mq(lg) {
+    .blog-list-related{
+        width: 25%;
+        padding-block: 3rem;
+        gap: 1.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .list-card{
+        width: 100%;
+        padding: 1.8rem 2rem;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #F5F5F5;
+        gap: 1.7rem;
+        
+        &.trending{
+           
+           color: #2998FF;
+            .list-card-head{
+                color: #000000;
+            }
+        }
+        &.category{
+            background-color: #292D32;
+         }
+         &.archive{
+            background-color: #ECC243;
+         }
+        
+        .list-icon{
+            width: 2.4rem;
+        }
+        &-head{
+            display: flex;
+            gap: 1rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+        .list{
+            display: flex;
+            flex-direction: column;
+            gap:1rem
+        }
+        .list-item{
+            display: -webkit-box;
+            -webkit-line-strokeLinejoin: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-height: 4.45rem;
+        }
+    
+    }
+}

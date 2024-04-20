@@ -13,6 +13,8 @@ import { MyContext } from "./mycontext";
 import { Header } from "./layouts/Header";
 import { RotateDevice } from "./layouts/RotateDevcice";
 import { Svi } from "./pages/Svi";
+import { Blogs } from "./pages/Blogs";
+import { BlogsDetail } from "./pages/BlogsDetail";
 import { Modal } from "./layouts/Modal";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -53,6 +55,8 @@ function App() {
             <Route path="/SpaceVerse" element={<SpaceVerse />} />
             <Route path="/Svs" element={<Svs />} />
             <Route path="/Svi" element={<Svi />} />
+            <Route path="/Blogs" element={<Blogs />} />
+            <Route path="/BlogsDetail" element={<BlogsDetail />} />
           </Routes>
         </BrowserRouter>
       </MyContext.Provider>
