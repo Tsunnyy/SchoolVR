@@ -55,8 +55,9 @@ function App() {
             <Route path="/SpaceVerse" element={<SpaceVerse />} />
             <Route path="/Svs" element={<Svs />} />
             <Route path="/Svi" element={<Svi />} />
-            <Route path="/Blogs" element={<Blogs />} />
-            <Route path="/BlogsDetail" element={<BlogsDetail />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blogs/category/:slug" element={<Blogs />} />
+            <Route path="/blogs/:slug" element={<BlogsDetail />} />
           </Routes>
         </BrowserRouter>
       </MyContext.Provider>

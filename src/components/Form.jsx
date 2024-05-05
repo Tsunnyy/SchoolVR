@@ -16,29 +16,87 @@ export const Form = () => {
   let [global, setGlobal] = useState("");
 
   const handleChange = (e) => {
-    setError(initialVal);
     const { name, value } = e.target;
-    setForm((prevForm) => ({ ...prevForm, [name]: value }));
+    switch (name) {
+      case "name":
+        // name should just accept alphabets and spaces
+        value.trim() === ""
+          ? setError((prevError) => ({
+            ...prevError,
+            name: "Name is required",
+          }))
+          : setError((prevError) => ({ ...prevError, name: "" }));
+        let n = value;
+        setForm((prevForm) => ({
+          ...prevForm,
+          [name]: n.replace(/[^A-Za-z\s.]/g, ""),
+        }));
+        break;
+      case "email":
+        value.trim() === "" || !value.includes("@") || !value.includes(".")
+          ? setError((prevError) => ({
+            ...prevError,
+            email: "Email is invalid",
+          }))
+          : setError((prevError) => ({ ...prevError, email: "" }));
+        setForm((prevForm) => ({ ...prevForm, [name]: value }));
+        break;
+      case "message":
+        value.trim() === ""
+          ? setError((prevError) => ({
+            ...prevError,
+            message: "Message is required",
+          }))
+          : setError((prevError) => ({
+            ...prevError,
+            message: "",
+          }));
+        setForm((prevForm) => ({ ...prevForm, [name]: value }));
+        break;
+      default:
+        break;
+    }
+  };
+
+  const validateRequiredFields = () => {
+    const requiredFields = ["name", "email", "message"];
+    let isValid = true;
+    let newErrorState = {};
+
+    requiredFields.forEach((field) => {
+      if (!form[field].trim()) {
+        newErrorState[field] = `${field.charAt(0).toUpperCase() + field.slice(1)
+          } is required`;
+        isValid = false;
+      } else {
+        newErrorState[field] = "";
+      }
+    });
+
+    setError((prevError) => ({ ...prevError, ...newErrorState }));
+
+    return isValid;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (form.name === "") {
-      setError((prevError) => ({ ...prevError, name: "Name is required" }));
-    } else if (form.email === "") {
-      setError((prevError) => ({ ...prevError, email: "Email is required" }));
-    } else if (
-      form.email !== "" &&
-      !form.email.includes("@") &&
-      !form.email.includes(".")
-    ) {
-      setError((prevError) => ({ ...prevError, email: "Email is invalid" }));
-    } else if (form.message === "") {
-      setError((prevError) => ({
-        ...prevError,
-        message: "Message is required",
-      }));
-    } else {
+    // if (form.name === "") {
+    //   setError((prevError) => ({ ...prevError, name: "Name is required" }));
+    // } else if (form.email === "") {
+    //   setError((prevError) => ({ ...prevError, email: "Email is required" }));
+    // } else if (
+    //   form.email !== "" &&
+    //   !form.email.includes("@") &&
+    //   !form.email.includes(".")
+    // ) {
+    //   setError((prevError) => ({ ...prevError, email: "Email is invalid" }));
+    // } else if (form.message === "") {
+    //   setError((prevError) => ({
+    //     ...prevError,
+    //     message: "Message is required",
+    //   }));
+    // }
+    if (validateRequiredFields()) {
       emailjs
         .send(
           import.meta.env.VITE_SERVICE_ID,

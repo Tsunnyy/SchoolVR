@@ -46,7 +46,7 @@ let productLinks = [
     path: "/GeoVerse",
   },
   {
-    id: 5,
+    id: 7,
     name: "SpaceVerse",
     path: "/SpaceVerse",
   },
@@ -59,6 +59,11 @@ let productLinks = [
     id: 4,
     name: "ChemVerse",
     path: "/ChemVerse",
+  },
+  {
+    id: 5,
+    name: "Blogs",
+    path: "/blogs",
   },
 ];
 

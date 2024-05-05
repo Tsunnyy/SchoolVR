@@ -1,93 +1,187 @@
 import { BlogCard } from "../components/BlogCard";
 import { Footer } from "../layouts/Footer";
 import { useContext, useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { MyContext } from "../mycontext";
 import { ListCard } from "../components/ListCard";
+import { Axiosinstance } from "../../Axios";
+import { RelatedBlogs } from "../layouts/blogs/RelatedBlogs";
+import {
+  EmailShareButton,
+  FacebookShareButton,
+  LinkedinShareButton,
+  MailruShareButton,
+  TwitterShareButton,
+} from "react-share";
+import { CopyShareLink } from "../components/CopyShareLink";
+let socialList = [
+  {
+    tag: FacebookShareButton,
+    img: "facebook",
+    path: "/",
+  },
+  // {
+  //   tag:FacebookShareButton,
+  //   img: "instagram",
+  //   path: "/",
+  // },
+  {
+    tag: TwitterShareButton,
+    img: "twitter",
+    path: "/",
+  },
+  {
+    tag: LinkedinShareButton,
+    img: "linkdin",
+    path: "/",
+  },
+  {
+    tag: EmailShareButton,
+    img: "mail",
+    path: "/",
+  },
+  {
+    tag: CopyShareLink,
+    img: "link",
+    path: "/",
+  },
+];
 
 export const BlogsDetail = () => {
   const { setExtraClass } = useContext(MyContext);
-  const [blogs, setBlogs] = useState([]);
-  const [trendingBlogs, setTrendingBlogs] = useState([]);
-  const [category, setCategory] = useState([]);
-  const [archivesBlogs, setArchivesBlogs] = useState([]);
+  const { slug } = useParams();
+  const [pending, setPending] = useState(false);
+  const [blog, setBlog] = useState(null);
 
   useEffect(() => {
-    setExtraClass("blogs-detail-page");
+    setExtraClass("blogs-detail-page blogs-page");
+    setPending(true);
+    Axiosinstance.get(`/api/blog/${slug}`)
+      .then((res) => {
+        setBlog(res.data);
+        document.title = res.data.title + " | Niruvana Kreations";
+      })
+      .catch((err) => {
+        setBlog(null);
+      })
+      .finally(() => setPending(false));
   }, []);
+  if (pending) {
+    return (
+      <div className="blog-section loading">
+        <div className="container">
+          <div className="back-btn desktop">
+            <NavLink to="/blogs" className="flex">
+              <img
+                className="back-icon"
+                src="/img/icon/arrow-left.svg"
+                alt="back"
+              />
+              All Blogs
+            </NavLink>
+          </div>
+          <div className="main-wrap">
+            <div className="head-wrap">
+              <div className="article-head">
+                <h4 className="title">Loading</h4>
+                <div className="blog-meta">
+                  <span className="meta-date"></span>
+                  <span className="meta-tag tag"></span>
+                </div>
+              </div>
+              <div className="article-thumbnail"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  if (!blog) {
+    return (
+      <div className="no-data">
+        <p>Blog not found</p>
+      </div>
+    );
+  }
   return (
     <div className="blog-section">
       <div className="container">
         <div className="back-btn desktop">
-
-          <NavLink to={"/"} className="flex">
+          <NavLink to="/blogs" className="flex">
             <img
               className="back-icon"
               src="/img/icon/arrow-left.svg"
               alt="back"
             />
-            Home
+            All Blogs
           </NavLink>
         </div>
 
         <div className="main-wrap">
-          <div className="page-head">
-            <div className="head-wrap">
-              <h4 className="section-title">Blogs</h4>
-
-              <span className="section-sub-title">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt consectetur adipiscing elit,
-              </span>
-              <button className="btn btn-outline">
-                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20.8128 10.1721V14.7928C20.8128 18.0273 18.9646 19.4135 16.1921 19.4135H6.95077C4.17835 19.4135 2.33008 18.0273 2.33008 14.7928V8.32381C2.33008 5.08933 4.17835 3.70312 6.95077 3.70312H13.4197" stroke="#292D32" strokeWidth="1.38621" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M6.95117 8.78613L9.84373 11.0965C10.7956 11.8543 12.3574 11.8543 13.3092 11.0965L14.3997 10.2278" stroke="#292D32" strokeWidth="1.38621" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M18.5037 7.8619C19.7797 7.8619 20.814 6.82752 20.814 5.55156C20.814 4.27559 19.7797 3.24121 18.5037 3.24121C17.2277 3.24121 16.1934 4.27559 16.1934 5.55156C16.1934 6.82752 17.2277 7.8619 18.5037 7.8619Z" stroke="#292D32" strokeWidth="1.38621" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                Get Notified
-              </button>
+          <div className="head-wrap ">
+            <div className="article-head">
+              <h4 className="title">{blog.title}</h4>
+              <div className="blog-meta">
+                <span className="meta-date">
+                  {new Date(blog.updatedAt).toLocaleDateString(undefined, {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  })}
+                </span>
+                <span className="meta-tag tag">Virtual Reality</span>
+              </div>
             </div>
-            <div className="latest-blog">
-              {/* <BlogCard id={blogs[0].id} title={blogs[0].title} /> */}
+            <div className="article-thumbnail">
+              <img src={blog.banner} alt={blog.title} />
             </div>
           </div>
-          <div className="blog-list">
-            <div className="blog-list-head">
-              <h4 className="blog-list-title">All Blogs</h4>
-              <div className="input-wrap">
+          <div
+            className="article-body"
+            dangerouslySetInnerHTML={{ __html: blog.content }}
+          ></div>
+          <div className="feedback-section">
+            <div className="feedback-title">
+              <h4 className="title">
                 <img
-                  className="search-icon"
-                  src="/img/icon/search.svg"
-                  alt="back"
+                  className="title-icon"
+                  src="/img/icon/chat.svg"
+                  alt="chat"
                 />
-                <input type="text" placeholder="Search by keyword" className="search-input" />
-              </div>
+                Do you have Feedback/Suggestion ?
+              </h4>
+              <NavLink to="/" className="read-more">
+                Click Here
+              </NavLink>
             </div>
-            <div className="blog-list-body">
-
-              <div className="blog-list-wrap">
-                {blogs.map((blog => {
-                  return (
-                    <BlogCard
-                      id={blog.id}
-                      title={blog.title}
-                      tags={blog.tags}
-                      img={blog.banner}
-                      description={blog.description} />
-                  );
-                }))}
-              </div>
-              <div className="blog-list-related">
-                <ListCard img="trend" extraClass="trending" data={trendingBlogs} />
-                <ListCard img="category" extraClass="category" data={category}/>
-                {/* <ListCard img="calendar" extraClass="archive" /> */}
-
+            <div className="feedback-content">
+              <div className="social-list">
+                <span className="social-title">Share Blog</span>
+                <div className="social">
+                  {socialList.map((social, index) => (
+                    <social.tag
+                      url={window.location.href}
+                      key={index}
+                      className="read-more"
+                    >
+                      <img
+                        className="social-icon"
+                        src={`/img/icon/${social.img}.svg`}
+                        alt="back"
+                      />
+                    </social.tag>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
+          <RelatedBlogs />
           <div className="banner-section">
             <picture>
-              <source media="(min-width:768px)" srcSet="/img/school-banner.webp" />
+              <source
+                media="(min-width:768px)"
+                srcSet="/img/school-banner.webp"
+              />
               <img
                 className="hero-banner"
                 src="/img/school-banner-m.webp"
@@ -97,7 +191,7 @@ export const BlogsDetail = () => {
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

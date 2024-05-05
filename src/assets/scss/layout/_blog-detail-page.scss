@@ -1,1 +1,242 @@
 @use "../config/" as *;
+.blogs-detail-page {
+  .article-head {
+    color: var(--black);
+    .title {
+      font-weight: 450;
+      color: var(--black);
+      font-size: 2.8rem;
+      line-height: 1.2;
+      margin-bottom: 0.5em;
+      @include mq(md) {
+        font-size: 3.2rem;
+      }
+    }
+    .meta-date {
+      margin-right: 1rem;
+      font-size: 1.2rem;
+    }
+    @include mq(md) {
+      width: 50%;
+    }
+  }
+  @include mq(md) {
+    .head-wrap {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+  .blog-meta {
+    margin-bottom: 1rem;
+  }
+  .article-thumbnail {
+    img {
+      border-radius: 1rem;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+  .article-body {
+    margin-top: 1rem;
+    * {
+      color: #000;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.4rem;
+    }
+    img {
+      max-width: 100%;
+      width: auto;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+  table {
+    border: 1px solid;
+    max-width: 100%;
+    td,
+    th {
+      padding: 5px;
+      border: 1px solid;
+    }
+  }
+  strong {
+    font-weight: 600;
+  }
+  .blog-section.loading {
+    .title {
+      width: 100%;
+      height: 3rem;
+      background-color: #b1b1b1;
+      margin-bottom: 1rem;
+      animation: shimmer 2s infinite linear;
+      font-size: 0;
+      border-radius: 50vmax;
+      background-image: linear-gradient(
+        90deg,
+        #b1b1b1 0%,
+        #c8c8c8 50%,
+        #b1b1b1 100%
+      );
+    }
+    .meta-date {
+      width: 10rem;
+      display: inline-block;
+      height: 1.5rem;
+      background-color: #b1b1b1;
+      margin-bottom: 1.5rem;
+      font-size: 0;
+      border-radius: 50vmax;
+      animation: shimmer 2s infinite linear;
+      background-image: linear-gradient(
+        90deg,
+        #b1b1b1 0%,
+        #c8c8c8 50%,
+        #b1b1b1 100%
+      );
+    }
+    .tag {
+      width: 10rem;
+      display: inline-block;
+      height: 1.5rem;
+      background-color: #b1b1b1;
+      margin-bottom: 1.5rem;
+      font-size: 0;
+      border-radius: 50vmax;
+      animation: shimmer 2s infinite linear;
+      background-image: linear-gradient(
+        90deg,
+        #b1b1b1 0%,
+        #c8c8c8 50%,
+        #b1b1b1 100%
+      );
+    }
+    .article-thumbnail {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background-color: #b1b1b1;
+      border-radius: 1rem;
+      animation: shimmer 2s infinite linear;
+      background-image: linear-gradient(
+        90deg,
+        #b1b1b1 0%,
+        #c8c8c8 50%,
+        #b1b1b1 100%
+      );
+    }
+  }
+}
+.feedback-section {
+  background-color: #eeeeee;
+  color: #292d32;
+  margin-inline: -2.5rem;
+  // border-radius: 2rem;
+  padding: 3rem 2rem;
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2rem;
+  }
+  @include mq(lg) {
+    padding-inline: 3rem;
+    margin: 0;
+  }
+  .read-more {
+    color: #2998ff;
+    font-size: 1.4rem;
+  }
+  .feedback-title {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 4rem;
+    gap: 1rem;
+    @include mq(md) {
+      margin-bottom: 0;
+    }
+    &::before {
+      content: "";
+      width: 60%;
+      height: 0.1rem;
+      background-color: #9ea0a8;
+      position: absolute;
+      bottom: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      @include mq(md) {
+        display: none;
+      }
+    }
+  }
+  .social-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #292d32;
+    display: flex;
+    gap: 1rem;
+
+    &-icon {
+      width: 2.4rem;
+    }
+  }
+  .social {
+    display: flex;
+    gap: 2rem;
+  }
+  .social-icon {
+    width: 2.4rem;
+  }
+}
+.related-head {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  &::before,
+  &::after {
+    content: "";
+    height: 0.1rem;
+    background-color: #9ea0a8;
+    width: 100%;
+    max-width: 10rem;
+  }
+  h3 {
+    color: black;
+    font-weight: 550;
+    text-transform: uppercase;
+    width: max-content;
+    flex-shrink: 0;
+    font-size: 1.8rem;
+  }
+}
+.view-all {
+  width: 100%;
+  padding: 1.5rem;
+  color: #000;
+  margin-bottom: 2rem;
+  background-color: #f5f5f5;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  @include mq(md) {
+    margin-bottom: 4rem;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: -40rem 0;
+  }
+  100% {
+    background-position: 40rem 0;
+  }
+}

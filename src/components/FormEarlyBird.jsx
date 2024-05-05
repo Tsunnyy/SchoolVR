@@ -21,29 +21,93 @@ export const FormEarlyBird = () => {
   let [global, setGlobal] = useState("");
 
   const handleChange = (e) => {
-    setError(initialVal);
     const { name, value } = e.target;
-    setForm((prevForm) => ({ ...prevForm, [name]: value }));
+  
+    switch (name) {
+  
+      case "name":
+        // name should just accept alphabets and spaces
+        value.trim() === ""
+          ? setError((prevError) => ({
+            ...prevError,
+            name: "Name is required",
+          }))
+          : setError((prevError) => ({ ...prevError, name: "" }));
+        let n = value;
+        setForm((prevForm) => ({
+          ...prevForm,
+          [name]: n.replace(/[^A-Za-z\s.]/g, ""),
+        }));
+        break;
+  
+      case "email":
+        value.trim() === "" || !value.includes("@") || !value.includes(".")
+          ? setError((prevError) => ({
+            ...prevError,
+            email: "Email is invalid",
+          }))
+          : setError((prevError) => ({ ...prevError, email: "" }));
+        setForm((prevForm) => ({ ...prevForm, [name]: value }));
+        break;
+  
+      case "phone":
+        value.trim() === ""
+          ? setError((prevError) => ({
+            ...prevError,
+            phone: "Phone is required",
+          }))
+          : setError((prevError) => ({ ...prevError, phone: "" }));
+  
+        setForm((prevForm) => ({
+          ...prevForm,
+          [name]: value.replace(/[^0-9]/g, ""),
+        }));
+        break;
+  
+      case "designation":
+        value.trim() === ""
+          ? setError((prevError) => ({
+            ...prevError,
+            designation: "Designation is required",
+          }))
+          : setError((prevError) => ({
+            ...prevError,
+            designation: "",
+          }));
+        setForm((prevForm) => ({ ...prevForm, [name]: value }));
+        break;
+  
+      default:
+        setForm((prevForm) => ({ ...prevForm, [name]: value }));
+        break;
+    }
+  };
+
+  const validateRequiredFields = () => {
+    const requiredFields = ["name", "phone", "email"];
+    let isValid = true;
+    let newErrorState = {};
+
+    requiredFields.forEach((field) => {
+      if (!form[field].trim()) {
+        newErrorState[field] = `${
+          field.charAt(0).toUpperCase() + field.slice(1)
+        } is required`;
+        isValid = false;
+      } else {
+        newErrorState[field] = "";
+      }
+    });
+
+    setError((prevError) => ({ ...prevError, ...newErrorState }));
+
+    return isValid;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (form.name === "") {
-      setError((prevError) => ({ ...prevError, name: "Name is required" }));
-    } else if (form.email === "") {
-      setError((prevError) => ({ ...prevError, email: "Email is required" }));
-    } else if (
-      form.email !== "" &&
-      !form.email.includes("@") &&
-      !form.email.includes(".")
-    ) {
-      setError((prevError) => ({ ...prevError, email: "Email is invalid" }));
-    } else if (form.phone === "") {
-      setError((prevError) => ({
-        ...prevError,
-        phone: "Phone is required",
-      }));
-    } else {
+
+    if (validateRequiredFields()) {
       let msg = `Country: ${form.country}\n\n State: ${form.state}\n\n Phone: ${form.phone}\n\n Designation: ${form.designation}\n\n School: ${form.school}\n\n `;
       emailjs
         .send(

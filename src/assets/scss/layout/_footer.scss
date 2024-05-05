@@ -81,6 +81,16 @@
     border-top: 0.1rem solid #ffffff;
   }
 }
+.blogs-page{
+  .footer{
+    margin-inline: -2.5rem;
+    padding-top: 4rem;
+    isolation: unset;
+    &::before{
+      background: linear-gradient(100deg, #292D32 58.99%, #000000 104.8%);
+    }
+  }
+}
 @include mq(lg) {
   .footer {
     .footer-link-list {
