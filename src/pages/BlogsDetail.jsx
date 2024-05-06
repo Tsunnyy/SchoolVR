@@ -65,7 +65,7 @@ export const BlogsDetail = () => {
         setBlog(null);
       })
       .finally(() => setPending(false));
-  }, []);
+  }, [slug]);
   if (pending) {
     return (
       <div className="blog-section loading">
