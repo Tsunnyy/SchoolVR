@@ -1,17 +1,21 @@
 @use "../config/" as *;
 
 .home-page,
-.svs-page {
+.svs-page,
+.blogs-page {
   .explore-tray {
     backdrop-filter: blur(2rem);
-    background: linear-gradient(151.22deg,
+    background: linear-gradient(
+        151.22deg,
         rgba(236, 194, 67, 0.5) 9.45%,
-        rgba(255, 255, 255, 0.1) 94.83%),
+        rgba(255, 255, 255, 0.1) 94.83%
+      ),
       linear-gradient(0deg, rgba(236, 194, 67, 0.4), rgba(236, 194, 67, 0.4));
   }
 }
 
-.blogs-page,.blogs-detail-page {
+.blogs-page,
+.blogs-detail-page {
   header {
     .menu-title,
     .hamburger {
@@ -118,7 +122,7 @@ header {
   .navlink-submenu {
     position: relative;
 
-    >button {
+    > button {
       height: 2rem;
       align-items: center;
       display: flex;
@@ -163,7 +167,7 @@ header {
       font-weight: 500;
     }
 
-    >* {
+    > * {
       color: #292d32;
     }
 
@@ -207,9 +211,11 @@ header {
         inset: 0;
         border-radius: 1.35rem;
         z-index: -1;
-        background: linear-gradient(321.8deg,
-            rgba(210, 210, 210, 0.238) 0%,
-            rgba(255, 255, 255, 0.7) 96.65%);
+        background: linear-gradient(
+          321.8deg,
+          rgba(210, 210, 210, 0.238) 0%,
+          rgba(255, 255, 255, 0.7) 96.65%
+        );
         border: 0.1rem solid transparent;
         border-color: white;
         opacity: 0;

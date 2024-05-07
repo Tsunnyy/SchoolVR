@@ -17,6 +17,7 @@ import { Blogs } from "./pages/Blogs";
 import { BlogsDetail } from "./pages/BlogsDetail";
 import { Modal } from "./layouts/Modal";
 import ScrollToTop from "./components/ScrollToTop";
+import { Contact } from "./pages/Contact";
 
 function App() {
   const [loader, setLoader] = useState(true);
@@ -56,6 +57,7 @@ function App() {
             <Route path="/Svs" element={<Svs />} />
             <Route path="/Svi" element={<Svi />} />
             <Route path="/blogs" element={<Blogs />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/blogs/category/:slug" element={<Blogs />} />
             <Route path="/blogs/:slug" element={<BlogsDetail />} />
           </Routes>
