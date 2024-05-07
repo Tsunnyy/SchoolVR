@@ -4,6 +4,7 @@ import { BlogSidebar } from "./BlogSidebar";
 import { BlogCard } from "../../components/BlogCard";
 import { Axiosinstance } from "../../../Axios";
 import { BlogLoader } from "./BlogLoader";
+import { NavLink } from "react-router-dom";
 
 export const RelatedBlogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -62,7 +63,7 @@ export const RelatedBlogs = () => {
                   );
                 })}
             </div>
-            <button className="view-all">VIew All</button>
+            <NavLink to="/blogs" className="view-all">VIew All</NavLink>
           </div>
         )}
       </div>
