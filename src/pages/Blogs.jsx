@@ -1,5 +1,7 @@
 import { BlogCard } from "../components/BlogCard";
+import { ModalNotified } from "../layouts/ModalNotified";
 import { Footer } from "../layouts/Footer";
+
 import { useContext, useEffect, useState } from "react";
 import {
   Link,
@@ -14,6 +16,7 @@ import { BlogList } from "../layouts/blogs/BlogList";
 
 export const Blogs = () => {
   const { setExtraClass } = useContext(MyContext);
+  const [modalActive, setModalActive] = useState(false);
   useEffect(() => {
     setExtraClass("blogs-page");
   }, []);
@@ -32,7 +35,7 @@ export const Blogs = () => {
         </div>
 
         <div className="main-wrap">
-          <LatestBlog />
+          <LatestBlog setModalActive={setModalActive}/>
           <BlogList />
           <div className="banner-section">
             <picture>
@@ -49,6 +52,10 @@ export const Blogs = () => {
           </div>
         </div>
       </div>
+      <ModalNotified
+        modalActive={modalActive}
+        setModalActive={setModalActive}
+      />
       <Footer />
     </div>
   );

@@ -16,6 +16,89 @@
   &.active {
     display: flex;
   }
+  &.modal-feedback {
+    .form-section {
+      padding: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.8);
+      @include mq(lg) {
+        display: flex;
+        padding: 4rem;
+        gap: 3rem;
+        max-width: 120rem;
+      }
+    }
+    .btn-close {
+      width: 1rem;
+      height: 1rem;
+      @include mq(lg) {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+    .title {
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      color: #000;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    .meta-date {
+      font-size: 1rem;
+      margin-right: 1rem;
+      @include mq(lg) {
+        font-size: 1.6rem;
+        .label {
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .btn {
+      margin-bottom: 0;
+    }
+    .head {
+      gap: 2rem;
+      display: flex;
+      color: #000;
+      @include mq(lg) {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        width: 55%;
+      }
+    }
+    .visual {
+      width: 13rem;
+      height: 12rem;
+      flex-shrink: 0;
+      border-radius: 2rem;
+      overflow: hidden;
+      @include mq(lg) {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    @include mq(lg) {
+      textarea {
+        min-height: 17rem;
+      }
+      .body {
+        flex: 1;
+      }
+      .tag {
+        font-size: 1.6rem;
+      }
+    }
+  }
   .head {
     display: flex;
     justify-content: space-between;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BlogCard } from "../../components/BlogCard";
 import { Axiosinstance } from "../../../Axios";
 
-export const LatestBlog = () => {
+export const LatestBlog = ({ setModalActive }) => {
   const [loading, setLoading] = useState(true);
   const [blog, setBlog] = useState({});
   useEffect(() => {
@@ -25,7 +25,10 @@ export const LatestBlog = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt consectetur adipiscing elit,
         </span>
-        <button className="btn btn-outline">
+        <button
+          className="btn btn-outline"
+          onClick={() => setModalActive(true)}
+        >
           <svg
             width="23"
             height="23"

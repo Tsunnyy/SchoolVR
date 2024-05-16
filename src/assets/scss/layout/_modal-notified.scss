@@ -1,0 +1,51 @@
+@use "../config/" as *;
+
+.modal.modal-notified {
+  display: flex;
+  .form-section {
+    width: 100%;
+    background-color: rgba(white, 0.8);
+    max-width: 50rem;
+    @include mq("md") {
+      padding: 5rem 4rem;
+    }
+  }
+  .form-title {
+    font-size: 2.8rem;
+    letter-spacing: unset;
+    text-transform: unset;
+    margin-bottom: 2.8rem;
+    @include mq("md") {
+      font-size: 3.6rem;
+      margin-bottom: 5rem;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+  }
+  .checkmark-input:checked + .checkmark {
+    background-color: #ecc243;
+  }
+  .acknowledge {
+    color: #000000;
+    .text {
+      font-size: 1.4rem;
+    }
+    .checkmark {
+      &-input {
+        accent-color: #ecc243;
+        background-color: #7c7c7c33;
+        border-radius: 0.5rem;
+        width: 2.3rem;
+        height: 2.3rem;
+        flex-shrink: 0;
+      }
+    }
+    .checkbox-container {
+      display: flex;
+      gap: 1.7rem;
+    }
+  }
+}

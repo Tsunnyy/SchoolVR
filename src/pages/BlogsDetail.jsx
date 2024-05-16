@@ -6,6 +6,8 @@ import { MyContext } from "../mycontext";
 import { ListCard } from "../components/ListCard";
 import { Axiosinstance } from "../../Axios";
 import { RelatedBlogs } from "../layouts/blogs/RelatedBlogs";
+import { ModalFeedback } from "../layouts/ModalFeedback";
+
 import {
   EmailShareButton,
   FacebookShareButton,
@@ -52,6 +54,7 @@ export const BlogsDetail = () => {
   const { slug } = useParams();
   const [pending, setPending] = useState(false);
   const [blog, setBlog] = useState(null);
+  const [modalActive, setModalActive] = useState(false);
 
   useEffect(() => {
     setExtraClass("blogs-detail-page blogs-page");
@@ -150,9 +153,12 @@ export const BlogsDetail = () => {
                 />
                 Do you have Feedback/Suggestion ?
               </h4>
-              <NavLink to="/" className="read-more">
+              <button
+                onClick={() => setModalActive(true)}
+                className="read-more"
+              >
                 Click Here
-              </NavLink>
+              </button>
             </div>
             <div className="feedback-content">
               <div className="social-list">
@@ -191,6 +197,11 @@ export const BlogsDetail = () => {
           </div>
         </div>
       </div>
+      <ModalFeedback
+        blog={blog}
+        modalActive={modalActive}
+        setModalActive={setModalActive}
+      />
       <Footer />
     </div>
   );
