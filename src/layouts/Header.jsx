@@ -10,12 +10,12 @@ let subMenuLinks = [
   //   class: "about-us",
   //   path: "/about-us",
   // },
-  // {
-  //   id: 2,
-  //   name: "Blogs",
-  //   class: "blogs",
-  //   path: "/blogs",
-  // },
+  {
+    id: 2,
+    name: "Blogs",
+    class: "blogs",
+    path: "/blogs",
+  },
   {
     id: 3,
     name: "School VR For Schools",
@@ -183,6 +183,11 @@ export const Header = () => {
 
       <nav className="navbar secondary-navbar">
         <ul className="sub-menu">
+          <li className="navlink-item">
+            <NavLink to="/blogs" className="demo">
+              Blogs
+            </NavLink>
+          </li>
           <li className="navlink-item">
             <button className="demo" onClick={() => setModalActive(true)}>
               Book A Demo

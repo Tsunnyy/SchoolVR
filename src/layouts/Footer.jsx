@@ -60,11 +60,11 @@ let productLinks = [
     name: "ChemVerse",
     path: "/ChemVerse",
   },
-  // {
-  //   id: 5,
-  //   name: "Blogs",
-  //   path: "/blogs",
-  // },
+  {
+    id: 5,
+    name: "Blogs",
+    path: "/blogs",
+  },
 ];
 
 let solutionsLinks = [
