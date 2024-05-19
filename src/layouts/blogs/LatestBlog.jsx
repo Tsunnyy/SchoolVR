@@ -25,8 +25,7 @@ export const LatestBlog = ({ setModalActive }) => {
         <h4 className="section-title">Blogs</h4>
 
         <span className="section-sub-title">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt consectetur adipiscing elit,
+          Get the latest updates from our blog and stay updated in the world of VR
         </span>
         <button
           className="btn btn-outline"
