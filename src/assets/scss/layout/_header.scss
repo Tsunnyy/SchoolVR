@@ -335,9 +335,11 @@ header {
 
       .navlink-item {
         margin-right: 3rem;
-        > a,
-        > button {
-          filter: invert(1);
+        &:not(.navlink-active) {
+          > a,
+          > button {
+            filter: invert(1);
+          }
         }
       }
 

@@ -3,7 +3,10 @@
 #root {
   overflow: hidden;
 }
-
+.not-found {
+  max-width: 500px;
+  margin: auto;
+}
 .container {
   max-width: var(--container);
   margin: auto;

@@ -18,6 +18,7 @@ import { BlogsDetail } from "./pages/BlogsDetail";
 import { Modal } from "./layouts/Modal";
 import ScrollToTop from "./components/ScrollToTop";
 import { Contact } from "./pages/Contact";
+import { NotFound } from "./pages/not-found";
 
 function App() {
   const [loader, setLoader] = useState(true);
@@ -60,6 +61,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/blogs/category/:slug" element={<Blogs />} />
             <Route path="/blogs/:slug" element={<BlogsDetail />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </MyContext.Provider>

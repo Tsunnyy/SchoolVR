@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { BlogCard } from "../../components/BlogCard";
 import { Axiosinstance } from "../../../Axios";
+import { useNavigate } from "react-router-dom";
 
 export const LatestBlog = ({ setModalActive }) => {
+  let navigate = useNavigate();
   const [loading, setLoading] = useState(true);
   const [blog, setBlog] = useState({});
   useEffect(() => {
@@ -14,6 +16,7 @@ export const LatestBlog = ({ setModalActive }) => {
       })
       .catch((err) => {
         setLoading(false);
+        navigate("/not-found");
       });
   }, []);
   return (
