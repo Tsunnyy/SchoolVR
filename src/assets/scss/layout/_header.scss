@@ -335,6 +335,10 @@ header {
 
       .navlink-item {
         margin-right: 3rem;
+        > a,
+        > button {
+          filter: invert(1);
+        }
       }
 
       .sub-menu a {
