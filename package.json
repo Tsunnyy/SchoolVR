@@ -29,6 +29,7 @@
     "react-share": "^5.1.0",
     "react-tilt": "^1.0.2",
     "sharp": "^0.33.2",
+    "sitemap": "^7.1.1",
     "swiper": "^10.3.1"
   },
   "devDependencies": {
