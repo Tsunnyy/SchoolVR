@@ -136,7 +136,13 @@ export const BlogsDetail = () => {
               </div>
             </div>
             <div className="article-thumbnail">
-              <img src={blog.banner} alt={blog.title} />
+              <img
+                src={blog.banner}
+                alt={blog.title}
+                onError={(e) => {
+                  e.target.src = "/img/demo.webp";
+                }}
+              />
             </div>
           </div>
           <div
