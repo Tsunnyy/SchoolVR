@@ -5,7 +5,14 @@ export const BlogCard = ({ id, title, tags, img, description, slug, date }) => {
     <div key={id} className="card">
       <div className="blog-head">
         <div className="blog-thumbnail">
-          <img className="blog-thumb" src={`${img}`} alt="" />
+          <img
+            className="blog-thumb"
+            src={`${img}`}
+            alt=""
+            onError={(e) => {
+              e.target.src = "/img/demo.webp";
+            }}
+          />
         </div>
         <div className="blog-head-content">
           <div className="blog-title">{title}</div>

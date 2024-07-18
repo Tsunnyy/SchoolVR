@@ -10,11 +10,16 @@ export const RelatedBlogs = () => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
   let url = "/api/blog";
+  console.log(loading);
   useEffect(() => {
     setLoading(true);
     Axiosinstance.get(url)
       .then((res) => {
         setBlogs(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+        setLoading(false);
       })
       .finally(() => setLoading(false));
   }, []);
@@ -47,23 +52,24 @@ export const RelatedBlogs = () => {
             <div className="blog-list-loaded">
               {!!blogs.length &&
                 blogs.map((blog, index) => {
+                  if (index > 2) return;
                   return (
-                    index > 2 && (
-                      <BlogCard
-                        key={blog.id}
-                        id={blog.id}
-                        title={blog.title}
-                        tags={blog.tags}
-                        img={blog.banner}
-                        description={blog.description}
-                        slug={blog.slug}
-                        date={blog.updatedAt}
-                      />
-                    )
+                    <BlogCard
+                      key={blog.id}
+                      id={blog.id}
+                      title={blog.title}
+                      tags={blog.tags}
+                      img={blog.banner}
+                      description={blog.description}
+                      slug={blog.slug}
+                      date={blog.updatedAt}
+                    />
                   );
                 })}
             </div>
-            <NavLink to="/blogs" className="view-all">VIew All</NavLink>
+            <NavLink to="/blogs" className="view-all">
+              VIew All
+            </NavLink>
           </div>
         )}
       </div>
