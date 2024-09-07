@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Footer } from '../layouts/Footer'
 import { About } from "../layouts/About";
+import PageHero from '../components/PageHero';
+import { MyContext } from '../mycontext';
 
 const Grant = () => {
+  const { setModalActive } = useContext(MyContext);
   return (
     <>
-      <div className="aboutHeadSection contactUsMain">
+      {/* <div className="aboutHeadSection contactUsMain">
         <img src="/img/layers/layer1.png" alt="Layer" className='layerImage' />
         <div className="margin-top-100-class padding-lr-class">
           <div className="row m-0 align-items-center justify-content-between">
@@ -19,7 +22,10 @@ const Grant = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <PageHero heroImage="grant" btnText="Book A Demo" bgImage="layer1" paragraph="At School VR, we believe that cost should never be a barrier to accessing transformative educational experiences. That's why we're proud to partner with the World Stem Federation to offer a generous grant program, making our cutting-edge VR technology more accessible to schools worldwide" title="Empowering Global Education" />
+
       <div className="unlockingOpportunities">
         <div className="padding-lr-class">
           <h4 className='pageHeadText d-flex gap-3 align-items-center justify-content-center'><img src="/img/icon/lock.svg" alt="lock" /> Unlocking Opportunities</h4>
@@ -89,7 +95,7 @@ const Grant = () => {
                           <p>Your school must be located in one of the 110 eligible countries. </p>
                         </div>
                       </div>
-                      <button className="btn btn-outline">
+                      <button className="btn btn-outline" onClick={() => setModalActive(true)}>
                         Apply Now
                       </button>
                     </div>

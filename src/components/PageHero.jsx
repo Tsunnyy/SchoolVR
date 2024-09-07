@@ -17,7 +17,7 @@ const PageHero = (props) => {
                             <p className='pagePara'>{props.paragraph}.</p>
                             {props.btnText ? (<button onClick={() => { setModalActive(true); }} className='btn btn-outline'>{props.btnText}</button>) : null}
                         </div>
-                        <div className={window.location.pathname == "/lab-setup-and-learning" || window.location.pathname == "/curriculum" ? "col-sm-4 pe-0" : "col-sm-3 pe-0"}>
+                        <div className={window.location.pathname == "/lab-setup-and-learning" || window.location.pathname == "/curriculum" || window.location.pathname == "/grant" || window.location.pathname == "/supportcommunity" ? "col-sm-4 pe-0" : "col-sm-3 pe-0"}>
                             <img src={`/img/${props.heroImage}.png`} alt={props.heroImage} />
                         </div>
                     </div>

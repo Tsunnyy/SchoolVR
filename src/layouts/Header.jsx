@@ -150,7 +150,7 @@ export const Header = () => {
               display: hamburger ? "block" : "none",
             }}
           ></div>
-          <div className={window.location.pathname === "/aboutUs"
+          {/* <div className={window.location.pathname === "/aboutUs"
             || window.location.pathname === "/contactUs"
             || window.location.pathname === "/curriculum"
             || window.location.pathname === "/subjects"
@@ -161,7 +161,7 @@ export const Header = () => {
             || window.location.pathname === "/svs"
             || window.location.pathname === "/svi"
             || window.location.pathname === "/lab-setup-and-learning"
-            ? "svs-page" : ""}>
+            ? "svs-page" : ""}> */}
             <nav
               className={`navbar explore-tray ${hamburger ? "navbar-active" : ""}`}
             >
@@ -216,7 +216,7 @@ export const Header = () => {
                 </button>
               </div>
             </nav>
-          </div>
+          {/* </div> */}
           <NavLink to="/" className="">
             {window.location.pathname === "/aboutUs"
               || window.location.pathname === "/contactUs"
@@ -234,7 +234,15 @@ export const Header = () => {
               : <img className="logo" src={logo} alt="SchoolVR" />}
           </NavLink>
         </div>
-        <ul className="sub-menu d-flex align-items-center p-0">
+        <ul className=
+          {window.location.pathname == "/BioVerse"
+            || window.location.pathname == "/ChemVerse"
+            || window.location.pathname == "/AtomVerse"
+            || window.location.pathname == "/SpaceVerse"
+            || window.location.pathname == "/GeoVerse"
+            || window.location.pathname == "/mathVerse"
+            ? "whiteClr sub-menu d-flex align-items-center p-0" : "sub-menu d-flex align-items-center p-0"}
+        >
           <DropdownButton id="aboutus" title="About Us"
             className={window.location.pathname === "/aboutUs" || window.location.pathname === "/contactUs" ? "active" : ""}>
             <Dropdown.Item href="/aboutUs">About</Dropdown.Item>

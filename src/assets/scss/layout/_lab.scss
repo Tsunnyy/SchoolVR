@@ -36,7 +36,7 @@
 
   .book-text,
   .scope-text {
-    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: Gilroy-Bold;
     font-size: 30px;
     font-weight: 400;
     line-height: 33.3px;
@@ -45,6 +45,7 @@
     position: absolute;
     color: #292D32;
     top: 40%;
+    text-transform: uppercase;
   }
 
   .scope-text {

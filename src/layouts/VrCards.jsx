@@ -51,7 +51,7 @@ export const VrCards = () => {
                   <div className="d-grid gap-4">
 
                     <div className="d-flex align-items-start gap-3">
-                      <img src="/img/icon/flash.svg" alt="Flash" />
+                      <img src="/img/icon/svs-1.svg" alt="svs-1" />
                       <div>
                         <h4>Enrichment</h4>
                         <p>Elevate traditional teaching methods with immersive experiences for a richer and more effective learning journey.</p>
@@ -59,7 +59,7 @@ export const VrCards = () => {
                     </div>
 
                     <div className="d-flex align-items-start gap-3">
-                      <img src="/img/icon/cup.svg" alt="cup" />
+                      <img src="/img/icon/svs-2.svg" alt="svs-2" />
                       <div>
                         <h4>Engagement</h4>
                         <p>Energize classrooms by transforming theoretical concepts into captivating 3D experiences, fostering student curiosity.</p>
@@ -67,7 +67,7 @@ export const VrCards = () => {
                     </div>
 
                     <div className="d-flex align-items-start gap-3">
-                      <img src="/img/icon/moneys.svg" alt="money" />
+                      <img src="/img/icon/svs-3.svg" alt="svs-3" />
                       <div>
                         <h4>Empowerment</h4>
                         <p>Equip educators with cutting-edge tools to enhance teaching strategies, providing a holistic and student-centric approach.</p>
@@ -79,21 +79,21 @@ export const VrCards = () => {
                   <div className="gridViewWithFlexRInner">
                     <div className="d-grid gap-4">
                       <div className="d-flex align-items-start gap-3">
-                        <img src="/img/icon/hands.svg" alt="hands" />
+                        <img src="/img/icon/svs-4.svg" alt="svs-4" />
                         <div>
                           <h4>Grades</h4>
                           <p>SchoolVR covers grades from 5th to 12th.</p>
                         </div>
                       </div>
                       <div className="d-flex align-items-start gap-3">
-                        <img src="/img/icon/location_new.svg" alt="location_new" />
+                        <img src="/img/icon/svs-5.svg" alt="svs-5" />
                         <div>
                           <h4>Subjects</h4>
                           <p>Subjects include Biology, Physics, Chemistry, History, Geography and additional modules</p>
                         </div>
                       </div>
                       <div className="d-flex align-items-start gap-3">
-                        <img src="/img/icon/location_new.svg" alt="location_new" />
+                        <img src="/img/icon/svs-6.svg" alt="svs-6" />
                         <div>
                           <h4>Topics</h4>
                           <p>Our topics, aligned with the Cambridge syllabus, seamlessly adapt to ICSE and CBSE, ACCRA, UK, US, and many more ensuring a versatile and comprehensive learning experience for students.</p>

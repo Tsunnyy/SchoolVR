@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Footer } from '../layouts/Footer'
 import { About } from "../layouts/About";
+import { MyContext } from '../mycontext';
 
 const TrainingAndCertification = () => {
+  const { setModalActive } = useContext(MyContext);
   return (
     <>
       <div className='aboutHeadSection p-0 position-relative'>
@@ -114,7 +116,7 @@ const TrainingAndCertification = () => {
                 </div>
               </div>
             </div>
-            <button className='btn btn-outline m-auto my-5'>Get in Touch</button>
+            <button className='btn btn-outline m-auto my-5' onClick={() => setModalActive(true)}>Get in Touch</button>
           </div>
 
         </div>
@@ -188,7 +190,7 @@ const TrainingAndCertification = () => {
             <h4 className='m-0'>Ready to provide your students with a world-class education?</h4>
             <p className='my-4'>Ready to empower your educators and IT staff with world-class training and certification, at no cost to your school? Visit our Training & Certification page to learn more about upcoming courses, registration details, and syllabus outlines.</p>
             <em>Note: The above syllabus actual content may vary. The syllabus is continuously refined in our training programs to reflect the latest advancements in educational technology and best practices.</em>
-            <button className='btn btn-outline m-auto mt-3'>Book a Demo</button>
+            <button className='btn btn-outline m-auto mt-3' onClick={() => setModalActive(true)}>Book a Demo</button>
           </div>
         </div>
       </div>

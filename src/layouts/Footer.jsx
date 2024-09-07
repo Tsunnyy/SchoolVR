@@ -5,7 +5,7 @@ let quickLinks = [
   {
     id: 1,
     name: "About Us",
-    path: "/about-us",
+    path: "/aboutus",
   },
   {
     id: 2,
@@ -214,7 +214,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="col-4 pe-0">
-          <ul className="footer-link-list">
+          <ul className="footer-link-list footer-link-list-last">
             {infoLinks.map((link) => (
               <li key={link.id}>
                 <a href={link.path}>

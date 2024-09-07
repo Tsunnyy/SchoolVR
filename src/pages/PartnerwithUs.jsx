@@ -26,7 +26,7 @@ const PartnerwithUs = () => {
                 <div className="reachOuttoUsCard reachOuttoUsCardColFour">
                     <div className="reachOuttoUsCardInner">
                         <div className="d-flex gap-3 align-items-start">
-                            <img src="/img/icon/forschool.svg" alt="forschool" />
+                            <img src="/img/icon/partner-1.svg" alt="partner-1" />
                             <div>
                                 <span>Lucrative Opportunity</span>
                                 <p>Tap into the growing demand for VR in education and unlock a new revenue stream for your business.</p>
@@ -35,7 +35,7 @@ const PartnerwithUs = () => {
                     </div>
                     <div className="reachOuttoUsCardInner">
                         <div className="d-flex gap-3 align-items-start">
-                            <img src="/img/icon/forstudent.svg" alt="forstudent" />
+                            <img src="/img/icon/partner-2.svg" alt="partner-2" />
                             <div>
                                 <span>Cutting-Edge Technology</span>
                                 <p>Represent a leading provider of immersive learning solutions, backed by years of research.</p>
@@ -44,7 +44,7 @@ const PartnerwithUs = () => {
                     </div>
                     <div className="reachOuttoUsCardInner">
                         <div className="d-flex gap-3 align-items-start">
-                            <img src="/img/icon/forpartner.svg" alt="forpartner" />
+                            <img src="/img/icon/partner-3.svg" alt="partner-3" />
                             <div>
                                 <span>Comprehensive Support</span>
                                 <p>Receive extensive training, marketing materials, and ongoing support to ensure your success</p>
@@ -53,7 +53,7 @@ const PartnerwithUs = () => {
                     </div>
                     <div className="reachOuttoUsCardInner">
                         <div className="d-flex gap-3 align-items-start">
-                            <img src="/img/icon/forpartner.svg" alt="forpartner" />
+                            <img src="/img/icon/partner-4.svg" alt="partner-4" />
                             <div>
                                 <span>Global Impact</span>
                                 <p>Join a movement that is transforming education and empowering students around the world.</p>

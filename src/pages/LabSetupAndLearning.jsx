@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PageHero from '../components/PageHero'
 import { Footer } from '../layouts/Footer'
 import { About } from "../layouts/About";
+import { MyContext } from '../mycontext';
 
 const LabSetupAndLearning = () => {
+    const { setModalActive } = useContext(MyContext);
     return (
         <>
             <PageHero btnText="Book a Demo" bgImage="layer1" heroImage="lebsetup" title="Effortless Setup, Global Accessibility" paragraph="School VR makes it easy for schools worldwide to embrace the future of education. Our comprehensive solutions cover everything from lab setup to licensing, ensuring a smooth and seamless transition to immersive learning." />
@@ -89,8 +91,8 @@ const LabSetupAndLearning = () => {
                                         <hr />
                                         <div className="d-grid gap-4">
                                             <img src="/img/earth.png" alt="" />
-                                            <button className="btn btn-outline mx-auto">
-                                                Apply Now
+                                            <button className="btn btn-outline mx-auto" onClick={() => setModalActive(true)}>
+                                                View List
                                             </button>
                                         </div>
                                     </div>
@@ -98,10 +100,14 @@ const LabSetupAndLearning = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="successText mt-5 text-center">
+                    <div className="successText successTextExtraMarginInLabPage text-center">
                         <h4>Ready to Unlock the Power of VR in Your School?</h4>
                         <p className='mb-5'>Explore our licensing options, learn more about the grant program, and discover how School VR can transform your educational landscape. Contact us today to request a demo or discuss your specific needs. We're here to support you every step of the way.</p>
-                        <button className='btn btn-outline m-auto'>Book a Demo</button>
+                        <div className="d-flex justify-content-center gap-5 align-items-center">
+                            <button className="btn btn-outline" onClick={() => setModalActive(true)}>Check Eligibility</button>
+                            <button className='btn btn-secondary btn-primary-clr' onClick={() => setModalActive(true)}>Book a Demo</button>
+                        </div>
+                        {/* <button className='btn btn-outline m-auto' onClick={() => setModalActive(true)}>Book a Demo</button> */}
                     </div>
                 </div>
             </div>

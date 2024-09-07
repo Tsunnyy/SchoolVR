@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Footer } from '../layouts/Footer'
 import { About } from "../layouts/About";
+import { MyContext } from '../mycontext';
 
 const Subjects = () => {
+  const { setModalActive } = useContext(MyContext);
   return (
     <>
       <div className="aboutHeadSection contactUsMain">
@@ -68,10 +70,10 @@ const Subjects = () => {
               <img src="/img/country/world.svg" alt="World Map" />
             </div>
           </div>
-          <div className="successText mt-5 text-center">
+          <div className="successText successTextExtraMarginInLabPage text-center">
             <h4>Ready to provide your students with a world-class education?</h4>
             <p>Explore our comprehensive curriculum offerings, request a demo, and discover how School VR can revolutionize your classrooms, no matter where you are in the world.</p>
-            <button className='btn btn-outline m-auto'>Book a Demo</button>
+            <button className='btn btn-outline mx-auto mt-5' onClick={() => setModalActive(true)}>Book a Demo</button>
           </div>
         </div>
       </div>

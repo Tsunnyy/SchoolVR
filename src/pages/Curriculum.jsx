@@ -2,6 +2,7 @@ import React from 'react'
 import { Footer } from '../layouts/Footer'
 import { About } from "../layouts/About";
 import PageHero from '../components/PageHero';
+import SuccessMsg from '../layouts/SuccessMsg';
 
 const Curriculum = () => {
 
@@ -134,7 +135,7 @@ const Curriculum = () => {
 
                     <div className="expandingHorizon">
                         <div className="row m-0 align-items-center">
-                            <div className="col-md-5 col-12 ps-0">
+                            <div className="col-md-6 col-12 ps-0">
                                 <h4 className='pageHeadText clrWhite'>Expanding Horizons</h4>
                                 <span>coming soon</span>
                                 <div className="commingSoonCOuntry">
@@ -151,7 +152,7 @@ const Curriculum = () => {
                                     })}
                                 </div>
                             </div>
-                            <div className="col-md-7 col-12 pe-0">
+                            <div className="col-md-6 col-12 pe-0">
                                 <img src="/img/country/map.svg" alt="Map" />
                             </div>
                         </div>

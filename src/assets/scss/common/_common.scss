@@ -690,13 +690,13 @@ p.pagePara {
   }
 
   em {
-    font-family: Gilroy-Regular;
+    font-family: Gilroy-Light;
     font-size: 12px;
     font-style: italic;
     font-weight: 400;
     line-height: 14.4px;
     text-align: center;
-    color: #9E9E9E;
+    color: #292D32;
   }
 }
 
@@ -835,7 +835,7 @@ p.pagePara {
       color: #fff;
     }
 
-    .col-md-5.col-12 {
+    .col-md-6.col-12 {
       span {
         font-family: Gilroy-Medium;
         font-size: 18px;
@@ -845,6 +845,7 @@ p.pagePara {
         color: #fff;
         display: inline-block;
         margin: 10px 0 45px;
+        text-transform: uppercase;
       }
     }
   }
@@ -878,6 +879,7 @@ p.pagePara {
 .exprienceTheGlobalMain {
   background: #F6FBFF;
   padding: 0 80px;
+  border-radius: 20px;
 
   h2 {
     font-family: Gilroy-SemiBold;
@@ -943,7 +945,7 @@ p.pagePara {
       color: #292D32;
 
       .reachOuttoUsCardInnerHead {
-        background: #F4F5F9;
+        background: #D3E5F3;
         padding: 20px;
         border-radius: 20px 20px 0 0;
 
@@ -1148,7 +1150,7 @@ p.pagePara {
 .applicationProcessGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 70%;
+  max-width: 80%;
   margin: auto;
   gap: 100px;
 
@@ -1160,7 +1162,7 @@ p.pagePara {
     &:nth-child(2)::before {
       content: "";
       position: absolute;
-      width: 302px;
+      width: 365px;
       height: 2px;
       background: #9CEC5B;
       top: 47px;
@@ -1221,23 +1223,35 @@ p.pagePara {
   gap: 60px;
   align-items: center;
 
+  &:nth-child(2) {
+    .actualProduct {
+
+      &:nth-child(1) img,
+      &:nth-child(2) img {
+        background: #fcf9f3;
+      }
+    }
+  }
+
   .actualProduct {
 
+
+
     &:nth-child(1) img {
-      background: #9CEC5B;
+      background: #f6ffee;
     }
 
 
     &:nth-child(2) img {
-      background: #8ECAE6;
+      background: #f5fafe;
     }
 
     &:nth-child(3) img {
-      background: #C8B6FF;
+      background: #f9f8ff;
     }
 
     &:nth-child(4) img {
-      background: #023047;
+      background: #e6ebee;
     }
 
     img {
@@ -1734,4 +1748,8 @@ p.pagePara {
       color: #151519;
     }
   }
+}
+
+.successTextExtraMarginInLabPage{
+  margin: 60px 0 30px;
 }

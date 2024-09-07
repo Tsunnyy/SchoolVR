@@ -1,11 +1,12 @@
 import React from 'react'
 import { Footer } from '../layouts/Footer'
 import { About } from "../layouts/About";
+import PageHero from '../components/PageHero';
 
 const SupportCommunity = () => {
     return (
         <>
-            <div className="aboutHeadSection contactUsMain">
+            {/* <div className="aboutHeadSection contactUsMain">
                 <img src="/img/layers/layer1.png" alt="Layer" className='layerImage' />
                 <div className="margin-top-100-class padding-lr-class">
                     <div className="row m-0 align-items-center justify-content-between">
@@ -19,13 +20,14 @@ const SupportCommunity = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <PageHero title="We're Here to Help You Succeed" bgImage="layer1" heroImage="support" btnText="Book A Demo" paragraph="At School VR, we're committed to providing exceptional support and fostering a vibrant community where educators, students, and partners can connect, collaborate, and thrive. We understand that implementing new technology can be challenging, and we're here to guide you every step of the way." />
             <div className="reachOuttoUs supportResources padding-lr-class">
                 <h3 className='text-center mb-5'>Comprehensive Support Resources</h3>
                 <div className="reachOuttoUsCard">
                     <div className="reachOuttoUsCardInner">
                         <div className="d-flex gap-3 align-items-start">
-                            <img src="/img/icon/forschool.svg" alt="forschool" />
+                            <img src="/img/icon/res-1.svg" alt="res-1" />
                             <div>
                                 <span>FAQs & Troubleshooting Guides</span>
                                 <p>Choose from online, in-person, or blended learning formats (depending on availability in the region)</p>
@@ -34,7 +36,7 @@ const SupportCommunity = () => {
                     </div>
                     <div className="reachOuttoUsCardInner">
                         <div className="d-flex gap-3 align-items-start">
-                            <img src="/img/icon/forstudent.svg" alt="forstudent" />
+                            <img src="/img/icon/res-2.svg" alt="res-2" />
                             <div>
                                 <span>Dedicated Customer Support</span>
                                 <p>Learn from experienced VR educators & IT professionals in cutting-edge virtual reality environments.</p>
@@ -43,7 +45,7 @@ const SupportCommunity = () => {
                     </div>
                     <div className="reachOuttoUsCardInner">
                         <div className="d-flex gap-3 align-items-start">
-                            <img src="/img/icon/forpartner.svg" alt="forpartner" />
+                            <img src="/img/icon/res-3.svg" alt="res-3" />
                             <div>
                                 <span>On-Site Assistance</span>
                                 <p>Engage in practical exercises & simulations to solidify your understanding</p>
@@ -85,7 +87,7 @@ const SupportCommunity = () => {
                             <div className="communityMainDivR text-center">
                                 <h6>SchoolVRs Learners Forum</h6>
                                 <img src="/img/community.png" alt="community" />
-                                <button className='btn btn-outline mx-auto'>Join Community</button>
+                                <button className='btn btn-outline mx-auto'>Coming Soon</button>
                             </div>
                         </div>
                     </div>
