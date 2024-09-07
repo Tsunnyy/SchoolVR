@@ -1,12 +1,15 @@
 @use "../config/" as *;
+@import '../common/fonts';
 
 #root {
   overflow: hidden;
 }
+
 .not-found {
   max-width: 500px;
   margin: 5rem auto;
 }
+
 .container {
   max-width: var(--container);
   margin: auto;
@@ -19,6 +22,10 @@
   // @include mq(lg) {
   //   padding-left: 10rem;
   // }
+}
+
+.text-center {
+  text-align: center;
 }
 
 .flex {
@@ -39,6 +46,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .flex-start {
   display: flex;
   justify-content: space-between;
@@ -99,12 +107,17 @@ svg {
   height: 100svh;
   min-height: 50rem;
 }
+
 .gradient-wrap {
   background: linear-gradient(103.92deg, #ffffff 35.34%, #ececec 97.13%);
+  background: #F6FBFF;
 }
+
 .dark-gradient-wrap {
   background: linear-gradient(139.6deg, #373a3a 4.41%, #191b1b 96.51%);
+  background: #F6FBFF;
 }
+
 .text-justify {
   text-align: justify;
 }
@@ -118,13 +131,16 @@ svg {
   background-color: #ffffff;
   z-index: 1;
   opacity: 0.5;
+
   &.top {
     top: 0;
   }
+
   &.bottom {
     bottom: 0;
     z-index: -1;
   }
+
   &.dark {
     background-color: #292d32;
   }
@@ -140,12 +156,14 @@ svg {
   text-align: center;
   margin-right: 1rem;
   width: max-content;
+
   &-list {
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
   }
 }
+
 @include mq(lg) {
   .section-sub-title {
     font-size: 1.8rem;
@@ -153,18 +171,1567 @@ svg {
 
   .section-title {
     font-size: 5rem;
+    color: #292D32;
   }
+
   .dark-gradient-wrap {
     background: linear-gradient(139.6deg, #373a3a 4.41%, #191b1b 96.51%);
+    background: #F6FBFF;
   }
 }
+
 @include mq(md) {
   .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
+
   .col-2 {
     grid-column: span 2;
+  }
+}
+
+// About Page Css 
+
+.padding-lr-class {
+  padding-inline: 125px;
+}
+
+.margin-top-100-class {
+  margin-top: 100px;
+}
+
+.aboutHeadSection {
+  padding-bottom: 70px;
+
+  .layerImage {
+    position: absolute;
+    height: 400px;
+    left: 0;
+    z-index: -1;
+  }
+
+  h1 {
+    font-family: Gilroy-SemiBold;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.6px;
+    margin: 12px 0 30px;
+    color: #292D32;
+  }
+
+  .row {
+    img {
+      min-height: 433px;
+      object-fit: contain;
+    }
+  }
+}
+
+p.pagePara {
+  font-family: Gilroy-Regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: justify;
+  color: #292D32;
+  margin: 20px 0;
+}
+
+.pageHeadText {
+  font-family: Gilroy-SemiBold;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 46px;
+  color: #292D32;
+
+  &.pageHeadTextLight {
+    font-family: Gilroy-Regular;
+  }
+}
+
+.ourMissionVissionCardMain {
+  position: relative;
+  z-index: 99;
+}
+
+.ourMissionVissionSection {
+  background: #F6FBFF;
+  padding: 40px 0;
+  overflow: hidden;
+
+  img.absLayer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: -115px;
+    max-width: 489px;
+    object-fit: contain;
+    max-height: 489px;
+  }
+}
+
+
+.ourMissionVissionCard {
+  background: #FFFFFF99;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px 0px #C1D0DC1A;
+  color: #292D32;
+
+  h4 {
+    font-family: Gilroy-SemiBold;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #292D32;
+    margin-bottom: 30px;
+  }
+
+  h5 {
+    font-family: Gilroy-SemiBold;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19.8px;
+    color: #292D32;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-family: Gilroy-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: justify;
+  }
+
+  img {
+    max-width: 345px;
+    object-fit: contain;
+  }
+
+}
+
+.ourJourneySectionMain {
+  position: relative;
+  padding: 30px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #D1D1D1;
+  }
+
+  .ourJourneySectionInner {
+    img {
+      max-width: 270px;
+      border-radius: 30px;
+      // background: #D9D9D9;
+    }
+
+    h5 {
+      font-family: Gilroy-SemiBold;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 36.75px;
+      text-align: center;
+      margin-top: 50px;
+      color: #292D32;
+    }
+  }
+}
+
+.form-group.col-2 {
+  width: 100%;
+}
+
+.ourJourneySection {
+  background: linear-gradient(100deg, #ECC243 19.81%, #D2971F 104.8%);
+  padding: 60px 0 230px;
+
+  .pageHeadText.clrWhite,
+  .pagePara.clrWhite {
+    color: #fff;
+  }
+
+  .journeyTimeLineMain {
+    position: relative;
+    display: grid;
+    gap: 100px;
+    padding: 40px 0;
+    margin-top: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 60%;
+      height: 2px;
+      background: #fff;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin: auto;
+      width: 2px;
+      height: 100%;
+      background-color: #fff;
+    }
+
+    .journeyTimeLineInner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 175px;
+      place-content: center;
+      align-items: center;
+      position: relative;
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        width: 58px;
+        height: 58px;
+        border-radius: 100%;
+        border: 2px solid #fff;
+        background: linear-gradient(100deg, #ECC243 19.81%, #D2971F 104.8%);
+        z-index: 2;
+      }
+
+      &::before {
+        width: 36px;
+        height: 36px;
+        background: #fff;
+        z-index: 3;
+      }
+    }
+  }
+}
+
+
+.joinUsSection {
+  background: #F6FBFF;
+  padding-bottom: 40px;
+
+  .pagePara.marginClass {
+    margin: 20px 0 60px;
+  }
+
+  .joinUsKeyPoints {
+    background: #FFFFFF99;
+    padding: 60px;
+    box-shadow: 0px 0px 40px 0px #C1D0DC40;
+    border-radius: 20px;
+    position: relative;
+    top: -180px;
+    background: #FFFFFF99;
+    backdrop-filter: blur(56px);
+
+    .joinUsKeyPointsGrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 70px 100px;
+
+      img {
+        max-width: 45px;
+        object-fit: contain;
+      }
+
+      h4 {
+        font-family: Gilroy-SemiBold;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 19.8px;
+        color: #292D32;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-family: Gilroy-Medium;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.56px;
+        text-align: justify;
+        color: #292D32;
+      }
+    }
+  }
+}
+
+// Contact Us CSS
+
+.reachOuttoUs {
+  background: #F6FBFF;
+  color: #292D32;
+  padding-block: 50px;
+
+  .reachOuttoUsCard.reachOuttoUsCardColFour {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+  }
+
+  .socialIcons {
+    img {
+      max-width: 30px;
+    }
+  }
+
+  hr.marginBlock {
+    margin-block: 60px;
+  }
+
+  h3.secondary_title {
+    font-family: Gilroy-SemiBold;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.75px;
+    margin: 0 0 40px;
+  }
+
+  .reachOuttoUsCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+    .reachOuttoUsCardInner {
+      background: #FFFFFF99;
+      box-shadow: 0px 0px 40px 0px #C1D0DC40;
+      border-radius: 20px;
+      padding: 25px;
+
+      h4 {
+        font-family: Gilroy-SemiBold;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 19.8px;
+      }
+
+      p {
+        font-family: Gilroy-Medium;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.56px;
+        text-align: justify;
+        margin: 10px 0 20px;
+      }
+
+      hr {
+        margin: 40px 0;
+      }
+
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+
+  .contactOptions {
+    h6 {
+      font-family: Gilroy-SemiBold;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #292D32;
+      margin: 50px 0 0;
+      text-align: center;
+    }
+
+    .contactOptionsMain {
+      gap: 80px;
+      padding: 15px 0;
+      margin: 30px 0;
+
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        height: 100%;
+        width: 1px;
+        background: #D1D1D1;
+      }
+
+      img {
+        max-width: 30px;
+      }
+
+      h2 {
+        font-family: Gilroy-SemiBold;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 15.4px;
+        color: #292D32;
+        margin-bottom: 0;
+      }
+
+      a {
+        font-family: Gilroy-Medium;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.56px;
+        text-align: justify;
+        color: #656565;
+      }
+
+    }
+  }
+}
+
+
+.supportResources {
+  .reachOuttoUsCard {
+    gap: 70px;
+
+    .reachOuttoUsCardInner {
+      background-color: transparent;
+      box-shadow: none;
+      padding: 0;
+      color: #292D32;
+
+      img {
+        max-width: 30px;
+      }
+
+      span {
+        font-family: Gilroy-SemiBold;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 15.4px;
+      }
+
+      p {
+        font-family: Gilroy-Regular;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        text-align: justify;
+        margin: 12px 0 0;
+      }
+    }
+  }
+
+  .communityMainDivMain {
+    background: #FFFFFF99;
+    box-shadow: 0px 0px 40px 0px #C1D0DC40;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 60px 0 40px;
+
+    h4 {
+      margin-bottom: 40px;
+    }
+
+    .communityMainDiv {
+      display: grid;
+      gap: 40px;
+
+      img {
+        max-width: 60px;
+      }
+    }
+
+    .communityMainDivR {
+      padding: 30px;
+      background: #F4F5F9;
+      border-radius: 8px;
+
+      h6 {
+        font-family: Gilroy-SemiBold;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 19.8px;
+        color: #292D32;
+      }
+
+      img {
+        margin: 20px 0 40px;
+      }
+    }
+  }
+
+
+}
+
+
+.successText {
+
+  h4 {
+    font-family: Gilroy-SemiBold;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.75px;
+    color: #292D32;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-family: Gilroy-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    color: #292D32;
+  }
+
+  em {
+    font-family: Gilroy-Regular;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: center;
+    color: #9E9E9E;
+  }
+}
+
+.idealPartnerProfileMain {
+  display: grid;
+  grid-template-columns: 306px 1fr;
+  // gap: 40px;
+  background: #FFFFFF99;
+  box-shadow: 0px 0px 40px 0px #C1D0DC40;
+  border-radius: 22px;
+  margin: 40px 0;
+
+
+  .idealPartnerProfileL {
+    padding: 40px 20px;
+    background: linear-gradient(100deg, #ECC243 19.81%, #D2971F 104.8%);
+    border-radius: 22px 0 0 22px;
+    color: #fff;
+
+    h2 {
+      font-family: Gilroy-SemiBold;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 40px;
+    }
+
+    p {
+      font-family: Gilroy-Regular;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.6px;
+    }
+  }
+
+  .idealPartnerProfileR {
+    padding: 50px;
+
+    img {
+      max-width: 24px;
+    }
+
+    span {
+      font-family: Gilroy-SemiBold;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 19.8px;
+      color: #292D32;
+    }
+
+    p {
+      font-family: Gilroy-Medium;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.56px;
+      text-align: justify;
+      color: #292D32;
+      margin-top: 10px;
+    }
+  }
+
+  .idealPartnerProfileRWithBg {
+    border-radius: 20px;
+    background: #F4F5F9;
+    padding: 25px;
+    color: #292D32;
+
+    h4 {
+      font-family: Gilroy-SemiBold;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 19.8px;
+    }
+
+    h3 {
+      font-family: Gilroy-SemiBold;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17.15px;
+      margin-bottom: 6px;
+    }
+
+    hr {
+      margin: 30px 0;
+    }
+
+    p,
+    ul li {
+      font-family: Gilroy-Regular;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.4px;
+      text-align: justify;
+    }
+  }
+}
+
+.establishedBoards {
+  background: #F6FBFF;
+  padding: 34px 0;
+
+  .establishedBoardsCard {
+    gap: 80px 73px;
+    margin: 50px 0;
+
+    .establishedBoardsCardInner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        max-width: 141px;
+        object-fit: contain;
+        // box-shadow: 0px 8px 12px 0px #42474C14;
+        border-radius: 20px;
+      }
+
+      p {
+        font-family: Gilroy-Regular;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: #292D32;
+        margin: 0;
+      }
+    }
+  }
+
+  .expandingHorizon {
+    background: linear-gradient(100deg, #ECC243 19.81%, #D2971F 104.8%);
+    box-shadow: 0px 4px 40px 0px #0000001A;
+    border-radius: 20px;
+    padding: 36px 50px;
+
+    h4 {
+      color: #fff;
+    }
+
+    .col-md-5.col-12 {
+      span {
+        font-family: Gilroy-Medium;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.83px;
+        letter-spacing: 0.6em;
+        color: #fff;
+        display: inline-block;
+        margin: 10px 0 45px;
+      }
+    }
+  }
+
+  .commingSoonCOuntry {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 80px;
+
+    img {
+      max-width: 56px;
+      object-fit: contain;
+    }
+
+    p {
+      font-family: Gilroy-SemiBold;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      color: #292D32;
+      margin: 0;
+
+      &:nth-child(1) {
+        font-family: Gilroy-Regular;
+      }
+    }
+
+  }
+}
+
+.exprienceTheGlobalMain {
+  background: #F6FBFF;
+  padding: 0 80px;
+
+  h2 {
+    font-family: Gilroy-SemiBold;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 46px;
+    color: #ECC243;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.98px;
+    text-align: justify;
+    color: #292D32;
+  }
+}
+
+.button {
+  border: 1px solid #292D32;
+  border-radius: 58px;
+  padding: 12px 30px;
+  font-family: Gilroy-SemiBold;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.7px;
+  color: #292D32;
+}
+
+.cieProgram {
+  background: #F6FBFF;
+
+  .offerDiv {
+    background: #FFFFFF99;
+    border: 1px solid;
+    border-image: linear-gradient(269.16deg, #ECC243 0.73%, #FFFFFF 89.67%);
+    border-radius: 20px;
+    padding: 30px 100px;
+    box-shadow: 0px 0px 40px 0px #C1D0DC40;
+    position: relative;
+    top: -100px;
+
+    p {
+      font-family: Gilroy-Regular;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      text-align: center;
+      margin: 20px 0 0;
+      color: #292D32;
+    }
+
+    .pageHeadText {
+      color: #ECC243;
+    }
+  }
+
+  .reachOuttoUsCard {
+    .reachOuttoUsCardInner {
+      padding: 0;
+      color: #292D32;
+
+      .reachOuttoUsCardInnerHead {
+        background: #F4F5F9;
+        padding: 20px;
+        border-radius: 20px 20px 0 0;
+
+        h5 {
+          font-family: Gilroy-SemiBold;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 29.4px;
+          margin: 0;
+        }
+      }
+
+      .innerPaddingClass {
+        padding: 28px 20px;
+      }
+
+
+      img {
+        max-width: 18px;
+      }
+
+      span {
+        font-family: Gilroy-SemiBold;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 15.4px;
+      }
+
+      p {
+        font-family: Gilroy-Regular;
+        margin: 0 0 10px;
+        text-align: left;
+      }
+    }
+  }
+
+}
+
+.benefitsofCertificationParent {
+  padding: 0 36px;
+
+  .benefitsofCertification {
+    border-radius: 20px;
+    background: linear-gradient(100deg, #ECC243 19.81%, #D2971F 104.8%);
+    padding: 0 50px;
+
+    .pageHeadText {
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    .gridDiv {
+      img {
+        max-width: 60px;
+      }
+
+      span {
+        font-family: Gilroy-SemiBold;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 19.8px;
+      }
+
+      p {
+        font-family: Gilroy-SemiBold;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.7px;
+        text-align: justify;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.programDetails {
+  span {
+    font-family: Gilroy-SemiBold;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.4px;
+    color: #292D32;
+  }
+
+  p {
+    font-family: Gilroy-Medium;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.56px;
+    color: #656565;
+    margin: 12px 0 0;
+  }
+}
+
+.paddingBottomClass {
+  padding-bottom: 200px;
+}
+
+.gridDiv {
+  display: grid;
+
+  &.withTwoCol {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  &.withFourCol {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+  }
+}
+
+.unlockingOpportunities {
+  padding: 60px 0;
+  background: #F6FBFF;
+
+  .pageHeadText {
+    font-family: Gilroy-SemiBold;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+
+    img {
+      max-width: 42px;
+    }
+  }
+
+  .gridViewWithFlex {
+    margin: 60px 0;
+  }
+}
+
+.gridViewWithFlex {
+  display: grid;
+  grid-template-columns: 306px 1fr;
+
+  .gridViewWithFlexL {
+    background: linear-gradient(100deg, #ECC243 19.81%, #D2971F 104.8%);
+    padding: 35px;
+    border-radius: 20px 0 0 20px;
+    color: #fff;
+
+    h3 {
+      font-family: Gilroy-SemiBold;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+
+    span {
+      font-family: Gilroy-Regular;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.6px;
+    }
+
+    img {
+      max-width: 60px;
+    }
+  }
+
+  .gridViewWithFlexR {
+    padding: 40px;
+    color: #292D32;
+    background-color: #fff;
+    border-radius: 0 20px 20px 0;
+
+    img {
+      max-width: 24px;
+    }
+
+    h4 {
+      font-family: Gilroy-SemiBold;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 19.8px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: Gilroy-Medium;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.56px;
+      text-align: justify;
+      margin: 0;
+    }
+
+    .gridViewWithFlexRInner {
+      background: #F4F5F9;
+      padding: 30px;
+      border-radius: 20px;
+
+      hr {
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
+.applicationProcessGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 70%;
+  margin: auto;
+  gap: 100px;
+
+  .applicationProcessGridInner {
+    text-align: center;
+    position: relative;
+
+    &:nth-child(2):after,
+    &:nth-child(2)::before {
+      content: "";
+      position: absolute;
+      width: 302px;
+      height: 2px;
+      background: #9CEC5B;
+      top: 47px;
+      left: -100%;
+    }
+
+    &:nth-child(2)::before {
+      right: -100%;
+      left: unset;
+    }
+
+    h5 {
+      font-family: Gilroy-SemiBold;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 15.4px;
+      color: #292D32;
+      margin: 10px 0;
+    }
+
+    p {
+      font-family: Gilroy-Regular;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.4px;
+      text-align: center;
+      color: #656565;
+      margin: 0 0 40px;
+    }
+
+    span {
+      padding: 8px 22px;
+      display: inline-block;
+      background: #9CEC5B;
+      border-radius: 14px;
+      font-family: Gilroy-SemiBold;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.6px;
+      color: #FFFFFF;
+      margin: 30px 0;
+    }
+
+    img {
+      max-width: 30px;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .padding-lr-class {
+    padding-inline: 25px;
+  }
+}
+
+.productsMain {
+  gap: 60px;
+  align-items: center;
+
+  .actualProduct {
+
+    &:nth-child(1) img {
+      background: #9CEC5B;
+    }
+
+
+    &:nth-child(2) img {
+      background: #8ECAE6;
+    }
+
+    &:nth-child(3) img {
+      background: #C8B6FF;
+    }
+
+    &:nth-child(4) img {
+      background: #023047;
+    }
+
+    img {
+      max-width: 45px;
+      max-height: 45px;
+      border-radius: 100%;
+      min-height: 45px;
+      padding: 10px;
+      margin: auto;
+    }
+
+    p {
+      font-family: Gilroy-Medium;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.98px;
+      text-align: justify;
+      margin: 18px 0 0;
+      color: #292D32;
+    }
+  }
+}
+
+.exloreOurSubjectMain {
+
+  .exloreOurSubjectMainR {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -46px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 1px;
+      height: 100%;
+      background: #D1D1D1;
+    }
+  }
+
+  em {
+    font-family: Gilroy-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    letter-spacing: 0.6em;
+    text-align: center;
+    color: #292D32;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+}
+
+.verticalLine {
+  span {
+    display: inline-block;
+    height: 122px;
+    width: 2px;
+    background: #D1D1D1;
+  }
+}
+
+.stepsToInstall {
+  margin: 60px 0 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    height: 100%;
+    width: 1px;
+    background: #D1D1D1;
+  }
+
+  img {
+    max-width: 120px;
+  }
+
+  h4 {
+    font-family: Gilroy-SemiBold;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.75px;
+    color: #292D32;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: Gilroy-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: justify;
+    color: #292D32;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.buyingOptionsForKids {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 60px;
+  max-width: 70%;
+  margin: 60px auto;
+  align-items: center;
+  color: #292D32;
+
+  .buyingOptionsForKidsL {
+    h2 {
+      font-family: Gilroy-SemiBold;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 40px;
+    }
+
+    p {
+      font-family: Gilroy-Regular;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.6px;
+      margin: 10px 0 30px;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0 0 50px;
+      gap: 17px;
+
+      li {
+        background: #F8F8F8;
+        border-radius: 8px;
+        padding: 10px;
+        font-family: Gilroy-SemiBold;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.8px;
+        transition: .5s all ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #191b1b;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .buyingOptionsForKidsR {
+    background: #F8F8F8;
+    border-radius: 8px;
+    padding: 20px;
+
+    h6 {
+      font-family: Gilroy-SemiBold;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+    }
+
+    hr {
+      margin: 13px 0 20px;
+    }
+
+
+    .imgAndTextInner {
+
+      img {
+        max-width: 24px;
+        margin: auto;
+      }
+
+      &:nth-child(3) img {
+        max-width: 60px;
+      }
+    }
+
+    .d-flex {
+      gap: 20px;
+    }
+
+    p {
+      font-family: Gilroy-Regular;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.4px;
+      text-align: justify;
+      margin: 7px 0 0;
+    }
+  }
+}
+
+
+.pageInternalSectionMain {
+  background: #F6FBFF;
+  padding: 50px 0;
+
+  .internalSectGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    color: #292D32;
+
+    .internalSectGridInner:nth-child(2) {
+      position: relative;
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background: #D1D1D1;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      &::after {
+        left: -51px;
+      }
+
+      &::before {
+        right: -50px;
+      }
+    }
+
+    img {
+      max-width: 64px;
+    }
+
+    h2 {
+      font-family: Gilroy-SemiBold;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 36.75px;
+      margin: 30px 0 20px;
+    }
+
+    p {
+      font-family: Gilroy-Regular;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      text-align: justify;
+      margin: 0;
+    }
+  }
+}
+
+.pageInternalSectionMain {
+  .buyingOptionsForKids {
+    max-width: 100%;
+    background: #FFFFFF99;
+    box-shadow: 0px 0px 40px 0px #C1D0DC40;
+    border-radius: 20px;
+    padding: 35px;
+    grid-template-columns: 1fr 370px;
+
+    .buyingOptionsForKidsL select {
+      padding: 12px;
+      background: #F4F5F9;
+      font-family: Gilroy-Regular;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      text-align: left;
+      color: #7D7E82;
+      border: none;
+      outline: none;
+    }
+
+    img {
+      max-width: 66.1px;
+      gap: 30px;
+      margin: auto;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .tabs-container-item {
+    transition: .5s all ease-in-out;
+
+    .price-wrap {
+      display: flex;
+      gap: 35px;
+      background: #F4F5F9;
+      border-radius: 14.69px;
+      width: fit-content;
+
+      .price-per-verse,
+      .price-bundle {
+        padding: 15px;
+      }
+
+      .price-bundle {
+        background: #EBEBEC;
+        border-radius: 14.69px;
+        gap: 45px;
+      }
+
+      .before {
+        font-size: 0.7em;
+        position: relative;
+        margin-right: 10px;
+
+        &::after {
+          position: absolute;
+          inset: 0;
+          content: "";
+          height: 0.4rem;
+          margin: auto;
+          background-color: #ff1515;
+          rotate: -16deg;
+        }
+      }
+
+
+      .save {
+        background: #63E04F;
+        border-radius: 10.29px;
+        padding: 10px;
+        color: #fff;
+
+        p {
+          font-family: Gilroy-Regular;
+          font-size: 13.22px;
+          font-weight: 400;
+          line-height: 14.55px;
+          margin: 0;
+        }
+
+        h4 {
+          font-family: Gilroy-SemiBold;
+          font-size: 30px;
+          font-weight: 400;
+          line-height: 30px;
+        }
+      }
+
+      h3 {
+
+        span,
+        small {
+
+          font-family: Gilroy-SemiBold;
+          font-size: 30px;
+          font-weight: 400;
+          line-height: 30px;
+          color: #292D32;
+        }
+      }
+
+      span.text {
+        font-family: Gilroy-Medium;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        text-align: justify;
+        color: #646464;
+
+      }
+
+      .price-bundle {
+        display: flex;
+      }
+
+    }
+  }
+
+  .monthlyAndYearlyBtn {
+    margin-top: 30px;
+    background: #F4F5F9;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 4px;
+
+    .tabs-item {
+      font-family: Gilroy-Medium;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 13.2px;
+      color: #292D32;
+      background: transparent;
+      transition: .5s all ease-in-out;
+
+      &.tabs-active {
+        background: #292D32;
+        color: #fff;
+      }
+    }
+
+  }
+}
+
+.labSetUpOptions {
+  background: #F6FBFF;
+  padding: 60px 0;
+
+  .optionsInnerContent {
+    color: #292D32;
+
+    &:first-child {
+      margin-bottom: 45px;
+    }
+
+    img {
+      max-width: 60px;
+    }
+
+    h4 {
+      font-family: Gilroy-SemiBold;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29.4px;
+      margin: 14px 0 20px;
+    }
+
+    p {
+      font-family: Gilroy-Regular;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      text-align: justify;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      svg {
+        width: min-content;
+      }
+    }
+  }
+
+  .gridViewWithFlexRInner {
+    img {
+      max-width: 150px;
+      margin: auto;
+    }
+  }
+}
+
+.takeaNextStepMain {
+  .takeaNextStepMainL {
+    color: #292D32;
+
+    h4 {
+      font-family: Gilroy-SemiBold;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 36.75px;
+    }
+
+    h3 {
+      font-family: Gilroy-SemiBold;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 36.75px;
+    }
+
+    p {
+      font-family: Gilroy-Regular;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      text-align: justify;
+      margin: 10px 0 0;
+    }
+
+    hr {
+      margin: 30px 0;
+    }
+  }
+
+  .takeaNextStepMainR {
+    padding: 25px;
+    border: 1px solid #D1D1D1;
+    background: #FFFFFF;
+
+    p {
+      font-family: Gilroy-Medium;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 15px;
+      margin: 0 0 20px;
+      color: #151519;
+    }
   }
 }

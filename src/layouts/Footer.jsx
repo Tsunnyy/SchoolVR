@@ -9,23 +9,24 @@ let quickLinks = [
   },
   {
     id: 2,
+    name: "Contact Us",
+    path: "/contactUs",
+
+  },
+  {
+    id: 3,
     name: "Blogs",
     path: "/blogs",
   },
   {
-    id: 3,
+    id: 4,
     name: "Careers",
     path: "/careers",
   },
   {
-    id: 4,
+    id: 5,
     name: "Help Centre",
     path: "/helpCentre",
-  },
-  {
-    id: 5,
-    name: "Contact Us",
-    path: "/contactUs",
   },
 ];
 
@@ -78,7 +79,35 @@ let solutionsLinks = [
     name: "SchoolIVR For Individuals",
     path: "/Svi",
   },
+  {
+    id: 3,
+    name: "Innovations & Research",
+    path: "/blogs",
+  },
+  {
+    id: 3,
+    name: "Lab Setup & Licensing Upcoming",
+    path: "/lab-setup-and-learning",
+  },
 ];
+
+let programsLinks = [
+  {
+    id: 1,
+    name: "Curriculum",
+    path: "/curriculum",
+  },
+  {
+    id: 2,
+    name: "Training & Certification",
+    path: "/training-and-certification",
+  },
+  {
+    id: 3,
+    name: "Grant",
+    path: "/grant",
+  },
+]
 
 let infoLinks = [
   {
@@ -93,78 +122,113 @@ let infoLinks = [
     img: "mobile",
     path: "tel:+919508382971",
   },
-  // {
-  //   id: 3,
-  //   name: "Arunoday, Sihodih",
-  //   img: "building",
-  //   path: "/",
-  // },
-  // {
-  //   id: 4,
-  //   name: "Giridh, Jharkhand 815301",
-  //   img: "location",
-  //   path: "/",
-  // },
+  {
+    id: 3,
+    name: "Arunoday, Sihodih",
+    img: "building",
+    path: "/",
+  },
+  {
+    id: 4,
+    name: "Giridh, Jharkhand 815301",
+    img: "location",
+    path: "/",
+  },
 ];
+
+let supportLinks = [
+  {
+    id: 1,
+    name: "Support & Community",
+    path: "/supportcommunity",
+  },
+  {
+    id: 1,
+    name: "Partner with Us",
+    path: "/partnerwithus",
+  },
+
+]
 
 export const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-top">
-        {/* <ul className="footer-link-list">
-					<span className="footer-link-title">quick links</span>
-					{quickLinks.map((link) => (
-						<li key={link.id} >
-							<a href={link.path}>
-								{link.name}
-							</a>
-						</li>
-					))}
-				</ul> */}
-        <ul className="footer-link-list">
-          <span className="footer-link-title">products</span>
-          {productLinks.map((link) => (
-            <li
-              key={link.id}
-              onClick={() => {
-                setTimeout(() => {
-                  window.scrollTo(0, 0);
-                }, 10);
-              }}
-            >
-              <NavLink to={link.path}>{link.name}</NavLink>
-            </li>
-          ))}
-        </ul>
-        <ul className="footer-link-list">
-          <span className="footer-link-title">our solutions</span>
-          {solutionsLinks.map((link) => (
-            <li
-              key={link.id}
-              onClick={() => {
-                setTimeout(() => {
-                  window.scrollTo(0, 0);
-                }, 10);
-              }}
-            >
-              <NavLink to={link.path}>{link.name}</NavLink>
-            </li>
-          ))}
-        </ul>
-        <ul className="footer-link-list">
-          {infoLinks.map((link) => (
-            <li key={link.id}>
-              <a href={link.path}>
-                <img
-                  className="icon"
-                  src={`/img/icon/${link.img}.svg`}
-                  alt={`${link.img}`}
-                />
-                {link.name}
-              </a>
-            </li>
-          ))}
-        </ul>
+    <footer className="footer footer_new">
+      <div className="row m-0 my-5">
+        <div className="col-8 ps-0">
+          <div className="footer-top-new">
+            <ul className="footer-link-list-new">
+              <span className="footer-link-title">About</span>
+              {quickLinks.map((link) => (
+                <li key={link.id} >
+                  <a href={link.path}>
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <ul className="footer-link-list">
+              <span className="footer-link-title">Solutions</span>
+              {solutionsLinks.map((link) => (
+                <li
+                  key={link.id}
+                  onClick={() => {
+                    setTimeout(() => {
+                      window.scrollTo(0, 0);
+                    }, 10);
+                  }}
+                >
+                  <NavLink to={link.path}>{link.name}</NavLink>
+                </li>
+              ))}
+            </ul>
+            <ul className="footer-link-list">
+              <span className="footer-link-title">Programs</span>
+              {programsLinks.map((link) => (
+                <li
+                  key={link.id}
+                  onClick={() => {
+                    setTimeout(() => {
+                      window.scrollTo(0, 0);
+                    }, 10);
+                  }}
+                >
+                  <NavLink to={link.path}>{link.name}</NavLink>
+                </li>
+              ))}
+            </ul>
+            <ul className="footer-link-list">
+              <span className="footer-link-title">Support</span>
+              {supportLinks.map((link) => (
+                <li
+                  key={link.id}
+                  onClick={() => {
+                    setTimeout(() => {
+                      window.scrollTo(0, 0);
+                    }, 10);
+                  }}
+                >
+                  <NavLink to={link.path}>{link.name}</NavLink>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="col-4 pe-0">
+          <ul className="footer-link-list">
+            {infoLinks.map((link) => (
+              <li key={link.id}>
+                <a href={link.path}>
+                  <img
+                    className="icon"
+                    src={`/img/icon/${link.img}.svg`}
+                    alt={`${link.img}`}
+                  />
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
       <div className="footer-bottom">
         <span className="footer-text">Copyright © 2024 - AONIX</span>

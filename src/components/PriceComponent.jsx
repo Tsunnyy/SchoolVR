@@ -66,8 +66,8 @@ export const PriceComponent = () => {
       )}`,
       beforePricePerVerse: price.beforePricePerVerse
         ? `${currencySymbol}${formatPrice(
-            price.beforePricePerVerse * exchangeRates[currency]
-          )}`
+          price.beforePricePerVerse * exchangeRates[currency]
+        )}`
         : "",
       priceBundle: `${currencySymbol}${formatPrice(
         price.priceBundle * exchangeRates[currency]
@@ -165,85 +165,184 @@ export const PriceComponent = () => {
   }, []);
 
   return (
-    <div className="card card-black text-light card-7">
-      <div className="head">
-        <h3 className="card-title">Pricing Plan</h3>
-        <div className="tabs">
+    <>
+      <div className="buyingOptionsForKids mb-0">
+        <div className="buyingOptionsForKidsL">
+          <div className="d-flex gap-4 align-items-center">
+            <h2>Pricing Plan</h2>
+            <select
+              onChange={(e) => handleCurrencyChange(e.target.value)}
+              value={currency}
+            >
+              <option value="USD">USD</option>
+              <option value="AUD">AUD</option>
+              <option value="NZD">NZD</option>
+              <option value="CAD">CAD</option>
+              <option value="MYR">MYR</option>
+              <option value="CNY">CNY</option>
+              <option value="INR">INR</option>
+              <option value="PEN">PEN</option>
+              <option value="SAR">SAR</option>
+              <option value="AED">AED</option>
+              <option value="GBP">GBP</option>
+              <option value="EUR">EUR</option>
+            </select>
+          </div>
+          <p className="text-start">AI Tutors in SchoolVR act as personalized guides, swiftly resolving student doubts,
+            providing tailored assistance, and ensuring a seamless learning experience.</p>
+
           {priceInUSD.map((item) => {
+            const convertedPrice = convertPrice(item);
             return (
               <div
                 key={item.id}
-                className={`tabs-item ${
-                  pricing === item.id ? "tabs-active" : ""
-                }`}
-                onClick={() => setPricing(item.id)}
+                className={`tabs-container-item ${pricing === item.id ? "tabs-container-item-active" : ""
+                  }`}
               >
-                {item.name}
+                <div className="price-wrap">
+                  <div className="price-per-verse">
+                    <h3 className="price">
+                      <small className="before">
+                        {convertedPrice.beforePricePerVerse}
+                      </small>
+                      <span className="now">{convertedPrice.pricePerVerse}</span>
+                    </h3>
+                    <span className="text">Per Verse | {item.name}</span>
+                  </div>
+                  <div className="price-bundle">
+                    <div>
+                      <h3 className="price">
+                        <small className="before">
+                          {convertedPrice.beforePrice}
+                        </small>
+                        <span className="now">{convertedPrice.priceBundle}</span>
+                      </h3>
+                      <spab className="text">Bundle of All Verses | {item.name}</spab>
+                    </div>
+                    <div className="save">
+                      <p className="text">Save</p>
+                      <h4>{item.savePer}%</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+
+          <div className="d-flex gap-3 align-items-center monthlyAndYearlyBtn">
+            {priceInUSD.map((item) => {
+              return (
+                <div
+                  key={item.id}
+                  className={`tabs-item ${pricing === item.id ? "tabs-active" : ""
+                    }`}
+                  onClick={() => setPricing(item.id)}
+                >
+                  {item.name}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="buyingOptionsForKidsR">
+          <h6 className="text-center">SchoolVR Compatibility</h6>
+          <p className="text-center">SVI is compatible with a variety of headsets, including those designed for both gaming and educational purposes</p>
+          <hr />
+          <div className="d-flex flex-wrap justify-content-center align-items-center">
+            <div className="icon-wrap">
+              <img className="icon" src="/img/icon/quest-2.svg" alt="" />
+              <p className="card-text">Oculus Quest 2</p>
+            </div>
+            <div className="icon-wrap">
+              <img className="icon" src="/img/icon/quest-3.svg" alt="" />
+              <p className="card-text">Oculus Quest 3</p>
+            </div>
+            <div className="icon-wrap">
+              <img className="icon" src="/img/icon/pico-vr.svg" alt="" />
+              <p className="card-text">Pico VR</p>
+            </div>
+          </div>
+          <button className="btn btn-outline mx-auto mt-5">Coming Soon</button>
+        </div>
+      </div>
+      {/* <div className="card card-black text-light card-7">
+        <div className="head">
+          <h3 className="card-title">Pricing Plan</h3>
+          <div className="tabs">
+            {priceInUSD.map((item) => {
+              return (
+                <div
+                  key={item.id}
+                  className={`tabs-item ${pricing === item.id ? "tabs-active" : ""
+                    }`}
+                  onClick={() => setPricing(item.id)}
+                >
+                  {item.name}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="tabs-container">
+          <select
+            onChange={(e) => handleCurrencyChange(e.target.value)}
+            value={currency}
+          >
+            <option value="USD">USD</option>
+            <option value="AUD">AUD</option>
+            <option value="NZD">NZD</option>
+            <option value="CAD">CAD</option>
+            <option value="MYR">MYR</option>
+            <option value="CNY">CNY</option>
+            <option value="INR">INR</option>
+            <option value="PEN">PEN</option>
+            <option value="SAR">SAR</option>
+            <option value="AED">AED</option>
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
+          </select>
+          {priceInUSD.map((item) => {
+            const convertedPrice = convertPrice(item);
+            return (
+              <div
+                key={item.id}
+                className={`tabs-container-item ${pricing === item.id ? "tabs-container-item-active" : ""
+                  }`}
+              >
+                <div className="price-wrap">
+                  <div className="price-per-verse">
+                    <h3 className="price">
+                      <small className="before">
+                        {convertedPrice.beforePricePerVerse}
+                      </small>
+                      <span className="now">{convertedPrice.pricePerVerse}</span>
+                    </h3>
+                    <div className="text">Per Verse | {item.name}</div>
+                  </div>
+                  <div className="price-bundle">
+                    <h3 className="price">
+                      <small className="before">
+                        {convertedPrice.beforePrice}
+                      </small>
+                      <span className="now">{convertedPrice.priceBundle}</span>
+                    </h3>
+                    <div className="text">Bundle of All Verses | {item.name}</div>
+                    <div className="save">
+                      <p className="text">Save</p>
+                      <h4>{item.savePer}%</h4>
+                    </div>
+                  </div>
+                </div>
               </div>
             );
           })}
         </div>
-      </div>
-      <div className="tabs-container">
-        <select
-          onChange={(e) => handleCurrencyChange(e.target.value)}
-          value={currency}
-        >
-          <option value="USD">USD</option>
-          <option value="AUD">AUD</option>
-          <option value="NZD">NZD</option>
-          <option value="CAD">CAD</option>
-          <option value="MYR">MYR</option>
-          <option value="CNY">CNY</option>
-          <option value="INR">INR</option>
-          <option value="PEN">PEN</option>
-          <option value="SAR">SAR</option>
-          <option value="AED">AED</option>
-          <option value="GBP">GBP</option>
-          <option value="EUR">EUR</option>
-        </select>
-        {priceInUSD.map((item) => {
-          const convertedPrice = convertPrice(item);
-          return (
-            <div
-              key={item.id}
-              className={`tabs-container-item ${
-                pricing === item.id ? "tabs-container-item-active" : ""
-              }`}
-            >
-              <div className="price-wrap">
-                <div className="price-per-verse">
-                  <h3 className="price">
-                    <small className="before">
-                      {convertedPrice.beforePricePerVerse}
-                    </small>
-                    <span className="now">{convertedPrice.pricePerVerse}</span>
-                  </h3>
-                  <div className="text">Per Verse | {item.name}</div>
-                </div>
-                <div className="price-bundle">
-                  <h3 className="price">
-                    <small className="before">
-                      {convertedPrice.beforePrice}
-                    </small>
-                    <span className="now">{convertedPrice.priceBundle}</span>
-                  </h3>
-                  <div className="text">Bundle of All Verses | {item.name}</div>
-                  <div className="save">
-                    <p className="text">Save</p>
-                    <h4>{item.savePer}%</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-      <div className="card-text">
-        Unlock a universe of learning with our SVI bundle, featuring Bioverse,
-        Chemverse, Atomverse, Geoverse, Spaceverse, and more, complete with AI
-        tutors, quizzes, and a plethora of engaging features.
-      </div>
-    </div>
+        <div className="card-text">
+          Unlock a universe of learning with our SVI bundle, featuring Bioverse,
+          Chemverse, Atomverse, Geoverse, Spaceverse, and more, complete with AI
+          tutors, quizzes, and a plethora of engaging features.
+        </div>
+      </div> */}
+    </>
   );
 };

@@ -73,6 +73,15 @@
     }
   }
 
+  .product-list-new {
+    width: fit-content;
+    margin: 0 auto;
+    border: 1px solid #FFFFFF;
+    background: #39393933;
+    padding: 6px 60px;
+    border-radius: 69px;
+  }
+
   .navlink-item a {
     width: 4.5rem;
     height: 4.5rem;
@@ -88,11 +97,15 @@
 
   .back-btn {
     position: absolute;
-    top: 10rem;
+    top: 0;
+    bottom: 0;
+    margin-block: auto;
+    height: min-content;
     left: 4rem;
 
     a {
       display: flex;
+      color: #fff;
     }
   }
 

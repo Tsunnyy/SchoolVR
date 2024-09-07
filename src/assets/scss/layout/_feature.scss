@@ -1,141 +1,213 @@
 @use "../config/" as *;
 
-.feature-section {
-  background: url("/img/feature-m.webp") center/cover;
-  padding: 4rem 2rem;
-  position: relative;
-  .btn {
-    display: none;
-  }
-  .card {
-    &-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.2rem;
-    }
+// .feature-section {
+//   background: url("/img/feature-m.webp") center/cover;
+//   padding: 4rem 2rem;
+//   position: relative;
+//   .btn {
+//     display: none;
+//   }
+//   .card {
+//     &-list {
+//       display: flex;
+//       flex-wrap: wrap;
+//       gap: 1.2rem;
+//     }
 
-    &-item {
-      position: relative;
-      width: calc(100% - 2rem);
-      border-radius: 1.4rem;
-      padding: 1.2rem;
-      margin-left: 2rem;
-      margin-top: 2rem;
-      border: 0.1rem solid #ffffff;
-      backdrop-filter: blur(2rem);
-      background: linear-gradient(
-        139.6deg,
-        rgba(255, 255, 255, 0.4) 4.41%,
-        rgba(209, 209, 209, 0.4) 96.51%
-      );
-    }
+//     &-item {
+//       position: relative;
+//       width: calc(100% - 2rem);
+//       border-radius: 1.4rem;
+//       padding: 1.2rem;
+//       margin-left: 2rem;
+//       margin-top: 2rem;
+//       border: 0.1rem solid #ffffff;
+//       backdrop-filter: blur(2rem);
+//       background: linear-gradient(
+//         139.6deg,
+//         rgba(255, 255, 255, 0.4) 4.41%,
+//         rgba(209, 209, 209, 0.4) 96.51%
+//       );
+//     }
 
-    &-icon {
-      background-color: var(--white);
-      width: 6rem;
-      height: 6rem;
-      border-radius: 1.2rem;
+//     &-icon {
+//       background-color: var(--white);
+//       width: 6rem;
+//       height: 6rem;
+//       border-radius: 1.2rem;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       position: absolute;
+//       top: -2rem;
+//       left: -2rem;
+
+//       img {
+//         width: 4rem;
+//       }
+//     }
+
+//     &-title {
+//       margin-bottom: 2rem;
+//       padding-left: 4rem;
+//     }
+
+//     &-content {
+//       font-size: 1.2rem;
+//     }
+//   }
+//   h3{
+//     font-weight: 600;
+//   }
+//   .btn {
+//     margin-top: 2rem;
+//   }
+// }
+
+// @include mq(lg) {
+//   .feature-section {
+//     background: url("/img/feature.webp") center/cover;
+//     min-height: 100vh;
+//     padding-inline: unset;
+//     .btn {
+//       display: flex;
+//     }
+//     .card-list {
+//       gap: 8rem;
+//       justify-content: center;
+//       max-width: var(--max-width);
+//       margin-inline: auto;
+//     }
+
+//     .card-title {
+//       padding: unset;
+//       margin-bottom: 1.5rem;
+//     }
+
+//     .card-content {
+//       font-size: 1.2rem;
+//     }
+
+//     h3 {
+//       font-size: 2.8rem;
+//     }
+
+//     .card-item {
+//       width: 40%;
+//       padding: 3.5rem 5.5rem;
+// border-radius: 2.2rem;
+//       &:nth-child(3) {
+//         margin-right: auto;
+//       }
+
+//       &:nth-child(4),
+//       &:nth-child(2) {
+//         margin-right: 3rem;
+//         margin-left: unset;
+//         .card-title {
+//           padding: unset;
+//         }
+
+//         .card-icon {
+//           left: unset;
+//           right: -2rem;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @include mq(xl) {
+//   .feature-section {
+//     .card-icon {
+//       width: 9.9rem;
+//       height: 9.9rem;
+//       top: -3rem;
+//       left: -6rem;
+
+//       img {
+//         width: 6.4rem;
+//       }
+//     }
+//     .card-item {
+//       &:nth-child(4),
+//       &:nth-child(2) {
+//         .card-icon {
+//           right: -6rem;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+.feature-section-class {
+  padding: 50px 88px;
+
+  .cardOptions {
+    box-shadow: 0px 0px 40px 0px #C1D0DC40;
+    background: #FFFFFF99;
+    padding: 80px 100px;
+    display: grid;
+    gap: 80px;
+
+    .cardOptionOne {
       display: flex;
+      gap: 80px;
       justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: -2rem;
-      left: -2rem;
-
-      img {
-        width: 4rem;
-      }
+      padding: 0 97px;
     }
 
-    &-title {
-      margin-bottom: 2rem;
-      padding-left: 4rem;
-    }
-
-    &-content {
-      font-size: 1.2rem;
-    }
-  }
-  h3{
-    font-weight: 600;
-  }
-  .btn {
-    margin-top: 2rem;
-  }
-}
-
-@include mq(lg) {
-  .feature-section {
-    background: url("/img/feature.webp") center/cover;
-    min-height: 100vh;
-    padding-inline: unset;
-    .btn {
+    .cardOptionTwo {
       display: flex;
+      justify-content: space-between;
+      gap: 165px;
     }
-    .card-list {
-      gap: 8rem;
-      justify-content: center;
-      max-width: var(--max-width);
-      margin-inline: auto;
-    }
+  }
 
-    .card-title {
-      padding: unset;
-      margin-bottom: 1.5rem;
-    }
-
-    .card-content {
-      font-size: 1.2rem;
-    }
+  .card-item {
+    border: 2px solid #DEDEDE;
+    border-radius: 2px;
+    padding: 40px 58px;
+    position: relative;
 
     h3 {
-      font-size: 2.8rem;
+      font-family: Gilroy-SemiBold;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 30.8px;
+      color: #292D32;
+      margin-bottom: 20px;
     }
 
-    .card-item {
-      width: 40%;
-      padding: 3.5rem 5.5rem;
-border-radius: 2.2rem;
-      &:nth-child(3) {
-        margin-right: auto;
-      }
+    p {
+      font-family: Gilroy-Regular;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.4px;
+      text-align: justify;
+      color: #292D32;
+    }
+  }
 
-      &:nth-child(4),
-      &:nth-child(2) {
-        margin-right: 3rem;
-        margin-left: unset;
-        .card-title {
-          padding: unset;
-        }
+  .card-icon {
+    padding: 18px;
+    border: 1px solid #DEDEDE;
+    border-radius: 20px;
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    background: #fff;
 
-        .card-icon {
-          left: unset;
-          right: -2rem;
-        }
-      }
+
+    img {
+      max-width: 64px;
     }
   }
 }
 
-@include mq(xl) {
-  .feature-section {
-    .card-icon {
-      width: 9.9rem;
-      height: 9.9rem;
-      top: -3rem;
-      left: -6rem;
-
-      img {
-        width: 6.4rem;
-      }
-    }
-    .card-item {
-      &:nth-child(4),
-      &:nth-child(2) {
-        .card-icon {
-          right: -6rem;
-        }
-      }
-    }
+@media (max-width: 991px) {
+  .feature-section-class .cardOptions {
+    padding: 10px;
   }
 }

@@ -21,8 +21,8 @@ export const GeoVerse = () => {
         <ProductBanner
           class="product-geo-verse"
           title="GeoVerse"
-          subTitle="Unleashing the Wonders of Life, One Cell at a Time"
-          coming={true}
+          subTitle="Coming Soon"
+          // coming={true}
         />
         <About />
       </div>

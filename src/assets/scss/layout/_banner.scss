@@ -1,67 +1,130 @@
 @use "../config/" as *;
-.home-page .hero-section picture {
-  transform: translateY(0%);
-}
-.hero-section {
-  background: url("/img/banner-bg-m.webp") center/cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  picture {
-    transition: 1000ms ease-in-out;
-    transform: translateY(100%);
-  }
+
+.h-section {
+  background: url("/img/banner-bg.png") center/cover;
+  display: grid;
+  place-content: center;
+  padding-top: 70px;
+
   .hero-image {
     position: relative;
-    display: flex;
-    align-items: center;
-  }
-  .bag {
-    inset: 0;
-    margin-inline: auto;
-    top: 9%;
-    position: absolute;
-    width: 55%;
-    height: auto;
-    animation-name: floating;
-    animation-duration: 3500ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    z-index: 2;
+    display: grid;
+    place-content: center;
+
+    .bag {
+      max-width: 208px;
+      margin: auto;
+      position: absolute;
+      inset-inline: 0;
+      top: -5rem;
+      animation-name: bagFloat;
+      animation-duration: 3500ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      z-index: 2;
+    }
+
+    @keyframes bagFloat {
+      0% {
+        top: -7rem;
+      }
+
+      50% {
+        top: -3rem;
+      }
+
+      100% {
+        top: -7rem;
+      }
+    }
   }
 
   .hero-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: -20%;
-    z-index: 1;
-  }
 
-  .hero-title {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    color: var(--secondary);
-    letter-spacing: 0.4rem;
-    word-spacing: 0.5rem;
-    margin-bottom: 2rem;
-  }
-
-  @keyframes floating {
-    0% {
-      top: 9%;
-    }
-
-    50% {
-      top: 3%;
-    }
-
-    100% {
-      top: 9%;
+    .hero-title {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      color: #000;
+      letter-spacing: 0.4rem;
+      word-spacing: 0.5rem;
+      margin: 40px 0;
     }
   }
 }
+
+
+// .home-page .hero-section picture {
+//   transform: translateY(0%);
+// }
+
+// .hero-section {
+//   background: url("/img/banner-bg-m.webp") center/cover;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+
+//   picture {
+//     transition: 1000ms ease-in-out;
+//     transform: translateY(100%);
+//   }
+
+//   .hero-image {
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     padding: 60px 0 0;
+//   }
+
+//   .bag {
+//     inset: 0;
+//     margin-inline: auto;
+//     top: 9%;
+//     position: absolute;
+//     width: 55%;
+//     height: auto;
+//     animation-name: floating;
+//     animation-duration: 3500ms;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: ease-in-out;
+//     z-index: 2;
+//   }
+
+//   .hero-content {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     margin-top: -20%;
+//     z-index: 1;
+//   }
+
+//   .hero-title {
+//     font-size: 1.4rem;
+//     text-transform: uppercase;
+//     color: var(--secondary);
+//     letter-spacing: 0.4rem;
+//     word-spacing: 0.5rem;
+//     margin-bottom: 2rem;
+//   }
+
+//   @keyframes floating {
+//     0% {
+//       top: 9%;
+//     }
+
+//     50% {
+//       top: 3%;
+//     }
+
+//     100% {
+//       top: 9%;
+//     }
+//   }
+// }
 
 .offer-section {
   margin: 2rem auto;
@@ -116,7 +179,7 @@
 @include mq(md) {
   .hero-section {
     padding-top: 15%;
-    background: url("/img/banner-bg.webp") center/cover;
+    background: url("/img/banner-bg.png") center/cover;
 
     .hero-image {
       picture {
@@ -137,15 +200,19 @@
       top: -8rem;
       width: 21rem;
     }
+
     .offer-section {
       padding: 2.5rem 2.7rem 2rem;
+
       .btn-primary {
         font-size: 2rem;
       }
+
       .btn-close {
         margin: -3.5rem -3.5rem 0 auto;
       }
     }
+
     .offer-text {
       font-size: 1.4rem;
       margin-bottom: 0.7rem;

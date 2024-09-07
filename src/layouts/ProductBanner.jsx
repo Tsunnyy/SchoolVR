@@ -33,6 +33,12 @@ let productLinks = [
     class: "geo-verse",
     path: "/GeoVerse",
   },
+  {
+    id: 6,
+    name: "MathVerse",
+    class: "math-verse",
+    path: "/mathVerse",
+  },
 ];
 
 export const ProductBanner = (props) => {
@@ -83,8 +89,8 @@ export const ProductBanner = (props) => {
         </div>
         {props.coming && <h3 className="product-coming">Coming Soon</h3>}
       </div>
-      <ul className="product-list">
-        <div className="cuvee-line">
+      <ul className="product-list-new d-flex justify-content-center align-item-center gap-5">
+        {/* <div className="cuvee-line">
           <svg
             width="1018"
             height="228"
@@ -98,7 +104,7 @@ export const ProductBanner = (props) => {
               stroke="white"
             />
           </svg>
-        </div>
+        </div> */}
         {productLinks.map((link) => (
           <li
             key={link.id}

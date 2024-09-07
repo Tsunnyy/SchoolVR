@@ -58,6 +58,7 @@ export const Svi = () => {
       <div className="main-wrap">
         <SchoolVrForIndividual />
         <VrCardsForIndividual />
+        
         <Faq accordianData={accordianData} />
         <About />
       </div>

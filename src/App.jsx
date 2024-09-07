@@ -19,6 +19,16 @@ import { Modal } from "./layouts/Modal";
 import ScrollToTop from "./components/ScrollToTop";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/not-found";
+import About from "./pages/About";
+import ContactUs from "./pages/ContactUs";
+import SupportCommunity from "./pages/SupportCommunity";
+import PartnerwithUs from "./pages/PartnerwithUs";
+import Curriculum from "./pages/Curriculum";
+import Subjects from "./pages/Subjects";
+import TrainingAndCertification from "./pages/TrainingAndCertification";
+import Grant from "./pages/Grant";
+import { MathVerse } from "./pages/MathVerse";
+import LabSetupAndLearning from "./pages/LabSetupAndLearning";
 
 function App() {
   const [loader, setLoader] = useState(true);
@@ -50,13 +60,23 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/aboutUs" element={<About />} />
+            <Route path="/contactUs" element={<ContactUs />} />
+            <Route path="/curriculum" element={<Curriculum />} />
+            <Route path="/subjects" element={<Subjects />} />
+            <Route path="/training-and-certification" element={<TrainingAndCertification />} />
+            <Route path="/grant" element={<Grant />} />
+            <Route path="/supportcommunity" element={<SupportCommunity />} />
+            <Route path="/partnerwithus" element={<PartnerwithUs />} />
             <Route path="/AtomVerse" element={<AtomVerse />} />
             <Route path="/BioVerse" element={<BioVerse />} />
             <Route path="/ChemVerse" element={<ChemVerse />} />
             <Route path="/GeoVerse" element={<GeoVerse />} />
+            <Route path="/MathVerse" element={<MathVerse />} />
             <Route path="/SpaceVerse" element={<SpaceVerse />} />
             <Route path="/Svs" element={<Svs />} />
             <Route path="/Svi" element={<Svi />} />
+            <Route path="/lab-setup-and-learning" element={<LabSetupAndLearning />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blogs/category/:slug" element={<Blogs />} />

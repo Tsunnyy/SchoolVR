@@ -2,14 +2,16 @@
 
 .space-verse-page .product-info-section {
   .card {
-    &-item {
-    }
+    &-item {}
+
     &-count {
       font-size: 3.4rem;
+
       &::after {
         content: unset;
       }
     }
+
     &-text {
       font-size: 1.2rem;
       text-transform: none;
@@ -17,35 +19,41 @@
     }
   }
 }
-.atom-verse-page .info-wrapper{
+
+.atom-verse-page .info-wrapper {
   background: url("/img/product/icon-dark/atom-verse.png") center/contain;
   background-repeat: no-repeat;
   background-position-y: 10%;
 }
-.bio-verse-page .info-wrapper{
+
+.bio-verse-page .info-wrapper {
   background: url("/img/product/icon-dark/bio-verse.png") center/contain;
   background-repeat: no-repeat;
   background-position-y: 10%;
 }
-.chem-verse-page .info-wrapper{
+
+.chem-verse-page .info-wrapper {
   background: url("/img/product/icon-dark/chem-verse.png") center/contain;
   background-repeat: no-repeat;
   background-position-y: 10%;
 }
-.space-verse-page .info-wrapper{
+
+.space-verse-page .info-wrapper {
   background: url("/img/product/icon-dark/space-verse.png") center/contain;
   background-repeat: no-repeat;
   background-position-y: 10%;
 }
-@include mq(md){
-  .product-info-section .info-wrapper{
+
+@include mq(md) {
+  .product-info-section .info-wrapper {
     background-position-y: 15%;
     background-size: 40rem;
   }
 }
+
 .product-info-section {
   padding: 5rem 2rem;
-  
+
 
   .counter-section {
     border: 0.1rem solid #ffffff;
@@ -67,7 +75,7 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        background-color: #ffffff;
+        background-color: #000000;
       }
     }
 
@@ -82,6 +90,7 @@
       font-size: 6rem;
       line-height: 1;
       display: flex;
+      color: #000;
 
       &::after {
         content: "+";
@@ -97,6 +106,7 @@
       text-transform: uppercase;
       letter-spacing: 0.7rem;
       margin-top: 0.5rem;
+      color: #000;
     }
   }
 
@@ -108,7 +118,8 @@
   .section-sub-title {
     font-size: 1.2rem;
     margin-bottom: 3rem;
-    max-width: 80rem;
+    // max-width: 80rem;
+
     @include mq(md) {
       font-size: 1.6rem;
     }
@@ -116,7 +127,7 @@
 
   .section-sub-title,
   .section-title {
-    color: #ffffff;
+    color: #292D32;
   }
 
   .get-in-touch {
@@ -162,19 +173,24 @@
       max-width: var(--max-width);
       margin-inline: auto;
     }
+
     .card-item {
       width: 33.33%;
+
       &:not(:last-child)::after {
         height: 100%;
         width: 0.1rem;
         left: 100%;
       }
+
       &:first-child {
         padding-right: 4rem;
       }
+
       &:nth-child(2) {
         padding-inline: 4rem;
       }
+
       &:nth-child(3) {
         padding-left: 4rem;
       }

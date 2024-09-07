@@ -55,8 +55,8 @@ let productData = [
 export const Product = () => {
   return (
     <div className="product-section full-height">
-      <span className="line top"></span>
-      <span className="line bottom"></span>
+      {/* <span className="line top"></span> */}
+      {/* <span className="line bottom"></span> */}
 
       <div className="product-item">
         <Swiper

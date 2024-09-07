@@ -22,7 +22,7 @@ export const LatestBlog = ({ setModalActive }) => {
   return (
     <div className="page-head">
       <div className="head-wrap">
-        <h4 className="section-title">Blogs</h4>
+        <h4 className="section-title">Innovations & Research</h4>
 
         <span className="section-sub-title">
           Get the latest updates from our blog and stay updated in the world of VR

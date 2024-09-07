@@ -7,12 +7,14 @@
   .section-title {
     font-weight: 600;
     line-height: 1.2;
+
     @include mq(md) {
       font-size: 5.2rem;
     }
   }
+
   .section-sub-title {
-font-weight: 400;
+    font-weight: 400;
   }
 
   .lab-image-section {
@@ -26,6 +28,28 @@ font-weight: 400;
       width: max-content;
       height: max-content;
     }
+  }
+
+  .book-text {
+    left: 8%;
+  }
+
+  .book-text,
+  .scope-text {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 33.3px;
+    letter-spacing: 8px;
+    margin: 11px 0 0;
+    position: absolute;
+    color: #292D32;
+    top: 40%;
+  }
+
+  .scope-text {
+    right: 12%;
+    top: 45%;
   }
 
   .book {
@@ -69,14 +93,17 @@ font-weight: 400;
 @include mq(lg) {
   .lab-section {
     padding-top: 8rem;
+
     .lab-image-section {
       margin-top: auto;
       width: 80%;
       margin-inline: auto;
+
       a {
         margin-bottom: 5rem;
       }
     }
+
     .book {
       width: 23%;
       top: -5%;

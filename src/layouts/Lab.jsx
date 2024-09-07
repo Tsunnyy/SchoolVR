@@ -18,7 +18,7 @@ export const Lab = () => {
         <picture>
           <source
             media="(min-width:768px)"
-            srcSet="/img/students/student-1.webp"
+            srcSet="/img/students/new-stud.png"
           />
           <img
             className="lab-image"
@@ -27,15 +27,17 @@ export const Lab = () => {
           />
         </picture>
         <img className="book" src="/img/elements/book.webp" alt="book" />
+        <h5 className="book-text">Theoretical</h5>
         <img className="scope" src="/img/elements/lab.webp" alt="scope" />
-        <a>
+        <h5 className="scope-text">Practical</h5>
+        {/* <a>
           <button
             onClick={() => setModalActive(true)}
             className="btn btn-secondary"
           >
             Know More
           </button>
-        </a>
+        </a> */}
       </div>
     </div>
   );

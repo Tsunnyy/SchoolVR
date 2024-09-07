@@ -12,19 +12,19 @@ let cardData = [
   {
     id: 1,
     name: "Experiences",
-    img: "experience",
+    img: "experience_new",
     count: 200,
   },
   {
     id: 2,
     name: "Concepts",
-    img: "concepts",
+    img: "concepts_new",
     count: 50,
   },
   {
     id: 3,
     name: "Practicals",
-    img: "practicals",
+    img: "practicals_new",
     count: 60,
   },
 ];

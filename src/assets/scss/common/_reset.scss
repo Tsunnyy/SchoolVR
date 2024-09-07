@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: $font-primary;
+  font-family: Gilroy-Medium;
 }
 *,
 *::before,
@@ -18,7 +18,7 @@ html {
 // 1. As a best practice, apply a default `background-color`.
 // 2. As a best practice, apply a default `color` so that if text color changes just change body text color.
 body {
-  font-family: $font-primary, Arial, "Noto Sans", sans-serif;
+  font-family: Gilroy-Medium;
   font-weight: normal;
   font-size: var(--para);
   background-color: var(--body); //1
@@ -51,7 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--white);
+  // color: var(--white);
 }
 h1 {
   font-size: 2.8rem;
@@ -73,7 +73,7 @@ h6 {
 }
 a {
   text-decoration: none;
-  color: var(--white);
+  // color: var(--white);
   cursor: pointer;
   &:hover {
     text-decoration: none;
@@ -96,7 +96,7 @@ blockquote {
 }
 button {
   border: none;
-  color: var(--white);
+  // color: var(--white);
   background-color: transparent;
   &:not(:disabled) {
     cursor: pointer;

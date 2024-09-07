@@ -4,10 +4,12 @@
   position: relative;
   isolation: isolate;
   padding-inline: 2rem;
+
   .footer-text {
     font-size: 1.3rem;
     font-weight: 500;
   }
+
   &::before {
     content: "";
     width: 100%;
@@ -19,6 +21,7 @@
     pointer-events: none;
     background: linear-gradient(125.1deg, #ecc243 26.81%, #d2971f 89.01%);
   }
+
   &-link-title {
     text-transform: uppercase;
     letter-spacing: 0.5rem;
@@ -27,18 +30,23 @@
     margin-bottom: 1.5rem;
     font-weight: 500;
   }
+
   &-link-list {
     width: 50%;
     margin-bottom: 3rem;
+
     &:nth-child(3),
     &:last-child {
       width: 100%;
     }
+
     &:nth-child(3) {
       margin-bottom: 4rem;
     }
+
     &:last-child {
       position: relative;
+
       &::before {
         content: "";
         width: 100%;
@@ -48,31 +56,38 @@
         top: -2rem;
         left: 0;
       }
+
       li {
         margin-bottom: 2rem;
         font-size: 1.6rem;
       }
     }
   }
+
   li {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
     text-transform: capitalize;
     font-weight: 300;
   }
+
   &-top {
     display: flex;
     flex-wrap: wrap;
   }
+
   a {
     display: flex;
+    color: #fff;
   }
+
   .icon {
     width: 2.5rem;
     height: 2.5rem;
     object-fit: contain;
     margin-right: 1.4rem;
   }
+
   &-bottom {
     height: 6.5rem;
     display: flex;
@@ -81,32 +96,56 @@
     border-top: 0.1rem solid #ffffff;
   }
 }
-.blogs-page{
-  .footer{
+
+.blogs-page {
+  .footer {
     margin-inline: -2.5rem;
     padding-top: 4rem;
     isolation: unset;
-    &::before{
+
+    &::before {
       background: linear-gradient(100deg, #292D32 58.99%, #000000 104.8%);
     }
   }
 }
+
 @include mq(lg) {
   .footer {
     .footer-link-list {
       width: 30%;
       flex-shrink: 0;
+      padding: 0;
+
       &:last-child {
         margin-left: auto;
+
         &::before {
           display: none;
         }
       }
     }
+
     &-top,
     &-bottom {
       max-width: var(--max-width);
       margin-inline: auto;
     }
+  }
+}
+
+
+.footer.footer_new {
+  padding-inline: 125px;
+
+  .footer-top-new {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 20px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
   }
 }

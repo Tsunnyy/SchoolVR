@@ -2,7 +2,8 @@
 
 .about-section {
   background: linear-gradient(-112.35deg, #e9e9e9 13.45%, #ffffff 100.43%);
-  padding: 3rem 2rem;
+  background: #fff;
+  padding: 3rem 125px;
   .head-title {
     color: var(--secondary);
     font-size: 1.8rem;
@@ -35,6 +36,7 @@
     background-color: var(--white);
     padding: 4.8rem 2.5rem 2.5rem;
     z-index: 1;
+    border: 1px solid #D1D1D1;
   }
   .form-title {
     font-size: 2.4rem;
@@ -50,7 +52,7 @@
 }
 @include mq(lg) {
   .about-section {
-    padding-inline: unset;
+    // padding-inline: unset;
     flex-direction: row-reverse;
     .about-logo {
       width: 45%;
@@ -65,7 +67,7 @@
     }
     .about-content {
       align-items: flex-start;
-      padding-left: 4rem;
+      padding-left: 0;
     }
     .text-logo {
       height: 3rem;
