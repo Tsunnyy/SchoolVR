@@ -109,7 +109,7 @@ const PartnerwithUs = () => {
                                     <h3>Regional Associate Partner</h3>
                                     <p>Demonstrate a dedication to promoting STEM education and integrating technology into your curriculum</p>
                                     <h3>Benefits</h3>
-                                    <ul>
+                                    <ul className='m-0 p-0'>
                                         <li>Exclusive territory rights</li>
                                         <li>Comprehensive training and support</li>
                                         <li>Access to marketing materials and resources</li>

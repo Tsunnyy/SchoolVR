@@ -12,12 +12,12 @@ let subMenuLinks = [
   //   class: "about-us",
   //   path: "/about-us",
   // },
-  {
-    id: 2,
-    name: "Blogs",
-    class: "blogs",
-    path: "/blogs",
-  },
+  // {
+  //   id: 2,
+  //   name: "Blogs",
+  //   class: "blogs",
+  //   path: "/blogs",
+  // },
   {
     id: 3,
     name: "School VR For Schools",
@@ -194,7 +194,7 @@ export const Header = () => {
                 ))}
               </ul>
 
-              <ul className="sub-menu">
+              <ul className="sub-menu p-0 m-0">
                 {subMenuLinks.map((link) => (
                   <li
                     key={link.id}

@@ -112,9 +112,9 @@ header {
     transition: 500ms;
     cursor: pointer;
 
-    &:hover {
-      filter: invert(1);
-    }
+    // &:hover {
+    //   filter: invert(1);
+    // }
 
     &-icon {
       width: 3rem;
@@ -137,6 +137,7 @@ header {
     max-height: 100vh;
     overflow: auto;
     border: 0.1rem solid #ffffff7a;
+    background: #0000008f;
 
     &.navbar-active {
       display: block;

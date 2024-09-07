@@ -779,7 +779,7 @@ p.pagePara {
     }
 
     hr {
-      margin: 30px 0;
+      margin: 20px 0;
     }
 
     p,
@@ -1169,6 +1169,11 @@ p.pagePara {
       left: -100%;
     }
 
+    &:nth-child(2):after{
+      left: -72%;
+      width: 288px;
+    }
+
     &:nth-child(2)::before {
       right: -100%;
       left: unset;
@@ -1226,41 +1231,60 @@ p.pagePara {
   &:nth-child(2) {
     .actualProduct {
 
-      &:nth-child(1) img,
-      &:nth-child(2) img {
+      &:nth-child(1)::after {
+        left: 9px;
+      }
+
+      &:nth-child(1)::after,
+      &:nth-child(2)::after {
         background: #fcf9f3;
       }
     }
   }
 
   .actualProduct {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+    &::after {
+      content: "";
+      width: 45px;
+      height: 45px;
+      border-radius: 100%;
+      background-color: #000;
+      position: absolute;
+      top: -11px;
+      z-index: -1;
+    }
 
-
-    &:nth-child(1) img {
+    &:nth-child(1)::after {
       background: #f6ffee;
+      left: 5px;
     }
 
 
-    &:nth-child(2) img {
+    &:nth-child(2)::after {
       background: #f5fafe;
     }
 
-    &:nth-child(3) img {
+    &:nth-child(3)::after {
       background: #f9f8ff;
     }
 
-    &:nth-child(4) img {
+    &:nth-child(4)::after {
       background: #e6ebee;
     }
 
     img {
-      max-width: 45px;
-      max-height: 45px;
-      border-radius: 100%;
-      min-height: 45px;
-      padding: 10px;
-      margin: auto;
+      max-width: 22px;
+      max-height: 22px;
+      min-height: 22px;
+      // border-radius: 100%;
+      // padding: 10px;
+      // margin: auto;
     }
 
     p {
@@ -1301,8 +1325,9 @@ p.pagePara {
     letter-spacing: 0.6em;
     text-align: center;
     color: #292D32;
-    margin-bottom: 10px;
+    margin: 10px 0 20px;
     display: inline-block;
+    text-transform: uppercase;
   }
 }
 
@@ -1750,6 +1775,6 @@ p.pagePara {
   }
 }
 
-.successTextExtraMarginInLabPage{
+.successTextExtraMarginInLabPage {
   margin: 60px 0 30px;
 }

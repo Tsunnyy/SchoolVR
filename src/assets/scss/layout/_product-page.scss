@@ -185,23 +185,26 @@
     }
 
     &.product-bio-verse {
-      background: url("/img/product/page-bg/bio-verse-bg.webp") center/cover;
+      background: url("/img/product/page-bg/bio.webp") center/cover;
     }
 
     &.product-chem-verse {
-      background: url("/img/product/page-bg/chem-verse-bg.webp") center/cover;
+      background: url("/img/product/page-bg/chem.webp") center/cover;
     }
 
     &.product-atom-verse {
-      background: url("/img/product/page-bg/atom-verse-bg.webp") center/cover;
+      background: url("/img/product/page-bg/atom.webp") center/cover;
     }
 
     &.product-space-verse {
-      background: url("/img/product/page-bg/space-verse-bg.webp") center/cover;
+      background: url("/img/product/page-bg/space.webp") center/cover;
     }
 
     &.product-geo-verse {
-      background: url("/img/product/page-bg/geo-verse-bg.webp") center/cover;
+      background: url("/img/product/page-bg/geo.webp") center/cover;
+    }
+    &.product-math-verse {
+      background: url("/img/product/page-bg/math.webp") center/cover;
     }
     .section-title {
       font-size: 6rem;

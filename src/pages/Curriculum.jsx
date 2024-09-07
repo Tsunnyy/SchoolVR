@@ -10,7 +10,7 @@ const Curriculum = () => {
         {
             region: "International",
             curriculum: "Baccalaureate (IB)",
-            imgPath: "india"
+            imgPath: "ib"
         },
         {
             region: "Cambridge",

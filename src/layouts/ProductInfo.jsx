@@ -9,7 +9,7 @@ export const ProductInfo = ({ cardData, productData }) => {
       <div className="padding-lr-class">
         <div className="info-content">
           <h4 className="section-title">{productData.title}</h4>
-          <span className="section-sub-title text-center">
+          <span className="section-sub-title">
             {productData.subTitle}
           </span>
         </div>
