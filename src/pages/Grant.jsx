@@ -128,8 +128,8 @@ const Grant = () => {
             </div>
           </div>
 
-          <div className="d-flex gap-3 align-items-center justify-content-center">
-            <button className='btn btn-secondary'>Apply Noe</button>
+          <div className="d-flex gap-3 align-items-center justify-content-center btn_group">
+            <button className='btn btn-secondary'>Apply Now</button>
             <button className='btn btn-outline'>Check Eligibility</button>
           </div>
         </div>

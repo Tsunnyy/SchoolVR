@@ -50,6 +50,14 @@ let productData = [
     video: true,
     content: "Coming Soon",
   },
+  {
+    id: 6,
+    name: "MathVerse",
+    class: "math-verse",
+    path: "/mathVerse",
+    video: true,
+    content: "Coming Soon",
+  },
 ];
 
 export const Product = () => {
@@ -73,7 +81,7 @@ export const Product = () => {
               return (
                 '<span class="' +
                 className +
-                '"><img class="icon" src="/img/product/icon/verse-' +
+                '"><img class="icon" src="/img/product/icon/new/verse-' +
                 index +
                 '.svg" alt="verse" /></span>'
               );

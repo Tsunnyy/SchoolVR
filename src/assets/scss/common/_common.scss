@@ -1328,6 +1328,15 @@ p.pagePara {
     margin: 10px 0 20px;
     display: inline-block;
     text-transform: uppercase;
+    font-style: normal;
+  }
+}
+
+.btn_group {
+  .btn {
+    max-width: 180px;
+    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -1683,6 +1692,10 @@ p.pagePara {
   background: #F6FBFF;
   padding: 60px 0;
 
+  .labSetUpOptionsRight {
+    padding: 0 0 0 50px;
+  }
+
   .optionsInnerContent {
     color: #292D32;
 
@@ -1785,8 +1798,10 @@ p.pagePara {
 
   .countryListPage {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
+    max-width: 70%;
+    margin: auto;
 
     h2 {
       font-size: 20x;
@@ -1801,6 +1816,8 @@ p.pagePara {
     ul {
       padding: 0;
       margin: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
 
       li {
         font-family: Gilroy-Regular;

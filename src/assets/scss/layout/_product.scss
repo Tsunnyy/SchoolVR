@@ -1,5 +1,29 @@
 @use "../config/" as *;
 
+.swiper-slide {
+  &:last-child .video {
+    position: relative;
+
+    &::after {
+      content: "Coming Soon";
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-content: center;
+      font-size: 50px;
+      color: #fff;
+    }
+
+    video {
+      background-color: #E76F51;
+
+    }
+  }
+}
+
 .product-section {
   overflow: hidden;
   background: radial-gradient(110.73% 221.19% at -4.65% 0%,
@@ -19,7 +43,8 @@
 
   .vr-video {
     max-width: 80rem;
-    padding-top: 2rem;
+    max-width: 95rem;
+    // padding-top: 2rem;
     position: relative;
     width: 100%;
     isolation: isolate;
@@ -118,8 +143,8 @@
   }
 
   .icon {
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 5rem;
+    height: 5rem;
     object-fit: contain;
     filter: grayscale(1);
     transition: filter ease-in 300ms;
@@ -197,6 +222,7 @@
     line-height: 16.8px;
     color: #525252;
     margin: 12px 0 30px;
+    width: 60%;
   }
 
   .section-title {
@@ -228,36 +254,80 @@
     }
 
     .product-content {
-      width: 70%;
+      width: 80%;
       margin-inline: auto;
       position: relative;
 
       &.product-bio-verse::before {
         // background: url("/img/product/item-bg/bio-verse-bg.webp") center/cover;
+        background: url("/img/bioVerseEdge.png");
         content: "";
         position: absolute;
         inset: 0;
-        background: url("/img/bioVerseEdge.png");
         background-repeat: no-repeat;
         background-size: contain;
         width: 100%;
         height: 100%;
       }
-      
+
       &.product-chem-verse::before {
-        background: url("/img/product/item-bg/chem-verse-bg.webp") center/cover;
+        // background: url("/img/product/item-bg/chem-verse-bg.webp") center/cover;
+        background: url("/img/chemVerseEdge.png");
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
       }
 
       &.product-atom-verse::before {
-        background: url("/img/product/item-bg/atom-verse-bg.webp") center/cover;
+        // background: url("/img/product/item-bg/atom-verse-bg.webp") center/cover;
+        background: url("/img/atomVerseEdge.png");
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
       }
 
       &.product-space-verse::before {
-        background: url("/img/product/item-bg/space-verse-bg.webp") center/cover;
+        // background: url("/img/product/item-bg/space-verse-bg.webp") center/cover;
+        background: url("/img/spaceVerseEdge.png");
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
       }
 
       &.product-geo-verse::before {
-        background: url("/img/product/item-bg/geo-verse-bg.webp") center/cover;
+        // background: url("/img/product/item-bg/geo-verse-bg.webp") center/cover;
+        background: url("/img/geoVerseEdge.png");
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+      }
+
+      &.product-math-verse::before {
+        // background: url("/img/product/item-bg/geo-verse-bg.webp") center/cover;
+        background: url("/img/mathVerseEdge.png");
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
       }
     }
   }
