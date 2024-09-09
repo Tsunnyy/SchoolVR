@@ -37,7 +37,7 @@ const LabSetupAndLearning = () => {
                             </div>
                         </div>
                         <div className="col-12 col-sm-5 pe-0">
-                            <img src="/img/lebsetup.png" alt="" />
+                            <img src="/img/ivr.webp" alt="" />
                         </div>
                     </div>
                     <div className="gridViewWithFlex">

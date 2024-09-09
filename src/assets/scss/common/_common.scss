@@ -1169,7 +1169,7 @@ p.pagePara {
       left: -100%;
     }
 
-    &:nth-child(2):after{
+    &:nth-child(2):after {
       left: -72%;
       width: 288px;
     }
@@ -1777,4 +1777,41 @@ p.pagePara {
 
 .successTextExtraMarginInLabPage {
   margin: 60px 0 30px;
+}
+
+.countryListPageMain {
+  background: #F6FBFF;
+
+
+  .countryListPage {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+
+    h2 {
+      font-size: 20x;
+      line-height: 1.125;
+      font-weight: 600;
+      letter-spacing: .004em;
+      color: #1d1d1f;
+      padding: 30px 0 20px 0;
+      font-family: Gilroy-Bold;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        font-family: Gilroy-Regular;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: justify;
+        color: #292D32;
+        // color: #06c;
+      }
+
+    }
+  }
 }

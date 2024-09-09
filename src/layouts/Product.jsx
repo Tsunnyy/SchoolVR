@@ -129,7 +129,7 @@ export const Product = () => {
                 <h4 className="section-title">{product.name}</h4>
                 <span className="section-sub-title">{product.content}</span>
                 <Link preventScrollReset={true} to={product.path}>
-                  <span className="btn btn-secondary">Know More</span>
+                  <span className="btn btn-outline">Know More</span>
                 </Link>
               </div>
             </SwiperSlide>

@@ -125,12 +125,14 @@ export const Header = () => {
             className={
               window.location.pathname === "/aboutUs"
                 || window.location.pathname === "/contactUs"
+                || window.location.pathname === "/CountryList"
                 || window.location.pathname === "/curriculum"
                 || window.location.pathname === "/subjects"
                 || window.location.pathname === "/training-and-certification"
                 || window.location.pathname === "/grant"
                 || window.location.pathname === "/supportcommunity"
                 || window.location.pathname === "/partnerwithus"
+                || window.location.pathname === "/lab-setup-and-learning"
                 ? "golden openMenuBtn" : "openMenuBtn"
             }
           >
@@ -228,6 +230,7 @@ export const Header = () => {
               || window.location.pathname === "/partnerwithus"
               || window.location.pathname === "/svs"
               || window.location.pathname === "/svi"
+              || window.location.pathname === "/CountryList"
               || window.location.pathname === "/lab-setup-and-learning"
               ?
               <img className="logo" src={logo2} alt="SchoolVR" />
