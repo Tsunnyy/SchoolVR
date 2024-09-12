@@ -62,7 +62,7 @@ let productData = [
 
 export const Product = () => {
   return (
-    <div className="product-section full-height">
+    <div className="product-section">
       {/* <span className="line top"></span> */}
       {/* <span className="line bottom"></span> */}
 

@@ -94,7 +94,7 @@
       font-family: Gilroy-SemiBold;
       font-size: 60px;
       font-weight: 400;
-      line-height: 60px;
+      line-height: 36px;
       color: #000000;
 
       &::after {
@@ -215,5 +215,40 @@
         padding-left: 4rem;
       }
     }
+  }
+}
+
+@media (max-width: 991px) {
+
+  // .product-info-section .card-item {
+  //   justify-content: start;
+  // }
+  .product-info-section .card-item:not(:last-child):after {
+    display: none;
+  }
+
+  .product-info-section .counter-section {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .space-verse-page .product-info-section .card-count,
+  .product-info-section .card-count {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .product-info-section .card-text {
+    font-size: 14px;
+  }
+
+  .product-info-section {
+    padding: 40px 20px 0;
+  }
+
+  .product-info-section .get-in-touch {
+    margin-top: 0;
   }
 }

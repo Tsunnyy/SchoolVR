@@ -12,19 +12,19 @@ let cardData = [
   {
     id: 1,
     name: "Interactive simulations of stars, nebulae & supernovae.",
-    img: "stellar",
+    img: "stellarNew",
     count: "Stellar Phenomena",
   },
   {
     id: 2,
     name: "Immersive visits to different planets in our solar system.",
-    img: "planetary",
+    img: "planetaryNew",
     count: "Planetary Exploration",
   },
   {
     id: 3,
     name: "Virtual spacewalks for a unique perspective on the cosmos. ",
-    img: "spacewalk",
+    img: "spacewalkNew",
     count: "Spacewalk Adventures",
   },
 ];

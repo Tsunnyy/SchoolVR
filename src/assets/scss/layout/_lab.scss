@@ -118,3 +118,11 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+
+  .lab-section .book-text,
+  .lab-section .scope-text {
+    display: none;
+  }
+}

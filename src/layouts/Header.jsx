@@ -5,32 +5,115 @@ import { useContext, useEffect, useState } from "react";
 import { MyContext } from "../mycontext";
 import { DropdownButton } from "react-bootstrap";
 import Dropdown from 'react-bootstrap/Dropdown';
+// let subMenuLinks = [
+//   {
+//     id: 1,
+//     name: "About Us",
+//     class: "about-us",
+//     path: "/about-us",
+//   },
+//   {
+//     id: 2,
+//     name: "Blogs",
+//     class: "blogs",
+//     path: "/blogs",
+//   },
+//   {
+//     id: 3,
+//     name: "School VR For Schools",
+//     class: "vr-schools",
+//     path: "/svs",
+//   },
+//   {
+//     id: 4,
+//     name: "School VR For Individuals",
+//     class: "vr-individuals",
+//     path: "/svi",
+//   },
+// ];
+
 let subMenuLinks = [
-  // {
-  //   id: 1,
-  //   name: "About Us",
-  //   class: "about-us",
-  //   path: "/about-us",
-  // },
-  // {
-  //   id: 2,
-  //   name: "Blogs",
-  //   class: "blogs",
-  //   path: "/blogs",
-  // },
+  {
+    id: 1,
+    name: "About Us",
+    class: "about-us",
+    path: "/about-us",
+  },
+  {
+    id: 2,
+    name: "Contact Us",
+    class: "contact-us",
+    path: "/contact-us",
+  },
   {
     id: 3,
-    name: "School VR For Schools",
+    name: "SchoolVR for School (SVS)",
     class: "vr-schools",
     path: "/svs",
   },
   {
     id: 4,
-    name: "School VR For Individuals",
+    name: "SchoolVR for Individuals (SVI)",
     class: "vr-individuals",
     path: "/svi",
   },
+  {
+    id: 5,
+    name: "Innovations & Research",
+    class: "innovations-research",
+    path: "/innovations-research",
+  },
+  {
+    id: 6,
+    name: "Lab Setup & Licensing",
+    class: "lab-setup-licensing",
+    path: "/lab-setup-licensing",
+  },
+  {
+    id: 7,
+    name: "Curriculum",
+    class: "curriculum",
+    path: "/curriculum",
+  },
+  {
+    id: 8,
+    name: "Subjects",
+    class: "subjects",
+    path: "/subjects",
+  },
+  {
+    id: 9,
+    name: "Training & Certification",
+    class: "training-certification",
+    path: "/training-certification",
+  },
+  {
+    id: 10,
+    name: "Grant",
+    class: "grant",
+    path: "/grant",
+  },
+  {
+    id: 11,
+    name: "Support & Community",
+    class: "support-community",
+    path: "/support-community",
+  },
+  {
+    id: 12,
+    name: "Partner with Us",
+    class: "partner-with-us",
+    path: "/partner-with-us",
+  },
+  {
+    id: 13,
+    name: "Blogs",
+    class: "blogs",
+    path: "/blogs",
+  },
 ];
+
+
 let productLinks = [
   {
     id: 1,
