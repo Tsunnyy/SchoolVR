@@ -137,7 +137,7 @@ export const Ivr = () => (
               <p className="section-sub-title">{ivr.content}</p>
               <img
                 className="hero-banner"
-                src={`/img/${ivr.class}.png`}
+                src={`/img/students/${ivr.class}.png`}
                 alt="bannerVR" />
               <NavLink to={ivr.path}>
                 <span className="btn btn-outline">Know More</span>
