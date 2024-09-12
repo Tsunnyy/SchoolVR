@@ -15,7 +15,7 @@ export const Banner = ({ setModalActive }) => {
             <img
               className=""
               // src="/img/banner-m.png"
-              src="/img/banner-vr-m.webp"
+              src="/img/banner-b.webp"
               alt="bannerVR"
             />
           </picture>

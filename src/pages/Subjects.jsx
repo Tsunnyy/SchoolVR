@@ -11,11 +11,11 @@ const Subjects = () => {
         <img src="/img/layers/layer1.png" alt="Layer" className='layerImage' />
         <div className="margin-top-100-class padding-lr-class">
           <div className="row m-0 align-items-center justify-content-between">
-            <div className="col-sm-8 ps-0">
+            <div className="col-sm-9 ps-0">
               <h4 className='pageHeadText'>Explore Our Range of Subjects</h4>
               <p className='pagePara my-4'>Embark on an exciting journey through the world of knowledge, where each subject comes alive with interactive VR experience</p>
               <div className="row m-0 exloreOurSubjectMain align-items-end">
-                <div className="col-8 ps-0 exloreOurSubjectMainL">
+                <div className="col-lg-5 col-md-7 ps-0 exloreOurSubjectMainL">
                   <div className=" d-flex productsMain">
                     <div className="actualProduct">
                       <img src="/img/subject/1.svg" alt="Products | Icon" />
@@ -35,7 +35,7 @@ const Subjects = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-3 exloreOurSubjectMainR">
+                <div className="col-lg-5 exloreOurSubjectMainR">
                   <em>coming soon</em>
                   <div className=" d-flex productsMain">
                     <div className="actualProduct">
@@ -51,7 +51,7 @@ const Subjects = () => {
               </div>
 
             </div>
-            <div className="col-sm-3 pe-0 opacity-0">
+            <div className="col-sm-3 pe-0 opacity-0 d-none-after-767">
               <img src="/img/curriculum.png" alt="curriculum Image" />
             </div>
           </div>

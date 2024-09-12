@@ -112,25 +112,25 @@ let programsLinks = [
 let infoLinks = [
   {
     id: 1,
-    name: "admin@Aonix.in",
+    name: "info@schoolvr.us",
     img: "sms",
-    path: "mailto:admin@aonix.in",
+    path: "mailto:info@schoolvr.us",
   },
   {
     id: 2,
-    name: "+91-9508382971",
+    name: "+1 (571) 567-9892",
     img: "mobile",
     path: "tel:+919508382971",
   },
-  {
-    id: 3,
-    name: "Arunoday, Sihodih",
-    img: "building",
-    path: "/",
-  },
+  // {
+  //   id: 3,
+  //   name: "dellaware, us",
+  //   img: "building",
+  //   path: "/",
+  // },
   {
     id: 4,
-    name: "Giridh, Jharkhand 815301",
+    name: "dellaware, us",
     img: "location",
     path: "/",
   },
@@ -154,7 +154,7 @@ export const Footer = () => {
   return (
     <footer className="footer footer_new">
       <div className="row m-0 my-5">
-        <div className="col-8 ps-0">
+        <div className="col-md-8 col-12 ps-0">
           <div className="footer-top-new">
             <ul className="footer-link-list-new">
               <span className="footer-link-title">About</span>
@@ -213,7 +213,7 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="col-4 pe-0">
+        <div className="col-md-4 col-12 pe-0">
           <ul className="footer-link-list footer-link-list-last">
             {infoLinks.map((link) => (
               <li key={link.id}>

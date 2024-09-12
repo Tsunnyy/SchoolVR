@@ -46,12 +46,12 @@ let accordianData = [
   },
 ];
 export const Svi = () => {
-  const { setExtraClass, setModalActive } = useContext(MyContext);
+  // const { setExtraClass, setModalActive } = useContext(MyContext);
 
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    setExtraClass("svs-page svi-page");
+    // setExtraClass("svs-page svi-page");
   }, []);
   return (
     <>

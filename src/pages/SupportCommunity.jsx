@@ -57,7 +57,7 @@ const SupportCommunity = () => {
 
                 <div className="communityMainDivMain">
                     <div className="row m-0 align-items-center">
-                        <div className="col-12 col-sm-8 ps-0">
+                        <div className="col-12 col-md-8 ps-0">
                             <h4 class="pageHeadText">Thriving Community</h4>
                             <div className="communityMainDiv">
                                 <div className="d-flex gap-3 align-items-start">
@@ -83,7 +83,7 @@ const SupportCommunity = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-sm-4 pe-0">
+                        <div className="col-12 col-md-4 pe-0">
                             <div className="communityMainDivR text-center">
                                 <h6>SchoolVRs Learners Forum</h6>
                                 <img src="/img/community.png" alt="community" />

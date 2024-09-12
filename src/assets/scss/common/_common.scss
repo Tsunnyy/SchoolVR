@@ -420,6 +420,24 @@ p.pagePara {
         background: #fff;
         z-index: 3;
       }
+
+      h2 {
+        font-family: Gilroy-SemiBold;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36px;
+        color: #292D32;
+      }
+
+      p {
+        font-family: Gilroy-Medium;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.98px;
+        text-align: justify;
+        color: #292D32;
+        margin: 20px 0 0;
+      }
     }
   }
 }
@@ -594,6 +612,13 @@ p.pagePara {
   }
 }
 
+.reachOuttoUs.supportResources {
+
+  .gridViewWithFlex {
+    margin: 39px 0;
+  }
+}
+
 
 .supportResources {
   .reachOuttoUsCard {
@@ -641,6 +666,23 @@ p.pagePara {
     .communityMainDiv {
       display: grid;
       gap: 40px;
+      color: #292D32;
+
+      span {
+        font-family: Gilroy-SemiBold;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 19.8px;
+      }
+
+      p {
+        font-family: Gilroy-Medium;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.56px;
+        text-align: justify;
+        margin: 0;
+      }
 
       img {
         max-width: 60px;
@@ -757,39 +799,40 @@ p.pagePara {
     }
   }
 
-  .idealPartnerProfileRWithBg {
-    border-radius: 20px;
-    background: #F4F5F9;
-    padding: 25px;
-    color: #292D32;
+}
 
-    h4 {
-      font-family: Gilroy-SemiBold;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 19.8px;
-    }
+.idealPartnerProfileRWithBg {
+  border-radius: 20px;
+  background: #F4F5F9;
+  padding: 25px;
+  color: #292D32;
 
-    h3 {
-      font-family: Gilroy-SemiBold;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 17.15px;
-      margin-bottom: 6px;
-    }
+  h4 {
+    font-family: Gilroy-SemiBold;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19.8px;
+  }
 
-    hr {
-      margin: 20px 0;
-    }
+  h3 {
+    font-family: Gilroy-SemiBold;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.15px;
+    margin-bottom: 6px;
+  }
 
-    p,
-    ul li {
-      font-family: Gilroy-Regular;
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 14.4px;
-      text-align: justify;
-    }
+  hr {
+    margin: 20px 0;
+  }
+
+  p,
+  ul li {
+    font-family: Gilroy-Regular;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: justify;
   }
 }
 
@@ -835,7 +878,7 @@ p.pagePara {
       color: #fff;
     }
 
-    .col-md-6.col-12 {
+    .expandingHorizonL {
       span {
         font-family: Gilroy-Medium;
         font-size: 18px;
@@ -1841,5 +1884,470 @@ p.pagePara {
       }
 
     }
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .padding-lr-class {
+    padding-inline: 40px;
+  }
+
+  .buyingOptionsForKids {
+    gap: 30px;
+    max-width: 95%;
+  }
+
+  .buyingOptionsForKids .buyingOptionsForKidsL ul li {
+    font-size: 18px;
+  }
+
+  .paddingBottomClass {
+    padding-bottom: 100px;
+  }
+
+  .exprienceTheGlobalMain {
+    padding: 0 40px;
+  }
+
+  .cieProgram .offerDiv {
+    padding-inline: 40px;
+  }
+
+  .benefitsofCertificationParent .benefitsofCertification {
+    padding: 30px;
+  }
+
+  .supportResources .communityMainDivMain {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .joinUsSection .joinUsKeyPoints .joinUsKeyPointsGrid {
+    gap: 50px;
+  }
+
+  .reachOuttoUs .reachOuttoUsCard {
+    gap: 40px;
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .reachOuttoUs .reachOuttoUsCard .reachOuttoUsCardInner {
+    padding: 10px;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+
+
+  .gridViewWithFlex {
+    grid-template-columns: 1fr;
+
+    .gridViewWithFlexL {
+      color: #fff;
+      padding: 20px;
+      flex-direction: row !important;
+    }
+
+    .gridViewWithFlexR {
+      padding: 20px;
+      border-radius: 20px;
+    }
+  }
+
+  .stepsToInstall img {
+    max-width: 70px;
+  }
+
+  .stepsToInstall h4 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .stepsToInstall::after {
+    display: none;
+  }
+
+  .stepsToInstall {
+    gap: 40px;
+  }
+
+  .buyingOptionsForKids {
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+
+    .buyingOptionsForKidsL {
+      ul {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .pageInternalSectionMain .internalSectGrid {
+    gap: 50px;
+  }
+
+  .pageInternalSectionMain .internalSectGrid .internalSectGridInner:nth-child(2)::after,
+  .pageInternalSectionMain .internalSectGrid .internalSectGridInner:nth-child(2)::before {
+    display: none;
+  }
+
+  .pageInternalSectionMain .tabs-container-item .price-wrap .price-bundle {
+    gap: 10px;
+  }
+
+  .pageInternalSectionMain .buyingOptionsForKids {
+    padding: 20px;
+  }
+
+  .pageInternalSectionMain .buyingOptionsForKids {
+    grid-template-columns: 1.6fr 1fr;
+  }
+
+  .expandingHorizon {
+    position: relative;
+    isolation: isolate;
+
+    .expandingHorizonR {
+      img {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 20px;
+        opacity: .2;
+        z-index: -1;
+      }
+    }
+  }
+
+  .applicationProcessGrid {
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .applicationProcessGrid .applicationProcessGridInner span {
+    position: relative;
+    z-index: 10;
+  }
+
+  .applicationProcessGrid .applicationProcessGridInner:nth-child(2)::before {
+    right: -100px;
+  }
+
+  .applicationProcessGrid .applicationProcessGridInner:nth-child(2):after,
+  .applicationProcessGrid .applicationProcessGridInner:nth-child(2)::before {
+    width: 253px;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .padding-lr-class {
+    padding-inline: 20px;
+  }
+
+  .aboutHeadSection {
+    padding-bottom: 0;
+  }
+
+  .reachOuttoUs .reachOuttoUsCard .reachOuttoUsCardInner {
+    padding: 10px;
+    flex: 0 0 95%;
+    max-width: 95%;
+  }
+
+  .reachOuttoUs .contactOptions .contactOptionsMain {
+    flex-direction: column;
+  }
+
+  .reachOuttoUs .contactOptions .contactOptionsMain::after {
+    width: 100%;
+    height: 1px;
+  }
+
+  button.btn.btn-outline {
+    padding: 8px 20px;
+    max-width: 158px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .ourJourneySectionMain .ourJourneySectionInner h5,
+  .reachOuttoUs h3.secondary_title,
+  .takeaNextStepMain .takeaNextStepMainL h3,
+  .takeaNextStepMain .takeaNextStepMainL h4,
+  .successText h4,
+  .pageHeadText {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .takeaNextStepMain {
+    .col-sm-6.pe-0{
+      padding: 0 !important;
+    }
+  }
+
+  .ourJourneySectionMain .ourJourneySectionInner h5 {
+    margin-top: 15px;
+  }
+
+  .aboutHeadSection h1 {
+    margin: 10px 0;
+  }
+
+  .ourMissionVissionCard {
+    padding: 20px;
+
+    .ps-0,
+    .pe-0 {
+      padding: 0;
+    }
+  }
+
+  header {
+    a:has(.logo) {
+      position: absolute;
+      right: 20px;
+    }
+  }
+
+  .ourMissionVissionCard h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .partnershipAndAccreditationSection .pagePara {
+    br {
+      display: none;
+    }
+  }
+
+  .partnershipAndAccreditationSection {
+    .pageHeadText.my-5 {
+      margin-bottom: 10px !important;
+    }
+
+    .ourJourneySectionMain {
+      flex-direction: column;
+    }
+
+    .ourJourneySection .journeyTimeLineMain::after,
+    .ourJourneySection .journeyTimeLineMain::before,
+    .ourJourneySectionMain::after {
+      display: none;
+    }
+  }
+
+  .ourJourneySection .journeyTimeLineMain .journeyTimeLineInner::after,
+  .ourJourneySection .journeyTimeLineMain .journeyTimeLineInner::before,
+  .ourJourneySection .journeyTimeLineMain::after,
+  .ourJourneySection .journeyTimeLineMain::before {
+    display: none;
+  }
+
+  .ourJourneySection .journeyTimeLineMain {
+    gap: 20px;
+    padding: 20px 0;
+    margin-top: 0;
+  }
+
+  .ourJourneySection .journeyTimeLineMain .journeyTimeLineInner {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+
+    &:nth-child(2) {
+      flex-direction: column;
+    }
+  }
+
+  .ourJourneySection .journeyTimeLineMain .journeyTimeLineInner h2 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .ourJourneySection .journeyTimeLineMain .journeyTimeLineInner p {
+    margin: 10px 0 0;
+  }
+
+  .ourJourneySection {
+    padding: 60px 0 110px;
+  }
+
+  .joinUsSection .joinUsKeyPoints {
+    top: -70px;
+    padding: 20px;
+  }
+
+  .joinUsSection .joinUsKeyPoints .joinUsKeyPointsGrid {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .joinUsKeyPointsGridInner.d-flex.gap-5.align-items-start {
+    gap: 10px !important;
+
+    img {
+      max-width: 30px;
+    }
+  }
+
+  .gridViewWithFlex .gridViewWithFlexR .gridViewWithFlexRInner {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .gridViewWithFlexR {
+
+    .col-sm-6.col-12.pe-0.ps-5,
+    .col-sm-5.col-12.pe-0.ps-5 {
+      padding: 0 !important;
+    }
+  }
+
+  .buyingOptionsForKids {
+    grid-template-columns: 1fr;
+  }
+
+  .pageInternalSectionMain .internalSectGrid {
+    gap: 30px;
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .internalSectGridInner {
+    flex: 0 0 70%;
+  }
+
+  .pageInternalSectionMain .buyingOptionsForKids {
+    grid-template-columns: 1fr;
+  }
+
+  .pageInternalSectionMain .tabs-container-item .price-wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .labSetUpOptions .labSetUpOptionsRight {
+    padding: 0;
+  }
+
+  .successText.successTextExtraMarginInLabPage {
+    .d-flex.justify-content-center.gap-5.align-items-center {
+      flex-direction: column;
+      gap: 10px !important;
+    }
+  }
+
+  .d-flex.gap-3.align-items-center.justify-content-center.btn_group {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+
+  .establishedBoards .commingSoonCOuntry {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .establishedBoards .expandingHorizon {
+    padding: 20px;
+  }
+
+  .establishedBoards .expandingHorizon .expandingHorizonL span {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .d-none-after-767 {
+    display: none;
+  }
+
+  .exprienceTheGlobalMain {
+    padding: 20px;
+  }
+
+  .exprienceTheGlobal {
+    margin-top: 30px;
+  }
+
+  .exprienceTheGlobalMain h2 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .cieProgram .offerDiv {
+    padding-inline: 20px;
+  }
+
+  .benefitsofCertificationParent .benefitsofCertification {
+    padding: 20px;
+    position: relative;
+    isolation: isolate;
+
+  }
+
+  .benefitsofCertificationR {
+    img {
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: .2;
+      z-index: -1;
+    }
+  }
+
+  .gridDiv.withTwoCol {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .benefitsofCertificationParent {
+    padding: 0 20px;
+  }
+
+  .benefitsofCertificationParent .benefitsofCertification .gridDiv img {
+    max-width: 40px;
+  }
+
+  .gridDiv.withFourCol {
+    grid-template-columns: 2fr 2fr;
+    gap: 15px;
+  }
+
+  .applicationProcessGrid .applicationProcessGridInner:nth-child(2):after,
+  .applicationProcessGrid .applicationProcessGridInner:nth-child(2)::before {
+    display: none;
+  }
+
+  .applicationProcessGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .applicationProcessGrid .applicationProcessGridInner p {
+    margin: 0;
+  }
+
+  .supportResources .communityMainDivMain .communityMainDiv img {
+    max-width: 30px;
+  }
+
+  .communityMainDivR {
+    margin-top: 30px;
   }
 }

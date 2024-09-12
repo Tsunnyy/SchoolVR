@@ -97,7 +97,7 @@ export const Ivr = () => (
             </div>
           </div>
         </div>
-        <img src="/img/ivr.webp" alt="ivr" />
+        <img src="/img/ivr.webp" className="ivrMainImg" alt="ivr" />
         <div className="ivrCardGapClass">
           <div className="card-item">
             <div className="card-icon">

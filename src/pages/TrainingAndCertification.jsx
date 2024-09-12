@@ -123,7 +123,7 @@ const TrainingAndCertification = () => {
         <div className="benefitsofCertificationParent">
           <div className="benefitsofCertification">
             <div className="row m-0 align-items-center">
-              <div className="col-12 col-md-8 ps-0">
+              <div className="col-12 col-md-8 ps-0 benefitsofCertificationL">
                 <h2 className='pageHeadText clr-white'>Benefits of Certification</h2>
                 <div className="gridDiv withTwoCol">
                   <div className="d-flex gap-3 align-items-center">
@@ -156,7 +156,7 @@ const TrainingAndCertification = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-md-4 pe-0">
+              <div className="col-12 col-md-4 pe-0 benefitsofCertificationR">
                 <img src="/img/certificate.png" alt="certificate" />
               </div>
             </div>

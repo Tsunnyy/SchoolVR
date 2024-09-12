@@ -12,7 +12,7 @@ const LabSetupAndLearning = () => {
             <div className="labSetUpOptions">
                 <div className="padding-lr-class">
                     <div className="row m-0 mb-5">
-                        <div className="col-12 col-sm-8 ps-0">
+                        <div className="col-12 col-md-8 ps-0">
                             <div className="optionsInnerContent">
                                 <img src="/img/icon/vr_lab.svg" alt="" />
                                 <h4>Transform Your Space into a VR Lab</h4>
@@ -36,7 +36,7 @@ const LabSetupAndLearning = () => {
                                 </svg> Ongoing maintenance and updates</p>
                             </div>
                         </div>
-                        <div className="col-12 col-sm-4 labSetUpOptionsRight">
+                        <div className="col-12 col-md-4 labSetUpOptionsRight">
                             <img src="/img/ivr.webp" alt="" />
                         </div>
                     </div>

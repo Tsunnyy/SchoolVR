@@ -128,6 +128,8 @@ export const Header = () => {
                 || window.location.pathname === "/CountryList"
                 || window.location.pathname === "/curriculum"
                 || window.location.pathname === "/subjects"
+                || window.location.pathname === "/svs"
+                || window.location.pathname === "/svi"
                 || window.location.pathname === "/training-and-certification"
                 || window.location.pathname === "/grant"
                 || window.location.pathname === "/supportcommunity"
@@ -164,60 +166,60 @@ export const Header = () => {
             || window.location.pathname === "/svi"
             || window.location.pathname === "/lab-setup-and-learning"
             ? "svs-page" : ""}> */}
-            <nav
-              className={`navbar explore-tray ${hamburger ? "navbar-active" : ""}`}
-            >
-              <div className="flex navbar-top">
-                <div className="menu-title" onClick={closeHamburger}>
-                  <img
-                    className="menu-title-icon"
-                    src={"/img/menu.svg"}
-                    alt="menuIcon"
-                  />
-                  Explore
-                </div>
+          <nav
+            className={`navbar explore-tray ${hamburger ? "navbar-active" : ""}`}
+          >
+            <div className="flex navbar-top">
+              <div className="menu-title" onClick={closeHamburger}>
+                <img
+                  className="menu-title-icon"
+                  src={"/img/menu.svg"}
+                  alt="menuIcon"
+                />
+                Explore
               </div>
-              <ul className="product-list p-0">
-                {productLinks.map((link) => (
-                  <li
-                    key={link.id}
-                    className={`navlink-item navlink-item-${link.class}`}
-                  >
-                    <a onClick={() => redirect(link.path)}>
-                      <img
-                        className="icon"
-                        src={`/img/product/icon/${link.class}.svg`}
-                        alt="menuIcon"
-                      />
-                      {link.name}
-                      {link.coming && <div className="coming-soon">Coming Soon</div>}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-
-              <ul className="sub-menu p-0 m-0">
-                {subMenuLinks.map((link) => (
-                  <li
-                    key={link.id}
-                    className={`navlink-item navlink-item-${link.class}`}
-                  >
-                    <a onClick={() => redirect(link.path)}>{link.name}</a>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="navlink-item get-in-touch">
-                <button
-                  className="btn"
-                  onClick={() => {
-                    setModalActive(true);
-                  }}
+            </div>
+            <ul className="product-list p-0">
+              {productLinks.map((link) => (
+                <li
+                  key={link.id}
+                  className={`navlink-item navlink-item-${link.class}`}
                 >
-                  Get in Touch
-                </button>
-              </div>
-            </nav>
+                  <a onClick={() => redirect(link.path)}>
+                    <img
+                      className="icon"
+                      src={`/img/product/icon/${link.class}.svg`}
+                      alt="menuIcon"
+                    />
+                    {link.name}
+                    {link.coming && <div className="coming-soon">Coming Soon</div>}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            <ul className="sub-menu p-0 m-0">
+              {subMenuLinks.map((link) => (
+                <li
+                  key={link.id}
+                  className={`navlink-item navlink-item-${link.class}`}
+                >
+                  <a onClick={() => redirect(link.path)}>{link.name}</a>
+                </li>
+              ))}
+            </ul>
+
+            <div className="navlink-item get-in-touch">
+              <button
+                className="btn"
+                onClick={() => {
+                  setModalActive(true);
+                }}
+              >
+                Get in Touch
+              </button>
+            </div>
+          </nav>
           {/* </div> */}
           <NavLink to="/" className="">
             {window.location.pathname === "/aboutUs"

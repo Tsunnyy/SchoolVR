@@ -261,8 +261,88 @@
 
 }
 
-@include mq(xl) {
+@media (max-width: 1199px) {
   .ivr-section-class {
-    padding: 50px 30px 100px;
+    padding: 50px 40px 30px;
+  }
+
+  .ivr-section-class .ivrCardList {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+  }
+
+  .product-section .swiper-slide {
+    padding-top: 80px;
+  }
+
+  .product-section .swiper-pagination {
+    top: 10px;
+  }
+
+  .ivr-section-class .ivr-section-list-class .twoCardsList {
+    padding: 20px 30px;
+  }
+
+  .ivr-section-class .ivr-section-list-class .twoCardsList img {
+    max-height: 350px;
+    height: 100%;
+  }
+
+  .feature-section-class {
+    padding: 20px 40px;
+  }
+
+  .feature-section-class .cardOptions {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .ivr-section-class .ivrCardList {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    position: relative;
+
+    img.ivrMainImg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0.08;
+      z-index: 0;
+    }
+  }
+
+  .ivr-section-class .ivr-section-list-class {
+    padding: 0;
+  }
+
+  .feature-section-class .card-icon {
+    padding: 10px;
+
+    img {
+      max-width: 25px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .ivr-section-class {
+    padding-inline: 20px;
+  }
+
+  .ivr-section-class .ivrCardList {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .ivr-section-class .ivrCardList .ivrCardGapClass {
+    display: grid;
+    gap: 25px;
+  }
+
+  .ivr-section-class .ivr-section-list-class {
+    grid-template-columns: 1fr;
   }
 }

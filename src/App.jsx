@@ -43,7 +43,7 @@ function App() {
   }, []);
   return (
     <div className={extraClass}>
-      <RotateDevice />
+      {/* <RotateDevice /> */}
 
       <MyContext.Provider
         value={{

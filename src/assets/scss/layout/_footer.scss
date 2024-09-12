@@ -44,7 +44,7 @@
       margin-bottom: 4rem;
     }
 
-  &.footer-link-list-last {
+    &.footer-link-list-last {
       position: relative;
 
       &::before {
@@ -147,5 +147,41 @@
     margin: 0;
     padding: 0;
     width: fit-content;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .footer.footer_new {
+    padding-inline: 40px;
+  }
+
+  .footer.footer_new .footer-top-new {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  
+}
+
+@media (max-width: 767px) {
+
+  .about-section {
+    padding-inline: 20px;
+  }
+
+  .footer-link-list.footer-link-list-last::before {
+    display: none;
+  }
+
+  .footer-link-list.footer-link-list-last {
+    margin-top: 40px !important;
+  }
+
+  .footer.footer_new {
+
+    .col-12.pe-0,
+    .col-12.ps-0 {
+      padding: 0;
+    }
   }
 }

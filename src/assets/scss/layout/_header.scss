@@ -493,3 +493,14 @@ header {
     }
   }
 }
+
+@media (max-width: 767px) {
+  header .sub-menu {
+    display: none !important;
+  }
+
+  // header a:has(.logo) {
+  //   position: absolute;
+  //   right: 20px;
+  // }
+}

@@ -106,7 +106,7 @@ export const VrCards = () => {
             </div>
           </div>
           <div className="row mx-0 align-items-center stepsToInstall justify-content-between position-relative">
-            <div className="col-sm-5 col-12 ps-0">
+            <div className="col-md-5 col-12 ps-0">
               <div className="stepsToInstallInner">
                 <div className="d-flex gap-3">
                   <img src="/img/icon/basic_req.svg" alt="Icons" />
@@ -118,7 +118,7 @@ export const VrCards = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm-5 col-12 pe-0">
+            <div className="col-md-5 col-12 pe-0">
               <div className="stepsToInstallInner">
                 <div className="d-flex gap-3">
                   <img src="/img/icon/install_train.svg" alt="Icons" />

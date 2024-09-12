@@ -46,7 +46,7 @@
     max-width: 95rem;
     // padding-top: 2rem;
     position: relative;
-    width: 100%;
+    width: 95%;
     isolation: isolate;
 
     .line {
@@ -72,7 +72,7 @@
 
   .video {
     width: 100%;
-    mask-image: url("/img/vr-m.webp");
+    mask-image: url("/img/vr.webp");
     mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -329,6 +329,24 @@
         width: 100%;
         height: 100%;
       }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .product-section .swiper-pagination {
+    gap: 5px;
+  }
+
+  .product-section .swiper-pagination-bullet {
+    width: fit-content !important;
+    height: fit-content !important;
+    padding: 0;
+
+    img {
+      width: 4rem;
+      height: 4rem;
     }
   }
 }

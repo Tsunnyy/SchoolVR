@@ -61,7 +61,7 @@ const PartnerwithUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="idealPartnerProfileMain">
+                {/* <div className="idealPartnerProfileMain">
                     <div className="idealPartnerProfileL">
                         <div>
                             <h2>Ideal Partner Profile</h2>
@@ -119,7 +119,68 @@ const PartnerwithUs = () => {
                             </div>
                         </div>
                     </div>
+                </div> */}
+                <div className="gridViewWithFlex">
+                    <div className="gridViewWithFlexL d-flex flex-column align-items-start justify-content-between">
+                        <div>
+                            <h3>Ideal Partner Profile</h3>
+                            <span>Empowering Success Through Strategic Collaboration</span>
+                        </div>
+                        <img src="/img/icon/ip.svg" alt="part-1" />
+                    </div>
+                    <div className="gridViewWithFlexR">
+                        <div className="row m-0 align-items-center">
+                            <div className="col-sm-7 col-12 p-0">
+                                <div className="d-grid gap-3">
+                                    <div className="d-flex gap-3 align-items-start">
+                                        <img src="/img/icon/part-1.svg" alt="part-1" />
+                                        <div>
+                                            <h4>Passion for Education</h4>
+                                            <p>A genuine interest in improving educational outcomes and empowering students.</p>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex gap-3 align-items-start">
+                                        <img src="/img/icon/part-2.svg" alt="part-2" />
+                                        <div>
+                                            <h4>Business Acumen</h4>
+                                            <p>Demonstrated experience in sales, marketing, or business development, with a proven track record of driving growth.</p>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex gap-3 align-items-start">
+                                        <img src="/img/icon/part-3.svg" alt="part-3" />
+                                        <div>
+                                            <h4>Strong Network</h4>
+                                            <p>Established relationships with schools, educational institutions, or government agencies.</p>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex gap-3 align-items-start">
+                                        <img src="/img/icon/part-4.svg" alt="part-4" />
+                                        <div>
+                                            <h4>Entrepreneurial Spirit</h4>
+                                            <p>A drive to succeed and a willingness to invest time and effort in building a successful partnership</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-5 col-12 pe-0 ps-5">
+                                <div className="gridViewWithFlexRInner idealPartnerProfileRWithBg">
+                                    <h4>Partnership Opportunities</h4>
+                                    <hr />
+                                    <h3>Regional Associate Partner</h3>
+                                    <p className='my-3'>Demonstrate a dedication to promoting STEM education and integrating technology into your curriculum</p>
+                                    <h3>Benefits</h3>
+                                    <ul className='m-0 p-0'>
+                                        <li>Exclusive territory rights</li>
+                                        <li>Comprehensive training and support</li>
+                                        <li>Access to marketing materials and resources</li>
+                                        <li>Opportunity to make a real difference in education</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div className="row m-0 takeaNextStepMain">
                     <div className="col-sm-6 ps-0 pe-5">
                         <div className="takeaNextStepMainL">

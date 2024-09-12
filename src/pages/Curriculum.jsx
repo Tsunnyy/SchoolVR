@@ -135,7 +135,7 @@ const Curriculum = () => {
 
                     <div className="expandingHorizon">
                         <div className="row m-0 align-items-center">
-                            <div className="col-md-6 col-12 ps-0">
+                            <div className="col-lg-6 col-12 ps-0 expandingHorizonL">
                                 <h4 className='pageHeadText clrWhite'>Expanding Horizons</h4>
                                 <span>coming soon</span>
                                 <div className="commingSoonCOuntry">
@@ -152,7 +152,7 @@ const Curriculum = () => {
                                     })}
                                 </div>
                             </div>
-                            <div className="col-md-6 col-12 pe-0">
+                            <div className="col-lg-6 col-12 pe-0 expandingHorizonR">
                                 <img src="/img/country/map.svg" alt="Map" />
                             </div>
                         </div>

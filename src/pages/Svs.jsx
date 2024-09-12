@@ -37,16 +37,16 @@ let accordianData = [
   },
 ];
 export const Svs = () => {
-  const { setExtraClass, setModalActive } = useContext(MyContext);
+  // const { setExtraClass, setModalActive } = useContext(MyContext);
 
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    setExtraClass("svs-page");
+    // setExtraClass("svs-page");
   }, []);
   return (
     <>
-      <div className="main-wrap">
+      <div className="main-wrap_new">
         <SchoolVrForSchool />
         <VrCards />
         <Faq accordianData={accordianData} />
