@@ -14,8 +14,8 @@ const Subjects = () => {
             <div className="col-sm-9 ps-0">
               <h4 className='pageHeadText'>Explore Our Range of Subjects</h4>
               <p className='pagePara my-4'>Embark on an exciting journey through the world of knowledge, where each subject comes alive with interactive VR experience</p>
-              <div className="row m-0 exloreOurSubjectMain align-items-end">
-                <div className="col-lg-5 col-md-7 ps-0 exloreOurSubjectMainL">
+              <div className="row m-0 exloreOurSubjectMain align-items-center justify-content-between">
+                <div className="col-md-6 col-12 ps-0 exloreOurSubjectMainL">
                   <div className=" d-flex productsMain">
                     <div className="actualProduct">
                       <img src="/img/subject/1.svg" alt="Products | Icon" />
@@ -35,7 +35,7 @@ const Subjects = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-5 exloreOurSubjectMainR">
+                <div className="col-md-5 col-12 exloreOurSubjectMainR">
                   <em>coming soon</em>
                   <div className=" d-flex productsMain">
                     <div className="actualProduct">
