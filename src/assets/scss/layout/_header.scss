@@ -279,8 +279,10 @@ header {
         background-color: #292d32;
         color: #ecc243;
         text-align: center;
-        padding-block: 0.4rem;
+        padding: 2px 15px;
         transform: translateY(70%);
+        width: fit-content;
+        margin: auto;
       }
     }
 
@@ -308,6 +310,7 @@ header {
 
   .sub-menu {
     gap: 22px;
+    padding-left: 100px !important;
 
     &.whiteClr {
       .dropdown button {
@@ -406,6 +409,10 @@ header {
   }
 }
 
+.sub-menu-mobile {
+  display: none;
+}
+
 @include mq(md) {
   header {
     padding-top: 3.2rem;
@@ -495,12 +502,27 @@ header {
 }
 
 @media (max-width: 767px) {
+
+  header {
+    padding-top: 20px;
+  }
+
   header .sub-menu {
     display: none !important;
   }
 
-  // header a:has(.logo) {
-  //   position: absolute;
-  //   right: 20px;
-  // }
+  .sub-menu-mobile {
+    display: block;
+
+    li {
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  header .explore-tray .get-in-touch {
+    margin-bottom: 50px;
+  }
 }

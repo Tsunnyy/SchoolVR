@@ -14,7 +14,42 @@ const Subjects = () => {
             <div className="col-sm-9 ps-0">
               <h4 className='pageHeadText'>Explore Our Range of Subjects</h4>
               <p className='pagePara my-4'>Embark on an exciting journey through the world of knowledge, where each subject comes alive with interactive VR experience</p>
-              <div className="row m-0 exloreOurSubjectMain align-items-center justify-content-between">
+              <div className="exloreOurSubjectMain">
+                <div className="exloreOurSubjectMainL">
+                  <div className=" productsMain">
+                    <div className="actualProduct">
+                      <img src="/img/subject/1.svg" alt="Products | Icon" />
+                      <p>BioVerse</p>
+                    </div>
+                    <div className="actualProduct">
+                      <img src="/img/subject/2.svg" alt="Products | Icon" />
+                      <p>ChemVerse</p>
+                    </div>
+                    <div className="actualProduct">
+                      <img src="/img/subject/3.svg" alt="Products | Icon" />
+                      <p>AtomVerse</p>
+                    </div>
+                    <div className="actualProduct">
+                      <img src="/img/subject/4.svg" alt="Products | Icon" />
+                      <p>SpaceVerse</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="exloreOurSubjectMainR">
+                  <em>coming soon</em>
+                  <div className=" productsMain">
+                    <div className="actualProduct">
+                      <img src="/img/subject/5.svg" alt="Products | Icon" />
+                      <p>GeoVerse</p>
+                    </div>
+                    <div className="actualProduct">
+                      <img src="/img/subject/6.svg" alt="Products | Icon" />
+                      <p>MathVerse</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="row m-0 exloreOurSubjectMain align-items-end justify-content-between">
                 <div className="col-md-6 col-12 ps-0 exloreOurSubjectMainL">
                   <div className=" d-flex productsMain">
                     <div className="actualProduct">
@@ -48,7 +83,7 @@ const Subjects = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
             </div>
             <div className="col-sm-3 pe-0 opacity-0 d-none-after-767">

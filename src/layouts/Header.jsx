@@ -37,13 +37,13 @@ let subMenuLinks = [
     id: 1,
     name: "About Us",
     class: "about-us",
-    path: "/about-us",
+    path: "/aboutUs",
   },
   {
     id: 2,
     name: "Contact Us",
     class: "contact-us",
-    path: "/contact-us",
+    path: "/contactUs",
   },
   {
     id: 3,
@@ -61,13 +61,13 @@ let subMenuLinks = [
     id: 5,
     name: "Innovations & Research",
     class: "innovations-research",
-    path: "/innovations-research",
+    path: "/blogs",
   },
   {
     id: 6,
     name: "Lab Setup & Licensing",
     class: "lab-setup-licensing",
-    path: "/lab-setup-licensing",
+    path: "/lab-setup-and-learning",
   },
   {
     id: 7,
@@ -85,7 +85,7 @@ let subMenuLinks = [
     id: 9,
     name: "Training & Certification",
     class: "training-certification",
-    path: "/training-certification",
+    path: "/training-and-certification",
   },
   {
     id: 10,
@@ -97,19 +97,13 @@ let subMenuLinks = [
     id: 11,
     name: "Support & Community",
     class: "support-community",
-    path: "/support-community",
+    path: "/supportcommunity",
   },
   {
     id: 12,
     name: "Partner with Us",
     class: "partner-with-us",
-    path: "/partner-with-us",
-  },
-  {
-    id: 13,
-    name: "Blogs",
-    class: "blogs",
-    path: "/blogs",
+    path: "/partnerwithus",
   },
 ];
 
@@ -237,18 +231,6 @@ export const Header = () => {
               display: hamburger ? "block" : "none",
             }}
           ></div>
-          {/* <div className={window.location.pathname === "/aboutUs"
-            || window.location.pathname === "/contactUs"
-            || window.location.pathname === "/curriculum"
-            || window.location.pathname === "/subjects"
-            || window.location.pathname === "/training-and-certification"
-            || window.location.pathname === "/grant"
-            || window.location.pathname === "/supportcommunity"
-            || window.location.pathname === "/partnerwithus"
-            || window.location.pathname === "/svs"
-            || window.location.pathname === "/svi"
-            || window.location.pathname === "/lab-setup-and-learning"
-            ? "svs-page" : ""}> */}
           <nav
             className={`navbar explore-tray ${hamburger ? "navbar-active" : ""}`}
           >
@@ -281,13 +263,13 @@ export const Header = () => {
               ))}
             </ul>
 
-            <ul className="sub-menu p-0 m-0">
+            <ul className="sub-menu-mobile p-0 m-0">
               {subMenuLinks.map((link) => (
                 <li
                   key={link.id}
                   className={`navlink-item navlink-item-${link.class}`}
                 >
-                  <a onClick={() => redirect(link.path)}>{link.name}</a>
+                  <a href={link.path} onClick={() => redirect(link.path)}>{link.name}</a>
                 </li>
               ))}
             </ul>
@@ -362,199 +344,16 @@ export const Header = () => {
             <Dropdown.Item href="/supportcommunity">Support & Community</Dropdown.Item>
             <Dropdown.Item href="/partnerwithus">Partner With Us</Dropdown.Item>
           </DropdownButton>
-          {/* <li className="navlink-item">
-            <NavLink to="/blogs" className="demo">
-              Blogs
-            </NavLink>
-          </li>
-          <li className="navlink-item">
-            <button className="demo" onClick={() => setModalActive(true)}>
-              Book A Demo
-            </button>
-          </li>
-          <li
-            className={
-              "navlink-item navlink-submenu" +
-              (services ? " navlink-active" : "")
-            }
-          >
-            <button to={"/about"} onClick={() => setServices(!services)}>
-              Our Services
-              <div className="icon">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2.38012 8.7793L6.18345 4.97596C6.63262 4.5268 7.36762 4.5268 7.81678 4.97596L11.6201 8.7793"
-                    stroke={services ? "#000" : "#fff"}
-                    strokeWidth="1.5"
-                    strokeMiterlimit="10"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
-            <ul className="submenu-list">
-              <li className="submenu-item">
-                <Link to="/svs">SchoolVR for Schools</Link>
-              </li>
-              <li className="submenu-item">
-                <Link to="/svi">SchoolVR for Individuals</Link>
-              </li>
-            </ul>
-          </li> */}
         </ul>
         <div className="navlink-item get-in-touch desktop">
           <a
             href="#contact"
             className="btn btn-outline"
-          // onClick={() => {
-          //   setModalActive(true);
-          // }}
           >
             Get in Touch
           </a>
         </div>
       </header >
-      {/* <header>
-        <button className="hamburger" onClick={openHamburger}>
-          <img className="hamburger-icon" src={"/img/menu.svg"} alt="menuIcon" />
-          Explore
-        </button>
-        <div
-          className="overlay"
-          onClick={closeHamburger}
-          style={{
-            display: hamburger ? "block" : "none",
-          }}
-        ></div>
-        <nav
-          className={`navbar explore-tray ${hamburger ? "navbar-active" : ""}`}
-        >
-          <div className="flex navbar-top">
-            <div className="menu-title" onClick={closeHamburger}>
-              <img
-                className="menu-title-icon"
-                src={"/img/menu.svg"}
-                alt="menuIcon"
-              />
-              Explore
-            </div>
-          </div>
-          <ul className="product-list">
-            {productLinks.map((link) => (
-              <li
-                key={link.id}
-                className={`navlink-item navlink-item-${link.class}`}
-              >
-                <a onClick={() => redirect(link.path)}>
-                  <img
-                    className="icon"
-                    src={`/img/product/icon/${link.class}.svg`}
-                    alt="menuIcon"
-                  />
-                  {link.name}
-                  {link.coming && <div className="coming-soon">Coming Soon</div>}
-                </a>
-              </li>
-            ))}
-          </ul>
-
-          <ul className="sub-menu">
-            {subMenuLinks.map((link) => (
-              <li
-                key={link.id}
-                className={`navlink-item navlink-item-${link.class}`}
-              >
-                <a onClick={() => redirect(link.path)}>{link.name}</a>
-              </li>
-            ))}
-          </ul>
-
-          <div className="navlink-item get-in-touch">
-            <button
-              className="btn"
-              onClick={() => {
-                setModalActive(true);
-              }}
-            >
-              Get in Touch
-            </button>
-          </div>
-        </nav>
-
-        <NavLink to="/" className="logo-wrap">
-          <img className="logo" src={logo} alt="SchoolVR" />
-          <img className="logo logo-2" src={logo2} alt="SchoolVR" />
-        </NavLink>
-
-        <nav className="navbar secondary-navbar">
-          <ul className="sub-menu">
-            <li className="navlink-item">
-              <NavLink to="/blogs" className="demo">
-                Blogs
-              </NavLink>
-            </li>
-            <li className="navlink-item">
-              <button className="demo" onClick={() => setModalActive(true)}>
-                Book A Demo
-              </button>
-            </li>
-            <li
-              className={
-                "navlink-item navlink-submenu" +
-                (services ? " navlink-active" : "")
-              }
-            >
-              <button to={"/about"} onClick={() => setServices(!services)}>
-                Our Services
-                <div className="icon">
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2.38012 8.7793L6.18345 4.97596C6.63262 4.5268 7.36762 4.5268 7.81678 4.97596L11.6201 8.7793"
-                      stroke={services ? "#000" : "#fff"}
-                      strokeWidth="1.5"
-                      strokeMiterlimit="10"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </button>
-              <ul className="submenu-list">
-                <li className="submenu-item">
-                  <Link to="/svs">SchoolVR for Schools</Link>
-                </li>
-                <li className="submenu-item">
-                  <Link to="/svi">SchoolVR for Individuals</Link>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <div className="navlink-item get-in-touch desktop">
-          <a
-            href="#contact"
-            className="btn"
-          // onClick={() => {
-          //   setModalActive(true);
-          // }}
-          >
-            Get in Touch
-          </a>
-        </div>
-      </header> */}
     </>
   );
 };

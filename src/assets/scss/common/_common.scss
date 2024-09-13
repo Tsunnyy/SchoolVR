@@ -1268,9 +1268,11 @@ p.pagePara {
 }
 
 .productsMain {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 60px;
   align-items: center;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 
   &:nth-child(2) {
     .actualProduct {
@@ -1344,6 +1346,10 @@ p.pagePara {
 }
 
 .exloreOurSubjectMain {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 100px;
 
   .exloreOurSubjectMainR {
     position: relative;
@@ -2048,11 +2054,33 @@ p.pagePara {
     width: 253px;
     z-index: 0;
   }
+
+  .productsMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .productsMain .actualProduct::after {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 
 @media (max-width: 767px) {
   .padding-lr-class {
     padding-inline: 20px;
+  }
+
+  .exloreOurSubjectMain {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .exloreOurSubjectMain em {
+    width: 100%;
+    text-align: center;
   }
 
   .aboutHeadSection {
@@ -2094,7 +2122,7 @@ p.pagePara {
   }
 
   .takeaNextStepMain {
-    .col-sm-6.pe-0{
+    .col-sm-6.pe-0 {
       padding: 0 !important;
     }
   }
@@ -2350,5 +2378,22 @@ p.pagePara {
 
   .communityMainDivR {
     margin-top: 30px;
+  }
+
+  .countryListPageMain .countryListPage {
+    max-width: 100%;
+  }
+
+  .countryListPageMain .countryListPage ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .countryListPageMain .countryListPage h2 {
+    padding: 10px 0;
+  }
+
+  .countryListPageMain .countryListPage ul li {
+    font-size: 14px;
+    text-align: left;
   }
 }
