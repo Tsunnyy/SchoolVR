@@ -8,7 +8,7 @@ const PageHero = (props) => {
     return (
         <>
             <div className='aboutHeadSection position-relative'>
-                <img src={`/img/layers/${props.bgImage}.png`} alt="Layer" className='layerImage' />
+                <img src={`/img/layers/${props.bgImage}.webp`} alt="Layer" className='layerImage' />
                 <div className="margin-top-100-class padding-lr-class">
                     <div className="row m-0 align-items-center justify-content-between">
                         <div className="col-sm-8 ps-0">
@@ -18,7 +18,7 @@ const PageHero = (props) => {
                             {props.btnText ? (<button onClick={() => { setModalActive(true); }} className='btn btn-outline'>{props.btnText}</button>) : null}
                         </div>
                         <div className={window.location.pathname == "/lab-setup-and-learning" || window.location.pathname == "/curriculum" || window.location.pathname == "/grant" || window.location.pathname == "/supportcommunity" ? "col-sm-4 pe-0" : "col-sm-3 pe-0"}>
-                            <img src={`/img/${props.heroImage}.png`} alt={props.heroImage} />
+                            <img src={`/img/${props.heroImage}.webp`} alt={props.heroImage} />
                         </div>
                     </div>
                 </div>

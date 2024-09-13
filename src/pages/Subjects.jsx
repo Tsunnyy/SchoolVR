@@ -8,7 +8,7 @@ const Subjects = () => {
   return (
     <>
       <div className="aboutHeadSection contactUsMain">
-        <img src="/img/layers/layer1.png" alt="Layer" className='layerImage' />
+        <img src="/img/layers/layer1.webp" alt="Layer" className='layerImage' />
         <div className="margin-top-100-class padding-lr-class">
           <div className="row m-0 align-items-center justify-content-between">
             <div className="col-sm-9 ps-0">

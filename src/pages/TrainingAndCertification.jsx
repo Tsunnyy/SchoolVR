@@ -8,7 +8,7 @@ const TrainingAndCertification = () => {
   return (
     <>
       <div className='aboutHeadSection p-0 position-relative'>
-        <img src="/img/layers/layer1.png" alt="Layer" className='layerImage' />
+        <img src="/img/layers/layer1.webp" alt="Layer" className='layerImage' />
         <div className="margin-top-100-class padding-lr-class">
           <div className="paddingBottomClass">
             <div className="row m-0 align-items-center justify-content-between">
