@@ -90,7 +90,7 @@ const LabSetupAndLearning = () => {
                                         </div>
                                         <hr />
                                         <div className="d-grid gap-4">
-                                            <img src="/img/earth.png" alt="" />
+                                            <img src="/img/earth.webp" alt="" />
                                             <button className="btn btn-outline mx-auto" onClick={() => setModalActive(true)}>
                                                 View List
                                             </button>

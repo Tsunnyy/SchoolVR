@@ -16,7 +16,7 @@ const PartnerwithUs = () => {
                             <button className='btn btn-outline'>Submit Inquiry</button>
                         </div>
                         <div className="col-sm-3 pe-0">
-                            <img src="/img/partner.png" alt="partner Image" />
+                            <img src="/img/partner.webp" alt="partner Image" />
                         </div>
                     </div>
                 </div>

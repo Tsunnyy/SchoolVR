@@ -131,7 +131,7 @@ export const VrCards = () => {
               </div>
             </div>
           </div>
-          <img src="/img/access.png" alt="Access" />
+          <img src="/img/access.webp" alt="Access" />
         </div>
       </div>
       <div className="buyingOptionsForKids">
@@ -199,9 +199,9 @@ export const VrCards = () => {
             </li>
           </ul>
           <button className="btn btn-outline" onClick={() => {
-                  setOrderModal(true);
-                  setNum("");
-                }}>Order Now</button>
+            setOrderModal(true);
+            setNum("");
+          }}>Order Now</button>
         </div>
         <div className="buyingOptionsForKidsR">
           <h6 className="text-center">Each Kit includes essential accessories</h6>

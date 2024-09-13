@@ -52,7 +52,7 @@ const Subjects = () => {
 
             </div>
             <div className="col-sm-3 pe-0 opacity-0 d-none-after-767">
-              <img src="/img/curriculum.png" alt="curriculum Image" />
+              <img src="/img/curriculum.webp" alt="curriculum Image" />
             </div>
           </div>
         </div>

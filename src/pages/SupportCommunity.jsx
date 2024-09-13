@@ -16,7 +16,7 @@ const SupportCommunity = () => {
                             <button className='btn btn-outline'>Book a Demo</button>
                         </div>
                         <div className="col-sm-3 pe-0">
-                            <img src="/img/support.png" alt="Support Image" />
+                            <img src="/img/support.webp" alt="Support Image" />
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@ const SupportCommunity = () => {
                         <div className="col-12 col-md-4 pe-0">
                             <div className="communityMainDivR text-center">
                                 <h6>SchoolVRs Learners Forum</h6>
-                                <img src="/img/community.png" alt="community" />
+                                <img src="/img/community.webp" alt="community" />
                                 <button className='btn btn-outline mx-auto'>Coming Soon</button>
                             </div>
                         </div>

@@ -18,7 +18,7 @@ const TrainingAndCertification = () => {
                 <p className='pagePara'>At School VR, we recognize that technology is rapidly transforming the educational landscape. Our comprehensive training and certification programs, accredited by the World Stem Federation, empower educators and IT staff with the skills and knowledge they need to harness the full potential of technology in the classroom, creating engaging and impactful learning experiences for students..</p>
               </div>
               <div className="col-sm-5 pe-0">
-                <img src="/img/traning.png" alt="About Image" />
+                <img src="/img/traning.webp" alt="About Image" />
               </div>
             </div>
           </div>
@@ -157,7 +157,7 @@ const TrainingAndCertification = () => {
                 </div>
               </div>
               <div className="col-12 col-md-4 pe-0 benefitsofCertificationR">
-                <img src="/img/certificate.png" alt="certificate" />
+                <img src="/img/certificate.webp" alt="certificate" />
               </div>
             </div>
           </div>
