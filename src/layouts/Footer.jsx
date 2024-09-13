@@ -5,7 +5,7 @@ let quickLinks = [
   {
     id: 1,
     name: "About Us",
-    path: "/aboutus",
+    path: "/aboutUs",
   },
   {
     id: 2,
@@ -72,12 +72,12 @@ let solutionsLinks = [
   {
     id: 1,
     name: "SchoolIVR For Schools",
-    path: "/Svs",
+    path: "/svs",
   },
   {
     id: 2,
     name: "SchoolIVR For Individuals",
-    path: "/Svi",
+    path: "/svi",
   },
   {
     id: 3,
@@ -104,6 +104,11 @@ let programsLinks = [
   },
   {
     id: 3,
+    name: "Subjects",
+    path: "/subjects",
+  },
+  {
+    id: 4,
     name: "Grant",
     path: "/grant",
   },
