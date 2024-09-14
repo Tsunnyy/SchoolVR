@@ -3,9 +3,48 @@ import { Footer } from '../layouts/Footer'
 import { About } from "../layouts/About";
 import PageHero from '../components/PageHero';
 import { MyContext } from '../mycontext';
+import { Faq } from '../layouts/Faq';
 
 const Grant = () => {
   const { setModalActive } = useContext(MyContext);
+  let accordianData = [
+    {
+      id: 0,
+      question: "What is the World Stem Federation Grant Program?",
+      answer: "The World Stem Federation Grant Program is a financial assistance initiative aimed at promoting STEM education and technology integration in schools worldwide. Through this program, eligible schools can receive a significant grant towards the cost of implementing School VR.",
+    },
+    {
+      id: 1,
+      question: "Who is eligible for the grant?",
+      answer: "Schools located in one of the 110 eligible countries (see the list above) are eligible to apply. Schools must demonstrate a commitment to STEM education and a clear plan for integrating School VR into their curriculum.",
+    },
+    {
+      id: 2,
+      question: "What is the grant amount?",
+      answer: "The grant covers a significant portion of the annual School VR license fee: 75% for the first three years, reducing the cost to $1,500 USD per lab per year. 60% for the following three years, bringing the cost down to $2,400 USD per lab per year.",
+    },
+    {
+      id: 3,
+      question: "How do I apply for the grant?",
+      answer: "Step 1: Check Eligibility - Confirm that your school meets the basic criteria outlined above. Step 2: Connect with Local Partner - Use our interactive Local Associate Partner Locator to find your nearest representative. They will guide you through the application process and provide personalized support. Step 3: Await Approval - The World Stem Federation will review your application and notify you of the decision.",
+    },
+    {
+      id: 4,
+      question: "What is the application deadline?",
+      answer: "The application deadline is by 31st December 2024.",
+    },
+    {
+      id: 5,
+      question: "Can I apply for the grant if I already have a School VR lab?",
+      answer: "Unfortunately, the grant is only available for new School VR lab setups. However, existing users can still benefit from our ongoing support and training programs.",
+    },
+    {
+      id: 6,
+      question: "What if my country is not on the list of eligible countries?",
+      answer: "We are constantly expanding our grant program and working to include more countries in the future. Please check back regularly for updates, or contact us to express your interest in bringing School VR to your region.",
+    },
+  ];
+
   return (
     <>
       {/* <div className="aboutHeadSection contactUsMain">
@@ -69,7 +108,7 @@ const Grant = () => {
                         <h4>Substantial Savings</h4>
                         <span>First 3 Years</span>
                         <span>Receive a remarkable 75% grant, reducing your annual license fee to just $1,500 USD per lab.</span>
-
+                        <br />
                         <span>Next 3 Years</span>
                         <span>Continue benefiting from a 60% grant, bringing your annual cost down to $2,400 USD per lab.</span>
                       </div>
@@ -134,6 +173,7 @@ const Grant = () => {
           </div>
         </div>
       </div>
+      <Faq accordianData={accordianData}/>
       <About />
       <Footer />
     </>

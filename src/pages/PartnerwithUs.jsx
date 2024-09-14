@@ -6,16 +6,16 @@ import { Form } from '../components/Form';
 const PartnerwithUs = () => {
     return (
         <>
-            <div className="aboutHeadSection contactUsMain">
+            <div className="aboutHeadSection contactUsMain position-relative">
                 <img src="/img/layers/layer1.webp" alt="Layer" className='layerImage' />
                 <div className="margin-top-100-class padding-lr-class">
                     <div className="row m-0 align-items-center justify-content-between">
-                        <div className="col-sm-8 ps-0">
+                        <div className="col-sm-7 ps-0">
                             <h4 className='pageHeadText'>Expand Your Reach, Transform Education</h4>
                             <p className='pagePara my-5'>Are you passionate about educational innovation and eager to make a difference in your community? School VR is seeking dedicated partners to join our global network and bring the power of immersive learning to schools worldwide.</p>
                             <button className='btn btn-outline'>Submit Inquiry</button>
                         </div>
-                        <div className="col-sm-3 pe-0">
+                        <div className="col-sm-4 pe-0">
                             <img src="/img/partner.webp" alt="partner Image" />
                         </div>
                     </div>
@@ -169,11 +169,19 @@ const PartnerwithUs = () => {
                                     <h3>Regional Associate Partner</h3>
                                     <p className='my-3'>Demonstrate a dedication to promoting STEM education and integrating technology into your curriculum</p>
                                     <h3>Benefits</h3>
-                                    <ul className='m-0 p-0'>
-                                        <li>Exclusive territory rights</li>
-                                        <li>Comprehensive training and support</li>
-                                        <li>Access to marketing materials and resources</li>
-                                        <li>Opportunity to make a real difference in education</li>
+                                    <ul className='m-0 p-0 bulletPoints'>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                            <circle cx="12.1" cy="12.1" r="1" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>Exclusive territory rights</li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                            <circle cx="12.1" cy="12.1" r="1" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>Comprehensive training and support</li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                            <circle cx="12.1" cy="12.1" r="1" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>Access to marketing materials and resources</li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                            <circle cx="12.1" cy="12.1" r="1" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>Opportunity to make a real difference in education</li>
                                     </ul>
                                 </div>
                             </div>

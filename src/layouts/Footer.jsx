@@ -23,11 +23,6 @@ let quickLinks = [
     name: "Careers",
     path: "/careers",
   },
-  {
-    id: 5,
-    name: "Help Centre",
-    path: "/helpCentre",
-  },
 ];
 
 let productLinks = [
@@ -71,12 +66,12 @@ let productLinks = [
 let solutionsLinks = [
   {
     id: 1,
-    name: "SchoolIVR For Schools",
+    name: "SchoolVR For Schools",
     path: "/svs",
   },
   {
     id: 2,
-    name: "SchoolIVR For Individuals",
+    name: "SchoolVR For Individuals",
     path: "/svi",
   },
   {
@@ -125,7 +120,7 @@ let infoLinks = [
     id: 2,
     name: "+1 (571) 567-9892",
     img: "mobile",
-    path: "tel:+919508382971",
+    path: "tel:+15715679892",
   },
   // {
   //   id: 3,
@@ -135,7 +130,7 @@ let infoLinks = [
   // },
   {
     id: 4,
-    name: "dellaware, us",
+    name: "Dellaware, Us",
     img: "location",
     path: "/",
   },

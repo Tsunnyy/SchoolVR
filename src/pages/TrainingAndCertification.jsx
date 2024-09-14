@@ -47,7 +47,7 @@ const TrainingAndCertification = () => {
                       <p>Teachers new to educational technology or seeking foundational knowledge</p>
                     </div>
                   </div>
-                  <div className="d-flex gap-4 mb-5 align-items-start">
+                  <div className="d-flex gap-4 mb-5 align-items-start syllabus">
                     <img src="/img/icon/star.svg" alt="star" />
                     <div>
                       <span>Syllabus Highlights</span>
@@ -72,7 +72,7 @@ const TrainingAndCertification = () => {
                       <p>Teachers with 2 years experience in educational technology looking to deepen their expertise</p>
                     </div>
                   </div>
-                  <div className="d-flex gap-4 mb-5 align-items-start">
+                  <div className="d-flex gap-4 mb-5 align-items-start syllabus">
                     <img src="/img/icon/star.svg" alt="people" />
                     <div>
                       <span>Syllabus Highlights</span>
@@ -98,7 +98,7 @@ const TrainingAndCertification = () => {
                       <p>Experienced educators with 3 Years experience seeking to become leaders in educational technology integration</p>
                     </div>
                   </div>
-                  <div className="d-flex gap-4 mb-5 align-items-start">
+                  <div className="d-flex gap-4 mb-5 align-items-start syllabus">
                     <img src="/img/icon/star.svg" alt="star" />
                     <div>
                       <span>Syllabus Highlights</span>
@@ -122,7 +122,7 @@ const TrainingAndCertification = () => {
         </div>
         <div className="benefitsofCertificationParent">
           <div className="benefitsofCertification">
-            <div className="row m-0 align-items-center">
+            <div className="row m-0 align-items-center justify-content-between">
               <div className="col-12 col-md-8 ps-0 benefitsofCertificationL">
                 <h2 className='pageHeadText clr-white'>Benefits of Certification</h2>
                 <div className="gridDiv withTwoCol">
@@ -156,7 +156,7 @@ const TrainingAndCertification = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-md-4 pe-0 benefitsofCertificationR">
+              <div className="col-12 col-md-3 pe-0 benefitsofCertificationR">
                 <img src="/img/certificate.webp" alt="certificate" />
               </div>
             </div>
@@ -167,19 +167,19 @@ const TrainingAndCertification = () => {
           <div className="reachOuttoUs programDetails">
             <h3 className='secondary_title text-center'>Certified Innovative Educator (CIE) Program </h3>
             <div className="gridDiv withFourCol">
-              <div>
+              <div className='reachOuttoUsInner'>
                 <span>Training Delivery</span>
                 <p>Choose from online, in-person, or blended learning formats (depending on availability in the region)</p>
               </div>
-              <div>
+              <div className='reachOuttoUsInner'>
                 <span>Expert Instructors</span>
                 <p>Learn from experienced VR educators & IT professionals</p>
               </div>
-              <div>
+              <div className='reachOuttoUsInner'>
                 <span>Hands-on Activities</span>
                 <p>Engage in practical exercises & simulations to solidify your understanding</p>
               </div>
-              <div>
+              <div className='reachOuttoUsInner'>
                 <span>Ongoing Support</span>
                 <p>Access resources & community forums for continued learning & collaboration</p>
               </div>

@@ -263,7 +263,7 @@ export const Header = () => {
               ))}
             </ul>
 
-            <ul className="sub-menu-mobile p-0 m-0">
+            {/* <ul className="sub-menu-mobile p-0 m-0">
               {subMenuLinks.map((link) => (
                 <li
                   key={link.id}
@@ -272,7 +272,7 @@ export const Header = () => {
                   <a href={link.path} onClick={() => redirect(link.path)}>{link.name}</a>
                 </li>
               ))}
-            </ul>
+            </ul> */}
 
             <div className="navlink-item get-in-touch">
               <button
@@ -315,7 +315,7 @@ export const Header = () => {
         >
           <DropdownButton id="aboutus" title="About Us"
             className={window.location.pathname === "/aboutUs" || window.location.pathname === "/contactUs" ? "active" : ""}>
-            <Dropdown.Item href="/aboutUs">About</Dropdown.Item>
+            <Dropdown.Item href="/aboutUs">About Us</Dropdown.Item>
             <Dropdown.Item href="/contactUs">Contact Us</Dropdown.Item>
           </DropdownButton>
           <DropdownButton id="solutions" title="Solutions"
@@ -348,7 +348,7 @@ export const Header = () => {
         <div className="navlink-item get-in-touch desktop">
           <a
             href="#contact"
-            className="btn btn-outline"
+            className={window.location.pathname === "/" ? "btn" : "btn btn-outline"}
           >
             Get in Touch
           </a>

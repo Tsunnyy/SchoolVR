@@ -136,8 +136,8 @@ export const Product = () => {
                 </div>
                 <h4 className="section-title">{product.name}</h4>
                 <span className="section-sub-title">{product.content}</span>
-                <Link preventScrollReset={true} to={product.path}>
-                  <span className="btn btn-outline">Know More</span>
+                <Link className="btn btn-outline" preventScrollReset={true} to={product.path}>
+                  Know More
                 </Link>
               </div>
             </SwiperSlide>

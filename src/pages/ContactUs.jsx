@@ -22,7 +22,7 @@ const ContactUs = () => {
             />
 
             <div className="reachOuttoUs padding-lr-class">
-                <h3 className='text-center mb-5'>Reach Out to Us</h3>
+                <h3 className='text-center mb-5 reachOuttoUsTitle'>Reach Out to Us</h3>
                 <div className="reachOuttoUsCard">
                     <div className="reachOuttoUsCardInner">
                         <div className="d-flex gap-4 mb-5 align-items-center">
@@ -93,7 +93,7 @@ const ContactUs = () => {
                             <img src="/img/icon/call.svg" alt="Call" />
                             <div>
                                 <h2>Phone</h2>
-                                <a href='tel:+919508382971'>+91 9508382971</a>
+                                <a href='tel:+15715679892'>+1 (571) 567-9892</a>
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@ const ContactUs = () => {
 
                 <hr className='marginBlock' />
 
-                <h3 className='text-center pageHeadText'>We're excited to hear from you and embark on this journey of educational innovation together!</h3>
+                <h3 className='text-center bottomText'>We're excited to hear from you and embark on this journey of educational innovation together!</h3>
             </div>
             <ModalEarlyBird modalActive={earlyBird} setModalActive={setearlyBird} />
             <About />

@@ -269,6 +269,8 @@
         background-size: contain;
         width: 100%;
         height: 100%;
+        isolation: isolate;
+        z-index: -1;
       }
 
       &.product-chem-verse::before {
@@ -281,6 +283,8 @@
         background-size: contain;
         width: 100%;
         height: 100%;
+        isolation: isolate;
+        z-index: -1;
       }
 
       &.product-atom-verse::before {
@@ -293,6 +297,8 @@
         background-size: contain;
         width: 100%;
         height: 100%;
+        isolation: isolate;
+        z-index: -1;
       }
 
       &.product-space-verse::before {
@@ -305,6 +311,8 @@
         background-size: contain;
         width: 100%;
         height: 100%;
+        isolation: isolate;
+        z-index: -1;
       }
 
       &.product-geo-verse::before {
@@ -317,6 +325,8 @@
         background-size: contain;
         width: 100%;
         height: 100%;
+        isolation: isolate;
+        z-index: -1;
       }
 
       &.product-math-verse::before {
@@ -329,6 +339,8 @@
         background-size: contain;
         width: 100%;
         height: 100%;
+        isolation: isolate;
+        z-index: -1;
       }
     }
   }

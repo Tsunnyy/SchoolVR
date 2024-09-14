@@ -43,10 +43,10 @@ const LabSetupAndLearning = () => {
                     <div className="gridViewWithFlex">
                         <div className="gridViewWithFlexL d-flex flex-column align-items-start justify-content-between">
                             <div>
-                                <h3>Grant Benefits</h3>
-                                <span>Maximize Your Educational Impact</span>
+                                <h3>Flexible Licensing</h3>
+                                <span>Options to Fit Your Needs</span>
                             </div>
-                            <img src="/img/icon/setting.svg" alt="setting" />
+                            <img src="/img/icon/licensing.svg" alt="setting" />
                         </div>
                         <div className="gridViewWithFlexR">
                             <div className="row m-0 align-items-center">
@@ -102,7 +102,8 @@ const LabSetupAndLearning = () => {
                     </div>
                     <div className="successText successTextExtraMarginInLabPage text-center">
                         <h4>Ready to Unlock the Power of VR in Your School?</h4>
-                        <p className='mb-5'>Explore our licensing options, learn more about the grant program, and discover how School VR can transform your educational landscape. Contact us today to request a demo or discuss your specific needs. We're here to support you every step of the way.</p>
+                        <p className='m-0'>Explore our licensing options, learn more about the grant program, and discover how School VR can transform your educational landscape. Contact us today to request a demo or discuss your specific needs. We're here to support you every step of the way.</p>
+                        <span className='noteText'>Note - Grant eligibility and terms are subject to the World Stem Federation's guidelines and may vary by country.</span>
                         <div className="d-flex justify-content-center gap-5 align-items-center">
                             <button className="btn btn-outline" onClick={() => setModalActive(true)}>Check Eligibility</button>
                             <button className='btn btn-secondary btn-primary-clr' onClick={() => setModalActive(true)}>Book a Demo</button>

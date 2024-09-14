@@ -31,9 +31,8 @@ export const VrCardsForIndividual = () => {
             </div>
           </div>
           <PriceComponent />
-          {/* <SuccessMsg btn="Book A Demo" msg="Enquire Now, SchoolVR for Individuals now and take advantage of our best offers to elevate your learning!" /> */}
-          <div className="successText mt-5 text-center">
-            <p>Enquire Now, SchoolVR for Individuals now and take advantage of our best offers to elevate your learning!</p>
+          <div className="successText successTextWithDiffP mt-5 text-center">
+            <p>Enquire Now, SchoolVR for Individuals now and take advantage of our <br /> best offers to elevate your learning!</p>
             <button className="btn btn-outline mx-auto mt-5" onClick={() => setModalActive(true)}>Book A Demo</button>
           </div>
         </div>

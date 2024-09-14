@@ -91,7 +91,7 @@ const Curriculum = () => {
 
     return (
         <>
-            {/* <div className="aboutHeadSection contactUsMain">
+            <div className="aboutHeadSection contactUsMain position-relative">
                 <img src="/img/layers/layer1.webp" alt="Layer" className='layerImage' />
                 <div className="margin-top-100-class padding-lr-class">
                     <div className="row m-0 align-items-center justify-content-between">
@@ -105,19 +105,10 @@ const Curriculum = () => {
                         </div>
                     </div>
                 </div>
-            </div> */}
-            <PageHero
-                bgImage="layer1"
-                title="Curriculum"
-                isTagline={false}
-                tagline=""
-                paragraph="School VR isn't just about captivating VR experiences; it's about seamlessly weaving cutting-edge technology into the fabric of education worldwide. We've meticulously mapped our content to an extensive array of internationally recognized educational boards and their corresponding syllabi, ensuring a smooth and enriching transition for schools across the globe."
-                hasButton={true}
-                btnText="Know More"
-                heroImage="curriculum"
-            />
+            </div>
 
-            <div className="establishedBoards">
+            <div className="establishedBoards position-relative">
+                <img src="/img/board_circle.svg" alt="board_circle" className='boardCircle' />
                 <div className="padding-lr-class">
 
                     <h4 className='pageHeadText text-center'>Established Boards & Syllabi</h4>
@@ -151,6 +142,7 @@ const Curriculum = () => {
                                         )
                                     })}
                                 </div>
+                                <em>And many more!</em>
                             </div>
                             <div className="col-lg-6 col-12 pe-0 expandingHorizonR">
                                 <img src="/img/country/map.svg" alt="Map" />
@@ -159,7 +151,7 @@ const Curriculum = () => {
                     </div>
 
                     <div className="successText mt-5 text-center">
-                        <p>We're passionate about empowering educators and students to achieve their full potential. Whether you're just getting started with School VR or looking to take your implementation to the next level, we're here to support you every step of the way.</p>
+                        <p className='newPTest'>This extensive and ever-growing list ensures that School VR complements and enhances your <br /> existing curriculum, no matter where you are in the world.</p>
                     </div>
                 </div>
             </div>

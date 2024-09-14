@@ -36,12 +36,12 @@ const AbourUs = () => {
                 <img src="/img/layers/layer1.webp" alt="Layer" className='layerImage' />
                 <div className="margin-top-100-class padding-lr-class">
                     <div className="row m-0 align-items-center justify-content-between">
-                        <div className="col-sm-8 ps-0">
+                        <div className="col-sm-7 ps-0">
                             <h4 className='pageHeadText'>About Us</h4>
                             <h1>Pioneering the Future of Education and Esports</h1>
                             <p className='pagePara'>At Brainistics Technologies, we're driven by a passion for innovation and a belief in the transformative power of technology. We're not just shaping the future of education but also redefining the landscape of competitive gaming. School VR, our flagship product, emerged from a deep commitment to providing immersive and engaging learning experiences. We saw the potential of virtual reality to revolutionize education, and our team of educators, technologists, and visionaries worked tirelessly to make that vision a reality. But our journey doesn't end there. Through e-Sports Club, we're fostering a thriving community of gamers, providing platforms for them to showcase their skills, compete at the highest levels, and connect with fellow enthusiasts. We're harnessing the power of technology to create inclusive and accessible esports experiences, both online and offline.</p>
                         </div>
-                        <div className="col-sm-3 pe-0">
+                        <div className="col-sm-4 pe-0">
                             <img src="/img/aboutus.webp" alt="About Image" />
                         </div>
                     </div>
@@ -149,7 +149,7 @@ const AbourUs = () => {
                         <div className="joinUsKeyPointsGrid">
                             {joinUsData.map((val) => {
                                 return (
-                                    <div className="joinUsKeyPointsGridInner d-flex gap-5 align-items-start" key={val.id}>
+                                    <div className="joinUsKeyPointsGridInner d-flex align-items-start" key={val.id}>
                                         <img src={`/img/join/${val.imgPath}.svg`} alt={`${val.imgPath}`} />
                                         <div>
                                             <h4>{val.title}</h4>

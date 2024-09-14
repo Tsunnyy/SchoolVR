@@ -207,7 +207,9 @@ svg {
 
   .layerImage {
     position: absolute;
-    height: 400px;
+    height: 502px;
+    top: 20px;
+    top: 0;
     left: 0;
     z-index: -1;
   }
@@ -275,10 +277,11 @@ p.pagePara {
 
 
 .ourMissionVissionCard {
-  background: #FFFFFF99;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0px 0px 30px 0px #C1D0DC1A;
+  background: #FFFFFF99;
+  backdrop-filter: blur(10px);
   color: #292D32;
 
   h4 {
@@ -400,6 +403,17 @@ p.pagePara {
       align-items: center;
       position: relative;
 
+      .journeyTimeLineInnerL {
+        width: 50%;
+        margin-left: auto;
+
+      }
+
+      .journeyTimeLineInnerL:nth-child(2) {
+        margin-right: auto;
+        margin-left: unset;
+      }
+
       &::after,
       &::before {
         content: "";
@@ -449,17 +463,28 @@ p.pagePara {
 
   .pagePara.marginClass {
     margin: 20px 0 60px;
+    font-family: Gilroy-Medium;
   }
 
   .joinUsKeyPoints {
     background: #FFFFFF99;
-    padding: 60px;
+    padding: 60px 130px;
     box-shadow: 0px 0px 40px 0px #C1D0DC40;
     border-radius: 20px;
     position: relative;
     top: -180px;
     background: #FFFFFF99;
     backdrop-filter: blur(56px);
+
+    .joinUsKeyPointsGridInner {
+      gap: 30px;
+    }
+
+    .pageHeadText {
+      font-family: Gilroy-SemiBold;
+      font-size: 30px;
+      line-height: 36px;
+    }
 
     .joinUsKeyPointsGrid {
       display: grid;
@@ -498,6 +523,28 @@ p.pagePara {
   background: #F6FBFF;
   color: #292D32;
   padding-block: 50px;
+
+  .reachOuttoUsTitle {
+    font-family: Gilroy-SemiBold;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.75px;
+  }
+
+  .btn.btn-outline {
+    font-family: Gilroy-SemiBold;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.7px;
+  }
+
+  .bottomText {
+    font-family: Gilroy-SemiBold;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.75px;
+    color: #292D32;
+  }
 
   .reachOuttoUsCard.reachOuttoUsCardColFour {
     grid-template-columns: repeat(4, 1fr);
@@ -622,13 +669,15 @@ p.pagePara {
 
 .supportResources {
   .reachOuttoUsCard {
-    gap: 70px;
+    gap: 35px;
 
     .reachOuttoUsCardInner {
       background-color: transparent;
       box-shadow: none;
-      padding: 0;
+      padding: 0 30px 0 0;
+      border-right: 1px solid #D1D1D1;
       color: #292D32;
+      border-radius: 0;
 
       img {
         max-width: 30px;
@@ -681,7 +730,7 @@ p.pagePara {
         font-weight: 400;
         line-height: 14.56px;
         text-align: justify;
-        margin: 0;
+        margin: 10px 0 0;
       }
 
       img {
@@ -709,6 +758,19 @@ p.pagePara {
   }
 
 
+}
+
+.bulletPoints {
+  li {
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    svg {
+      width: fit-content;
+    }
+  }
 }
 
 
@@ -739,6 +801,39 @@ p.pagePara {
     line-height: 14.4px;
     text-align: center;
     color: #292D32;
+  }
+
+  p.newPTest {
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.83px;
+  }
+
+  p.fontSemiBold {
+    font-family: Gilroy-Medium;
+  }
+
+  .noteText {
+    font-family: Gilroy-RegularItalic;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: center;
+    color: #9E9E9E;
+    margin: 10px 0 20px;
+    display: inline-block;
+  }
+}
+
+.successTextWithDiffP {
+  p {
+    font-family: Gilroy-SemiBold;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.75px;
+    text-align: center;
   }
 }
 
@@ -840,6 +935,27 @@ p.pagePara {
   background: #F6FBFF;
   padding: 34px 0;
 
+
+  .expandingHorizon {
+    em {
+      font-family: Gilroy-SemiBold;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 16.8px;
+      color: #292D32;
+      margin: 50px 0 0;
+      display: inline-block;
+    }
+  }
+
+  .boardCircle {
+    position: absolute;
+    left: -20px;
+    top: 100px;
+    max-width: 217px;
+  }
+
   .establishedBoardsCard {
     gap: 80px 73px;
     margin: 50px 0;
@@ -855,6 +971,8 @@ p.pagePara {
         object-fit: contain;
         // box-shadow: 0px 8px 12px 0px #42474C14;
         border-radius: 20px;
+        height: 90px;
+        margin-bottom: 10px;
       }
 
       p {
@@ -889,6 +1007,20 @@ p.pagePara {
         display: inline-block;
         margin: 10px 0 45px;
         text-transform: uppercase;
+        position: relative;
+        display: block;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 250px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 247px;
+          background: #fff;
+          height: 1px;
+        }
       }
     }
   }
@@ -958,7 +1090,7 @@ p.pagePara {
   background: #F6FBFF;
 
   .offerDiv {
-    background: #FFFFFF99;
+    background: #FFFFFF;
     border: 1px solid;
     border-image: linear-gradient(269.16deg, #ECC243 0.73%, #FFFFFF 89.67%);
     border-radius: 20px;
@@ -1021,10 +1153,36 @@ p.pagePara {
         font-family: Gilroy-Regular;
         margin: 0 0 10px;
         text-align: left;
+        position: relative;
+
+      }
+
+      .syllabus {
+
+        p::after {
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: -12px;
+          width: 3px;
+          height: 3px;
+          border-radius: 100%;
+          background: #292D32;
+        }
       }
     }
   }
 
+}
+
+.reachOuttoUsInner {
+  padding-right: 20px;
+  border-right: 1px solid #D1D1D1;
+
+  &:last-child {
+    border: none;
+    padding: 0;
+  }
 }
 
 .benefitsofCertificationParent {
@@ -1033,7 +1191,7 @@ p.pagePara {
   .benefitsofCertification {
     border-radius: 20px;
     background: linear-gradient(100deg, #ECC243 19.81%, #D2971F 104.8%);
-    padding: 0 50px;
+    padding: 0 120px;
 
     .pageHeadText {
       color: #fff;
@@ -1058,7 +1216,7 @@ p.pagePara {
         font-weight: 400;
         line-height: 14.7px;
         text-align: justify;
-        margin: 0;
+        margin: 10px 0 0;
       }
     }
   }
@@ -1084,7 +1242,7 @@ p.pagePara {
 }
 
 .paddingBottomClass {
-  padding-bottom: 200px;
+  padding-bottom: 130px;
 }
 
 .gridDiv {
@@ -1118,6 +1276,16 @@ p.pagePara {
 
   .gridViewWithFlex {
     margin: 60px 0;
+  }
+}
+
+.supportResources {
+  .gridViewWithFlex {
+    .gridViewWithFlexL {
+      h3 {
+        font-size: 34px;
+      }
+    }
   }
 }
 
@@ -1190,6 +1358,13 @@ p.pagePara {
   }
 }
 
+.btn.bg-transparent:hover,
+.btn.bg-transparent:focus,
+.btn.bg-transparent {
+  background: transparent;
+  color: #292D32 !important;
+}
+
 .applicationProcessGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1246,6 +1421,7 @@ p.pagePara {
       display: inline-block;
       background: #9CEC5B;
       border-radius: 14px;
+      text-transform: uppercase;
       font-family: Gilroy-SemiBold;
       font-size: 16px;
       font-weight: 400;
@@ -1400,7 +1576,9 @@ p.pagePara {
 }
 
 .stepsToInstall {
-  margin: 60px 0 30px;
+  margin: 60px auto 30px;
+  max-width: 90%;
+  margin-inline: auto !important;
 
   &::after {
     content: "";
@@ -1518,7 +1696,7 @@ p.pagePara {
     }
 
     .d-flex {
-      gap: 20px;
+      gap: 30px;
     }
 
     p {
@@ -1528,6 +1706,7 @@ p.pagePara {
       line-height: 14.4px;
       text-align: justify;
       margin: 7px 0 0;
+      text-transform: capitalize;
     }
   }
 }
@@ -1600,8 +1779,6 @@ p.pagePara {
     grid-template-columns: 1fr 370px;
 
     .buyingOptionsForKidsL select {
-      padding: 12px;
-      background: #F4F5F9;
       font-family: Gilroy-Regular;
       font-size: 14px;
       font-weight: 400;
@@ -1610,6 +1787,16 @@ p.pagePara {
       color: #7D7E82;
       border: none;
       outline: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      background: transparent;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z'/%3E%3Cpath fill='%23707e82' d='M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z'/%3E%3C/g%3E%3C/svg%3E");
+      background-color: #F4F5F9;
+      background-position: 88% 50%;
+      padding: 12px 30px 12px 12px;
+      border-radius: 6px;
     }
 
     img {
@@ -1632,6 +1819,10 @@ p.pagePara {
       background: #F4F5F9;
       border-radius: 14.69px;
       width: fit-content;
+
+      .price-per-verse {
+        width: 190px;
+      }
 
       .price-per-verse,
       .price-bundle {
@@ -1827,6 +2018,23 @@ p.pagePara {
     border: 1px solid #D1D1D1;
     background: #FFFFFF;
 
+    .head {
+      h3 {
+        font-family: Gilroy-Medium;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 15px;
+        margin: 0 0 24px;
+      }
+    }
+
+    form {
+      label {
+        display: none;
+      }
+    }
+
+
     p {
       font-family: Gilroy-Medium;
       font-size: 24px;
@@ -1894,10 +2102,29 @@ p.pagePara {
   }
 }
 
+.form-section.customForm {
+  input {
+    background: #F4F4F4;
+    border-radius: 5px;
+    padding: 17px 15px;
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #9E9E9E;
+    border: none;
+    outline: none;
+  }
+}
+
 
 @media (max-width: 1199px) {
   .padding-lr-class {
     padding-inline: 40px;
+  }
+
+  .ourJourneySection .journeyTimeLineMain .journeyTimeLineInner .journeyTimeLineInnerL {
+    width: 80%;
   }
 
   .buyingOptionsForKids {
@@ -1907,6 +2134,10 @@ p.pagePara {
 
   .buyingOptionsForKids .buyingOptionsForKidsL ul li {
     font-size: 18px;
+  }
+
+  .stepsToInstall {
+    width: 100%;
   }
 
   .paddingBottomClass {
@@ -1928,9 +2159,18 @@ p.pagePara {
   .supportResources .communityMainDivMain {
     padding: 20px;
   }
+
+  .joinUsSection .joinUsKeyPoints {
+    padding: 80px;
+  }
 }
 
 @media (max-width: 991px) {
+  .supportResources .reachOuttoUsCard .reachOuttoUsCardInner {
+    padding-right: 0;
+    border: none;
+  }
+
   .joinUsSection .joinUsKeyPoints .joinUsKeyPointsGrid {
     gap: 50px;
   }
@@ -2069,6 +2309,31 @@ p.pagePara {
 }
 
 @media (max-width: 767px) {
+  .joinUsSection .joinUsKeyPoints .pageHeadText {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .takeaNextStepMain .takeaNextStepMainR form input {
+    margin-bottom: 10px;
+  }
+
+  .establishedBoards .expandingHorizon .expandingHorizonL span::after {
+    display: none;
+  }
+
+  .pageInternalSectionMain .tabs-container-item .price-wrap .price-per-verse {
+    width: 100%;
+  }
+
+  .joinUsSection .joinUsKeyPoints .joinUsKeyPointsGridInner {
+    gap: 15px;
+  }
+
+  .ourJourneySection .journeyTimeLineMain .journeyTimeLineInner .journeyTimeLineInnerL {
+    width: 100%;
+  }
+
   .padding-lr-class {
     padding-inline: 20px;
   }
@@ -2224,7 +2489,7 @@ p.pagePara {
     grid-template-columns: 1fr;
   }
 
-  .joinUsKeyPointsGridInner.d-flex.gap-5.align-items-start {
+  .joinUsKeyPointsGridInner.d-flex.align-items-start {
     gap: 10px !important;
 
     img {

@@ -12,7 +12,7 @@ export const SchoolVrForIndividual = () => {
         <div className="margin-top-100-class padding-lr-class">
           <div className="row m-0 align-items-center justify-content-between">
             <div className="col-sm-8 ps-0">
-              <h4 className='pageHeadText pageHeadTextLight'>SchoolVR for <b>Individual</b></h4>
+              <h4 className='pageHeadText pageHeadTextLight'>SchoolVR for <b>Individuals</b></h4>
               <p className='pagePara'>
                 SVI, or SchoolVR for Individuals, is a cutting-edge Virtual Reality
                 platform meticulously crafted for independent learners. Offering an

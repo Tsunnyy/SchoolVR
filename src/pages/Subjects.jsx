@@ -7,7 +7,7 @@ const Subjects = () => {
   const { setModalActive } = useContext(MyContext);
   return (
     <>
-      <div className="aboutHeadSection contactUsMain">
+      <div className="aboutHeadSection contactUsMain position-relative">
         <img src="/img/layers/layer1.webp" alt="Layer" className='layerImage' />
         <div className="margin-top-100-class padding-lr-class">
           <div className="row m-0 align-items-center justify-content-between">
@@ -107,9 +107,10 @@ const Subjects = () => {
           </div>
           <div className="successText successTextExtraMarginInLabPage text-center">
             <h4>Ready to provide your students with a world-class education?</h4>
-            <p>Explore our comprehensive curriculum offerings, request a demo, and discover how School VR can revolutionize your classrooms, no matter where you are in the world.</p>
+            <p className='fontSemiBold'>Explore our comprehensive curriculum offerings, request a demo, and discover how School VR can revolutionize your classrooms, no matter where you are in the world.</p>
             <button className='btn btn-outline mx-auto mt-5' onClick={() => setModalActive(true)}>Book a Demo</button>
           </div>
+          {/* <hr className='my-5'/> */}
         </div>
       </div>
       <About />
