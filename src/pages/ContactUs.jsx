@@ -100,20 +100,46 @@ const ContactUs = () => {
 
                     <div className="d-none-after-767">
                         <div className="d-flex gap-3 justify-content-center align-items-center socialIcons">
-                            <img src="/img/social/fb.svg" alt="Facebook" />
+                            {/* <img src="/img/social/fb.svg" alt="Facebook" />
                             <img src="/img/social/ig.svg" alt="Instagram" />
                             <img src="/img/social/ld.svg" alt="LinkedIn" />
                             <img src="/img/social/x.svg" alt="x" />
-                            <img src="/img/social/yt.svg" alt="Youtube" />
+                            <img src="/img/social/yt.svg" alt="Youtube" /> */}
+
+                            <a href="https://www.facebook.com/profile.php?id=61558819645521&mibextid=qi2Omg&rdid=dgk90yyWyt6mm507&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fc4iTGogr5VjsYfxF%2F%3Fmibextid%3Dqi2Omg" target="_blank">
+                                <img src="/img/social/fb.svg" alt="Facebook" />
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <img src="/img/social/ig.svg" alt="Instagram" />
+                            </a>
+                            <a href="https://www.linkedin.com/company/schoolvr/" target="_blank">
+                                <img src="/img/social/ld.svg" alt="LinkedIn" />
+                            </a>
+                            <a href="https://x.com/School__VR?t=LNFaEqDFtoru3z4lXh3MjA&s=08" target="_blank">
+                                <img src="/img/social/x.svg" alt="X" />
+                            </a>
+                            <a href="https://www.youtube.com/@SchoolVR" target="_blank">
+                                <img src="/img/social/yt.svg" alt="YouTube" />
+                            </a>
+
                         </div>
                     </div>
                     <div className="d-none-on-web">
                         <div className="d-flex gap-3 justify-content-center align-items-center socialIcons">
-                            <img src="/img/social/fbg.svg" alt="Facebook" />
+                            <a href="https://www.facebook.com/profile.php?id=61558819645521&mibextid=qi2Omg&rdid=dgk90yyWyt6mm507&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fc4iTGogr5VjsYfxF%2F%3Fmibextid%3Dqi2Omg" target="_blank">
+                                <img src="/img/social/fbg.svg" alt="Facebook" />
+                            </a>
                             <img src="/img/social/igg.svg" alt="Instagram" />
-                            <img src="/img/social/ldg.svg" alt="LinkedIn" />
-                            <img src="/img/social/xg.svg" alt="x" />
-                            <img src="/img/social/ytg.svg" alt="Youtube" />
+
+                            <a href="https://www.linkedin.com/company/schoolvr/" target="_blank">
+                                <img src="/img/social/ldg.svg" alt="LinkedIn" />
+                            </a>
+                            <a href="https://x.com/School__VR?t=LNFaEqDFtoru3z4lXh3MjA&s=08" target="_blank">
+                                <img src="/img/social/xg.svg" alt="X" />
+                            </a>
+                            <a href="https://www.youtube.com/@SchoolVR" target="_blank">
+                                <img src="/img/social/ytg.svg" alt="YouTube" />
+                            </a>
                         </div>
                     </div>
                 </div>

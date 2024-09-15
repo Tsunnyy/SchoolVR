@@ -2255,6 +2255,12 @@ header .explore-tray {
 
 
 .modal .early-bird.early-bird-new {
+
+  img {
+    max-width: 318px;
+    margin: auto;
+  }
+
   h3 {
     font-family: Gilroy-SemiBold;
     font-size: 24px;
@@ -2263,6 +2269,20 @@ header .explore-tray {
     letter-spacing: 0.06em;
     text-align: center;
     margin: 0;
+  }
+
+  .imgWithOfferText {
+    position: absolute;
+    left: 81px;
+    top: 33px;
+  }
+
+  p.text {
+    font-family: Gilroy-Regular;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 12px;
   }
 
   .offerText {
@@ -2276,6 +2296,20 @@ header .explore-tray {
     width: 100%;
     text-transform: uppercase;
     color: #fff;
+  }
+
+  ul {
+    padding: 0;
+    margin: 40px 0 0;
+
+    li {
+      font-family: Gilroy-Regular;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      margin: 0 0 20px;
+      color: #fff;
+    }
   }
 }
 
@@ -2504,6 +2538,29 @@ header .explore-tray {
   .joinUsSection .joinUsKeyPoints .pageHeadText {
     font-size: 22px;
     line-height: 25px;
+  }
+
+  .modal .early-bird.early-bird-new .imgWithOfferText {
+    left: 0;
+    right: 0;
+    margin: auto;
+    // top: 40px;
+  }
+
+  .modal .early-bird.early-bird-new h3 {
+    font-size: 18px;
+    line-height: 28.12px;
+  }
+
+  .modal .early-bird.early-bird-new .btn-fill {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal .early-bird.early-bird-new .offerText {
+    font-size: 12px;
   }
 
   .buyingOptionsForKids .buyingOptionsForKidsL h2 {
@@ -2902,9 +2959,17 @@ header .explore-tray {
 
   .successText.successTextExtraMarginInLabPage {
     .d-flex.justify-content-center.gap-5.align-items-center {
-      flex-direction: column;
+      // flex-direction: column;
       gap: 10px !important;
+
+      button.btn {
+        font-size: 12px;
+      }
     }
+  }
+
+  .labSetUpOptions{
+    padding-bottom: 20px;
   }
 
   .d-flex.gap-3.align-items-center.justify-content-center.btn_group {
