@@ -2137,6 +2137,10 @@ header .explore-tray {
   }
 }
 
+.d-none-on-web{
+  display: none;
+}
+
 .successTextExtraMarginInLabPage {
   margin: 60px 0 30px;
 }
@@ -2657,6 +2661,10 @@ header .explore-tray {
     &:nth-child(2) {
       flex-direction: row;
     }
+  }
+
+  .d-none-on-web{
+    display: block;
   }
 
   .ourJourneySection .journeyTimeLineMain .journeyTimeLineInner h2 {

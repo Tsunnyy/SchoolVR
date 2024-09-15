@@ -192,37 +192,39 @@ export const PriceComponent = () => {
           <p className="text-start">AI Tutors in SchoolVR act as personalized guides, swiftly resolving student doubts,
             providing tailored assistance, and ensuring a seamless learning experience.</p>
 
-          <div className="d-flex justify-content-between align-items-center gap-2 mb-5">
-            <select
-              onChange={(e) => handleCurrencyChange(e.target.value)}
-              value={currency}
-            >
-              <option value="USD">USD</option>
-              <option value="AUD">AUD</option>
-              <option value="NZD">NZD</option>
-              <option value="CAD">CAD</option>
-              <option value="MYR">MYR</option>
-              <option value="CNY">CNY</option>
-              <option value="INR">INR</option>
-              <option value="PEN">PEN</option>
-              <option value="SAR">SAR</option>
-              <option value="AED">AED</option>
-              <option value="GBP">GBP</option>
-              <option value="EUR">EUR</option>
-            </select>
-            <div className="d-flex gap-3 align-items-center monthlyAndYearlyBtn m-0">
-              {priceInUSD.map((item) => {
-                return (
-                  <div
-                    key={item.id}
-                    className={`tabs-item ${pricing === item.id ? "tabs-active" : ""
-                      }`}
-                    onClick={() => setPricing(item.id)}
-                  >
-                    {item.name}
-                  </div>
-                );
-              })}
+          <div className="d-none-on-web">
+            <div className="d-flex justify-content-between align-items-center gap-2 mb-5">
+              <select
+                onChange={(e) => handleCurrencyChange(e.target.value)}
+                value={currency}
+              >
+                <option value="USD">USD</option>
+                <option value="AUD">AUD</option>
+                <option value="NZD">NZD</option>
+                <option value="CAD">CAD</option>
+                <option value="MYR">MYR</option>
+                <option value="CNY">CNY</option>
+                <option value="INR">INR</option>
+                <option value="PEN">PEN</option>
+                <option value="SAR">SAR</option>
+                <option value="AED">AED</option>
+                <option value="GBP">GBP</option>
+                <option value="EUR">EUR</option>
+              </select>
+              <div className="d-flex gap-3 align-items-center monthlyAndYearlyBtn m-0">
+                {priceInUSD.map((item) => {
+                  return (
+                    <div
+                      key={item.id}
+                      className={`tabs-item ${pricing === item.id ? "tabs-active" : ""
+                        }`}
+                      onClick={() => setPricing(item.id)}
+                    >
+                      {item.name}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
 
