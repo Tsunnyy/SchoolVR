@@ -175,6 +175,7 @@
 
   .footer.footer_new .footer-top-new {
     grid-template-columns: repeat(2, auto);
+    gap: 25px 15px;
   }
 
 
@@ -200,5 +201,21 @@
     .col-12.ps-0 {
       padding: 0;
     }
+  }
+
+  .footer-link-title {
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  .footer li a {
+    font-family: Gilroy-Medium;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17.28px;
+  }
+
+  #root>div>footer>div.row.m-0.my-5>div.col-md-8.col-12.ps-0>div>ul:nth-child(2)>li:nth-child(3)>a {
+    line-height: 14px;
   }
 }

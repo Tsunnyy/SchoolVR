@@ -131,7 +131,16 @@ export const VrCards = () => {
               </div>
             </div>
           </div>
-          <img src="/img/access.webp" alt="Access" />
+          <picture>
+            <source media="(min-width:768px)" srcSet={"/img/access.webp"} />
+            <img
+              className=""
+              // src="/img/banner-m.png"
+              src={"/img/access-m.webp"}
+              alt="bannerVR"
+            />
+          </picture>
+          {/* <img src="/img/access.webp" alt="Access" /> */}
         </div>
       </div>
       <div className="buyingOptionsForKids">
@@ -198,7 +207,7 @@ export const VrCards = () => {
               Need More?
             </li>
           </ul>
-          <button className="btn btn-outline" onClick={() => {
+          <button className="btn btn-outline textCenterAfter767" onClick={() => {
             setOrderModal(true);
             setNum("");
           }}>Order Now</button>

@@ -5,6 +5,7 @@ import { useContext, useEffect, useState } from "react";
 import { MyContext } from "../mycontext";
 import { DropdownButton } from "react-bootstrap";
 import Dropdown from 'react-bootstrap/Dropdown';
+import { Accordion } from 'react-bootstrap';
 // let subMenuLinks = [
 //   {
 //     id: 1,
@@ -263,16 +264,133 @@ export const Header = () => {
               ))}
             </ul>
 
-            {/* <ul className="sub-menu-mobile p-0 m-0">
-              {subMenuLinks.map((link) => (
+            <ul className="sub-menu-mobile p-0 m-0">
+              {/* {subMenuLinks.map((link) => (
                 <li
                   key={link.id}
                   className={`navlink-item navlink-item-${link.class}`}
                 >
                   <a href={link.path} onClick={() => redirect(link.path)}>{link.name}</a>
                 </li>
-              ))}
-            </ul> */}
+              ))} */}
+              <Accordion defaultActiveKey="0">
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>About Us</Accordion.Header>
+                  <Accordion.Body>
+                    <Link
+                      onClick={closeHamburger}
+                      to="/aboutUs"
+                    // className={window.location.pathname === "/aboutUs" || window.location.pathname === "/contactUs" ? "active" : ""}
+                    >
+                      About Us
+                    </Link>
+                    <br />
+                    <Link
+                      onClick={closeHamburger}
+                      to="/contactUs"
+                    // className={window.location.pathname === "/contactUs" || window.location.pathname === "/aboutUs" ? "active" : ""}
+                    >
+                      Contact Us
+                    </Link>
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>Solutions</Accordion.Header>
+                  <Accordion.Body>
+                    <Link
+                      onClick={closeHamburger}
+                      to="/svs"
+                    // className={window.location.pathname === "/svs" || window.location.pathname === "/svi" || window.location.pathname === "/lab-setup-and-learning" ? "active" : ""}
+                    >
+                      SchoolVR for School (SVS)
+                    </Link>
+                    <br />
+                    <Link
+                      onClick={closeHamburger}
+                      to="/svi"
+                    // className={window.location.pathname === "/svi" || window.location.pathname === "/svs" || window.location.pathname === "/lab-setup-and-learning" ? "active" : ""}
+                    >
+                      SchoolVR for Individuals (SVI)
+                    </Link>
+                    <br />
+                    <Link
+                      onClick={closeHamburger}
+                      to="/blogs"
+                    // className={window.location.pathname === "/blogs" ? "active" : ""}
+                    >
+                      Innovations & Research
+                    </Link>
+                    <br />
+                    <Link
+                      onClick={closeHamburger}
+                      to="/lab-setup-and-learning"
+                    // className={window.location.pathname === "/lab-setup-and-learning" || window.location.pathname === "/svs" || window.location.pathname === "/svi" ? "active" : ""}
+                    >
+                      Lab Setup & Licensing
+                    </Link>
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="2">
+                  <Accordion.Header>Programs</Accordion.Header>
+                  <Accordion.Body>
+                    <Link
+                      onClick={closeHamburger}
+                      to="/curriculum"
+                    // className={window.location.pathname === "/curriculum" || window.location.pathname === "/subjects" || window.location.pathname === "/training-and-certification" || window.location.pathname === "/grant" ? "active" : ""}
+                    >
+                      Curriculum
+                    </Link>
+                    <br />
+                    <Link
+                      onClick={closeHamburger}
+                      to="/subjects"
+                    // className={window.location.pathname === "/subjects" || window.location.pathname === "/curriculum" || window.location.pathname === "/training-and-certification" || window.location.pathname === "/grant" ? "active" : ""}
+                    >
+                      Subjects
+                    </Link>
+                    <br />
+                    <Link
+                      onClick={closeHamburger}
+                      to="/training-and-certification"
+                    // className={window.location.pathname === "/training-and-certification" || window.location.pathname === "/curriculum" || window.location.pathname === "/subjects" || window.location.pathname === "/grant" ? "active" : ""}
+                    >
+                      Training & Certification
+                    </Link>
+                    <br />
+                    <Link
+                      onClick={closeHamburger}
+                      to="/grant"
+                    // className={window.location.pathname === "/grant" || window.location.pathname === "/curriculum" || window.location.pathname === "/subjects" || window.location.pathname === "/training-and-certification" ? "active" : ""}
+                    >
+                      Grant
+                    </Link>
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="3">
+                  <Accordion.Header>Support</Accordion.Header>
+                  <Accordion.Body>
+                    <Link
+                      onClick={closeHamburger}
+                      to="/supportcommunity"
+                    // className={window.location.pathname === "/supportcommunity" || window.location.pathname === "/partnerwithus" ? "active" : ""}
+                    >
+                      Support & Community
+                    </Link>
+                    <br />
+                    <Link
+                      onClick={closeHamburger}
+                      to="/partnerwithus"
+                    // className={window.location.pathname === "/partnerwithus" || window.location.pathname === "/supportcommunity" ? "active" : ""}
+                    >
+                      Partner With Us
+                    </Link>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </ul>
 
             <div className="navlink-item get-in-touch">
               <button

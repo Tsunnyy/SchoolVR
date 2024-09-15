@@ -23,7 +23,7 @@ const ContactUs = () => {
 
             <div className="reachOuttoUs padding-lr-class">
                 <h3 className='text-center mb-5 reachOuttoUsTitle'>Reach Out to Us</h3>
-                <div className="reachOuttoUsCard">
+                <div className="reachOuttoUsCard reachOuttoUsCardWithPadding">
                     <div className="reachOuttoUsCardInner">
                         <div className="d-flex gap-4 mb-5 align-items-center">
                             <img src="/img/icon/forschool.svg" alt="forschool" />

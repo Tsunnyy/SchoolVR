@@ -73,11 +73,13 @@ const LabSetupAndLearning = () => {
                                             <img src="/img/icon/lab-3.svg" alt="lab-3" />
                                             <div>
                                                 <h4>Exclusive Grant Program</h4>
-                                                <span>First 3 Years</span> <br />
-                                                <span>Enjoy a 75% grant from the World Stem Federation, reducing your annual cost to just $1,500 USD per lab.</span>
-                                                <br />
-                                                <span>Next 3 Years</span> <br />
-                                                <span>Continue benefiting from a 60% grant, bringing your annual cost down to $2,400 USD per lab.</span>
+                                                <div className="extraPaddingClass">
+                                                    <span className='withBullerPoints'>First 3 Years</span> <br />
+                                                    <span>Enjoy a 75% grant from the World Stem Federation, reducing your annual cost to just $1,500 USD per lab.</span>
+                                                    <br />
+                                                    <span className='withBullerPoints'>Next 3 Years</span> <br />
+                                                    <span>Continue benefiting from a 60% grant, bringing your annual cost down to $2,400 USD per lab.</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

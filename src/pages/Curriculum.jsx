@@ -101,7 +101,7 @@ const Curriculum = () => {
                             <button className='btn btn-secondary btn-primary-clr'>Know More</button>
                         </div>
                         <div className="col-sm-5 pe-0">
-                            <img src="/img/curriculum.png" alt="curriculum Image" />
+                            <img src="/img/curriculum.webp" alt="curriculum Image" />
                         </div>
                     </div>
                 </div>

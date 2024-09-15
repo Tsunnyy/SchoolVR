@@ -18,11 +18,11 @@ let quickLinks = [
     name: "Blogs",
     path: "/blogs",
   },
-  {
-    id: 4,
-    name: "Careers",
-    path: "/careers",
-  },
+  // {
+  //   id: 4,
+  //   name: "Careers",
+  //   path: "/careers",
+  // },
 ];
 
 let productLinks = [
@@ -130,7 +130,7 @@ let infoLinks = [
   // },
   {
     id: 4,
-    name: "Dellaware, Us",
+    name: "Dellaware, US",
     img: "location",
     path: "/",
   },

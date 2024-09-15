@@ -9,17 +9,21 @@
   align-items: center;
   display: none;
   padding: 2rem;
+
   &.modal-greyscale {
     backdrop-filter: blur(1rem);
     background-color: rgba(black, 0.5);
   }
+
   &.active {
     display: flex;
   }
+
   &.modal-feedback {
     .form-section {
       padding: 1.5rem;
       background-color: rgba(255, 255, 255, 0.8);
+
       @include mq(lg) {
         display: flex;
         padding: 4rem;
@@ -27,14 +31,17 @@
         max-width: 120rem;
       }
     }
+
     .btn-close {
       width: 1rem;
       height: 1rem;
+
       @include mq(lg) {
         width: 2rem;
         height: 2rem;
       }
     }
+
     .title {
       -webkit-line-clamp: 3;
       overflow: hidden;
@@ -44,11 +51,14 @@
       font-weight: 500;
       margin-bottom: 1rem;
     }
+
     .meta-date {
       font-size: 1rem;
       margin-right: 1rem;
+
       @include mq(lg) {
         font-size: 1.6rem;
+
         .label {
           font-size: 1.6rem;
         }
@@ -58,51 +68,62 @@
     .form-group {
       margin-bottom: 1rem;
     }
+
     .btn {
       margin-bottom: 0;
     }
+
     .head {
       gap: 2rem;
       display: flex;
       color: #000;
+
       @include mq(lg) {
         flex-direction: column-reverse;
         justify-content: flex-end;
         width: 55%;
       }
     }
+
     .visual {
       width: 13rem;
       height: 12rem;
       flex-shrink: 0;
       border-radius: 2rem;
       overflow: hidden;
+
       @include mq(lg) {
         width: 100%;
         height: auto;
         aspect-ratio: 16/9;
       }
+
       img {
         width: 100%;
         height: 100%;
       }
     }
+
     @include mq(lg) {
       textarea {
         min-height: 17rem;
       }
+
       .body {
         flex: 1;
       }
+
       .tag {
         font-size: 1.6rem;
       }
     }
   }
+
   .head {
     display: flex;
     justify-content: space-between;
   }
+
   .btn-close {
     padding: 0.1rem;
     position: absolute;
@@ -110,6 +131,7 @@
     right: 2rem;
     background: transparent;
   }
+
   .form-title {
     text-transform: uppercase;
     color: var(--black);
@@ -118,15 +140,18 @@
     letter-spacing: 0.2rem;
     margin-bottom: 1rem;
   }
+
   .form-control {
     border: unset;
     background-color: rgba(89, 89, 89, 0.16);
     backdrop-filter: blur(2rem);
     color: black;
+
     &::placeholder {
       color: transparent;
     }
   }
+
   // .form-group {
   //   margin-bottom: 3rem;
   // }
@@ -149,6 +174,7 @@
     width: calc(100% - 4rem);
     background-color: rgba(white, 0.5);
   }
+
   .btn.btn-secondary {
     border-radius: 1rem;
     width: 100%;
@@ -158,43 +184,65 @@
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+
     svg {
       display: none;
     }
   }
+
   .video-section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5rem;
+    position: relative;
+
+    span {
+      position: absolute;
+      top: 29px;
+      right: 30px;
+      cursor: pointer;
+
+      svg {
+        font-size: 30px;
+      }
+    }
+
     video {
       max-width: 70vw;
       width: 100%;
       height: 100%;
     }
   }
+
   .early-bird-form {
     width: 100%;
     max-width: 90rem;
+
     @include mq(md) {
       display: flex;
+
       .early-bird {
         width: 40rem;
         flex-shrink: 0;
         margin-right: -5rem;
         padding: 2rem 8rem 2rem 4rem;
+
         .btn-fill {
           display: none;
         }
+
         hr {
           margin-block: 5rem;
         }
       }
+
       .form-section {
         padding-inline: 3rem;
         background: white;
       }
     }
+
     .form-section {
       width: 100%;
       display: none;
@@ -204,35 +252,43 @@
         display: block;
       }
     }
+
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
+
       .col-2 {
         grid-column: span 2;
       }
     }
+
     &.step-2 {
       .early-bird {
         display: none;
+
         @include mq(md) {
           display: block;
         }
       }
+
       .form-section {
         display: block;
       }
     }
   }
+
   .early-bird {
     background-color: rgba(black, 0.5);
     backdrop-filter: blur(2rem);
     padding: 2rem;
     border-radius: 2rem;
+
     hr {
       color: white;
       margin: 2rem 0;
     }
+
     h3 {
       font-weight: 400;
       letter-spacing: 6px;
@@ -241,6 +297,7 @@
       margin-top: 4rem;
       margin-bottom: 1rem;
     }
+
     li {
       display: flex;
       gap: 1rem;
@@ -250,11 +307,13 @@
       line-height: 1;
       margin-block: 2rem;
       font-weight: 400;
+
       svg {
         width: 2.5rem;
         flex-shrink: 0;
       }
     }
+
     .btn-fill {
       border-radius: 0.5rem;
       width: 100%;
@@ -262,12 +321,14 @@
       font-weight: 500;
       position: relative;
       text-transform: uppercase;
+
       svg {
         position: absolute;
         right: 0;
         width: 3rem;
       }
     }
+
     .btn-offer {
       background: #ecc243;
       border-radius: 1rem;
@@ -280,8 +341,7 @@
   }
 }
 
-@include mq(md) {
-}
+@include mq(md) {}
 
 @include mq(lg) {
   .modal {
@@ -290,11 +350,13 @@
       width: 100%;
       max-width: 70rem;
     }
+
     .form-btn {
       grid-column: span 2;
     }
   }
 }
+
 @include mq(xl) {
   .modal {
     .form-section {

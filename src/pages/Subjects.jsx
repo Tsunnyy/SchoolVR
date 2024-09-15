@@ -17,35 +17,35 @@ const Subjects = () => {
               <div className="exloreOurSubjectMain">
                 <div className="exloreOurSubjectMainL">
                   <div className=" productsMain">
-                    <div className="actualProduct">
+                    <a href='/BioVerse' className="actualProduct">
                       <img src="/img/subject/1.svg" alt="Products | Icon" />
                       <p>BioVerse</p>
-                    </div>
-                    <div className="actualProduct">
+                    </a>
+                    <a href='/ChemVerse' className="actualProduct">
                       <img src="/img/subject/2.svg" alt="Products | Icon" />
                       <p>ChemVerse</p>
-                    </div>
-                    <div className="actualProduct">
+                    </a>
+                    <a href='/AtomVerse' className="actualProduct">
                       <img src="/img/subject/3.svg" alt="Products | Icon" />
                       <p>AtomVerse</p>
-                    </div>
-                    <div className="actualProduct">
+                    </a>
+                    <a href='/SpaceVerse' className="actualProduct">
                       <img src="/img/subject/4.svg" alt="Products | Icon" />
                       <p>SpaceVerse</p>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <div className="exloreOurSubjectMainR">
                   <em>coming soon</em>
                   <div className=" productsMain">
-                    <div className="actualProduct">
+                    <a href='/GeoVerse' className="actualProduct">
                       <img src="/img/subject/5.svg" alt="Products | Icon" />
                       <p>GeoVerse</p>
-                    </div>
-                    <div className="actualProduct">
+                    </a>
+                    <a href='/MathVerse' className="actualProduct">
                       <img src="/img/subject/6.svg" alt="Products | Icon" />
                       <p>MathVerse</p>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
