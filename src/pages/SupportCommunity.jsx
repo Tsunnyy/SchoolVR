@@ -87,7 +87,7 @@ const SupportCommunity = () => {
                             <div className="communityMainDivR text-center">
                                 <h6>SchoolVRs Learners Forum</h6>
                                 <img src="/img/community.webp" alt="community" />
-                                <button className='btn btn-outline mx-auto'>Coming Soon</button>
+                                <button className='btn mx-auto disableButton'>Coming Soon</button>
                             </div>
                         </div>
                     </div>

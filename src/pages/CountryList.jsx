@@ -73,7 +73,7 @@ const CountryList = () => {
                         />
                     </div>
                     <hr className='mb-5' />
-                    <div className="countryListPageGrid">
+                    <div className="countryListPageGrid pb-5">
                         {filteredData.map((val) => (
                             <div className='countryListInner' key={val.continent}>
                                 <h2>{val.continent}</h2>

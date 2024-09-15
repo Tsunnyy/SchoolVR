@@ -83,7 +83,6 @@ const TrainingAndCertification = () => {
                       <p>Utilizing technology for differentiated instruction & personalized learning</p>
                       <p>Exploring emerging trends & research in educational technology</p>
                       <p>Collaborative project development using various tech tools add text in p tag</p>
-                      <p></p>
                     </div>
                   </div>
                 </div>

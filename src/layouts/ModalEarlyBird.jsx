@@ -21,7 +21,7 @@ export const ModalEarlyBird = ({ modalActive, setModalActive }) => {
         className={"early-bird-form step-" + step}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="early-bird">
+        <div className="early-bird early-bird-new">
           <h3>Early Adopter</h3>
           <button
             className="btn-close mobile"
@@ -52,7 +52,7 @@ export const ModalEarlyBird = ({ modalActive, setModalActive }) => {
               />
             </svg>
           </button>
-          <button className="btn btn-offer">Offer</button>
+          <span className="offerText">Offer</span>
 
           <hr />
           <ul>

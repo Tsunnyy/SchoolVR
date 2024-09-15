@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import { Footer } from '../layouts/Footer'
 import { About } from "../layouts/About";
 import { Form } from '../components/Form';
+import { MyContext } from '../mycontext';
+import { ModalEarlyBird } from '../layouts/ModalEarlyBird';
 
 const PartnerwithUs = () => {
+    const { setExtraClass, setModalActive } = useContext(MyContext);
+    const [earlyBird, setearlyBird] = useState(false);
     return (
         <>
             <div className="aboutHeadSection contactUsMain position-relative">
@@ -13,7 +17,7 @@ const PartnerwithUs = () => {
                         <div className="col-sm-7 ps-0">
                             <h4 className='pageHeadText'>Expand Your Reach, Transform Education</h4>
                             <p className='pagePara my-5'>Are you passionate about educational innovation and eager to make a difference in your community? School VR is seeking dedicated partners to join our global network and bring the power of immersive learning to schools worldwide.</p>
-                            <button className='btn btn-outline'>Submit Inquiry</button>
+                            <button className='btn btn-outline' onClick={() => setModalActive(true)}>Submit Inquiry</button>
                         </div>
                         <div className="col-sm-4 pe-0">
                             <img src="/img/partner.webp" alt="partner Image" />
@@ -22,7 +26,7 @@ const PartnerwithUs = () => {
                 </div>
             </div>
             <div className="reachOuttoUs supportResources padding-lr-class">
-                <h3 className='text-center mb-5'>Why Partner with School VR?</h3>
+                <h3 className='text-center mb-5 supportResourcesTitle'>Why Partner with School VR?</h3>
                 <div className="reachOuttoUsCard reachOuttoUsCardColFour">
                     <div className="reachOuttoUsCardInner">
                         <div className="d-flex gap-3 align-items-start">
@@ -210,6 +214,8 @@ const PartnerwithUs = () => {
                     </div>
                 </div>
             </div>
+
+            <ModalEarlyBird modalActive={earlyBird} setModalActive={setearlyBird} />
             <About />
             <Footer />
         </>

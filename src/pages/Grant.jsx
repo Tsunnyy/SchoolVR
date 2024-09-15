@@ -108,10 +108,10 @@ const Grant = () => {
                         <h4>Substantial Savings</h4>
                         <div className="extraPaddingClass">
 
-                          <span className='withBullerPoints'>First 3 Years</span>
+                          <span className='withBullerPoints'>First 3 Years</span> <br />
                           <span>Receive a remarkable 75% grant, reducing your annual license fee to just $1,500 USD per lab.</span>
                           <br />
-                          <span className='withBullerPoints'>Next 3 Years</span>
+                          <span className='withBullerPoints'>Next 3 Years</span> <br />
                           <span>Continue benefiting from a 60% grant, bringing your annual cost down to $2,400 USD per lab.</span>
                         </div>
                       </div>
@@ -171,8 +171,8 @@ const Grant = () => {
           </div>
 
           <div className="d-flex gap-3 align-items-center justify-content-center btn_group">
-            <button className='btn btn-secondary'>Apply Now</button>
-            <button className='btn btn-outline'>Check Eligibility</button>
+            <button className='btn btn-secondary' onClick={() => setModalActive(true)}>Apply Now</button>
+            <a href='/countryList' className='btn btn-outline'>Check Eligibility</a>
           </div>
         </div>
       </div>

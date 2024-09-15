@@ -86,7 +86,7 @@ const ContactUs = () => {
                             <img src="/img/icon/email.svg" alt="Mail" />
                             <div>
                                 <h2>Email</h2>
-                                <a href='mailto:admin@aonix.com'>admin@aonix.com</a>
+                                <a href='mailto:info@schoolvr.us'>info@schoolvr.us</a>
                             </div>
                         </div>
                         <div className="d-flex gap-4 align-items-center">
@@ -98,19 +98,30 @@ const ContactUs = () => {
                         </div>
                     </div>
 
-                    <div className="d-flex gap-3 justify-content-center align-items-center socialIcons">
-                        <img src="/img/social/fb.svg" alt="Facebook" />
-                        <img src="/img/social/ig.svg" alt="Instagram" />
-                        <img src="/img/social/ld.svg" alt="LinkedIn" />
-                        <img src="/img/social/x.svg" alt="x" />
-                        <img src="/img/social/yt.svg" alt="Youtube" />
+                    <div className="d-none-after-767">
+                        <div className="d-flex gap-3 justify-content-center align-items-center socialIcons">
+                            <img src="/img/social/fb.svg" alt="Facebook" />
+                            <img src="/img/social/ig.svg" alt="Instagram" />
+                            <img src="/img/social/ld.svg" alt="LinkedIn" />
+                            <img src="/img/social/x.svg" alt="x" />
+                            <img src="/img/social/yt.svg" alt="Youtube" />
+                        </div>
+                    </div>
+                    <div className="d-none-on-web">
+                        <div className="d-flex gap-3 justify-content-center align-items-center socialIcons">
+                            <img src="/img/social/fbg.svg" alt="Facebook" />
+                            <img src="/img/social/igg.svg" alt="Instagram" />
+                            <img src="/img/social/ldg.svg" alt="LinkedIn" />
+                            <img src="/img/social/xg.svg" alt="x" />
+                            <img src="/img/social/ytg.svg" alt="Youtube" />
+                        </div>
                     </div>
                 </div>
 
                 <hr className='marginBlock' />
 
                 <h3 className='text-center bottomText'>We're excited to hear from you and embark on this journey of educational innovation together!</h3>
-            </div>
+            </div >
             <ModalEarlyBird modalActive={earlyBird} setModalActive={setearlyBird} />
             <About />
             <Footer />

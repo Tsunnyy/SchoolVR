@@ -193,7 +193,7 @@ export const PriceComponent = () => {
             providing tailored assistance, and ensuring a seamless learning experience.</p>
 
           <div className="d-none-on-web">
-            <div className="d-flex justify-content-between align-items-center gap-2 mb-5">
+            <div className="d-flex justify-content-between align-items-center gap-2 marginBOn767">
               <select
                 onChange={(e) => handleCurrencyChange(e.target.value)}
                 value={currency}

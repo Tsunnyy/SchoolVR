@@ -664,6 +664,14 @@ p.pagePara {
   .gridViewWithFlex {
     margin: 39px 0;
   }
+
+  h3.supportResourcesTitle {
+    font-family: Gilroy-SemiBold;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #292D32;
+  }
 }
 
 
@@ -809,7 +817,8 @@ header .explore-tray {
 }
 
 .sub-menu-mobile .accordion-body a {
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 26px;
   color: #000;
 }
 
@@ -1006,6 +1015,13 @@ header .explore-tray {
       justify-content: center;
       align-items: center;
 
+      &:nth-child(1),
+      &:nth-child(2) {
+        img {
+          object-fit: none;
+        }
+      }
+
       img {
         max-width: 141px;
         object-fit: contain;
@@ -1013,7 +1029,9 @@ header .explore-tray {
         border-radius: 20px;
         height: 90px;
         margin-bottom: 10px;
+
       }
+
 
       p {
         font-family: Gilroy-Regular;
@@ -2137,7 +2155,25 @@ header .explore-tray {
   }
 }
 
-.d-none-on-web{
+.modal .form-btn {
+
+  // text-align: center;
+  .btn.btn-secondary {
+    width: 100px;
+  }
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: none;
+  background: #f4f4f4;
+}
+
+.takeaNextStepMain .form-btn .btn.btn-secondary {
+  width: fit-content;
+}
+
+.d-none-on-web {
   display: none;
 }
 
@@ -2212,6 +2248,48 @@ header .explore-tray {
   }
 }
 
+.about-section button.btn {
+  width: fit-content;
+  max-width: fit-content;
+}
+
+
+.modal .early-bird.early-bird-new {
+  h3 {
+    font-family: Gilroy-SemiBold;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 39.12px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin: 0;
+  }
+
+  .offerText {
+    font-family: Gilroy-SemiBold;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.82px;
+    letter-spacing: 0.56em;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
+.btn.disableButton {
+  background: #D9D9D9;
+  border: none;
+  color: #000;
+
+  &:focus,
+  &:hover {
+    background: #D9D9D9;
+    color: #000;
+  }
+}
 
 @media (max-width: 1199px) {
   .padding-lr-class {
@@ -2350,6 +2428,11 @@ header .explore-tray {
 
   .pageInternalSectionMain .tabs-container-item .price-wrap .price-bundle {
     gap: 10px;
+    justify-content: space-between;
+  }
+
+  .marginBOn767 {
+    margin-bottom: 10px;
   }
 
   .pageInternalSectionMain .buyingOptionsForKids {
@@ -2422,6 +2505,52 @@ header .explore-tray {
     font-size: 22px;
     line-height: 25px;
   }
+
+  .buyingOptionsForKids .buyingOptionsForKidsL h2 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .reachOuttoUs.supportResources h3.supportResourcesTitle {
+    font-size: 18px;
+  }
+
+  .buyingOptionsForKids .buyingOptionsForKidsL p {
+    font-size: 14px;
+    line-height: 16.8px;
+    margin: 24px 0 10px;
+  }
+
+  .modal .form-btn {
+    .btn.btn-secondary {
+      margin-top: 15px;
+    }
+  }
+
+  .pageInternalSectionMain .tabs-container-item .price-wrap h3 {
+    margin: 0;
+  }
+
+  .pageInternalSectionMain .tabs-container-item .price-wrap h3 span,
+  .pageInternalSectionMain .tabs-container-item .price-wrap h3 small {
+    font-family: Gilroy-SemiBold;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .pageInternalSectionMain .tabs-container-item .price-wrap .text {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+
+  .pageInternalSectionMain .tabs-container-item .price-wrap .text {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+
+  // #root>div>div.main-wrap>div.pageInternalSectionMain>div>div.buyingOptionsForKids.mb-0>div.buyingOptionsForKidsL>div.tabs-container-item.tabs-container-item-active>div>div.price-per-verse>h3>span {
+  //   margin-left: -1px;
+  // }
 
   .takeaNextStepMain .takeaNextStepMainR form input {
     margin-bottom: 10px;
@@ -2663,7 +2792,7 @@ header .explore-tray {
     }
   }
 
-  .d-none-on-web{
+  .d-none-on-web {
     display: block;
   }
 
@@ -2762,7 +2891,9 @@ header .explore-tray {
 
   .pageInternalSectionMain .tabs-container-item .price-wrap {
     flex-direction: column;
-    gap: 20px;
+    background: none;
+    gap: 0;
+    width: 100%;
   }
 
   .labSetUpOptions .labSetUpOptionsRight {
@@ -2796,6 +2927,7 @@ header .explore-tray {
     margin-bottom: 15px;
   }
 
+  .ourJourneySectionMain::after,
   .d-none-after-767 {
     display: none;
   }
@@ -2923,5 +3055,9 @@ header .explore-tray {
   .countryListPageMain .countryListPage ul li {
     font-size: 14px;
     text-align: left;
+  }
+
+  .productsMain .actualProduct img {
+    min-height: 22px;
   }
 }

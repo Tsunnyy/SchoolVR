@@ -1,21 +1,24 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import { Footer } from '../layouts/Footer'
 import { About } from "../layouts/About";
 import PageHero from '../components/PageHero';
-import SuccessMsg from '../layouts/SuccessMsg';
+import { ModalEarlyBird } from '../layouts/ModalEarlyBird';
+import { MyContext } from '../mycontext';
 
 const Curriculum = () => {
+    const { setExtraClass, setModalActive } = useContext(MyContext);
+    const [earlyBird, setearlyBird] = useState(false);
 
     const curricula = [
         {
             region: "International",
             curriculum: "Baccalaureate (IB)",
-            imgPath: "ib"
+            imgPath: "board2"
         },
         {
             region: "Cambridge",
             curriculum: "IGCSE & A Levels",
-            imgPath: "cambridge"
+            imgPath: "board1"
         },
         {
             region: "India",
@@ -87,8 +90,6 @@ const Curriculum = () => {
         }
     ];
 
-
-
     return (
         <>
             <div className="aboutHeadSection contactUsMain position-relative">
@@ -98,14 +99,14 @@ const Curriculum = () => {
                         <div className="col-sm-7 ps-0">
                             <h4 className='pageHeadText'>Curriculum</h4>
                             <p className='pagePara my-5'>School VR isn't just about captivating VR experiences; it's about seamlessly weaving cutting-edge technology into the fabric of education worldwide. We've meticulously mapped our content to an extensive array of internationally recognized educational boards and their corresponding syllabi, ensuring a smooth and enriching transition for schools across the globe.</p>
-                            <button className='btn btn-secondary btn-primary-clr'>Know More</button>
+                            <button onClick={() => setModalActive(true)} className='btn btn-secondary btn-primary-clr' > Know More</button>
                         </div>
                         <div className="col-sm-5 pe-0">
                             <img src="/img/curriculum.webp" alt="curriculum Image" />
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
 
             <div className="establishedBoards position-relative">
                 <img src="/img/board_circle.svg" alt="board_circle" className='boardCircle' />
@@ -155,6 +156,8 @@ const Curriculum = () => {
                     </div>
                 </div>
             </div>
+
+            <ModalEarlyBird modalActive={earlyBird} setModalActive={setearlyBird} />
 
             <About />
             <Footer />
