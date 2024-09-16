@@ -33,29 +33,29 @@ const AbourUs = () => {
     return (
         <>
             <div className='aboutHeadSection position-relative'>
-                <img src="/img/layers/layer1.png" alt="Layer" className='layerImage' />
+                <img src="/img/layers/layer1.webp" alt="Layer" className='layerImage' />
                 <div className="margin-top-100-class padding-lr-class">
                     <div className="row m-0 align-items-center justify-content-between">
-                        <div className="col-sm-8 ps-0">
+                        <div className="col-sm-7 ps-0">
                             <h4 className='pageHeadText'>About Us</h4>
                             <h1>Pioneering the Future of Education and Esports</h1>
                             <p className='pagePara'>At Brainistics Technologies, we're driven by a passion for innovation and a belief in the transformative power of technology. We're not just shaping the future of education but also redefining the landscape of competitive gaming. School VR, our flagship product, emerged from a deep commitment to providing immersive and engaging learning experiences. We saw the potential of virtual reality to revolutionize education, and our team of educators, technologists, and visionaries worked tirelessly to make that vision a reality. But our journey doesn't end there. Through e-Sports Club, we're fostering a thriving community of gamers, providing platforms for them to showcase their skills, compete at the highest levels, and connect with fellow enthusiasts. We're harnessing the power of technology to create inclusive and accessible esports experiences, both online and offline.</p>
                         </div>
-                        <div className="col-sm-3 pe-0">
-                            <img src="/img/aboutus.png" alt="About Image" />
+                        <div className="col-sm-4 pe-0">
+                            <img src="/img/aboutus.webp" alt="About Image" />
                         </div>
                     </div>
                 </div>
             </div>
             {/* <PageHero bgImage="layer1" title="About Us" isTagline={true} tagline="Pioneering the Future of Education and Esports" heroImage="aboutus" paragraph="At Brainistics Technologies, we're driven by a passion for innovation and a belief in the transformative power of technology. We're not just shaping the future of education but also redefining the landscape of competitive gaming. School VR, our flagship product, emerged from a deep commitment to providing immersive and engaging learning experiences. We saw the potential of virtual reality to revolutionize education, and our team of educators, technologists, and visionaries worked tirelessly to make that vision a reality. But our journey doesn't end there. Through e-Sports Club, we're fostering a thriving community of gamers, providing platforms for them to showcase their skills, compete at the highest levels, and connect with fellow enthusiasts. We're harnessing the power of technology to create inclusive and accessible esports experiences, both online and offline." /> */}
             <div className="ourMissionVissionSection position-relative">
-                <img src="/img/layer.png" className="absLayer" alt='Layer' />
+                <img src="/img/layer.webp" className="absLayer" alt='Layer' />
                 <div className="padding-lr-class">
                     <div className="d-grid gap-5 ourMissionVissionCardMain">
                         <div className="ourMissionVissionCard">
                             <div className="row m-0 align-items-center">
                                 <div className="col-sm-5 ps-0">
-                                    <img src="/img/mission.png" alt="" />
+                                    <img src="/img/mission.webp" alt="" />
                                 </div>
                                 <div className="col-sm-7 pe-0">
                                     <h4>Our Mission</h4>
@@ -74,7 +74,7 @@ const AbourUs = () => {
                         <div className="ourMissionVissionCard">
                             <div className="row m-0 align-items-center">
                                 <div className="col-sm-5 ps-0">
-                                    <img src="/img/vission.png" alt="" />
+                                    <img src="/img/vission.webp" alt="" />
                                 </div>
                                 <div className="col-sm-7 pe-0">
                                     <h4>Our Vision</h4>
@@ -90,11 +90,11 @@ const AbourUs = () => {
 
                         <div className="d-flex gap-5 justify-content-around align-items-center ourJourneySectionMain">
                             <div className="ourJourneySectionInner d-flex flex-column justify-content-center align-items-center">
-                                <img src="/img/mission.png" alt="Logo" />
+                                <img src="/img/mission.webp" alt="Logo" />
                                 <h5>World Stem Federation</h5>
                             </div>
                             <div className="ourJourneySectionInner d-flex flex-column justify-content-center align-items-center">
-                                <img src="/img/mission.png" alt="Logo" />
+                                <img src="/img/mission.webp" alt="Logo" />
                                 <h5>e-Sports Club</h5>
                             </div>
                         </div>
@@ -115,12 +115,12 @@ const AbourUs = () => {
                                 <p>Delve into the four years of rigorous research and development that laid the foundation for School VR.</p>
                             </div>
                             <div className="journeyTimeLineInnerR">
-                                <img src="/img/journey1.png" alt="Journey" />
+                                <img src="/img/journey1.webp" alt="Journey" />
                             </div>
                         </div>
                         <div className="journeyTimeLineInner">
                             <div className="journeyTimeLineInnerR">
-                                <img src="/img/journey2.png" alt="Journey" />
+                                <img src="/img/journey2.webp" alt="Journey" />
                             </div>
                             <div className="journeyTimeLineInnerL">
                                 <h2>Global Surveys &
@@ -135,7 +135,7 @@ const AbourUs = () => {
                                 <p>Celebrate the culmination of our efforts as we proudly present the final, polished version of School VR, ready to empower educators and students around the globe.</p>
                             </div>
                             <div className="journeyTimeLineInnerR">
-                                <img src="/img/journey3.png" alt="Journey" />
+                                <img src="/img/journey3.webp" alt="Journey" />
                             </div>
                         </div>
                     </div>
@@ -149,7 +149,7 @@ const AbourUs = () => {
                         <div className="joinUsKeyPointsGrid">
                             {joinUsData.map((val) => {
                                 return (
-                                    <div className="joinUsKeyPointsGridInner d-flex gap-5 align-items-start" key={val.id}>
+                                    <div className="joinUsKeyPointsGridInner d-flex align-items-start" key={val.id}>
                                         <img src={`/img/join/${val.imgPath}.svg`} alt={`${val.imgPath}`} />
                                         <div>
                                             <h4>{val.title}</h4>

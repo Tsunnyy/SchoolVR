@@ -7,15 +7,50 @@ const Subjects = () => {
   const { setModalActive } = useContext(MyContext);
   return (
     <>
-      <div className="aboutHeadSection contactUsMain">
-        <img src="/img/layers/layer1.png" alt="Layer" className='layerImage' />
+      <div className="aboutHeadSection contactUsMain position-relative">
+        <img src="/img/layers/layer1.webp" alt="Layer" className='layerImage' />
         <div className="margin-top-100-class padding-lr-class">
           <div className="row m-0 align-items-center justify-content-between">
-            <div className="col-sm-8 ps-0">
+            <div className="col-sm-9 ps-0">
               <h4 className='pageHeadText'>Explore Our Range of Subjects</h4>
               <p className='pagePara my-4'>Embark on an exciting journey through the world of knowledge, where each subject comes alive with interactive VR experience</p>
-              <div className="row m-0 exloreOurSubjectMain align-items-end">
-                <div className="col-8 ps-0 exloreOurSubjectMainL">
+              <div className="exloreOurSubjectMain">
+                <div className="exloreOurSubjectMainL">
+                  <div className=" productsMain">
+                    <a href='/BioVerse' className="actualProduct">
+                      <img src="/img/subject/1.svg" alt="Products | Icon" />
+                      <p>BioVerse</p>
+                    </a>
+                    <a href='/ChemVerse' className="actualProduct">
+                      <img src="/img/subject/2.svg" alt="Products | Icon" />
+                      <p>ChemVerse</p>
+                    </a>
+                    <a href='/AtomVerse' className="actualProduct">
+                      <img src="/img/subject/3.svg" alt="Products | Icon" />
+                      <p>AtomVerse</p>
+                    </a>
+                    <a href='/SpaceVerse' className="actualProduct">
+                      <img src="/img/subject/4.svg" alt="Products | Icon" />
+                      <p>SpaceVerse</p>
+                    </a>
+                  </div>
+                </div>
+                <div className="exloreOurSubjectMainR">
+                  <em>coming soon</em>
+                  <div className=" productsMain">
+                    <a href='/GeoVerse' className="actualProduct">
+                      <img src="/img/subject/5.svg" alt="Products | Icon" />
+                      <p>GeoVerse</p>
+                    </a>
+                    <a href='/MathVerse' className="actualProduct">
+                      <img src="/img/subject/6.svg" alt="Products | Icon" />
+                      <p>MathVerse</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="row m-0 exloreOurSubjectMain align-items-end justify-content-between">
+                <div className="col-md-6 col-12 ps-0 exloreOurSubjectMainL">
                   <div className=" d-flex productsMain">
                     <div className="actualProduct">
                       <img src="/img/subject/1.svg" alt="Products | Icon" />
@@ -35,7 +70,7 @@ const Subjects = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-3 exloreOurSubjectMainR">
+                <div className="col-md-5 col-12 exloreOurSubjectMainR">
                   <em>coming soon</em>
                   <div className=" d-flex productsMain">
                     <div className="actualProduct">
@@ -48,11 +83,11 @@ const Subjects = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
             </div>
-            <div className="col-sm-3 pe-0 opacity-0">
-              <img src="/img/curriculum.png" alt="curriculum Image" />
+            <div className="col-sm-3 pe-0 opacity-0 d-none-after-767">
+              <img src="/img/curriculum.webp" alt="curriculum Image" />
             </div>
           </div>
         </div>
@@ -72,9 +107,10 @@ const Subjects = () => {
           </div>
           <div className="successText successTextExtraMarginInLabPage text-center">
             <h4>Ready to provide your students with a world-class education?</h4>
-            <p>Explore our comprehensive curriculum offerings, request a demo, and discover how School VR can revolutionize your classrooms, no matter where you are in the world.</p>
+            <p className='fontSemiBold'>Explore our comprehensive curriculum offerings, request a demo, and discover how School VR can revolutionize your classrooms, no matter where you are in the world.</p>
             <button className='btn btn-outline mx-auto mt-5' onClick={() => setModalActive(true)}>Book a Demo</button>
           </div>
+          {/* <hr className='my-5'/> */}
         </div>
       </div>
       <About />

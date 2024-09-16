@@ -11,11 +11,11 @@ export const Banner = ({ setModalActive }) => {
         <div className="hero-image">
           <img src="/img/elements/bag.webp" className="bag" alt="bag" />
           <picture>
-            <source media="(min-width:768px)" srcSet="/img/banner-b.webp" />
+            <source media="(min-width:768px)" srcSet={"/img/banner-b.webp"} />
             <img
               className=""
               // src="/img/banner-m.png"
-              src="/img/banner-vr-m.webp"
+              src={"/img/banner-b.webp"}
               alt="bannerVR"
             />
           </picture>

@@ -1,0 +1,10 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.9817 22.0801L7.18158 31.0478C6.45125 31.4623 6 32.2373 6 33.077V43.3812C6 44.221 6.45126 44.996 7.18159 45.4105L31.0374 58.9503C31.7518 59.3557 32.6266 59.3557 33.3409 58.9503L57.1968 45.4105C57.9271 44.996 58.3784 44.221 58.3784 43.3812V33.077C58.3784 32.2373 57.9271 31.4623 57.1968 31.0478L50.9989 27.53" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 38.9062L31.0374 53.1167C31.7518 53.5221 32.6266 53.5221 33.3409 53.1167L58.3784 38.9062" stroke="black" stroke-width="1.75" stroke-linejoin="round"/>
+<path d="M58.3789 32.3013L32.1897 47.1654L6.00053 32.3013" stroke="black" stroke-width="1.75" stroke-linejoin="round"/>
+<path d="M32.1914 59.0208V47.166" stroke="black" stroke-width="1.75" stroke-linejoin="round"/>
+<path d="M46.2636 8.79102V25.8504C46.2636 27.2324 44.4147 28.4417 41.6523 29.1041" stroke="black" stroke-width="1.75" stroke-linecap="round"/>
+<ellipse cx="36.786" cy="8.79097" rx="9.47742" ry="3.79097" stroke="black" stroke-width="1.75"/>
+<path d="M39.3533 33.483C39.8674 34.3569 40.2074 35.4575 39.5022 36.186C38.1302 37.6035 34.6891 38.6086 30.661 38.6086C26.633 38.6086 23.1918 37.6035 21.8198 36.186C21.1146 35.4575 21.4547 34.3569 21.9687 33.483L30.661 18.7061L39.3533 33.483Z" stroke="black" stroke-width="1.75" stroke-linejoin="round"/>
+<path d="M27.3086 8.79102V18.419" stroke="black" stroke-width="1.75" stroke-linecap="round"/>
+</svg>

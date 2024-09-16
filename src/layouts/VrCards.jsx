@@ -106,7 +106,7 @@ export const VrCards = () => {
             </div>
           </div>
           <div className="row mx-0 align-items-center stepsToInstall justify-content-between position-relative">
-            <div className="col-sm-5 col-12 ps-0">
+            <div className="col-md-5 col-12 ps-0">
               <div className="stepsToInstallInner">
                 <div className="d-flex gap-3">
                   <img src="/img/icon/basic_req.svg" alt="Icons" />
@@ -118,7 +118,7 @@ export const VrCards = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm-5 col-12 pe-0">
+            <div className="col-md-5 col-12 pe-0">
               <div className="stepsToInstallInner">
                 <div className="d-flex gap-3">
                   <img src="/img/icon/install_train.svg" alt="Icons" />
@@ -131,7 +131,16 @@ export const VrCards = () => {
               </div>
             </div>
           </div>
-          <img src="/img/access.png" alt="Access" />
+          <picture>
+            <source media="(min-width:768px)" srcSet={"/img/access.webp"} />
+            <img
+              className=""
+              // src="/img/banner-m.png"
+              src={"/img/access-m.webp"}
+              alt="bannerVR"
+            />
+          </picture>
+          {/* <img src="/img/access.webp" alt="Access" /> */}
         </div>
       </div>
       <div className="buyingOptionsForKids">
@@ -198,10 +207,10 @@ export const VrCards = () => {
               Need More?
             </li>
           </ul>
-          <button className="btn btn-outline" onClick={() => {
-                  setOrderModal(true);
-                  setNum("");
-                }}>Order Now</button>
+          <button className="btn btn-outline textCenterAfter767" onClick={() => {
+            setOrderModal(true);
+            setNum("");
+          }}>Order Now</button>
         </div>
         <div className="buyingOptionsForKidsR">
           <h6 className="text-center">Each Kit includes essential accessories</h6>

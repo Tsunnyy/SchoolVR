@@ -19,7 +19,7 @@ export const MathVerse = () => {
         <div className="geo-verse-page">
             <div className="main-wrap">
                 <ProductBanner
-                    class="product-geo-verse"
+                    class="product-math-verse"
                     title="MathVerse"
                     subTitle="Coming Soon"
                 // coming={true}

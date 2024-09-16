@@ -6,24 +6,24 @@ import PageHero from '../components/PageHero';
 const SupportCommunity = () => {
     return (
         <>
-            {/* <div className="aboutHeadSection contactUsMain">
-                <img src="/img/layers/layer1.png" alt="Layer" className='layerImage' />
+            {/* <div className="aboutHeadSection contactUsMain position-relative">
+                <img src="/img/layers/layer1.webp" alt="Layer" className='layerImage' />
                 <div className="margin-top-100-class padding-lr-class">
                     <div className="row m-0 align-items-center justify-content-between">
-                        <div className="col-sm-8 ps-0">
+                        <div className="col-sm-7 ps-0">
                             <h4 className='pageHeadText'>We're Here to Help You Succeed</h4>
                             <p className='pagePara my-5'>At School VR, we're committed to providing exceptional support and fostering a vibrant community where educators, students, and partners can connect, collaborate, and thrive. We understand that implementing new technology can be challenging, and we're here to guide you every step of the way.</p>
                             <button className='btn btn-outline'>Book a Demo</button>
                         </div>
-                        <div className="col-sm-3 pe-0">
-                            <img src="/img/support.png" alt="Support Image" />
+                        <div className="col-sm-5 pe-0">
+                            <img src="/img/support.webp" alt="Support Image" />
                         </div>
                     </div>
                 </div>
             </div> */}
             <PageHero title="We're Here to Help You Succeed" bgImage="layer1" heroImage="support" btnText="Book A Demo" paragraph="At School VR, we're committed to providing exceptional support and fostering a vibrant community where educators, students, and partners can connect, collaborate, and thrive. We understand that implementing new technology can be challenging, and we're here to guide you every step of the way." />
             <div className="reachOuttoUs supportResources padding-lr-class">
-                <h3 className='text-center mb-5'>Comprehensive Support Resources</h3>
+                <h3 className='text-center mb-5 reachOuttoUsTitle'>Comprehensive Support Resources</h3>
                 <div className="reachOuttoUsCard">
                     <div className="reachOuttoUsCardInner">
                         <div className="d-flex gap-3 align-items-start">
@@ -57,7 +57,7 @@ const SupportCommunity = () => {
 
                 <div className="communityMainDivMain">
                     <div className="row m-0 align-items-center">
-                        <div className="col-12 col-sm-8 ps-0">
+                        <div className="col-12 col-md-8 ps-0">
                             <h4 class="pageHeadText">Thriving Community</h4>
                             <div className="communityMainDiv">
                                 <div className="d-flex gap-3 align-items-start">
@@ -83,11 +83,11 @@ const SupportCommunity = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-sm-4 pe-0">
+                        <div className="col-12 col-md-4 pe-0">
                             <div className="communityMainDivR text-center">
                                 <h6>SchoolVRs Learners Forum</h6>
-                                <img src="/img/community.png" alt="community" />
-                                <button className='btn btn-outline mx-auto'>Coming Soon</button>
+                                <img src="/img/community.webp" alt="community" />
+                                <button className='btn mx-auto disableButton'>Coming Soon</button>
                             </div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@ const SupportCommunity = () => {
 
                 <hr className='marginBlock' />
 
-                <h3 className='text-center'>We're excited to hear from you and embark on this journey of educational innovation together!</h3>
+                <h3 className='text-center bottomText'>Join the School VR community today and experience the power of collective learning and innovation.</h3>
             </div>
             <About />
             <Footer />

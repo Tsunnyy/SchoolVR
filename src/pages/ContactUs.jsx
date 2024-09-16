@@ -22,8 +22,8 @@ const ContactUs = () => {
             />
 
             <div className="reachOuttoUs padding-lr-class">
-                <h3 className='text-center mb-5'>Reach Out to Us</h3>
-                <div className="reachOuttoUsCard">
+                <h3 className='text-center mb-5 reachOuttoUsTitle'>Reach Out to Us</h3>
+                <div className="reachOuttoUsCard reachOuttoUsCardWithPadding">
                     <div className="reachOuttoUsCardInner">
                         <div className="d-flex gap-4 mb-5 align-items-center">
                             <img src="/img/icon/forschool.svg" alt="forschool" />
@@ -86,31 +86,68 @@ const ContactUs = () => {
                             <img src="/img/icon/email.svg" alt="Mail" />
                             <div>
                                 <h2>Email</h2>
-                                <a href='mailto:admin@aonix.com'>admin@aonix.com</a>
+                                <a href='mailto:info@schoolvr.us'>info@schoolvr.us</a>
                             </div>
                         </div>
                         <div className="d-flex gap-4 align-items-center">
                             <img src="/img/icon/call.svg" alt="Call" />
                             <div>
                                 <h2>Phone</h2>
-                                <a href='tel:+919508382971'>+91 9508382971</a>
+                                <a href='tel:+15715679892'>+1 (571) 567-9892</a>
                             </div>
                         </div>
                     </div>
 
-                    <div className="d-flex gap-3 justify-content-center align-items-center socialIcons">
-                        <img src="/img/social/fb.svg" alt="Facebook" />
-                        <img src="/img/social/ig.svg" alt="Instagram" />
-                        <img src="/img/social/ld.svg" alt="LinkedIn" />
-                        <img src="/img/social/x.svg" alt="x" />
-                        <img src="/img/social/yt.svg" alt="Youtube" />
+                    <div className="d-none-after-767">
+                        <div className="d-flex gap-3 justify-content-center align-items-center socialIcons">
+                            {/* <img src="/img/social/fb.svg" alt="Facebook" />
+                            <img src="/img/social/ig.svg" alt="Instagram" />
+                            <img src="/img/social/ld.svg" alt="LinkedIn" />
+                            <img src="/img/social/x.svg" alt="x" />
+                            <img src="/img/social/yt.svg" alt="Youtube" /> */}
+
+                            <a href="https://www.facebook.com/profile.php?id=61558819645521&mibextid=qi2Omg&rdid=dgk90yyWyt6mm507&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fc4iTGogr5VjsYfxF%2F%3Fmibextid%3Dqi2Omg" target="_blank">
+                                <img src="/img/social/fb.svg" alt="Facebook" />
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <img src="/img/social/ig.svg" alt="Instagram" />
+                            </a>
+                            <a href="https://www.linkedin.com/company/schoolvr/" target="_blank">
+                                <img src="/img/social/ld.svg" alt="LinkedIn" />
+                            </a>
+                            <a href="https://x.com/School__VR?t=LNFaEqDFtoru3z4lXh3MjA&s=08" target="_blank">
+                                <img src="/img/social/x.svg" alt="X" />
+                            </a>
+                            <a href="https://www.youtube.com/@SchoolVR" target="_blank">
+                                <img src="/img/social/yt.svg" alt="YouTube" />
+                            </a>
+
+                        </div>
+                    </div>
+                    <div className="d-none-on-web">
+                        <div className="d-flex gap-3 justify-content-center align-items-center socialIcons">
+                            <a href="https://www.facebook.com/profile.php?id=61558819645521&mibextid=qi2Omg&rdid=dgk90yyWyt6mm507&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fc4iTGogr5VjsYfxF%2F%3Fmibextid%3Dqi2Omg" target="_blank">
+                                <img src="/img/social/fbg.svg" alt="Facebook" />
+                            </a>
+                            <img src="/img/social/igg.svg" alt="Instagram" />
+
+                            <a href="https://www.linkedin.com/company/schoolvr/" target="_blank">
+                                <img src="/img/social/ldg.svg" alt="LinkedIn" />
+                            </a>
+                            <a href="https://x.com/School__VR?t=LNFaEqDFtoru3z4lXh3MjA&s=08" target="_blank">
+                                <img src="/img/social/xg.svg" alt="X" />
+                            </a>
+                            <a href="https://www.youtube.com/@SchoolVR" target="_blank">
+                                <img src="/img/social/ytg.svg" alt="YouTube" />
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <hr className='marginBlock' />
 
-                <h3 className='text-center pageHeadText'>We're excited to hear from you and embark on this journey of educational innovation together!</h3>
-            </div>
+                <h3 className='text-center bottomText'>We're excited to hear from you and embark on this journey of educational innovation together!</h3>
+            </div >
             <ModalEarlyBird modalActive={earlyBird} setModalActive={setearlyBird} />
             <About />
             <Footer />

@@ -97,7 +97,7 @@ export const Ivr = () => (
             </div>
           </div>
         </div>
-        <img src="/img/ivr.webp" alt="ivr" />
+        <img src="/img/ivr.webp" className="ivrMainImg" alt="ivr" />
         <div className="ivrCardGapClass">
           <div className="card-item">
             <div className="card-icon">
@@ -137,7 +137,7 @@ export const Ivr = () => (
               <p className="section-sub-title">{ivr.content}</p>
               <img
                 className="hero-banner"
-                src={`/img/${ivr.class}.png`}
+                src={`/img/students/${ivr.class}.webp`}
                 alt="bannerVR" />
               <NavLink to={ivr.path}>
                 <span className="btn btn-outline">Know More</span>

@@ -112,9 +112,9 @@ header {
     transition: 500ms;
     cursor: pointer;
 
-    &:hover {
-      filter: invert(1);
-    }
+    // &:hover {
+    //   filter: invert(1);
+    // }
 
     &-icon {
       width: 3rem;
@@ -137,6 +137,7 @@ header {
     max-height: 100vh;
     overflow: auto;
     border: 0.1rem solid #ffffff7a;
+    background: #0000008f;
 
     &.navbar-active {
       display: block;
@@ -278,8 +279,10 @@ header {
         background-color: #292d32;
         color: #ecc243;
         text-align: center;
-        padding-block: 0.4rem;
+        padding: 2px 15px;
         transform: translateY(70%);
+        width: fit-content;
+        margin: auto;
       }
     }
 
@@ -307,6 +310,7 @@ header {
 
   .sub-menu {
     gap: 22px;
+    padding-left: 100px !important;
 
     &.whiteClr {
       .dropdown button {
@@ -405,6 +409,10 @@ header {
   }
 }
 
+.sub-menu-mobile {
+  display: none;
+}
+
 @include mq(md) {
   header {
     padding-top: 3.2rem;
@@ -490,5 +498,31 @@ header {
         }
       }
     }
+  }
+}
+
+@media (max-width: 767px) {
+
+  header {
+    padding-top: 20px;
+  }
+
+  header .sub-menu {
+    display: none !important;
+  }
+
+  .sub-menu-mobile {
+    display: block;
+
+    li {
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  header .explore-tray .get-in-touch {
+    margin-bottom: 50px;
   }
 }

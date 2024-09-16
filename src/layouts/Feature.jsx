@@ -37,30 +37,12 @@ export const Feature = () => {
   const { setExtraClass, setModalActive } = useContext(MyContext);
 
   return (
-    // <div className="feature-section flex-col-center">
-    //   <span className="line top"></span>
-    //   <div className="card-list">
-    //     {cardData.map((card) => (
-    //       <div className="card-item" key={card.id}>
-    //         <div className="card-icon">
-    //           <img src={`/img/icon/${card.class}.svg`} alt={`${card.class}`} />
-    //         </div>
-    //         <div className="card-title">
-    //           <h3>{card.name}</h3>
-    //         </div>
-    //         <div className="card-content">
-    //           <p className="text-justify">{card.content}</p>
-    //         </div>
-    //       </div>
-    //     ))}
-    //   </div>
-    // </div>
     <div className="feature-section-class">
       <div className="cardOptions">
         <div className="cardOptionOne">
           <div className="card-item">
             <div className="card-icon">
-              <img src={`/img/icon/tutors.svg`} alt="tutors" />
+              <img src={`/img/icon/newIcons/tutors.svg`} alt="tutors" />
             </div>
             <div className="card-title">
               <h3>AI Tutors</h3>
@@ -73,7 +55,7 @@ export const Feature = () => {
           </div>
           <div className="card-item">
             <div className="card-icon">
-              <img src={`/img/icon/analytics.svg`} alt="analytics" />
+              <img src={`/img/icon/newIcons/analytics.svg`} alt="analytics" />
             </div>
             <div className="card-title">
               <h3>Analytics</h3>
@@ -88,7 +70,7 @@ export const Feature = () => {
         <div className="cardOptionTwo">
           <div className="card-item">
             <div className="card-icon">
-              <img src={`/img/icon/quiz.svg`} alt="quiz" />
+              <img src={`/img/icon/newIcons/quiz.svg`} alt="quiz" />
             </div>
             <div className="card-title">
               <h3>Quizzes</h3>
@@ -101,7 +83,7 @@ export const Feature = () => {
           </div>
           <div className="card-item">
             <div className="card-icon">
-              <img src={`/img/icon/explantion.svg`} alt="explantion" />
+              <img src={`/img/icon/newIcons/explantion.svg`} alt="explantion" />
             </div>
             <div className="card-title">
               <h3>Explanation Room</h3>

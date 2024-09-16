@@ -8,7 +8,7 @@ const TrainingAndCertification = () => {
   return (
     <>
       <div className='aboutHeadSection p-0 position-relative'>
-        <img src="/img/layers/layer1.png" alt="Layer" className='layerImage' />
+        <img src="/img/layers/layer1.webp" alt="Layer" className='layerImage' />
         <div className="margin-top-100-class padding-lr-class">
           <div className="paddingBottomClass">
             <div className="row m-0 align-items-center justify-content-between">
@@ -18,7 +18,7 @@ const TrainingAndCertification = () => {
                 <p className='pagePara'>At School VR, we recognize that technology is rapidly transforming the educational landscape. Our comprehensive training and certification programs, accredited by the World Stem Federation, empower educators and IT staff with the skills and knowledge they need to harness the full potential of technology in the classroom, creating engaging and impactful learning experiences for students..</p>
               </div>
               <div className="col-sm-5 pe-0">
-                <img src="/img/traning.png" alt="About Image" />
+                <img src="/img/traning.webp" alt="About Image" />
               </div>
             </div>
           </div>
@@ -27,7 +27,9 @@ const TrainingAndCertification = () => {
       <div className="cieProgram position-relative">
         <div className="padding-lr-class">
           <div className="offerDiv text-center">
-            <h2 className='pageHeadText'>Exclusive Offer</h2>
+            <h2 className='pageHeadText'><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.692 19.616c.59 0 .886 0 1.155.1q.057.021.111.046c.261.12.47.328.888.746c.962.962 1.443 1.443 2.034 1.488q.12.009.24 0c.591-.045 1.072-.526 2.034-1.488c.418-.418.627-.626.888-.746q.054-.025.11-.046c.27-.1.565-.1 1.156-.1h.11c1.507 0 2.261 0 2.73-.468s.468-1.223.468-2.73v-.11c0-.59 0-.886.1-1.155q.021-.057.046-.111c.12-.261.328-.47.746-.888c.962-.962 1.443-1.443 1.488-2.034q.009-.12 0-.24c-.045-.591-.526-1.072-1.488-2.034c-.418-.418-.626-.627-.746-.888l-.046-.11c-.1-.27-.1-.565-.1-1.156v-.11c0-1.507 0-2.261-.468-2.73s-1.223-.468-2.73-.468h-.11c-.59 0-.886 0-1.155-.1l-.111-.046c-.261-.12-.47-.328-.888-.746c-.962-.962-1.443-1.443-2.034-1.488a2 2 0 0 0-.24 0c-.591.045-1.072.526-2.034 1.488c-.418.418-.627.627-.888.746l-.11.046c-.27.1-.565.1-1.156.1h-.11c-1.507 0-2.261 0-2.73.468s-.468 1.223-.468 2.73v.11c0 .59 0 .886-.1 1.155q-.022.057-.046.111c-.12.261-.328.47-.746.888c-.962.962-1.443 1.443-1.488 2.034a2 2 0 0 0 0 .24c.045.591.526 1.072 1.488 2.034c.418.418.627.627.746.888q.025.054.046.11c.1.27.1.565.1 1.156v.11c0 1.507 0 2.261.468 2.73s1.223.468 2.73.468zM15 9l-6 6m6 0h-.01M9.01 9H9" color="white" />
+            </svg> Exclusive Offer</h2>
             <p>We are excited to announce that School VR is offering these valuable World Stem Federation accredited certifications, typically starting at $250 USD each, at no cost to your school! Every subject teacher and IT staff member can benefit from this exclusive opportunity to enhance their skills and gain professional recognition. This offer is available for the 1st Year of License to ensure the program is smoothly implemented at the school.</p>
           </div>
 
@@ -47,7 +49,7 @@ const TrainingAndCertification = () => {
                       <p>Teachers new to educational technology or seeking foundational knowledge</p>
                     </div>
                   </div>
-                  <div className="d-flex gap-4 mb-5 align-items-start">
+                  <div className="d-flex gap-4 mb-5 align-items-start syllabus">
                     <img src="/img/icon/star.svg" alt="star" />
                     <div>
                       <span>Syllabus Highlights</span>
@@ -72,7 +74,7 @@ const TrainingAndCertification = () => {
                       <p>Teachers with 2 years experience in educational technology looking to deepen their expertise</p>
                     </div>
                   </div>
-                  <div className="d-flex gap-4 mb-5 align-items-start">
+                  <div className="d-flex gap-4 mb-5 align-items-start syllabus">
                     <img src="/img/icon/star.svg" alt="people" />
                     <div>
                       <span>Syllabus Highlights</span>
@@ -81,7 +83,6 @@ const TrainingAndCertification = () => {
                       <p>Utilizing technology for differentiated instruction & personalized learning</p>
                       <p>Exploring emerging trends & research in educational technology</p>
                       <p>Collaborative project development using various tech tools add text in p tag</p>
-                      <p></p>
                     </div>
                   </div>
                 </div>
@@ -98,7 +99,7 @@ const TrainingAndCertification = () => {
                       <p>Experienced educators with 3 Years experience seeking to become leaders in educational technology integration</p>
                     </div>
                   </div>
-                  <div className="d-flex gap-4 mb-5 align-items-start">
+                  <div className="d-flex gap-4 mb-5 align-items-start syllabus">
                     <img src="/img/icon/star.svg" alt="star" />
                     <div>
                       <span>Syllabus Highlights</span>
@@ -122,8 +123,8 @@ const TrainingAndCertification = () => {
         </div>
         <div className="benefitsofCertificationParent">
           <div className="benefitsofCertification">
-            <div className="row m-0 align-items-center">
-              <div className="col-12 col-md-8 ps-0">
+            <div className="row m-0 align-items-center justify-content-between">
+              <div className="col-12 col-md-8 ps-0 benefitsofCertificationL">
                 <h2 className='pageHeadText clr-white'>Benefits of Certification</h2>
                 <div className="gridDiv withTwoCol">
                   <div className="d-flex gap-3 align-items-center">
@@ -156,8 +157,8 @@ const TrainingAndCertification = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-md-4 pe-0">
-                <img src="/img/certificate.png" alt="certificate" />
+              <div className="col-12 col-md-3 pe-0 benefitsofCertificationR">
+                <img src="/img/certificate.webp" alt="certificate" />
               </div>
             </div>
           </div>
@@ -167,19 +168,19 @@ const TrainingAndCertification = () => {
           <div className="reachOuttoUs programDetails">
             <h3 className='secondary_title text-center'>Certified Innovative Educator (CIE) Program </h3>
             <div className="gridDiv withFourCol">
-              <div>
+              <div className='reachOuttoUsInner'>
                 <span>Training Delivery</span>
                 <p>Choose from online, in-person, or blended learning formats (depending on availability in the region)</p>
               </div>
-              <div>
+              <div className='reachOuttoUsInner'>
                 <span>Expert Instructors</span>
                 <p>Learn from experienced VR educators & IT professionals</p>
               </div>
-              <div>
+              <div className='reachOuttoUsInner'>
                 <span>Hands-on Activities</span>
                 <p>Engage in practical exercises & simulations to solidify your understanding</p>
               </div>
-              <div>
+              <div className='reachOuttoUsInner'>
                 <span>Ongoing Support</span>
                 <p>Access resources & community forums for continued learning & collaboration</p>
               </div>

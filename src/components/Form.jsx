@@ -116,30 +116,90 @@ export const Form = () => {
 
   return (
     <form action="" className="grid-2" onSubmit={handleSubmit}>
-      <FormField
-        placeholder="Name*"
-        name="name"
-        value={form.name}
-        onChange={handleChange}
-        errorMessage={error.name}
-      />
-      <FormField
-        placeholder="Email*"
-        name="email"
-        value={form.email}
-        onChange={handleChange}
-        errorMessage={error.email}
-      />
+      {window.location.pathname === "/partnerwithus" ? (
+        <>
+          <FormField
+            placeholder="First Name*"
+            name="fname"
+            onChange={handleChange}
+            value={form.fname}
+            errorMessage={error.fname}
+          />
+          <FormField
+            placeholder="Last Name*"
+            name="lname"
+            onChange={handleChange}
+            value={form.lname}
+            errorMessage={error.lname}
+          />
+          <FormField
+            placeholder="Company/Organization*"
+            name="companyOrOrganization"
+            onChange={handleChange}
+            value={form.companyOrOrganization}
+            errorMessage={error.companyOrOrganization}
+          />
+          <FormField
+            placeholder="Location (Country/Region/City)*"
+            name="location"
+            onChange={handleChange}
+            value={form.location}
+            errorMessage={error.location}
+          />
+          <FormField
+            placeholder="Email*"
+            name="email"
+            onChange={handleChange}
+            value={form.email}
+            errorMessage={error.email}
+          />
+          <FormField
+            placeholder="Phone*"
+            name="phone"
+            onChange={handleChange}
+            value={form.phone}
+            errorMessage={error.phone}
+          />
+          <FormField
+            type="textarea"
+            placeholder="Brief Description of Your Experience & Interest in Partnering with School VR"
+            name="message"
+            onChange={handleChange}
+            value={form.message}
+            className="col-2"
+            errorMessage={error.message}
+          />
+        </>
+      ) : (
+        <>
+          <FormField
+            placeholder="Name*"
+            name="name"
+            onChange={handleChange}
+            value={form.name}
+            errorMessage={error.name}
+          />
+          <FormField
+            placeholder="Email*"
+            name="email"
+            onChange={handleChange}
+            value={form.email}
+            errorMessage={error.email}
+          />
+          <FormField
+            type="textarea"
+            placeholder="Message*"
+            name="message"
+            onChange={handleChange}
+            value={form.message}
+            className="col-2"
+            errorMessage={error.message}
+          />
+        </>
+      )}
 
-      <FormField
-        type="textarea"
-        placeholder="Message* "
-        name="message"
-        value={form.message}
-        className="col-2"
-        onChange={handleChange}
-        errorMessage={error.message}
-      />
+
+
       <p className="form-success col-2">{global}</p>
       <div className="form-btn">
         <button className="btn btn-secondary">
@@ -166,6 +226,6 @@ export const Form = () => {
           </svg>
         </button>
       </div>
-    </form>
+    </form >
   );
 };

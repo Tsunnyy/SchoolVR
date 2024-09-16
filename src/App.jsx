@@ -29,6 +29,7 @@ import TrainingAndCertification from "./pages/TrainingAndCertification";
 import Grant from "./pages/Grant";
 import { MathVerse } from "./pages/MathVerse";
 import LabSetupAndLearning from "./pages/LabSetupAndLearning";
+import CountryList from "./pages/CountryList";
 
 function App() {
   const [loader, setLoader] = useState(true);
@@ -42,7 +43,7 @@ function App() {
   }, []);
   return (
     <div className={extraClass}>
-      <RotateDevice />
+      {/* <RotateDevice /> */}
 
       <MyContext.Provider
         value={{
@@ -79,6 +80,7 @@ function App() {
             <Route path="/lab-setup-and-learning" element={<LabSetupAndLearning />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/CountryList" element={<CountryList />} />
             <Route path="/blogs/category/:slug" element={<Blogs />} />
             <Route path="/blogs/:slug" element={<BlogsDetail />} />
             <Route path="*" element={<NotFound />} />

@@ -1,7 +1,7 @@
 @use "../config/" as *;
 
 .h-section {
-  background: url("/img/banner-bg.png") center/cover;
+  background: url("/img/banner-bg.webp") center/cover;
   display: grid;
   place-content: center;
   padding-top: 70px;
@@ -173,13 +173,14 @@
     justify-content: center;
     font-size: 1.4rem;
     font-weight: 600;
+    border: none;
   }
 }
 
 @include mq(md) {
   .hero-section {
     padding-top: 15%;
-    background: url("/img/banner-bg.png") center/cover;
+    background: url("/img/banner-bg.webp") center/cover;
 
     .hero-image {
       picture {
@@ -277,3 +278,4 @@
     }
   }
 }
+

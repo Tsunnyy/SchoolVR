@@ -50,11 +50,19 @@ let productData = [
     video: true,
     content: "Coming Soon",
   },
+  {
+    id: 6,
+    name: "MathVerse",
+    class: "math-verse",
+    path: "/mathVerse",
+    video: true,
+    content: "Coming Soon",
+  },
 ];
 
 export const Product = () => {
   return (
-    <div className="product-section full-height">
+    <div className="product-section">
       {/* <span className="line top"></span> */}
       {/* <span className="line bottom"></span> */}
 
@@ -73,7 +81,7 @@ export const Product = () => {
               return (
                 '<span class="' +
                 className +
-                '"><img class="icon" src="/img/product/icon/verse-' +
+                '"><img class="icon" src="/img/product/icon/new/verse-' +
                 index +
                 '.svg" alt="verse" /></span>'
               );
@@ -128,8 +136,8 @@ export const Product = () => {
                 </div>
                 <h4 className="section-title">{product.name}</h4>
                 <span className="section-sub-title">{product.content}</span>
-                <Link preventScrollReset={true} to={product.path}>
-                  <span className="btn btn-secondary">Know More</span>
+                <Link className="btn btn-outline" preventScrollReset={true} to={product.path}>
+                  Know More
                 </Link>
               </div>
             </SwiperSlide>

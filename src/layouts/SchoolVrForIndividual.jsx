@@ -8,11 +8,11 @@ export const SchoolVrForIndividual = () => {
   return (
     <>
       <div className='aboutHeadSection position-relative'>
-        <img src="/img/layers/layer2.png" alt="Decorative layer background" className='layerImage' />
+        <img src="/img/layers/layer2.webp" alt="Decorative layer background" className='layerImage' />
         <div className="margin-top-100-class padding-lr-class">
           <div className="row m-0 align-items-center justify-content-between">
             <div className="col-sm-8 ps-0">
-              <h4 className='pageHeadText pageHeadTextLight'>SchoolVR for <b>Individual</b></h4>
+              <h4 className='pageHeadText pageHeadTextLight'>SchoolVR for <b>Individuals</b></h4>
               <p className='pagePara'>
                 SVI, or SchoolVR for Individuals, is a cutting-edge Virtual Reality
                 platform meticulously crafted for independent learners. Offering an
@@ -32,7 +32,7 @@ export const SchoolVrForIndividual = () => {
               <button className='btn btn-outline bg-transparent' onClick={() => { setModalActive(true); }} ariaLabel='Book a demo of SchoolVR for Schools'>Book a Demo</button>
             </div>
             <div className="col-sm-4 pe-0">
-              <img src="/img/svi.png" alt="SchoolVR for Individuals" />
+              <img src="/img/students/svi.webp" alt="SchoolVR for Individuals" />
             </div>
           </div>
         </div>

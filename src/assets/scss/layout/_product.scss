@@ -1,5 +1,29 @@
 @use "../config/" as *;
 
+.swiper-slide {
+  &:last-child .video {
+    position: relative;
+
+    &::after {
+      content: "Coming Soon";
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-content: center;
+      font-size: 50px;
+      color: #fff;
+    }
+
+    video {
+      background-color: #E76F51;
+
+    }
+  }
+}
+
 .product-section {
   overflow: hidden;
   background: radial-gradient(110.73% 221.19% at -4.65% 0%,
@@ -19,9 +43,10 @@
 
   .vr-video {
     max-width: 80rem;
-    padding-top: 2rem;
+    max-width: 95rem;
+    // padding-top: 2rem;
     position: relative;
-    width: 100%;
+    width: 95%;
     isolation: isolate;
 
     .line {
@@ -34,6 +59,7 @@
       position: fixed;
       border-radius: 50%;
       background-color: transparent;
+      display: none;
 
       @include mq(md) {
         left: 50%;
@@ -46,7 +72,7 @@
 
   .video {
     width: 100%;
-    mask-image: url("/img/vr-m.webp");
+    mask-image: url("/img/vr.webp");
     mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -67,6 +93,7 @@
       height: 100vh;
       min-height: 70rem;
       padding-top: 16rem;
+      background-color: #F6FBFF;
     }
 
     &-button-next,
@@ -116,8 +143,8 @@
   }
 
   .icon {
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 5rem;
+    height: 5rem;
     object-fit: contain;
     filter: grayscale(1);
     transition: filter ease-in 300ms;
@@ -135,34 +162,35 @@
       gap: 0;
     }
 
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   inset: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   z-index: -1;
+    // }
 
-    &.product-bio-verse::before {
-      background: url("/img/product/item-bg/bio-verse-bg-m.webp") center/cover;
-    }
+    // &.product-bio-verse::before {
+    //   background: url("/img/product/item-bg/bio-verse-bg-m.webp") center/cover;
+    //   background: radial-gradient(circle, rgba(137,210,78,0.5) 0%, rgba(255,255,255,1) 100%);
+    // }
 
-    &.product-chem-verse::before {
-      background: url("/img/product/item-bg/chem-verse-bg-m.webp") center/cover;
-    }
+    // &.product-chem-verse::before {
+    //   background: url("/img/product/item-bg/chem-verse-bg-m.webp") center/cover;
+    // }
 
-    &.product-atom-verse::before {
-      background: url("/img/product/item-bg/atom-verse-bg-m.webp") center/cover;
-    }
+    // &.product-atom-verse::before {
+    //   background: url("/img/product/item-bg/atom-verse-bg-m.webp") center/cover;
+    // }
 
-    &.product-space-verse::before {
-      background: url("/img/product/item-bg/space-verse-bg-m.webp") center/cover;
-    }
+    // &.product-space-verse::before {
+    //   background: url("/img/product/item-bg/space-verse-bg-m.webp") center/cover;
+    // }
 
-    &.product-geo-verse::before {
-      background: url("/img/product/item-bg/geo-verse-bg-m.webp") center/cover;
-    }
+    // &.product-geo-verse::before {
+    //   background: url("/img/product/item-bg/geo-verse-bg-m.webp") center/cover;
+    // }
 
     a {
       display: flex;
@@ -171,6 +199,14 @@
   }
 
   .product-geo-verse {
+    .section-sub-title {
+      text-transform: uppercase;
+      letter-spacing: 0.9rem;
+      word-spacing: 0.5rem;
+      font-weight: 500;
+    }
+  }
+  .product-math-verse {
     .section-sub-title {
       text-transform: uppercase;
       letter-spacing: 0.9rem;
@@ -189,9 +225,28 @@
   }
 
   .section-sub-title {
+    font-family: Gilroy-Regular;
+    font-size: 14px;
     font-weight: 400;
-    min-height: 6.8rem;
+    line-height: 16.8px;
+    color: #525252;
+    margin: 12px 0 30px;
+    width: 60%;
   }
+
+  .section-title {
+    font-family: Gilroy-SemiBold;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #292D32;
+    margin: 30px 0 0;
+  }
+
+  // .section-sub-title {
+  //   font-weight: 400;
+  //   min-height: 6.8rem;
+  // }
 
   .product-item {
     height: 100%;
@@ -201,35 +256,150 @@
 
 @include mq(lg) {
   .product-section {
-    min-height: 70rem;
+    // min-height: 70rem;
 
     .product-item {
       margin-inline: auto;
     }
 
     .product-content {
-      width: 70%;
+      width: 80%;
       margin-inline: auto;
+      position: relative;
 
       &.product-bio-verse::before {
-        background: url("/img/product/item-bg/bio-verse-bg.webp") center/cover;
+        // background: url("/img/product/item-bg/bio-verse-bg.webp") center/cover;
+        background: url("/img/bioVerseEdge.png");
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        isolation: isolate;
+        z-index: -1;
       }
 
       &.product-chem-verse::before {
-        background: url("/img/product/item-bg/chem-verse-bg.webp") center/cover;
+        // background: url("/img/product/item-bg/chem-verse-bg.webp") center/cover;
+        background: url("/img/chemVerseEdge.png");
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        isolation: isolate;
+        z-index: -1;
       }
 
       &.product-atom-verse::before {
-        background: url("/img/product/item-bg/atom-verse-bg.webp") center/cover;
+        // background: url("/img/product/item-bg/atom-verse-bg.webp") center/cover;
+        background: url("/img/atomVerseEdge.png");
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        isolation: isolate;
+        z-index: -1;
       }
 
       &.product-space-verse::before {
-        background: url("/img/product/item-bg/space-verse-bg.webp") center/cover;
+        // background: url("/img/product/item-bg/space-verse-bg.webp") center/cover;
+        background: url("/img/spaceVerseEdge.png");
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        isolation: isolate;
+        z-index: -1;
       }
 
       &.product-geo-verse::before {
-        background: url("/img/product/item-bg/geo-verse-bg.webp") center/cover;
+        // background: url("/img/product/item-bg/geo-verse-bg.webp") center/cover;
+        background: url("/img/geoVerseEdge.png");
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        isolation: isolate;
+        z-index: -1;
+      }
+
+      &.product-math-verse::before {
+        // background: url("/img/product/item-bg/geo-verse-bg.webp") center/cover;
+        background: url("/img/mathVerseEdge.png");
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        isolation: isolate;
+        z-index: -1;
       }
     }
   }
+}
+
+@media (max-width: 767px) {
+
+  .product-section .swiper-pagination {
+    gap: 5px;
+  }
+
+  .product-section .swiper-pagination-bullet {
+    width: fit-content !important;
+    height: fit-content !important;
+    padding: 0;
+
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  .product-section .section-sub-title {
+    width: 100%;
+  }
+
+  .swiper-slide:last-child .video::after {
+    font-size: 24px;
+  }
+
+  .product-section .product-content {
+    gap: 10px;
+  }
+
+  .product-section .section-title {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .product-section .swiper-slide {
+    min-height: unset;
+    height: 80vh;
+  }
+
+  .h-section .hero-image .bag {
+    max-width: 120px;
+  }
+
+  .h-section .hero-image picture img  {
+    margin-top: 30px;
+  }
+
 }

@@ -5,7 +5,7 @@ let quickLinks = [
   {
     id: 1,
     name: "About Us",
-    path: "/aboutus",
+    path: "/aboutUs",
   },
   {
     id: 2,
@@ -18,16 +18,11 @@ let quickLinks = [
     name: "Blogs",
     path: "/blogs",
   },
-  {
-    id: 4,
-    name: "Careers",
-    path: "/careers",
-  },
-  {
-    id: 5,
-    name: "Help Centre",
-    path: "/helpCentre",
-  },
+  // {
+  //   id: 4,
+  //   name: "Careers",
+  //   path: "/careers",
+  // },
 ];
 
 let productLinks = [
@@ -71,13 +66,13 @@ let productLinks = [
 let solutionsLinks = [
   {
     id: 1,
-    name: "SchoolIVR For Schools",
-    path: "/Svs",
+    name: "SchoolVR For Schools",
+    path: "/svs",
   },
   {
     id: 2,
-    name: "SchoolIVR For Individuals",
-    path: "/Svi",
+    name: "SchoolVR For Individuals",
+    path: "/svi",
   },
   {
     id: 3,
@@ -104,6 +99,11 @@ let programsLinks = [
   },
   {
     id: 3,
+    name: "Subjects",
+    path: "/subjects",
+  },
+  {
+    id: 4,
     name: "Grant",
     path: "/grant",
   },
@@ -112,25 +112,25 @@ let programsLinks = [
 let infoLinks = [
   {
     id: 1,
-    name: "admin@Aonix.in",
+    name: "info@schoolvr.us",
     img: "sms",
-    path: "mailto:admin@aonix.in",
+    path: "mailto:info@schoolvr.us",
   },
   {
     id: 2,
-    name: "+91-9508382971",
+    name: "+1 (571) 567-9892",
     img: "mobile",
-    path: "tel:+919508382971",
+    path: "tel:+15715679892",
   },
-  {
-    id: 3,
-    name: "Arunoday, Sihodih",
-    img: "building",
-    path: "/",
-  },
+  // {
+  //   id: 3,
+  //   name: "dellaware, us",
+  //   img: "building",
+  //   path: "/",
+  // },
   {
     id: 4,
-    name: "Giridh, Jharkhand 815301",
+    name: "Dellaware, US",
     img: "location",
     path: "/",
   },
@@ -154,7 +154,7 @@ export const Footer = () => {
   return (
     <footer className="footer footer_new">
       <div className="row m-0 my-5">
-        <div className="col-8 ps-0">
+        <div className="col-md-8 col-12 ps-0">
           <div className="footer-top-new">
             <ul className="footer-link-list-new">
               <span className="footer-link-title">About</span>
@@ -213,7 +213,7 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="col-4 pe-0">
+        <div className="col-md-4 col-12 pe-0">
           <ul className="footer-link-list footer-link-list-last">
             {infoLinks.map((link) => (
               <li key={link.id}>
