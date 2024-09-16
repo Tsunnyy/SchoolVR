@@ -301,7 +301,7 @@ export const PriceComponent = () => {
               <p className="card-text">Pico VR</p>
             </div>
           </div>
-          <button className="btn btn-outline mx-auto mt-5">Coming Soon</button>
+          <button className="btn mx-auto mt-5 disableButton border-none">Coming Soon</button>
         </div>
       </div>
       {/* <div className="card card-black text-light card-7">

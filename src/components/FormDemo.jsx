@@ -28,9 +28,9 @@ export const FormDemo = () => {
         // name should just accept alphabets and spaces
         value.trim() === ""
           ? setError((prevError) => ({
-              ...prevError,
-              name: "Name is required",
-            }))
+            ...prevError,
+            name: "Name is required",
+          }))
           : setError((prevError) => ({ ...prevError, name: "" }));
         let n = value;
         setForm((prevForm) => ({
@@ -41,48 +41,87 @@ export const FormDemo = () => {
       case "email":
         value.trim() === "" || !value.includes("@") || !value.includes(".")
           ? setError((prevError) => ({
-              ...prevError,
-              email: "Email is invalid",
-            }))
+            ...prevError,
+            email: "Email is invalid",
+          }))
           : setError((prevError) => ({ ...prevError, email: "" }));
         setForm((prevForm) => ({ ...prevForm, [name]: value }));
         break;
       case "message":
         value.trim() === ""
           ? setError((prevError) => ({
-              ...prevError,
-              message: "Message is required",
-            }))
+            ...prevError,
+            message: "Message is required",
+          }))
           : setError((prevError) => ({
-              ...prevError,
-              message: "",
-            }));
+            ...prevError,
+            message: "",
+          }));
         setForm((prevForm) => ({ ...prevForm, [name]: value }));
         break;
-      case "phone":
-        value.trim() === ""
-          ? setError((prevError) => ({
-              ...prevError,
-              phone: "Phone is required",
-            }))
-          : setError((prevError) => ({ ...prevError, phone: "" }));
 
+      case "phone":
+        const cleanedPhone = value.replace(/[^0-9]/g, ""); // Remove non-numeric characters
+        if (cleanedPhone.length === 0) {
+          setError((prevError) => ({
+            ...prevError,
+            phone: "Phone is required",
+          }));
+        } else if (cleanedPhone.length < 10) {
+          setError((prevError) => ({
+            ...prevError,
+            phone: "Phone number must be 10 digits",
+          }));
+        } else if (cleanedPhone.length > 10) {
+          setError((prevError) => ({
+            ...prevError,
+            phone: "Phone number must be 10 digits",
+          }));
+        } else {
+          setError((prevError) => ({
+            ...prevError,
+            phone: "",
+          }));
+        }
         setForm((prevForm) => ({
           ...prevForm,
-          [name]: value.replace(/[^0-9]/g, ""),
+          [name]: cleanedPhone,
         }));
         break;
+
+
       case "designation":
-        value.trim() === ""
-          ? setError((prevError) => ({
-              ...prevError,
-              designation: "Designation is required",
-            }))
-          : setError((prevError) => ({
-              ...prevError,
-              designation: "",
-            }));
-        setForm((prevForm) => ({ ...prevForm, [name]: value }));
+        setError((prevError) => ({
+          ...prevError,
+          designation: "",
+        }));
+        setForm((prevForm) => ({
+          ...prevForm,
+          [name]: value.replace(/[^A-Za-z\s.]/g, ""),
+        }
+        ));
+        break;
+      case "country":
+        setError((prevError) => ({
+          ...prevError,
+          country: "",
+        }));
+        setForm((prevForm) => ({
+          ...prevForm,
+          [name]: value.replace(/[^A-Za-z\s.]/g, ""),
+        }
+        ));
+        break;
+      case "state":
+        setError((prevError) => ({
+          ...prevError,
+          state: "",
+        }));
+        setForm((prevForm) => ({
+          ...prevForm,
+          [name]: value.replace(/[^A-Za-z\s.]/g, ""),
+        }
+        ));
         break;
       default:
         setForm((prevForm) => ({ ...prevForm, [name]: value }));
@@ -97,9 +136,8 @@ export const FormDemo = () => {
 
     requiredFields.forEach((field) => {
       if (!form[field].trim()) {
-        newErrorState[field] = `${
-          field.charAt(0).toUpperCase() + field.slice(1)
-        } is required`;
+        newErrorState[field] = `${field.charAt(0).toUpperCase() + field.slice(1)
+          } is required`;
         isValid = false;
       } else {
         newErrorState[field] = "";
