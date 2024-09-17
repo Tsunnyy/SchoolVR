@@ -66,8 +66,8 @@ const AbourUs = () => {
                                     <br />
                                     <br />
 
-                                    <h5>Our Vision </h5>
-                                    <p>We strive to empower educators and students worldwide with the tools they need to unlock their full potential. We envision a future where learning is not just informative but also inspiring, where students are active participants in their education, and where the possibilities are limitless</p>
+                                    <h5>Elevate Esports </h5>
+                                    <p>We aim to elevate the world of esports, making it more inclusive, accessible, and rewarding for all. We believe that competitive gaming has the power to foster teamwork, strategic thinking, and a sense of community, and we're committed to providing the platforms and opportunities for gamers to thrive.</p>
                                 </div>
                             </div>
                         </div>

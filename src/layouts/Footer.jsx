@@ -122,6 +122,12 @@ let infoLinks = [
     img: "mobile",
     path: "tel:+15715679892",
   },
+  {
+    id: 2,
+    name: "+91 9508382971",
+    img: "mobile",
+    path: "tel:+919508382971",
+  },
   // {
   //   id: 3,
   //   name: "dellaware, us",
@@ -130,7 +136,7 @@ let infoLinks = [
   // },
   {
     id: 4,
-    name: "Dellaware, US",
+    name: "Delaware, US",
     img: "location",
     path: "/",
   },
@@ -231,7 +237,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <span className="footer-text">Copyright © 2024 - AONIX</span>
+        <span className="footer-text">Copyright © 2024 - Brainistics</span>
       </div>
     </footer>
   );
