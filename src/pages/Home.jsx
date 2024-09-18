@@ -24,7 +24,7 @@ export const Home = () => {
           <Ivr />
           <Lab />
         </div>
-        <div className="dark-gradient-wrap">
+        <div className="dark-gradient-wrap newFeatureClass">
           <Feature />
         </div>
         <About />

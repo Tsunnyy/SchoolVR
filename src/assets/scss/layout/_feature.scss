@@ -207,6 +207,19 @@
   }
 }
 
+.newFeatureClass {
+
+  .feature-section-class {
+    .card-item:nth-child(2) {
+      .card-icon {
+
+        left: unset;
+        right: -50px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   .feature-section-class {
     padding: 50px 40px;
@@ -223,6 +236,11 @@
     img {
       max-width: 40px;
     }
+  }
+
+  .newFeatureClass .feature-section-class .card-item:nth-child(2) .card-icon{
+    right: -25px;
+    left: unset;
   }
 
   .feature-section-class .cardOptions .cardOptionOne,
