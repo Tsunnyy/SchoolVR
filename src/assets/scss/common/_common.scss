@@ -226,6 +226,7 @@ svg {
   .row {
     img {
       min-height: 433px;
+      max-height: 433px;
       object-fit: contain;
     }
   }
@@ -1033,7 +1034,7 @@ header .explore-tray {
         border-radius: 20px;
         height: 90px;
         margin-bottom: 10px;
-
+        margin-inline: auto;
       }
 
 
@@ -1468,7 +1469,7 @@ header .explore-tray {
   background: transparent;
   color: #292D32 !important;
 
-  &:hover{
+  &:hover {
     background: #292D32 !important;
     color: #fff !important;
   }
@@ -2246,6 +2247,32 @@ header .explore-tray {
   }
 }
 
+.sylabusListMain {
+  .countryListPage {
+    max-width: 100%;
+
+    .pageHeadText {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 30px;
+
+      img {
+        max-width: 70px;
+      }
+    }
+
+    ul {
+      gap: 10px 40px;
+
+      li {
+        text-align: left;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
 .form-section.customForm {
   input {
     background: #F4F4F4;
@@ -2268,6 +2295,8 @@ header .explore-tray {
 
 
 .modal .early-bird.early-bird-new {
+  display: grid;
+
 
   img {
     max-width: 318px;
@@ -2320,7 +2349,7 @@ header .explore-tray {
       font-size: 16px;
       font-weight: 400;
       line-height: 16px;
-      margin: 0 0 20px;
+      margin: 0 0 40px;
       color: #fff;
     }
   }
@@ -2337,6 +2366,15 @@ header .explore-tray {
     background: #D9D9D9;
     color: #000;
   }
+}
+
+.selectDropdown .selectDropdownInner__control:focus,
+.selectDropdown .selectDropdownInner__control:hover,
+.selectDropdown .selectDropdownInner__control {
+  background: rgba(89, 89, 89, 0.16);
+  border: none;
+  box-shadow: none;
+  outline: none;
 }
 
 @media (max-width: 1199px) {
@@ -2554,6 +2592,14 @@ header .explore-tray {
     line-height: 25px;
   }
 
+  .modal .early-bird.early-bird-new ul li {
+    margin: 0 0 20px;
+  }
+
+  .modal .early-bird.early-bird-new p.text {
+    margin: 10px 0 0;
+  }
+
   .modal .early-bird.early-bird-new .imgWithOfferText {
     left: 0;
     right: 0;
@@ -2598,7 +2644,7 @@ header .explore-tray {
     }
   }
 
-  .pageInternalSectionMain{
+  .pageInternalSectionMain {
     padding-bottom: 15px;
   }
 

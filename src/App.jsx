@@ -30,6 +30,12 @@ import Grant from "./pages/Grant";
 import { MathVerse } from "./pages/MathVerse";
 import LabSetupAndLearning from "./pages/LabSetupAndLearning";
 import CountryList from "./pages/CountryList";
+import IBSyllabus from "./components/IBSyllabus";
+import CambridgeSylabus from "./components/CambridgeSylabus";
+import USSyllabus from "./components/USSyllabus";
+import UKSyllabus from "./components/UKSyllabus";
+import AustraliaSyllabus from "./components/AustraliaSyllabus";
+import IndiaSyllabus from "./components/IndiaSyllabus";
 
 function App() {
   const [loader, setLoader] = useState(true);
@@ -81,6 +87,12 @@ function App() {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/CountryList" element={<CountryList />} />
+            <Route path="/ib-sylabus-list" element={<IBSyllabus />} />
+            <Route path="/cambridge-sylabus-list" element={<CambridgeSylabus />} />
+            <Route path="/us-sylabus-list" element={<USSyllabus />} />
+            <Route path="/uk-sylabus-list" element={<UKSyllabus />} />
+            <Route path="/australia-sylabus-list" element={<AustraliaSyllabus />} />
+            <Route path="/india-sylabus-list" element={<IndiaSyllabus />} />
             <Route path="/blogs/category/:slug" element={<Blogs />} />
             <Route path="/blogs/:slug" element={<BlogsDetail />} />
             <Route path="*" element={<NotFound />} />

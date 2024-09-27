@@ -32,7 +32,7 @@ export const SchoolVrForIndividual = () => {
               <button className='btn btn-outline bg-transparent' onClick={() => { setModalActive(true); }} ariaLabel='Book a demo of SchoolVR for Schools'>Book a Demo</button>
             </div>
             <div className="col-sm-4 pe-0">
-              <img src="/img/students/svi.webp" alt="SchoolVR for Individuals" />
+              <img src="/img/svi.webp" alt="SchoolVR for Individuals" />
             </div>
           </div>
         </div>

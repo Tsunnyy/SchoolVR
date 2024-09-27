@@ -143,7 +143,7 @@ export const VrCards = () => {
           {/* <img src="/img/access.webp" alt="Access" /> */}
         </div>
       </div>
-      <div className="buyingOptionsForKids">
+      {/* <div className="buyingOptionsForKids">
         <div className="buyingOptionsForKidsL">
           <h2>SchoolVR Kit</h2>
           <p>Choose from a range of SchoolVR Kits based on the number of headsets you need</p>
@@ -226,7 +226,7 @@ export const VrCards = () => {
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="vr-card-section">
         {/* <div className="card-list card-list-svs">
           <div className="card card-orange text-light card-1">

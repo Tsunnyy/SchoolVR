@@ -4,6 +4,7 @@ import { About } from "../layouts/About";
 import PageHero from '../components/PageHero';
 import { ModalEarlyBird } from '../layouts/ModalEarlyBird';
 import { MyContext } from '../mycontext';
+import { Link } from 'react-router-dom';
 
 const Curriculum = () => {
     const { setExtraClass, setModalActive } = useContext(MyContext);
@@ -13,37 +14,44 @@ const Curriculum = () => {
         {
             region: "International",
             curriculum: "Baccalaureate (IB)",
-            imgPath: "board2"
+            imgPath: "board2",
+            path: "/ib-sylabus-list"
         },
         {
             region: "Cambridge",
             curriculum: "IGCSE & A Levels",
-            imgPath: "board1"
-        },
-        {
-            region: "India",
-            curriculum: "CBSE & ICSE",
-            imgPath: "india"
-        },
-        {
-            region: "Australia",
-            curriculum: "Australian Curriculum",
-            imgPath: "australia"
+            imgPath: "board1",
+            path: "/cambridge-sylabus-list"
         },
         {
             region: "Common Core State Standards & Next",
             curriculum: "Generation Science Standards",
-            imgPath: "usa"
+            imgPath: "usa",
+            path: "/us-sylabus-list"
         },
         {
             region: "UK National Curriculum for England",
             curriculum: "(British Curriculum)",
-            imgPath: "uk"
+            imgPath: "uk",
+            path: "/uk-sylabus-list"
+        },
+        {
+            region: "Australia",
+            curriculum: "Australian Curriculum",
+            imgPath: "australia",
+            path: "/australia-sylabus-list"
+        },
+        {
+            region: "India",
+            curriculum: "CBSE & ICSE",
+            imgPath: "india",
+            path: "/india-sylabus-list"
         },
         {
             region: "UAE Ministry of Education",
             curriculum: "Curriculum (MOE)",
-            imgPath: "uae"
+            imgPath: "uae",
+            // path: "/uae-sylabus-list"
         }
     ];
 
@@ -117,9 +125,11 @@ const Curriculum = () => {
                         {curricula.map((val, index) => {
                             return (
                                 <div className="establishedBoardsCardInner" key={index}>
-                                    <img src={`/img/country/${val.imgPath}.svg`} alt={`${val.imgPath}`} />
-                                    <p>{val.region}</p>
-                                    <p>{val.curriculum}</p>
+                                    <Link to={val.path} className='text-center'>
+                                        <img src={`/img/country/${val.imgPath}.svg`} alt={`${val.imgPath}`} />
+                                        <p>{val.region}</p>
+                                        <p>{val.curriculum}</p>
+                                    </Link>
                                 </div>
                             )
                         })}

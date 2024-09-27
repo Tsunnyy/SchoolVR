@@ -213,6 +213,12 @@ export const Header = () => {
                 || window.location.pathname === "/supportcommunity"
                 || window.location.pathname === "/partnerwithus"
                 || window.location.pathname === "/lab-setup-and-learning"
+                || window.location.pathname === "/ib-sylabus-list"
+                || window.location.pathname === "/cambridge-sylabus-list"
+                || window.location.pathname === "/us-sylabus-list"
+                || window.location.pathname === "/uk-sylabus-list"
+                || window.location.pathname === "/australia-sylabus-list"
+                || window.location.pathname === "/india-sylabus-list"
                 ? "golden openMenuBtn" : "openMenuBtn"
             }
           >
@@ -246,7 +252,7 @@ export const Header = () => {
               </div>
             </div>
             <ul className="product-list p-0">
-              {productLinks.map((link) => (
+              {productLinks.map((link, index) => (
                 <li
                   key={link.id}
                   className={`navlink-item navlink-item-${link.class}`}
@@ -254,7 +260,8 @@ export const Header = () => {
                   <a onClick={() => redirect(link.path)}>
                     <img
                       className="icon"
-                      src={`/img/product/icon/${link.class}.svg`}
+                      src={`/img/product/icon/aside/${index + 1}.svg`}
+                      // img/product/icon/new/verse
                       alt="menuIcon"
                     />
                     {link.name}
@@ -262,6 +269,13 @@ export const Header = () => {
                   </a>
                 </li>
               ))}
+            </ul>
+
+            <ul className="forWebView p-0 m-0">
+              <li onClick={closeHamburger}><Link to="/aboutUs">About Us</Link></li>
+              <li onClick={closeHamburger}><Link to="/svs">SchoolVR for Schools</Link></li>
+              <li onClick={closeHamburger}><Link to="/svi">SchoolVR for Individuals</Link></li>
+              <li onClick={closeHamburger}><Link to="/blogs">Blogs</Link></li>
             </ul>
 
             <ul className="sub-menu-mobile p-0 m-0">
@@ -394,7 +408,7 @@ export const Header = () => {
 
             <div className="navlink-item get-in-touch">
               <button
-                className="btn"
+                className="btn btn-outline bg-transparent"
                 onClick={() => {
                   setModalActive(true);
                 }}
@@ -416,6 +430,12 @@ export const Header = () => {
               || window.location.pathname === "/svs"
               || window.location.pathname === "/svi"
               || window.location.pathname === "/CountryList"
+              || window.location.pathname === "/ib-sylabus-list"
+              || window.location.pathname === "/cambridge-sylabus-list"
+              || window.location.pathname === "/us-sylabus-list"
+              || window.location.pathname === "/uk-sylabus-list"
+              || window.location.pathname === "/australia-sylabus-list"
+              || window.location.pathname === "/india-sylabus-list"
               || window.location.pathname === "/lab-setup-and-learning"
               ?
               <img className="logo" src={logo2} alt="SchoolVR" />
