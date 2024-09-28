@@ -51,17 +51,19 @@ header {
     border: none;
 
     a.dropdown-item {
-      font-family: Gilroy-Regular;
-      font-size: 12px;
+      font-family: Gilroy-Medium;
+      font-size: 14px;
       font-weight: 400;
       line-height: 14.4px;
       color: #292D32;
       white-space: break-spaces;
       background: #fff;
       transition: .5s all ease;
-      padding: 2px 15px;
-      padding: 8px;
+      padding: 10px 15px;
+      padding: 12px 8px;
       white-space: nowrap;
+      letter-spacing: .5px;
+
 
       &:hover {
         background: #ECC243;

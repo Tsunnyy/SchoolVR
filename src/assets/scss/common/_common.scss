@@ -2377,6 +2377,177 @@ header .explore-tray {
   outline: none;
 }
 
+.schoolVrImpact {
+  padding: 40px 0 90px;
+
+  h1 {
+    font-family: Gilroy-SemiBold;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.75px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000000;
+  }
+}
+
+
+.svsTabsContainer.nav-tabs {
+  justify-content: center;
+  gap: 20px;
+  border: none;
+}
+
+.svsTabsContainer.nav-tabs .nav-link {
+  background: #EEEEEE;
+  border-radius: 20px 20px 0 0;
+  width: 181px;
+  text-align: center;
+  padding: 20px;
+  font-family: Gilroy-SemiBold;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19.8px;
+  text-align: center;
+  color: #292D32;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.svsTabsContainer.nav-tabs .nav-link.active {
+  color: #fff;
+  background: #ECC243;
+  // position: relative;
+
+  // &::after{
+  //   content: "";
+  //   width: 100px;
+  //   height: 100px;
+  //   border-radius: 100%;
+  //   background: #000;
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  // }
+}
+
+.svsTabContent {
+  padding: 40px 30px 50px;
+  background: #C6830E;
+  background: #ECC243;
+  border-radius: 20px;
+  position: relative;
+
+  // &.svsTabContentForStudent {
+  //   padding-bottom: 120px;
+  // }
+
+  img {
+    height: 300px;
+    object-fit: contain;
+  }
+
+  h2 {
+    font-family: Gilroy-SemiBold;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 28.6px;
+    color: #FFF;
+    position: relative;
+    padding: 0 0 25px;
+    margin-bottom: 25px;
+
+    &::after {
+      content: "";
+      width: 50%;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .tabGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 50px;
+
+    h4 {
+      font-family: Gilroy-SemiBold;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 15.4px;
+      text-align: left;
+      color: #292D32;
+      text-transform: capitalize;
+    }
+
+    p {
+      font-family: Gilroy-SemiBold;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 13.2px;
+      color: #fff;
+      margin: 7px 0 0;
+    }
+  }
+
+  .keyStatistics {
+    background: #FFFFFF99;
+    backdrop-filter: blur(106.9000015258789px);
+    box-shadow: 0px 0px 40px 0px #C1D0DC40;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -45px;
+    width: 60%;
+
+    // &::after{
+    //   content: "";
+    //   position: absolute;
+    //   inset: 0;
+    //   // bottom: -30px;
+    //   // left: -20px;
+    //   margin: auto;
+    //   height: 40px;
+    //   width: 1px;
+    //   background: #C2C2C2;
+    // }
+
+    .row {
+      align-items: center;
+    }
+
+    h5 {
+      font-family: Gilroy-SemiBold;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 26.4px;
+      color: #C6830E;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: Gilroy-SemiBold;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 28.6px;
+      color: #000;
+      margin: 0;
+    }
+
+    span {
+      font-family: Gilroy-SemiBold;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 15.4px;
+      color: #292D32;
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   .padding-lr-class {
     padding-inline: 40px;
@@ -2525,6 +2696,21 @@ header .explore-tray {
     padding: 20px;
   }
 
+  .svsTabContent .keyStatistics {
+    width: 100%;
+    position: relative;
+    bottom: -20px;
+  }
+
+  .svsTabContent.svsTabContentForStudent,
+  .svsTabContent {
+    padding: 40px 30px;
+  }
+
+  .svsContentR {
+    display: none;
+  }
+
   .pageInternalSectionMain .buyingOptionsForKids {
     grid-template-columns: 1.6fr 1fr;
   }
@@ -2583,6 +2769,10 @@ header .explore-tray {
     left: 0;
     right: 0;
     margin: auto;
+  }
+
+  .svsTabsContainer.nav-tabs .nav-link {
+    width: 160px;
   }
 }
 
@@ -3188,5 +3378,58 @@ header .explore-tray {
 
   .productsMain .actualProduct img {
     min-height: 22px;
+  }
+
+  .svsTabContent .tabGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .svsTabContent h2 {
+    padding: 0 0 15px;
+    font-size: 18px;
+    line-height: 19.6px;
+    margin-bottom: 20px;
+  }
+
+  .svsTabContent.svsTabContentForStudent,
+  .svsTabContent {
+    padding-inline: 20px;
+    border-radius: 0;
+  }
+
+  .svsTabContent .col-12 {
+    padding: 0 !important;
+  }
+
+  .keyPoints {
+    margin-bottom: 15px;
+  }
+
+  .svsTabContent .keyStatistics {
+    padding: 15px;
+  }
+
+  .svsTabsContainer.nav-tabs {
+    justify-content: space-between;
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+
+  .svsTabsContainer.nav-tabs .nav-link {
+    width: 100%;
+    font-size: 13px;
+    border-radius: 10px 10px 0 0;
+    padding: 8px 10px;
+    padding: 11px 5px;
+  }
+
+  .schoolVrImpact {
+    padding: 40px 0;
+  }
+
+  li.nav-item {
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 }

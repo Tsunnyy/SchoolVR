@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { MyContext } from "../mycontext";
 import { ModalOrder } from "./ModalOrder";
+import { Tab, Tabs } from "react-bootstrap";
 
 export const VrCards = () => {
   const { setModalActive } = useContext(MyContext);
@@ -32,6 +33,111 @@ export const VrCards = () => {
       img: "kit-5",
     },
   ]
+
+  let tabGrid = [
+    {
+      "key": "Tech-Forward-Reputation",
+      "description": "Position your school at the forefront of educational innovation."
+    },
+    {
+      "key": "Global-Competition-Platform",
+      "description": "Showcase your students' skills on a world stage."
+    },
+    {
+      "key": "Differentiated-Instruction",
+      "description": "Support diverse learning needs with personalized paths."
+    },
+    {
+      "key": "Enhanced-Learning-Outcomes",
+      "description": "Boost student achievement and engagement."
+    },
+    {
+      "key": "Future-Ready-Graduates",
+      "description": "Develop essential 21st-century skills in your students."
+    }
+  ]
+
+
+  let teacherTabGrid = [
+    {
+      "key": "Enhanced Effectiveness",
+      "description": "Strategies and resources to improve teaching and learning outcomes."
+    },
+    {
+      "key": "Professional Development",
+      "description": "Opportunities for educators to grow and enhance their skills."
+    },
+    {
+      "key": "Inspiring Student Engagement",
+      "description": "Techniques to captivate students and foster a love for learning."
+    },
+    {
+      "key": "Personalized Instruction",
+      "description": "Track student progress and tailor learning experiences to individual needs."
+    },
+    {
+      "key": "Global Educator Community",
+      "description": "Connect and collaborate with innovative teachers from around the world."
+    }
+  ]
+
+  let parentsTabGrid = [
+    {
+      "key": "Real-Time-Progress-Tracking",
+      "description": "Monitor your child's learning journey through parent dashboards."
+    },
+    {
+      "key": "Future-Ready-Skills",
+      "description": "Equip your child with critical thinking, problem-solving, and creativity skills."
+    },
+    {
+      "key": "Safe-Learning-Environment",
+      "description": [
+        "American Academy of Ophthalmology confirms VR safety for eyes.",
+        "Carefully designed session lengths align with current teaching modules."
+      ]
+    },
+    {
+      "key": "Personalized-Learning",
+      "description": "Support your child's unique learning style and abilities."
+    },
+    {
+      "key": "Lifelong-Love-of-Learning",
+      "description": "Transform abstract concepts into tangible, exciting experiences."
+    }
+  ]
+
+  let studentTabGrid = [
+    // {
+    //   "key": "Engaging-Experiences",
+    //   "description": "Dive into physics, chemistry, biology, and space like never before."
+    // },
+    {
+      "key": "Improved-Knowledge-Retention",
+      "description": "90% retention rate compared to 10% with traditional methods."
+    },
+    {
+      "key": "Faster-Learning",
+      "description": "4x faster to train than in the classroom."
+    },
+    {
+      "key": "Emotional-Connection",
+      "description": "3.75x more emotionally connected to content than classroom learners."
+    },
+    {
+      "key": "Confidence-Boost",
+      "description": "275% more confident to apply skills learned after training."
+    },
+    {
+      "key": "Focused-Learning",
+      "description": "4x more focused than e-learning peers."
+    },
+    {
+      "key": "Interactive-Exploration",
+      "description": "Conduct virtual experiments, travel through time, and explore new worlds."
+    }
+  ]
+
 
   return (
     <>
@@ -227,8 +333,169 @@ export const VrCards = () => {
           </div>
         </div>
       </div> */}
-      <div className="vr-card-section">
-        {/* <div className="card-list card-list-svs">
+
+      <div className="schoolVrImpact">
+        <div className="padding-lr-class">
+          <h1>SchoolVR Impact</h1>
+          <Tabs
+            defaultActiveKey="schools"
+            className="svsTabsContainer"
+          >
+            <Tab eventKey="schools" title="Schools">
+              <div className="svsTabContent">
+                <div className="row m-0">
+                  <div className="col-12 col-lg-8 ps-0">
+                    <h2>Empowering Education for the Future</h2>
+                    <div className="tabGrid">
+                      {tabGrid.map((val, index) => (
+                        <div className="tabGridInner" key={index}>
+                          <h4>{val.key}</h4>
+                          <p>{val.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="keyStatistics">
+                      <h5>Key Statistics</h5>
+                      <div className="row m-0">
+                        <div className="col-12 col-sm-6 ps-0">
+                          <div className="d-flex gap-2 align-items-center keyPoints">
+                            <p>90%</p>
+                            <span>improvement in test scores for VR learners</span>
+                          </div>
+                        </div>
+                        <div className="col-12 col-sm-6 pe-0">
+                          <div className="d-flex gap-2 align-items-center keyPoints">
+                            <p>60%</p>
+                            <span>faster learning curve observed in students using VR simulations</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-12 svsContentR col-sm-4 pe-0">
+                    <img src="/img/schooltab.png" alt="Image" />
+                  </div>
+                </div>
+
+              </div>
+            </Tab>
+            <Tab eventKey="teachers" title="Teachers">
+              <div className="svsTabContent">
+                <div className="row m-0">
+                  <div className="col-12 col-lg-8 ps-0">
+                    <h2>Revolutionize Your Teaching</h2>
+                    <div className="tabGrid">
+                      {teacherTabGrid.map((val, index) => (
+                        <div className="tabGridInner" key={index}>
+                          <h4>{val.key}</h4>
+                          <p>{val.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="keyStatistics">
+                      <h5>Key Statistics</h5>
+                      <div className="row m-0">
+                        <div className="col-12 col-sm-6 ps-0">
+                          <div className="d-flex gap-2 align-items-center keyPoints">
+                            <p>82%</p>
+                            <span>of teachers foresee a positive impact of VR on education</span>
+                          </div>
+                        </div>
+                        <div className="col-12 col-sm-6 pe-0">
+                          <div className="d-flex gap-2 align-items-center keyPoints">
+                            <p>90%</p>
+                            <span>report increased student attention and focus with VR</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-12 svsContentR col-sm-4 pe-0">
+                    <img src="/img/teacherTab.png" alt="Image" />
+                  </div>
+                </div>
+
+              </div>
+            </Tab>
+            <Tab eventKey="parents" title="Parents">
+              <div className="svsTabContent">
+                <div className="row m-0">
+                  <div className="col-12 col-lg-8 ps-0">
+                    <h2>Unlock Your Child's Potential</h2>
+                    <div className="tabGrid">
+                      {parentsTabGrid.map((val, index) => (
+                        <div className="tabGridInner" key={index}>
+                          <h4>{val.key}</h4>
+                          <p>{val.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                    {/* <div className="keyStatistics">
+                      <h5>Key Statistics</h5>
+                      <div className="row m-0">
+                        <div className="col-12 col-sm-6 ps-0">
+                          <div className="d-flex gap-2 align-items-center keyPoints">
+                            <p>82%</p>
+                            <span>of teachers foresee a positive impact of VR on education</span>
+                          </div>
+                        </div>
+                        <div className="col-12 col-sm-6 pe-0">
+                          <div className="d-flex gap-2 align-items-center keyPoints">
+                            <p>90%</p>
+                            <span>report increased student attention and focus with VR</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div> */}
+                  </div>
+                  <div className="col-12 svsContentR col-sm-4 pe-0">
+                    <img src="/img/parentTab.png" alt="Image" />
+                  </div>
+                </div>
+
+              </div>
+            </Tab>
+            <Tab eventKey="students" title="Students">
+              <div className="svsTabContent svsTabContentForStudent">
+                <div className="row m-0">
+                  <div className="col-12 col-lg-8 ps-0">
+                    <h2>Embark on an Immersive Learning Adventure</h2>
+                    <div className="tabGrid">
+                      {studentTabGrid.map((val, index) => (
+                        <div className="tabGridInner" key={index}>
+                          <h4>{val.key}</h4>
+                          <p>{val.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="keyStatistics">
+                      <h5>Key Statistics</h5>
+                      <div className="row m-0">
+                        <div className="col-12 col-sm-6 ps-0">
+                          <div className="d-flex gap-2 align-items-center keyPoints">
+                            <p>90%</p>
+                            <span>improvement in test scores</span>
+                          </div>
+                        </div>
+                        <div className="col-12 col-sm-6 pe-0">
+                          <div className="d-flex gap-2 align-items-center keyPoints">
+                            {/* <p>90%</p> */}
+                            <span>Multifold increase in attention span</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-12 svsContentR col-sm-4 pe-0">
+                    <img src="/img/studentTab.png" alt="Image" />
+                  </div>
+                </div>
+
+              </div>
+            </Tab>
+          </Tabs>
+          <div className="vr-card-section">
+            {/* <div className="card-list card-list-svs">
           <div className="card card-orange text-light card-1">
             <h3 className="card-title">Key Benefits</h3>
             <div className="feature-list text-justify">
@@ -475,11 +742,13 @@ export const VrCards = () => {
             </button>
           </div>
         </div> */}
-        <ModalOrder
-          modalActive={ordermodal}
-          setModalActive={setOrderModal}
-          num={num}
-        />
+            <ModalOrder
+              modalActive={ordermodal}
+              setModalActive={setOrderModal}
+              num={num}
+            />
+          </div>
+        </div>
       </div>
     </>
   );

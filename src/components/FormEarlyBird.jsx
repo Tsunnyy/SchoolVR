@@ -3,7 +3,6 @@ import { FormField } from "../components/FormField";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Select from 'react-select';
 
 let initialVal = {
   name: "",
