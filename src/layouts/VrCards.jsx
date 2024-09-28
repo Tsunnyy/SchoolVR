@@ -241,7 +241,7 @@ export const VrCards = () => {
             <source media="(min-width:768px)" srcSet={"/img/access.webp"} />
             <img
               className=""
-              // src="/img/banner-m.png"
+              // src="/img/banner-m.webp"
               src={"/img/access-m.webp"}
               alt="bannerVR"
             />
@@ -373,7 +373,7 @@ export const VrCards = () => {
                     </div>
                   </div>
                   <div className="col-12 svsContentR col-sm-4 pe-0">
-                    <img src="/img/schooltab.png" alt="Image" />
+                    <img src="/img/schooltab.webp" alt="Image" />
                   </div>
                 </div>
 
@@ -411,7 +411,7 @@ export const VrCards = () => {
                     </div>
                   </div>
                   <div className="col-12 svsContentR col-sm-4 pe-0">
-                    <img src="/img/teacherTab.png" alt="Image" />
+                    <img src="/img/teacherTab.webp" alt="Image" />
                   </div>
                 </div>
 
@@ -449,7 +449,7 @@ export const VrCards = () => {
                     </div> */}
                   </div>
                   <div className="col-12 svsContentR col-sm-4 pe-0">
-                    <img src="/img/parentTab.png" alt="Image" />
+                    <img src="/img/parentTab.webp" alt="Image" />
                   </div>
                 </div>
 
@@ -487,7 +487,7 @@ export const VrCards = () => {
                     </div>
                   </div>
                   <div className="col-12 svsContentR col-sm-4 pe-0">
-                    <img src="/img/studentTab.png" alt="Image" />
+                    <img src="/img/studentTab.webp" alt="Image" />
                   </div>
                 </div>
 
