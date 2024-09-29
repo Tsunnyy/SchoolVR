@@ -90,7 +90,7 @@ const AbourUs = () => {
 
                         <div className="d-flex gap-5 justify-content-around align-items-center ourJourneySectionMain">
                             <div className="ourJourneySectionInner d-flex flex-column justify-content-center align-items-center">
-                                <img src="/img/mission.webp" alt="Logo" />
+                                <img src="/img/wsf.png" alt="Logo" />
                                 <h5>World Stem Federation</h5>
                             </div>
                             <div className="ourJourneySectionInner d-flex flex-column justify-content-center align-items-center">

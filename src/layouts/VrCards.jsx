@@ -138,6 +138,90 @@ export const VrCards = () => {
     }
   ]
 
+  let ecoSystem = [
+    {
+      id: 1,
+      title: "Theoretical Labs",
+      features: [
+        "Unravel complex topics in a virtual realm",
+        "Bring textbook concepts to life in 3D"
+      ]
+    },
+    {
+      id: 2,
+      title: "Practical Labs",
+      features: [
+        "Conduct challenging experiments safely in a virtual space",
+        "Bridge the gap between theory and hands-on exploration"
+      ]
+    },
+    {
+      id: 3,
+      title: "AI Tutors",
+      features: [
+        "Provide personalized guidance for every student",
+        "Adapt to individual learning paces and styles"
+      ]
+    },
+    {
+      id: 5,
+      title: "Analytics Dashboard",
+      features: [
+        "Gain deep insights into student performance",
+        "Enable data-driven decision making for educators"
+      ]
+    },
+    {
+      id: 6,
+      title: "Interactive Quizzes",
+      features: [
+        "Assess and reinforce learning through engaging activities",
+        "Provide immediate feedback to students and teachers"
+      ]
+    },
+    {
+      id: 7,
+      title: "Explanation Rooms",
+      features: [
+        "Dive deeper into subjects with immersive explanations",
+        "Create memorable learning experiences"
+      ]
+    },
+    {
+      id: 8,
+      title: "Parental Dashboards",
+      features: [
+        "Monitor student progress in real-time",
+        "Facilitate greater parental involvement in education"
+      ]
+    },
+    {
+      id: 9,
+      title: "Diverse Content",
+      features: [
+        "Support for 15+ curricula and 20+ languages",
+        "Ensure global relevance and accessibility"
+      ]
+    },
+    {
+      id: 10,
+      title: "Universal Compatibility",
+      features: [
+        "Works with all VR headsets using Open XR",
+        "Flexible implementation across different hardware setups"
+      ]
+    },
+    {
+      id: 11,
+      title: "Virtual Value",
+      features: [
+        "Offer significant savings on physical lab investments",
+        "Eliminate space constraints while ensuring safe, cost-effective learning"
+      ]
+    }
+  ];
+
+
 
   return (
     <>
@@ -747,6 +831,24 @@ export const VrCards = () => {
               setModalActive={setOrderModal}
               num={num}
             />
+          </div>
+        </div>
+      </div>
+
+      <div className="schoolVrEcoSystemMain">
+        <div className="padding-lr-class">
+          <h2 className="text-center">SchoolVR Ecosystem</h2>
+          <p className="text-center pmarginClass">SchoolVR offers a complete educational ecosystem, transforming how students learn, teachers instruct, and schools operate. Our platform seamlessly integrates various components to create a dynamic, engaging, and effective learning environment.</p>
+          <div className="ecoSystemGrid mb-5">
+            {ecoSystem.map((val, index) => (
+              <div className="ecoSystemGridInner" key={index}>
+                <img src={`/img/icon/ecosystem/${index + 1}.svg`} alt="" />
+                <div>
+                  <h5>{val.title}</h5>
+                  <div className="d-grid gap-3">{val.features.map((val) => <p>{val}</p>)}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

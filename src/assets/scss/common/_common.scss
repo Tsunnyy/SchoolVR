@@ -276,6 +276,68 @@ p.pagePara {
   }
 }
 
+.schoolVrEcoSystemMain {
+  h2 {
+    font-family: Gilroy-SemiBold;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.75px;
+    color: #000;
+  }
+
+  p {
+    font-family: Gilroy-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    color: #292D32;
+  }
+
+  .pmarginClass {
+    margin: 20px 0 30px;
+  }
+
+  .ecoSystemGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .ecoSystemGridInner {
+    background: #F5FAFF;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    gap: 15px;
+
+    img {
+      max-width: 60px;
+    }
+
+    h5 {
+      font-family: Gilroy-SemiBold;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 15.4px;
+      color: #292D32;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: Gilroy-SemiBold;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 13.2px;
+      color: #797979;
+      margin: 0;
+    }
+
+  }
+}
+
 
 .ourMissionVissionCard {
   padding: 40px;
@@ -2774,6 +2836,10 @@ header .explore-tray {
   .svsTabsContainer.nav-tabs .nav-link {
     width: 160px;
   }
+
+  .schoolVrEcoSystemMain .ecoSystemGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 767px) {
@@ -2782,9 +2848,18 @@ header .explore-tray {
     line-height: 25px;
   }
 
+  .schoolVrEcoSystemMain .ecoSystemGrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    img{
+      max-width: 40px;
+    }
+  }
+
   .modal .early-bird.early-bird-new ul li {
     margin: 0 0 20px;
   }
+
 
   .modal .early-bird.early-bird-new p.text {
     margin: 10px 0 0;

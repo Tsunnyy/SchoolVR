@@ -122,12 +122,12 @@ let infoLinks = [
     img: "mobile",
     path: "tel:+15715679892",
   },
-  {
-    id: 2,
-    name: "+91 9508382971",
-    img: "mobile",
-    path: "tel:+919508382971",
-  },
+  // {
+  //   id: 2,
+  //   name: "+91 9508382971",
+  //   img: "mobile",
+  //   path: "tel:+919508382971",
+  // },
   // {
   //   id: 3,
   //   name: "dellaware, us",
