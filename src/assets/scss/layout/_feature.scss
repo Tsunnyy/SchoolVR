@@ -150,6 +150,7 @@
     padding: 80px 100px;
     display: grid;
     gap: 80px;
+    border-radius: 20px;
 
     .cardOptionOne {
       display: flex;
@@ -207,6 +208,10 @@
   }
 }
 
+// .atomVerse .cardOptions {
+//   background-image: url("/img/atomBg.png");
+// }
+
 .newFeatureClass {
 
   .feature-section-class {
@@ -238,7 +243,7 @@
     }
   }
 
-  .newFeatureClass .feature-section-class .card-item:nth-child(2) .card-icon{
+  .newFeatureClass .feature-section-class .card-item:nth-child(2) .card-icon {
     right: -25px;
     left: unset;
   }
@@ -285,6 +290,10 @@
 @media (max-width: 767px) {
   .feature-section-class {
     padding-inline: 20px;
+  }
+
+  .offer-section .btn-close {
+    opacity: 1;
   }
 
   .feature-section-class .cardOptions {

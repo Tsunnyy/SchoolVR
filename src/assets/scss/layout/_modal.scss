@@ -199,12 +199,17 @@
 
     span {
       position: absolute;
-      top: 29px;
-      right: 30px;
+      top: 70px;
+      right: 70px;
       cursor: pointer;
+      z-index: 99;
 
       svg {
         font-size: 30px;
+
+        path {
+          fill: #000;
+        }
       }
     }
 

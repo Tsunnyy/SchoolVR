@@ -1,5 +1,6 @@
 @use "../config/" as *;
 @use "sass:color" as *;
+
 .btn {
   padding: var(--space-2) 3.4rem;
   border-radius: var(--btn-radius, 50vmax);
@@ -13,29 +14,36 @@
   align-items: center;
   text-transform: capitalize;
   width: max-content;
+
   @include mq(md) {
     padding: var(--space-2) 3.4rem;
   }
+
   svg,
   path {
     transition: 0.4s;
   }
+
   &:hover,
   :focus {
     background-color: var(--secondary);
     color: var(--primary);
   }
+
   &.btn-outline {
     border: 0.1rem solid var(--secondary);
+
     &:hover,
     :focus {
       color: var(--white);
     }
   }
+
   &.btn-primary {
     background-color: var(--primary);
     color: var(--secondary);
   }
+
   &.btn-transperent {
     background-color: transparent;
     border: 0.1rem solid var(--white);
@@ -58,21 +66,30 @@
       color: var(--white);
       background: linear-gradient(106.57deg, #ecc243 8.33%, #c6830e 91.69%);
       border: none;
+
       svg path {
         stroke: #ffffff;
       }
     }
   }
+
   &.btn-secondary-light {
     background-color: var(--secondary);
     color: #9ea0a8;
+
     &:hover,
     :focus {
       color: var(--primary);
       background-color: var(--white);
     }
   }
+
   &.btn-sq {
     border-radius: 1rem;
   }
+}
+
+
+.btn.clr-golden {
+  color: #ECC243;
 }

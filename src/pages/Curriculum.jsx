@@ -109,7 +109,7 @@ const Curriculum = () => {
                             <p className='pagePara my-5'>School VR isn't just about captivating VR experiences; it's about seamlessly weaving cutting-edge technology into the fabric of education worldwide. We've meticulously mapped our content to an extensive array of internationally recognized educational boards and their corresponding syllabi, ensuring a smooth and enriching transition for schools across the globe.</p>
                             <button onClick={() => setModalActive(true)} className='btn btn-secondary btn-primary-clr' > Know More</button>
                         </div>
-                        <div className="col-sm-5 pe-0">
+                        <div className="col-sm-4 pe-0">
                             <img src="/img/curriculum.webp" alt="curriculum Image" />
                         </div>
                     </div>

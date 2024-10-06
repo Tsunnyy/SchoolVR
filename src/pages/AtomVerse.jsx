@@ -84,7 +84,7 @@ export const AtomVerse = () => {
           title="AtomVerse"
           subTitle="Unleashing the Wonders of Life, One Cell at a Time"
         />
-        <div className="dark-gradient-wrap newFeatureClass">
+        <div className="dark-gradient-wrap newFeatureClass atomVerse">
           <ProductInfo cardData={cardData} productData={productData} />
           <Feature />
         </div>

@@ -31,7 +31,7 @@ export const ProductInfo = ({ cardData, productData }) => {
         </div>
         <div className="navlink-item get-in-touch">
           <button
-            className="btn btn-outline"
+            className="btn btn-outline bg-transparent"
             onClick={() => setModalActive(true)}
           >
             book a demo

@@ -46,12 +46,13 @@
     align-items: center;
 
     .hero-title {
-      font-size: 1.4rem;
-      text-transform: uppercase;
-      color: #000;
-      letter-spacing: 0.4rem;
-      word-spacing: 0.5rem;
       margin: 40px 0;
+      font-family: Gilroy-Regular;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      letter-spacing: 0.47em;
+      color: #000;
     }
   }
 }
@@ -278,4 +279,3 @@
     }
   }
 }
-
