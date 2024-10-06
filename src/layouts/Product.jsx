@@ -31,7 +31,7 @@ let productData = [
     path: "/AtomVerse",
     video: true,
     content:
-      "Dive into the microscopic world with AtomVerse, exploring the fundamental building blocks of matter through interactive 3D experiences.",
+      "Dive into the microscopic world with AtomVerse, exploring the fundamental concepts of physics and matter through interactive 3D experiences.",
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ let productData = [
     class: "geo-verse",
     path: "/GeoVerse",
     video: true,
-    content: "Coming Soon",
+    content: "Explore GeoVerse, where students engage with geography concepts through 3D landscapes, maps, and immersive experiences.",
   },
   {
     id: 6,
@@ -56,7 +56,7 @@ let productData = [
     class: "math-verse",
     path: "/mathVerse",
     video: true,
-    content: "Coming Soon",
+    content: "In MathVerse, students explore 3D mathematical concepts by solving problems and visualizing solutions in a dynamic and engaging way.",
   },
 ];
 
@@ -70,10 +70,14 @@ export const Product = () => {
         <Swiper
           modules={[Pagination, EffectFade]}
           slidesPerView={1}
-          speed="700"
+          speed={700}
           effect="fade"
           fadeEffect={{
             crossFade: true,
+          }}
+          autoplay={{
+            delay: 14000,
+            disableOnInteraction: false,
           }}
           pagination={{
             clickable: true,

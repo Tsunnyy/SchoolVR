@@ -15,7 +15,7 @@ const ContactUs = () => {
                 title="Let's Shape the Future of Learning, Together"
                 isTagline={false}
                 tagline=""
-                paragraph="We value your interest in School VR and are eager to connect with you. Whether you're an educator seeking to transform your classroom, an administrator exploring innovative solutions, a student curious about immersive learning, or a potential partner ready to collaborate, we're here to listen and provide the support you need."
+                paragraph="We value your interest in SchoolVR and are eager to connect with you. Whether you're an educator seeking to transform your classroom, an administrator exploring innovative solutions, a student curious about immersive learning, or a potential partner ready to collaborate, we're here to listen and provide the support you need."
                 hasButton={true}
                 btnText="Contact Us"
                 heroImage="contact"
@@ -31,7 +31,7 @@ const ContactUs = () => {
                                 Institutions</span>
                         </div>
                         <h4>Schedule a Personalized Demo</h4>
-                        <p>Witness the magic of School VR firsthand. Our team will guide you through a tailored demonstration, showcasing how our platform can empower your students and elevate your educational offerings.</p>
+                        <p>Witness the magic of SchoolVR firsthand. Our team will guide you through a tailored demonstration, showcasing how our platform can empower your students and elevate your educational offerings.</p>
                         <button onClick={() => {
                             setModalActive(true);
                         }} className='btn btn-outline'>Schedule a Demo</button>
@@ -49,13 +49,13 @@ const ContactUs = () => {
                                 Individuals</span>
                         </div>
                         <h4>Explore the Possibilities</h4>
-                        <p>Are you curious about how VR can enhance your learning experience? Discover the exciting world of School VR, unlock your full potential, and revolutionize the way you learn.</p>
+                        <p>Are you curious about how VR can enhance your learning experience? Discover the exciting world of SchoolVR, unlock your full potential, and revolutionize the way you learn.</p>
                         <button onClick={() => {
                             setModalActive(true);
                         }} className='btn btn-outline'>Explore VR Learning</button>
                         <hr />
                         <h4>Share Your Feedback</h4>
-                        <p>We value your insights and ideas. Tell us what you love about School VR or suggest new features you'd like to see implemented.</p>
+                        <p>We value your insights and ideas. Tell us what you love about SchoolVR or suggest new features you'd like to see implemented.</p>
                         <button onClick={() => {
                             setModalActive(true);
                         }} className='btn btn-outline'>Share Feedback</button>
@@ -66,7 +66,7 @@ const ContactUs = () => {
                             <span>For Vendors & Partners</span>
                         </div>
                         <h4>Collaboration Opportunities</h4>
-                        <p>Interested in partnering with School VR to bring immersive learning to more students? We're eager to explore mutually beneficial collaborations and impactful opportunities together.</p>
+                        <p>Interested in partnering with SchoolVR to bring immersive learning to more students? We're eager to explore mutually beneficial collaborations and impactful opportunities together.</p>
                         <button onClick={() => {
                             setModalActive(true);
                         }} className='btn btn-outline'>Partner with Us</button>

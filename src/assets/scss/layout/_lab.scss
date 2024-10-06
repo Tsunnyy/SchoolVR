@@ -46,6 +46,17 @@
     color: #292D32;
     top: 40%;
     text-transform: uppercase;
+    text-align: center;
+
+    span {
+      font-size: 18px;
+      letter-spacing: 1.5px;
+      word-spacing: 0;
+      line-height: 16px;
+      text-align: center;
+      text-transform: capitalize;
+      font-family: Gilroy-SemiBold;
+    }
   }
 
   .scope-text {

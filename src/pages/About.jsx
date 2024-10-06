@@ -8,19 +8,19 @@ const AbourUs = () => {
         {
             id: 1,
             title: "Unlock the Potential of Every Student",
-            desc: "With School VR, you can cater to diverse learning styles and abilities, ensuring that every student has the opportunity to thrive. Our curriculum-aligned content and interactive VR experiences foster a deeper understanding of complex concepts, making learning both fun and effective.",
+            desc: "With SchoolVR, you can cater to diverse learning styles and abilities, ensuring that every student has the opportunity to thrive. Our curriculum-aligned content and interactive VR experiences foster a deeper understanding of complex concepts, making learning both fun and effective.",
             imgPath: "unlock"
         },
         {
             id: 2,
             title: "Inspire a Love of Learning",
-            desc: "Ignite curiosity and passion in your students as they explore new worlds, conduct virtual experiments, and travel through time. School VR transforms abstract ideas into tangible experiences, fostering a lifelong love of learning",
+            desc: "Ignite curiosity and passion in your students as they explore new worlds, conduct virtual experiments, and travel through time. SchoolVR transforms abstract ideas into tangible experiences, fostering a lifelong love of learning",
             imgPath: "inspire"
         },
         {
             id: 3,
             title: "Prepare Students for the Future",
-            desc: "Equip your students with the skills they need to succeed in the 21st century. School VR promotes critical thinking, problem-solving, collaboration, and creativity, preparing them for the challenges and opportunities that lie ahead.",
+            desc: "Equip your students with the skills they need to succeed in the 21st century. SchoolVR promotes critical thinking, problem-solving, collaboration, and creativity, preparing them for the challenges and opportunities that lie ahead.",
             imgPath: "prepare"
         },
         {
@@ -39,7 +39,7 @@ const AbourUs = () => {
                         <div className="col-sm-7 ps-0">
                             <h4 className='pageHeadText'>About Us</h4>
                             <h1>Pioneering the Future of Education and Esports</h1>
-                            <p className='pagePara'>At Brainistics Technologies, we're driven by a passion for innovation and a belief in the transformative power of technology. We're not just shaping the future of education but also redefining the landscape of competitive gaming. School VR, our flagship product, emerged from a deep commitment to providing immersive and engaging learning experiences. We saw the potential of virtual reality to revolutionize education, and our team of educators, technologists, and visionaries worked tirelessly to make that vision a reality. But our journey doesn't end there. Through e-Sports Club, we're fostering a thriving community of gamers, providing platforms for them to showcase their skills, compete at the highest levels, and connect with fellow enthusiasts. We're harnessing the power of technology to create inclusive and accessible esports experiences, both online and offline.</p>
+                            <p className='pagePara'>At Brainistics Technologies, we're driven by a passion for innovation and a belief in the transformative power of technology. We're not just shaping the future of education but also redefining the landscape of competitive gaming. SchoolVR, our flagship product, emerged from a deep commitment to providing immersive and engaging learning experiences. We saw the potential of virtual reality to revolutionize education, and our team of educators, technologists, and visionaries worked tirelessly to make that vision a reality. But our journey doesn't end there. Through e-Sports Club, we're fostering a thriving community of gamers, providing platforms for them to showcase their skills, compete at the highest levels, and connect with fellow enthusiasts. We're harnessing the power of technology to create inclusive and accessible esports experiences, both online and offline.</p>
                         </div>
                         <div className="col-sm-4 pe-0">
                             <img src="/img/aboutus.webp" alt="About Image" />
@@ -47,7 +47,7 @@ const AbourUs = () => {
                     </div>
                 </div>
             </div>
-            {/* <PageHero bgImage="layer1" title="About Us" isTagline={true} tagline="Pioneering the Future of Education and Esports" heroImage="aboutus" paragraph="At Brainistics Technologies, we're driven by a passion for innovation and a belief in the transformative power of technology. We're not just shaping the future of education but also redefining the landscape of competitive gaming. School VR, our flagship product, emerged from a deep commitment to providing immersive and engaging learning experiences. We saw the potential of virtual reality to revolutionize education, and our team of educators, technologists, and visionaries worked tirelessly to make that vision a reality. But our journey doesn't end there. Through e-Sports Club, we're fostering a thriving community of gamers, providing platforms for them to showcase their skills, compete at the highest levels, and connect with fellow enthusiasts. We're harnessing the power of technology to create inclusive and accessible esports experiences, both online and offline." /> */}
+            {/* <PageHero bgImage="layer1" title="About Us" isTagline={true} tagline="Pioneering the Future of Education and Esports" heroImage="aboutus" paragraph="At Brainistics Technologies, we're driven by a passion for innovation and a belief in the transformative power of technology. We're not just shaping the future of education but also redefining the landscape of competitive gaming. SchoolVR, our flagship product, emerged from a deep commitment to providing immersive and engaging learning experiences. We saw the potential of virtual reality to revolutionize education, and our team of educators, technologists, and visionaries worked tirelessly to make that vision a reality. But our journey doesn't end there. Through e-Sports Club, we're fostering a thriving community of gamers, providing platforms for them to showcase their skills, compete at the highest levels, and connect with fellow enthusiasts. We're harnessing the power of technology to create inclusive and accessible esports experiences, both online and offline." /> */}
             <div className="ourMissionVissionSection position-relative">
                 <img src="/img/layer.webp" className="absLayer" alt='Layer' />
                 <div className="padding-lr-class">
@@ -90,13 +90,13 @@ const AbourUs = () => {
 
                         <div className="d-flex gap-5 justify-content-around align-items-center ourJourneySectionMain">
                             <div className="ourJourneySectionInner d-flex flex-column justify-content-center align-items-center">
-                                <img src="/img/wsf.png" alt="Logo" />
+                                <img src="/img/wsf.webp" alt="Logo" />
                                 <h5>World Stem Federation</h5>
                             </div>
-                            <div className="ourJourneySectionInner d-flex flex-column justify-content-center align-items-center">
+                            {/* <div className="ourJourneySectionInner d-flex flex-column justify-content-center align-items-center">
                                 <img src="/img/mission.webp" alt="Logo" />
                                 <h5>e-Sports Club</h5>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -112,7 +112,7 @@ const AbourUs = () => {
                         <div className="journeyTimeLineInner">
                             <div className="journeyTimeLineInnerL">
                                 <h2>Years of Research & Development</h2>
-                                <p>Delve into the four years of rigorous research and development that laid the foundation for School VR.</p>
+                                <p>Delve into the four years of rigorous research and development that laid the foundation for SchoolVR.</p>
                             </div>
                             <div className="journeyTimeLineInnerR">
                                 <img src="/img/journey1.webp" alt="Journey" />
@@ -125,14 +125,14 @@ const AbourUs = () => {
                             <div className="journeyTimeLineInnerL">
                                 <h2>Global Surveys &
                                     Insights</h2>
-                                <p>Delve into the four years of rigorous research and development that laid the foundation for School VR.</p>
+                                <p>Delve into the four years of rigorous research and development that laid the foundation for SchoolVR.</p>
                             </div>
                         </div>
                         <div className="journeyTimeLineInner">
                             <div className="journeyTimeLineInnerL">
                                 <h2>The Final Product -
                                     Ready for Schools</h2>
-                                <p>Celebrate the culmination of our efforts as we proudly present the final, polished version of School VR, ready to empower educators and students around the globe.</p>
+                                <p>Celebrate the culmination of our efforts as we proudly present the final, polished version of SchoolVR, ready to empower educators and students around the globe.</p>
                             </div>
                             <div className="journeyTimeLineInnerR">
                                 <img src="/img/journey3.webp" alt="Journey" />
@@ -145,7 +145,7 @@ const AbourUs = () => {
                 <div className="padding-lr-class">
                     <div className="joinUsKeyPoints">
                         <h4 className='pageHeadText text-center'>Join Us in Shaping the Future of Education</h4>
-                        <p className="pagePara text-center marginClass">Are you ready to transform your classrooms into immersive learning environments? School VR invites you to embark on a journey of educational innovation, where virtual reality becomes a catalyst for student engagement, curiosity, and achievement.</p>
+                        <p className="pagePara text-center marginClass">Are you ready to transform your classrooms into immersive learning environments? SchoolVR invites you to embark on a journey of educational innovation, where virtual reality becomes a catalyst for student engagement, curiosity, and achievement.</p>
                         <div className="joinUsKeyPointsGrid">
                             {joinUsData.map((val) => {
                                 return (
@@ -161,7 +161,7 @@ const AbourUs = () => {
                         </div>
                     </div>
                     <h4 className='pageHeadText text-center'>Take the First Step Today</h4>
-                    <p className="pagePara text-center my-5">Request a demo, explore our licensing options, and discover the transformative potential of School VR. Together, let's create a brighter future for education, where every student has the opportunity to reach their full potential.</p>
+                    <p className="pagePara text-center my-5">Request a demo, explore our licensing options, and discover the transformative potential of SchoolVR. Together, let's create a brighter future for education, where every student has the opportunity to reach their full potential.</p>
                     <div className="d-flex justify-content-center">
                         <a href="#contact" className="btn btn-outline">
                             Get in Touch

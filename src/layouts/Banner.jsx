@@ -21,7 +21,7 @@ export const Banner = ({ setModalActive }) => {
           </picture>
         </div>
         <div className="hero-content">
-          <span className="hero-title">New way of learning</span>
+          <span className="hero-title">The Future of Education</span>
           <div className="navlink-item get-in-touch text-center">
             <button
               className="btn btn-secondary btn-primary-clr"

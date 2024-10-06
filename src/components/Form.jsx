@@ -162,7 +162,7 @@ export const Form = () => {
           />
           <FormField
             type="textarea"
-            placeholder="Brief Description of Your Experience & Interest in Partnering with School VR"
+            placeholder="Brief Description of Your Experience & Interest in Partnering with SchoolVR"
             name="message"
             onChange={handleChange}
             value={form.message}

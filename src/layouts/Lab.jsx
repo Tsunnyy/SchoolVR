@@ -27,9 +27,9 @@ export const Lab = () => {
           />
         </picture>
         <img className="book" src="/img/elements/book.webp" alt="book" />
-        <h5 className="book-text">Theoretical</h5>
+        <h5 className="book-text">Theoretical <br /> <span>2000+ Experiences</span></h5>
         <img className="scope" src="/img/elements/lab.webp" alt="scope" />
-        <h5 className="scope-text">Practical</h5>
+        <h5 className="scope-text">Practical <br /> <span>150+ Practical</span></h5>
         {/* <a>
           <button
             onClick={() => setModalActive(true)}
