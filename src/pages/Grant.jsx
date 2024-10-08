@@ -11,17 +11,17 @@ const Grant = () => {
     {
       id: 0,
       question: "What is the World Stem Federation Grant Program?",
-      answer: "The World Stem Federation Grant Program is a financial assistance initiative aimed at promoting STEM education and technology integration in schools worldwide. Through this program, eligible schools can receive a significant grant towards the cost of implementing School VR.",
+      answer: "The World Stem Federation Grant Program is a financial assistance initiative aimed at promoting STEM education and technology integration in schools worldwide. Through this program, eligible schools can receive a significant grant towards the cost of implementing SchoolVR.",
     },
     {
       id: 1,
       question: "Who is eligible for the grant?",
-      answer: "Schools located in one of the 110 eligible countries (see the list above) are eligible to apply. Schools must demonstrate a commitment to STEM education and a clear plan for integrating School VR into their curriculum.",
+      answer: "Schools located in one of the 110 eligible countries (see the list above) are eligible to apply. Schools must demonstrate a commitment to STEM education and a clear plan for integrating SchoolVR into their curriculum.",
     },
     {
       id: 2,
       question: "What is the grant amount?",
-      answer: "The grant covers a significant portion of the annual School VR license fee: 75% for the first three years, reducing the cost to $1,500 USD per lab per year. 60% for the following three years, bringing the cost down to $2,400 USD per lab per year.",
+      answer: "The grant covers a significant portion of the annual SchoolVR license fee: 75% for the first three years, reducing the cost to $1,500 USD per lab per year. 60% for the following three years, bringing the cost down to $2,400 USD per lab per year.",
     },
     {
       id: 3,
@@ -35,13 +35,13 @@ const Grant = () => {
     },
     {
       id: 5,
-      question: "Can I apply for the grant if I already have a School VR lab?",
-      answer: "Unfortunately, the grant is only available for new School VR lab setups. However, existing users can still benefit from our ongoing support and training programs.",
+      question: "Can I apply for the grant if I already have a SchoolVR lab?",
+      answer: "Unfortunately, the grant is only available for new SchoolVR lab setups. However, existing users can still benefit from our ongoing support and training programs.",
     },
     {
       id: 6,
       question: "What if my country is not on the list of eligible countries?",
-      answer: "We are constantly expanding our grant program and working to include more countries in the future. Please check back regularly for updates, or contact us to express your interest in bringing School VR to your region.",
+      answer: "We are constantly expanding our grant program and working to include more countries in the future. Please check back regularly for updates, or contact us to express your interest in bringing SchoolVR to your region.",
     },
   ];
 
@@ -53,7 +53,7 @@ const Grant = () => {
           <div className="row m-0 align-items-center justify-content-between">
             <div className="col-sm-8 ps-0">
               <h4 className='pageHeadText'>Empowering Global Education</h4>
-              <p className='pagePara my-5'>At School VR, we believe that cost should never be a barrier to accessing transformative educational experiences. That's why we're proud to partner with the World Stem Federation to offer a generous grant program, making our cutting-edge VR technology more accessible to schools worldwide</p>
+              <p className='pagePara my-5'>At SchoolVR, we believe that cost should never be a barrier to accessing transformative educational experiences. That's why we're proud to partner with the World Stem Federation to offer a generous grant program, making our cutting-edge VR technology more accessible to schools worldwide</p>
               <button className='btn btn-outline'>Book a Demo</button>
             </div>
             <div className="col-sm-4 pe-0">
@@ -63,13 +63,13 @@ const Grant = () => {
         </div>
       </div> */}
 
-      <PageHero heroImage="grant" btnText="Book A Demo" bgImage="layer1" paragraph="At School VR, we believe that cost should never be a barrier to accessing transformative educational experiences. That's why we're proud to partner with the World Stem Federation to offer a generous grant program, making our cutting-edge VR technology more accessible to schools worldwide" title="Empowering Global Education" />
+      <PageHero heroImage="grant" btnText="Book A Demo" bgImage="layer1" paragraph="At SchoolVR, we believe that cost should never be a barrier to accessing transformative educational experiences. That's why we're proud to partner with the World Stem Federation to offer a generous grant program, making our cutting-edge VR technology more accessible to schools worldwide" title="Empowering Global Education" />
 
       <div className="unlockingOpportunities">
         <div className="padding-lr-class">
           <h4 className='pageHeadText d-flex gap-3 align-items-center justify-content-center'><img src="/img/icon/lock.svg" alt="lock" /> Unlocking Opportunities</h4>
           <div className="successText mt-5 text-center">
-            <p>The World Stem Federation is committed to promoting STEM education and fostering innovation in classrooms across the globe. Through their grant program, they are empowering schools in 110 countries to embrace the future of learning with School VR.</p>
+            <p>The World Stem Federation is committed to promoting STEM education and fostering innovation in classrooms across the globe. Through their grant program, they are empowering schools in 110 countries to embrace the future of learning with SchoolVR.</p>
           </div>
           <div className="gridViewWithFlex">
             <div className="gridViewWithFlexL d-flex flex-column align-items-start justify-content-between">
@@ -88,7 +88,7 @@ const Grant = () => {
                       <img src="/img/icon/flash.svg" alt="Flash" />
                       <div>
                         <h4>Accelerated Adoption</h4>
-                        <p>This grant allows schools to implement School VR sooner,
+                        <p>This grant allows schools to implement SchoolVR sooner,
                           providing students with immediate access to immersive learning experiences.</p>
                       </div>
                     </div>

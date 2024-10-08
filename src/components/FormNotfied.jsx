@@ -86,7 +86,7 @@ export const FormNotfied = ({setModalActive}) => {
             }}
           />
           <p className="text">
-            I agree to receive Mails on behalf of School VR
+            I agree to receive Mails on behalf of SchoolVR
           </p>
         </label>
         <p className="form-error">{error.acknowledge}</p>

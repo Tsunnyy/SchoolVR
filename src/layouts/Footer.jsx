@@ -28,7 +28,7 @@ let quickLinks = [
 let productLinks = [
   //   {
   //     id: 1,
-  //     name: "School VR",
+  //     name: "SchoolVR",
   //     path: "/school-vr",
   //   },
   {

@@ -106,7 +106,7 @@ const Curriculum = () => {
                     <div className="row m-0 align-items-center justify-content-between">
                         <div className="col-sm-7 ps-0">
                             <h4 className='pageHeadText'>Curriculum</h4>
-                            <p className='pagePara my-5'>School VR isn't just about captivating VR experiences; it's about seamlessly weaving cutting-edge technology into the fabric of education worldwide. We've meticulously mapped our content to an extensive array of internationally recognized educational boards and their corresponding syllabi, ensuring a smooth and enriching transition for schools across the globe.</p>
+                            <p className='pagePara my-5'>SchoolVR isn't just about captivating VR experiences; it's about seamlessly weaving cutting-edge technology into the fabric of education worldwide. We've meticulously mapped our content to an extensive array of internationally recognized educational boards and their corresponding syllabi, ensuring a smooth and enriching transition for schools across the globe.</p>
                             <button onClick={() => setModalActive(true)} className='btn btn-secondary btn-primary-clr' > Know More</button>
                         </div>
                         <div className="col-sm-4 pe-0">
@@ -162,7 +162,7 @@ const Curriculum = () => {
                     </div>
 
                     <div className="successText mt-5 text-center">
-                        <p className='newPTest'>This extensive and ever-growing list ensures that School VR complements and enhances your <br /> existing curriculum, no matter where you are in the world.</p>
+                        <p className='newPTest'>This extensive and ever-growing list ensures that SchoolVR complements and enhances your <br /> existing curriculum, no matter where you are in the world.</p>
                     </div>
                 </div>
             </div>

@@ -62,7 +62,7 @@ export const BlogsDetail = () => {
     Axiosinstance.get(`/api/blog/${slug}`)
       .then((res) => {
         setBlog(res.data);
-        document.title = res.data.title + " | School VR";
+        document.title = res.data.title + " | SchoolVR";
       })
       .catch((err) => {
         setBlog(null);

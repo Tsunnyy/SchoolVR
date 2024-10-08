@@ -8,7 +8,7 @@ const LabSetupAndLearning = () => {
     const { setModalActive } = useContext(MyContext);
     return (
         <>
-            <PageHero btnText="Book a Demo" bgImage="layer1" heroImage="lebsetup" title="Effortless Setup, Global Accessibility" paragraph="School VR makes it easy for schools worldwide to embrace the future of education. Our comprehensive solutions cover everything from lab setup to licensing, ensuring a smooth and seamless transition to immersive learning." />
+            <PageHero btnText="Book a Demo" bgImage="layer1" heroImage="lebsetup" title="Effortless Setup, Global Accessibility" paragraph="SchoolVR makes it easy for schools worldwide to embrace the future of education. Our comprehensive solutions cover everything from lab setup to licensing, ensuring a smooth and seamless transition to immersive learning." />
             <div className="labSetUpOptions">
                 <div className="padding-lr-class">
                     <div className="row m-0 mb-5">
@@ -104,7 +104,7 @@ const LabSetupAndLearning = () => {
                     </div>
                     <div className="successText successTextExtraMarginInLabPage text-center">
                         <h4>Ready to Unlock the Power of VR in Your School?</h4>
-                        <p className='m-0'>Explore our licensing options, learn more about the grant program, and discover how School VR can transform your educational landscape. Contact us today to request a demo or discuss your specific needs. We're here to support you every step of the way.</p>
+                        <p className='m-0'>Explore our licensing options, learn more about the grant program, and discover how SchoolVR can transform your educational landscape. Contact us today to request a demo or discuss your specific needs. We're here to support you every step of the way.</p>
                         <span className='noteText'>Note - Grant eligibility and terms are subject to the World Stem Federation's guidelines and may vary by country.</span>
                         <div className="d-flex justify-content-center gap-5 align-items-center">
                             <button className="btn btn-outline" onClick={() => setModalActive(true)}>Check Eligibility</button>

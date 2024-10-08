@@ -21,13 +21,13 @@ import { Accordion } from 'react-bootstrap';
 //   },
 //   {
 //     id: 3,
-//     name: "School VR For Schools",
+//     name: "SchoolVR For Schools",
 //     class: "vr-schools",
 //     path: "/svs",
 //   },
 //   {
 //     id: 4,
-//     name: "School VR For Individuals",
+//     name: "SchoolVR For Individuals",
 //     class: "vr-individuals",
 //     path: "/svi",
 //   },

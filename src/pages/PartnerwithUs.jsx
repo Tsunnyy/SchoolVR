@@ -16,7 +16,7 @@ const PartnerwithUs = () => {
                     <div className="row m-0 align-items-center justify-content-between">
                         <div className="col-sm-7 ps-0">
                             <h4 className='pageHeadText'>Expand Your Reach, Transform Education</h4>
-                            <p className='pagePara my-5'>Are you passionate about educational innovation and eager to make a difference in your community? School VR is seeking dedicated partners to join our global network and bring the power of immersive learning to schools worldwide.</p>
+                            <p className='pagePara my-5'>Are you passionate about educational innovation and eager to make a difference in your community? SchoolVR is seeking dedicated partners to join our global network and bring the power of immersive learning to schools worldwide.</p>
                             <button className='btn btn-outline' onClick={() => setModalActive(true)}>Submit Inquiry</button>
                         </div>
                         <div className="col-sm-4 pe-0">
@@ -26,7 +26,7 @@ const PartnerwithUs = () => {
                 </div>
             </div>
             <div className="reachOuttoUs supportResources padding-lr-class">
-                <h3 className='text-center mb-5 supportResourcesTitle'>Why Partner with School VR?</h3>
+                <h3 className='text-center mb-5 supportResourcesTitle'>Why Partner with SchoolVR?</h3>
                 <div className="reachOuttoUsCard reachOuttoUsCardColFour">
                     <div className="reachOuttoUsCardInner">
                         <div className="d-flex gap-3 align-items-start">
@@ -197,7 +197,7 @@ const PartnerwithUs = () => {
                     <div className="col-sm-6 ps-0 pe-5">
                         <div className="takeaNextStepMainL">
                             <h4>Take the Next Step</h4>
-                            <p>We're passionate about empowering educators and students to achieve their full potential. Whether you're just getting started with School VR or looking to take your implementation to the next level, we're here to support you every step of the way.</p>
+                            <p>We're passionate about empowering educators and students to achieve their full potential. Whether you're just getting started with SchoolVR or looking to take your implementation to the next level, we're here to support you every step of the way.</p>
                             <hr />
                             <h3>We're excited to hear from you and embark on this journey of educational innovation together!</h3>
                         </div>

@@ -12,7 +12,7 @@ const SupportCommunity = () => {
                     <div className="row m-0 align-items-center justify-content-between">
                         <div className="col-sm-7 ps-0">
                             <h4 className='pageHeadText'>We're Here to Help You Succeed</h4>
-                            <p className='pagePara my-5'>At School VR, we're committed to providing exceptional support and fostering a vibrant community where educators, students, and partners can connect, collaborate, and thrive. We understand that implementing new technology can be challenging, and we're here to guide you every step of the way.</p>
+                            <p className='pagePara my-5'>At SchoolVR, we're committed to providing exceptional support and fostering a vibrant community where educators, students, and partners can connect, collaborate, and thrive. We understand that implementing new technology can be challenging, and we're here to guide you every step of the way.</p>
                             <button className='btn btn-outline'>Book a Demo</button>
                         </div>
                         <div className="col-sm-5 pe-0">
@@ -21,7 +21,7 @@ const SupportCommunity = () => {
                     </div>
                 </div>
             </div> */}
-            <PageHero title="We're Here to Help You Succeed" bgImage="layer1" heroImage="support" btnText="Book A Demo" paragraph="At School VR, we're committed to providing exceptional support and fostering a vibrant community where educators, students, and partners can connect, collaborate, and thrive. We understand that implementing new technology can be challenging, and we're here to guide you every step of the way." />
+            <PageHero title="We're Here to Help You Succeed" bgImage="layer1" heroImage="support" btnText="Book A Demo" paragraph="At SchoolVR, we're committed to providing exceptional support and fostering a vibrant community where educators, students, and partners can connect, collaborate, and thrive. We understand that implementing new technology can be challenging, and we're here to guide you every step of the way." />
             <div className="reachOuttoUs supportResources padding-lr-class">
                 <h3 className='text-center mb-5 reachOuttoUsTitle'>Comprehensive Support Resources</h3>
                 <div className="reachOuttoUsCard">
@@ -64,14 +64,14 @@ const SupportCommunity = () => {
                                     <img src="/img/icon/forum.svg" alt="forum" />
                                     <div>
                                         <span>Online Forum</span>
-                                        <p>Connect with educators and IT professionals worldwide in our vibrant online community. Share best practices, exchange ideas, and get inspiration from others who are using School VR to transform their classrooms.</p>
+                                        <p>Connect with educators and IT professionals worldwide in our vibrant online community. Share best practices, exchange ideas, and get inspiration from others who are using SchoolVR to transform their classrooms.</p>
                                     </div>
                                 </div>
                                 <div className="d-flex gap-3 align-items-start">
                                     <img src="/img/icon/sm.svg" alt="sm" />
                                     <div>
                                         <span>Social Media</span>
-                                        <p>Join the conversation on our social media channels. Stay informed about the latest updates, events, and educational technology trends. Share your School VR success stories and connect with like-minded educators</p>
+                                        <p>Join the conversation on our social media channels. Stay informed about the latest updates, events, and educational technology trends. Share your SchoolVR success stories and connect with like-minded educators</p>
                                     </div>
                                 </div>
                                 <div className="d-flex gap-3 align-items-start">
@@ -95,12 +95,12 @@ const SupportCommunity = () => {
 
                 <div className="successText text-center">
                     <h4>Your Success is Our Priority</h4>
-                    <p>We're passionate about empowering educators and students to achieve their full potential. Whether you're just getting started with School VR or looking to take your implementation to the next level, we're here to support you every step of the way.</p>
+                    <p>We're passionate about empowering educators and students to achieve their full potential. Whether you're just getting started with SchoolVR or looking to take your implementation to the next level, we're here to support you every step of the way.</p>
                 </div>
 
                 <hr className='marginBlock' />
 
-                <h3 className='text-center bottomText'>Join the School VR community today and experience the power of collective learning and innovation.</h3>
+                <h3 className='text-center bottomText'>Join the SchoolVR community today and experience the power of collective learning and innovation.</h3>
             </div>
             <About />
             <Footer />

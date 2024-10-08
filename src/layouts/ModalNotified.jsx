@@ -15,7 +15,7 @@ export const ModalNotified = ({ modalActive, setModalActive }) => {
       <div className="form-section" onClick={(e) => e.stopPropagation()}>
         <div className="head">
           <h3 className="form-title">
-            Stay Informed! <br /> SCHOOL VR Blogs
+            Stay Informed! <br /> SchoolVR Blogs
           </h3>
           <button
             className="btn-close"
