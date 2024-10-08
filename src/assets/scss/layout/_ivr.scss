@@ -222,14 +222,24 @@
     padding: 0 calc(135px - 86px);
 
     .twoCardsList {
-      background-color: #fff;
+      background-color: #f6fbff;
       box-shadow: 0px 4px 40px 0px #C1D0DC33;
-      padding: 40px 60px;
       border-radius: 20px;
+      border: 8px solid #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      transition: .7s all ease-in-out;
+
+      &:hover{
+        border: 8px solid transparent;
+        background: #fff;
+      }
+
+      &:hover img{
+        transform: scale(1.2);
+      }
 
       h4 {
         font-family: Gilroy-SemiBold;
@@ -246,11 +256,14 @@
         font-weight: 400;
         line-height: 20px;
         color: #000000;
+        margin: 0;
       }
 
       img {
-        max-height: 400px;
+        max-height: 350px;
         object-fit: contain;
+        transition: .5s all ease-in-out;
+        margin: 40px 0;
       }
 
       a {

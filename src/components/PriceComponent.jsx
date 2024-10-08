@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { MyContext } from "../mycontext";
 
 // Exchange rates for different currencies
 const exchangeRates = {
@@ -164,13 +165,18 @@ export const PriceComponent = () => {
     fetchCountry();
   }, []);
 
+
+  const { setModalActive } = useContext(MyContext);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="buyingOptionsForKids mb-0">
         <div className="buyingOptionsForKidsL">
           <div className="d-flex gap-4 align-items-center">
             <h2>Pricing Plan</h2>
-            <select
+            {/* <select
               className="d-none-after-767"
               onChange={(e) => handleCurrencyChange(e.target.value)}
               value={currency}
@@ -187,12 +193,13 @@ export const PriceComponent = () => {
               <option value="AED">AED</option>
               <option value="GBP">GBP</option>
               <option value="EUR">EUR</option>
-            </select>
+            </select> */}
           </div>
-          <p className="text-start">AI Tutors in SchoolVR act as personalized guides, swiftly resolving student doubts,
-            providing tailored assistance, and ensuring a seamless learning experience.</p>
+          <p className="text-start">Unlock the world’s highest-quality VR content with SVI at an incredibly affordable price. Gain access to the largest library of immersive educational experiences, covering a vast range of subjects.</p>
 
-          <div className="d-none-on-web">
+          <button className="btn btn-outline  mt-5" onClick={() => setModalActive(true)}>Join The Waitlist</button>
+
+          {/* <div className="d-none-on-web">
             <div className="d-flex justify-content-between align-items-center gap-2 marginBOn767">
               <select
                 onChange={(e) => handleCurrencyChange(e.target.value)}
@@ -281,7 +288,7 @@ export const PriceComponent = () => {
                 );
               })}
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="buyingOptionsForKidsR">
           <h6 className="text-center">SchoolVR Compatibility</h6>

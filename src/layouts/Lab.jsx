@@ -13,7 +13,7 @@ export const Lab = () => {
       <span className="section-sub-title">
         With the knowledge of both the Labs
       </span>
-      <h4 className="section-title">LABS</h4>
+      <h4 className="section-title ckr-golden">LABS</h4>
       <div className="lab-image-section">
         <picture>
           <source
@@ -27,9 +27,25 @@ export const Lab = () => {
           />
         </picture>
         <img className="book" src="/img/elements/book.webp" alt="book" />
-        <h5 className="book-text">Theoretical <br /> <span>2000+ Experiences</span></h5>
+        <h5 className="book-text">Theoretical
+          <p className="experienceBox">
+            <img src="/img/icon/ex1.svg" alt="Icon" />
+            <div className="d-grid">
+              <span>2000+</span>
+              <b>Experiences</b>
+            </div>
+          </p>
+        </h5>
         <img className="scope" src="/img/elements/lab.webp" alt="scope" />
-        <h5 className="scope-text">Practical <br /> <span>150+ Practical</span></h5>
+        <h5 className="scope-text">Practical
+          <p className="experienceBox">
+            <img src="/img/icon/ex2.svg" alt="Icon" />
+            <div className="d-grid">
+              <span>150+</span>
+              <b>Practicals</b>
+            </div>
+          </p>
+        </h5>
         {/* <a>
           <button
             onClick={() => setModalActive(true)}

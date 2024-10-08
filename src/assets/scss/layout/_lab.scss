@@ -4,6 +4,10 @@
   padding-top: 6rem;
   position: relative;
 
+  .section-title.ckr-golden {
+    color: #ECC243;
+  }
+
   .section-title {
     font-weight: 600;
     line-height: 1.2;
@@ -48,20 +52,48 @@
     text-transform: uppercase;
     text-align: center;
 
-    span {
-      font-size: 18px;
-      letter-spacing: 1.5px;
-      word-spacing: 0;
-      line-height: 16px;
-      text-align: center;
-      text-transform: capitalize;
-      font-family: Gilroy-SemiBold;
+    .experienceBox {
+      background: #C6B2F075;
+      backdrop-filter: blur(6.400000095367432px);
+      box-shadow: 0px 0px 40px 0px #C1D0DC40;
+      padding: 14px 20px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      text-align: left;
+      color: #000000;
+      margin-top: 20px;
+      border-radius: 10px;
+
+      span {
+        font-family: Gilroy-SemiBold;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36.75px;
+        letter-spacing: 0;
+      }
+
+      b {
+        font-family: Gilroy-Regular;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        letter-spacing: 0.44em;
+      }
+
+      img {
+        max-width: 44px;
+      }
     }
   }
 
   .scope-text {
     right: 100px;
     top: 45%;
+
+    .experienceBox {
+      background: #F0EAB275;
+    }
   }
 
   .book {
@@ -108,8 +140,13 @@
 
     .lab-image-section {
       margin-top: auto;
-      width: 80%;
+      width: 75%;
       margin-inline: auto;
+
+      img.lab-image {
+        position: relative;
+        z-index: 10;
+      }
 
       a {
         margin-bottom: 5rem;

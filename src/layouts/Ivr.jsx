@@ -129,9 +129,14 @@ export const Ivr = () => (
         </div>
       </div>
       {/* <span class="line dark"></span> */}
+      <div className="aaoResearch d-flex align-items-center">
+        <img src="/img/dr.png" alt="Icom" />
+        <p>Major eye health organizations, such as the <b>American Academy of Ophthalmology (AAO)</b>, state that there is no evidence suggesting that VR causes damage to the eyes.</p>
+      </div>
       <div className="ivr-section-list-class">
         {ivrData.map((ivr) => (
           <>
+          
             <div className="twoCardsList" key={ivr.id}>
               <h4 className="section-title">{ivr.name}</h4>
               <p className="section-sub-title">{ivr.content}</p>
@@ -143,55 +148,9 @@ export const Ivr = () => (
                 <span className="btn btn-outline">Know More</span>
               </NavLink>
             </div>
-            {/* <div key={ivr.id} className={`ivr-item flex-col-center ${ivr.class}`}>
-                  <h4 className="section-title">{ivr.name}</h4>
-                  <span className="section-sub-title">{ivr.content}</span>
-                  <NavLink to={ivr.path}>
-                    <span className="btn btn-outline">Know More</span>
-                  </NavLink>
-                  <img
-                    className="hero-banner"
-                    src={`/img/students/${ivr.class}.webp`}
-                    alt="bannerVR"
-                  />
-                </div> */}
           </>
         ))}
       </div>
     </div>
-    {/* <div className="ivr-section">
-          <div className="card-list">
-            {cardData.map((card) => (
-              <div className="card-item" key={card.id}>
-                <div className="card-icon">
-                  <img src={`/img/icon/${card.class}.svg`} alt={`${card.class}`} />
-                </div>
-                <div className="card-title">
-                  <h3>{card.name}</h3>
-                </div>
-                <div className="card-content">
-                  <p className="text-justify">{card.content}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="ivr-section-list">
-            {ivrData.map((ivr) => (
-              <div key={ivr.id} className={`ivr-item flex-col-center ${ivr.class}`}>
-                <h4 className="section-title">{ivr.name}</h4>
-                <span className="section-sub-title">{ivr.content}</span>
-                <NavLink to={ivr.path}>
-                  <span className="btn btn-outline">Know More</span>
-                </NavLink>
-                <img
-                  className="hero-banner"
-                  src={`/img/students/${ivr.class}.webp`}
-                  alt="bannerVR"
-                />
-              </div>
-            ))}
-          </div>
-  
-        </div> */}
   </>
 );

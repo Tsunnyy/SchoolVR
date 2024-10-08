@@ -35,12 +35,29 @@ const ContactUs = () => {
                         <button onClick={() => {
                             setModalActive(true);
                         }} className='btn btn-outline'>Schedule a Demo</button>
-                        <hr />
+                        {/* <hr />
                         <h4>Request a Consultation</h4>
                         <p>Have questions about implementation, curriculum alignment, or grant opportunities? Our experts are ready to provide personalized guidance and support</p>
                         <button onClick={() => {
                             setModalActive(true);
-                        }} className='btn btn-outline'>Contact Us</button>
+                        }} className='btn btn-outline'>Contact Us</button> */}
+                    </div>
+                    <div className="reachOuttoUsCardInner">
+                        <div className="d-flex gap-4 mb-5 align-items-center">
+                            <img src="/img/icon/forpartner.svg" alt="forpartner" />
+                            <span>For Vendors & Partners</span>
+                        </div>
+                        <h4>Collaboration Opportunities</h4>
+                        <p>Interested in partnering with SchoolVR to bring immersive learning to more students? We're eager to explore mutually beneficial collaborations and impactful opportunities together.</p>
+                        <button onClick={() => {
+                            setModalActive(true);
+                        }} className='btn btn-outline'>Partner with Us</button>
+                        {/* <hr />
+                        <h4>General Inquiries</h4>
+                        <p>For any other inquiries, proposals, or partnership opportunities, please contact us via email or phone directly.</p>
+                        <button onClick={() => {
+                            setModalActive(true);
+                        }} className='btn btn-outline'>Contact Us</button> */}
                     </div>
                     <div className="reachOuttoUsCardInner">
                         <div className="d-flex gap-4 mb-5 align-items-center">
@@ -53,29 +70,12 @@ const ContactUs = () => {
                         <button onClick={() => {
                             setModalActive(true);
                         }} className='btn btn-outline'>Explore VR Learning</button>
-                        <hr />
+                        {/* <hr />
                         <h4>Share Your Feedback</h4>
                         <p>We value your insights and ideas. Tell us what you love about SchoolVR or suggest new features you'd like to see implemented.</p>
                         <button onClick={() => {
                             setModalActive(true);
-                        }} className='btn btn-outline'>Share Feedback</button>
-                    </div>
-                    <div className="reachOuttoUsCardInner">
-                        <div className="d-flex gap-4 mb-5 align-items-center">
-                            <img src="/img/icon/forpartner.svg" alt="forpartner" />
-                            <span>For Vendors & Partners</span>
-                        </div>
-                        <h4>Collaboration Opportunities</h4>
-                        <p>Interested in partnering with SchoolVR to bring immersive learning to more students? We're eager to explore mutually beneficial collaborations and impactful opportunities together.</p>
-                        <button onClick={() => {
-                            setModalActive(true);
-                        }} className='btn btn-outline'>Partner with Us</button>
-                        <hr />
-                        <h4>General Inquiries</h4>
-                        <p>For any other inquiries, proposals, or partnership opportunities, please contact us via email or phone directly.</p>
-                        <button onClick={() => {
-                            setModalActive(true);
-                        }} className='btn btn-outline'>Contact Us</button>
+                        }} className='btn btn-outline'>Share Feedback</button> */}
                     </div>
                 </div>
 
@@ -98,13 +98,8 @@ const ContactUs = () => {
                         </div>
                     </div>
 
-                    <div className="d-none-after-767">
+                    {/* <div className="d-none-after-767">
                         <div className="d-flex gap-3 justify-content-center align-items-center socialIcons">
-                            {/* <img src="/img/social/fb.svg" alt="Facebook" />
-                            <img src="/img/social/ig.svg" alt="Instagram" />
-                            <img src="/img/social/ld.svg" alt="LinkedIn" />
-                            <img src="/img/social/x.svg" alt="x" />
-                            <img src="/img/social/yt.svg" alt="Youtube" /> */}
 
                             <a href="https://www.facebook.com/profile.php?id=61558819645521&mibextid=qi2Omg&rdid=dgk90yyWyt6mm507&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fc4iTGogr5VjsYfxF%2F%3Fmibextid%3Dqi2Omg" target="_blank">
                                 <img src="/img/social/fb.svg" alt="Facebook" />
@@ -123,8 +118,8 @@ const ContactUs = () => {
                             </a>
 
                         </div>
-                    </div>
-                    <div className="d-none-on-web">
+                    </div> */}
+                    {/* <div className="d-none-on-web"> */}
                         <div className="d-flex gap-3 justify-content-center align-items-center socialIcons">
                             <a href="https://www.facebook.com/profile.php?id=61558819645521&mibextid=qi2Omg&rdid=dgk90yyWyt6mm507&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fc4iTGogr5VjsYfxF%2F%3Fmibextid%3Dqi2Omg" target="_blank">
                                 <img src="/img/social/fbg.svg" alt="Facebook" />
@@ -141,7 +136,7 @@ const ContactUs = () => {
                                 <img src="/img/social/ytg.svg" alt="YouTube" />
                             </a>
                         </div>
-                    </div>
+                    {/* </div> */}
                 </div>
 
                 <hr className='marginBlock' />

@@ -13,27 +13,78 @@ export const VrCardsForIndividual = () => {
     <>
       <div className="pageInternalSectionMain">
         <div className="padding-lr-class">
-          <div className="internalSectGrid">
-            <div className="internalSectGridInner">
-              <img src="/img/icon/apple-vision-pro-users-male.svg" alt="" />
-              <h2>AI Tutors</h2>
-              <p>AI Tutors in SchoolVR act as personalized guides, swiftly resolving student doubts, providing tailored assistance, and ensuring a seamless learning experience.</p>
-            </div>
-            <div className="internalSectGridInner">
-              <img src="/img/icon/quiz.svg" alt="" />
-              <h2>Quizzes</h2>
-              <p>SchoolVR's interactive quizzes offer a gamified assessment approach, engaging students while evaluating their understanding and knowledge retention in a dynamic virtual environment.</p>
-            </div>
-            <div className="internalSectGridInner">
-              <img src="/img/icon/analytics.svg" alt="" />
-              <h2>Analytics</h2>
-              <p>Our robust analytics platform provides insightful data, enabling them to track performance, identify areas for improvement for optimal learning outcomes.</p>
+          <div className="d-grid keyHighlightPoints">
+            <p class="experienceBox">
+              <img src="/img/icon/ex1.svg" alt="Icon" />
+              <div class="d-grid"><span>2000 <em>+</em></span><b>Experiences</b></div>
+            </p>
+            <p class="experienceBox">
+              <img src="/img/icon/ex2.svg" alt="Icon" />
+              <div class="d-grid"><span>150 <em>+</em></span><b>Practicals</b></div>
+            </p>
+            <p class="experienceBox">
+              <img src="/img/icon/infinite-canvas.svg" alt="Icon" />
+              <div class="d-grid"><span>1,500</span><b>Quizzes</b></div>
+            </p>
+          </div>
+
+          <h1 className="newSubText">
+            Unlock the world’s best quality VR content with the <br /> largest library of immersive experiences.
+          </h1>
+
+
+          <div className="internalSectGridMain">
+            <h3>SVI Features</h3>
+            <div className="internalSectGrid">
+              <div className="internalSectGridInner">
+                <img src="/img/icon/f1.svg" alt="" />
+                <div>
+                  <h2>VR Labs</h2>
+                  <p>Conduct experiments and explore concepts in real-time virtual environments, providing hands-on practice without the constraints of traditional classrooms.</p>
+                </div>
+              </div>
+              <div className="internalSectGridInner">
+                <img src="/img/icon/f2.svg" alt="" />
+                <div>
+                  <h2>AI Tutors</h2>
+                  <p>Access personalized guides that quickly resolve doubts, offer tailored assistance, and ensure a smooth, uninterrupted learning experience.</p>
+                </div>
+              </div>
+              <div className="internalSectGridInner">
+                <img src="/img/icon/f3.svg" alt="" />
+                <div>
+                  <h2>Interactive Quizzes</h2>
+                  <p>Engage with gamified assessments that evaluate understanding and knowledge retention in a dynamic virtual setting.</p>
+                </div>
+              </div>
+              <div className="internalSectGridInner">
+                <img src="/img/icon/f4.svg" alt="" />
+                <div>
+                  <h2>Analytics Dashboard</h2>
+                  <p>Track performance and identify areas for improvement through a robust platform that provides valuable insights for optimal learning outcomes.</p>
+                </div>
+              </div>
+              <div className="internalSectGridInner">
+                <img src="/img/icon/f5.svg" alt="" />
+                <div>
+                  <h2>Learners' Community</h2>
+                  <p>Connect with fellow students via text or voice to share knowledge, collaborate on subjects, and enhance your learning journey with peer support.</p>
+                </div>
+              </div>
+              <div className="internalSectGridInner">
+                <img src="/img/icon/f6.svg" alt="" />
+                <div>
+                  <h2>Weekly Gamified Competitions</h2>
+                  <p>Participate in exciting weekly contests that test your knowledge, compete for prizes, and reinforce subject mastery in a fun, engaging way.</p>
+                </div>
+              </div>
             </div>
           </div>
+
           <PriceComponent />
           <div className="successText successTextWithDiffP mt-5 text-center">
-            <p>Enquire Now, SchoolVR for Individuals now and take advantage of our <br /> best offers to elevate your learning!</p>
-            <button className="btn btn-outline mx-auto mt-5" onClick={() => setModalActive(true)}>Book A Demo</button>
+            <p>Get top-quality VR headsets bundled with SchoolVR, offering a vast library of premium educational content</p>
+            <button className="btn mx-auto mt-5 disableButton" onClick={() => setModalActive(true)}>Coming Soon</button>
           </div>
         </div>
       </div>

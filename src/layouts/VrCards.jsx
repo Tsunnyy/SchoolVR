@@ -227,6 +227,25 @@ export const VrCards = () => {
     <>
       <div className="unlockingOpportunities pb-0">
         <div className="padding-lr-class">
+          <div className="d-grid keyHighlightPoints">
+            <p class="experienceBox">
+              <img src="/img/icon/ex1.svg" alt="Icon" />
+              <div class="d-grid"><span>2000 <em>+</em></span><b>Experiences</b></div>
+            </p>
+            <p class="experienceBox">
+              <img src="/img/icon/ex2.svg" alt="Icon" />
+              <div class="d-grid"><span>150 <em>+</em></span><b>Practicals</b></div>
+            </p>
+            <p class="experienceBox">
+              <img src="/img/icon/infinite-canvas.svg" alt="Icon" />
+              <div class="d-grid"><span>1,500</span><b>Quizzes</b></div>
+            </p>
+          </div>
+
+          <h1 className="newSubText">
+            Unlock the world’s best quality VR content with the <br /> largest library of immersive experiences.
+          </h1>
+
           <div className="gridViewWithFlex m-0">
             <div className="gridViewWithFlexL d-flex flex-column align-items-start justify-content-between">
               <div>
@@ -279,7 +298,7 @@ export const VrCards = () => {
                         <img src="/img/icon/svs-5.svg" alt="svs-5" />
                         <div>
                           <h4>Subjects</h4>
-                          <p>Subjects include Biology, Physics, Chemistry, History, Geography and additional modules</p>
+                          <p>The subjects offered in SVS include Sciences—Biology, Physics, and Chemistry—for both theory and practical labs, as well as Geography and Mathematics.</p>
                         </div>
                       </div>
                       <div className="d-flex align-items-start gap-3">
@@ -302,8 +321,8 @@ export const VrCards = () => {
                   <img src="/img/icon/basic_req.svg" alt="Icons" />
                   <div>
                     <h4>Basic Requirements</h4>
-                    <p>Allocate a space of 300 - 500 sqft for setting up the VR Lab.</p>
-                    <p>Ensure proper lighting and plug connections for an optimal immersive experience</p>
+                    <p>Allocate a space of 300 to 1000 sq ft for setting up the VR lab, depending on the typical class size.</p>
+                    <p>Ensure proper lighting and sufficient plug connections for an optimal immersive experience.</p>
                   </div>
                 </div>
               </div>
@@ -314,8 +333,8 @@ export const VrCards = () => {
                   <img src="/img/icon/install_train.svg" alt="Icons" />
                   <div>
                     <h4>Installation & Training</h4>
-                    <p>Our team ensures timely installation within 30 days of your order</p>
-                    <p>Comprehensive teacher training is provided for effective utilization.</p>
+                    <p>Our dedicated team ensures a smooth and timely installation process. We also provide comprehensive training for teachers, equipping them to effectively utilize the platform and maximize the benefits of SchoolVR in the classroom.</p>
+                    {/* <p>Comprehensive teacher training is provided for effective utilization.</p> */}
                   </div>
                 </div>
               </div>
@@ -330,7 +349,6 @@ export const VrCards = () => {
               alt="bannerVR"
             />
           </picture>
-          {/* <img src="/img/access.webp" alt="Access" /> */}
         </div>
       </div>
       {/* <div className="buyingOptionsForKids">
@@ -501,44 +519,6 @@ export const VrCards = () => {
 
               </div>
             </Tab>
-            <Tab eventKey="parents" title="Parents">
-              <div className="svsTabContent">
-                <div className="row m-0">
-                  <div className="col-12 col-lg-8 ps-0">
-                    <h2>Unlock Your Child's Potential</h2>
-                    <div className="tabGrid">
-                      {parentsTabGrid.map((val, index) => (
-                        <div className="tabGridInner" key={index}>
-                          <h4>{val.key}</h4>
-                          <p>{val.description}</p>
-                        </div>
-                      ))}
-                    </div>
-                    {/* <div className="keyStatistics">
-                      <h5>Key Statistics</h5>
-                      <div className="row m-0">
-                        <div className="col-12 col-sm-6 ps-0">
-                          <div className="d-flex gap-2 align-items-center keyPoints">
-                            <p>82%</p>
-                            <span>of teachers foresee a positive impact of VR on education</span>
-                          </div>
-                        </div>
-                        <div className="col-12 col-sm-6 pe-0">
-                          <div className="d-flex gap-2 align-items-center keyPoints">
-                            <p>90%</p>
-                            <span>report increased student attention and focus with VR</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div> */}
-                  </div>
-                  <div className="col-12 svsContentR col-sm-4 pe-0">
-                    <img src="/img/parentTab.webp" alt="Image" />
-                  </div>
-                </div>
-
-              </div>
-            </Tab>
             <Tab eventKey="students" title="Students">
               <div className="svsTabContent svsTabContentForStudent">
                 <div className="row m-0">
@@ -577,6 +557,45 @@ export const VrCards = () => {
 
               </div>
             </Tab>
+            <Tab eventKey="parents" title="Parents">
+              <div className="svsTabContent">
+                <div className="row m-0">
+                  <div className="col-12 col-lg-8 ps-0">
+                    <h2>Unlock Your Child's Potential</h2>
+                    <div className="tabGrid">
+                      {parentsTabGrid.map((val, index) => (
+                        <div className="tabGridInner" key={index}>
+                          <h4>{val.key}</h4>
+                          <p>{val.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                    {/* <div className="keyStatistics">
+                      <h5>Key Statistics</h5>
+                      <div className="row m-0">
+                        <div className="col-12 col-sm-6 ps-0">
+                          <div className="d-flex gap-2 align-items-center keyPoints">
+                            <p>82%</p>
+                            <span>of teachers foresee a positive impact of VR on education</span>
+                          </div>
+                        </div>
+                        <div className="col-12 col-sm-6 pe-0">
+                          <div className="d-flex gap-2 align-items-center keyPoints">
+                            <p>90%</p>
+                            <span>report increased student attention and focus with VR</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div> */}
+                  </div>
+                  <div className="col-12 svsContentR col-sm-4 pe-0">
+                    <img src="/img/parentTab.webp" alt="Image" />
+                  </div>
+                </div>
+
+              </div>
+            </Tab>
+
           </Tabs>
           <div className="vr-card-section">
             {/* <div className="card-list card-list-svs">
