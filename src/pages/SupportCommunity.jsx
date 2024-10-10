@@ -13,7 +13,7 @@ const SupportCommunity = () => {
                         <div className="col-sm-7 ps-0">
                             <h4 className='pageHeadText'>We're Here to Help You Succeed</h4>
                             <p className='pagePara my-5'>At SchoolVR, we're committed to providing exceptional support and fostering a vibrant community where educators, students, and partners can connect, collaborate, and thrive. We understand that implementing new technology can be challenging, and we're here to guide you every step of the way.</p>
-                            <button className='btn btn-outline'>Book a Demo</button>
+                            <button className='btn btn-outline'></button>
                         </div>
                         <div className="col-sm-5 pe-0">
                             <img src="/img/support.webp" alt="Support Image" />
@@ -21,7 +21,7 @@ const SupportCommunity = () => {
                     </div>
                 </div>
             </div> */}
-            <PageHero title="We're Here to Help You Succeed" bgImage="layer1" heroImage="support" btnText="Book A Demo" paragraph="At SchoolVR, we're committed to providing exceptional support and fostering a vibrant community where educators, students, and partners can connect, collaborate, and thrive. We understand that implementing new technology can be challenging, and we're here to guide you every step of the way." />
+            <PageHero title="We're Here to Help You Succeed" bgImage="layer1" heroImage="support" btnText="Connect With Us" paragraph="At SchoolVR, we're committed to providing exceptional support and fostering a vibrant community where educators, students, and partners can connect, collaborate, and thrive. We understand that implementing new technology can be challenging, and we're here to guide you every step of the way." />
             <div className="reachOuttoUs supportResources padding-lr-class">
                 <h3 className='text-center mb-5 reachOuttoUsTitle'>Comprehensive Support Resources</h3>
                 <div className="reachOuttoUsCard">

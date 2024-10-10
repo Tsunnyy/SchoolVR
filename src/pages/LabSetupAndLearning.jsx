@@ -8,12 +8,12 @@ const LabSetupAndLearning = () => {
     const { setModalActive } = useContext(MyContext);
     return (
         <>
-            <PageHero btnText="Book a Demo" bgImage="layer1" heroImage="lebsetup" title="Effortless Setup, Global Accessibility" paragraph="SchoolVR makes it easy for schools worldwide to embrace the future of education. Our comprehensive solutions cover everything from lab setup to licensing, ensuring a smooth and seamless transition to immersive learning." />
+            <PageHero btnText="Learn More" bgImage="layer1" heroImage="lebsetup" title="Effortless Setup, Global Accessibility" paragraph="SchoolVR makes it easy for schools worldwide to embrace the future of education. Our comprehensive solutions cover everything from lab setup to licensing, ensuring a smooth and seamless transition to immersive learning." />
 
             <div className="labSetUpOptions">
                 <div className="padding-lr-class">
 
-                    <div class="timeline-container">
+                    <div class="timeline-container mb-5">
                         <div class="timeline">
                             <div class="timeline-item">
                                 {/* <div class="timeline-dot"></div> */}
@@ -52,7 +52,7 @@ const LabSetupAndLearning = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row m-0 mb-5">
+                    {/* <div className="row m-0 mb-5">
                         <div className="col-12 col-md-8 ps-0">
                             <div className="optionsInnerContent">
                                 <img src="/img/icon/vr_lab.svg" alt="" />
@@ -80,7 +80,7 @@ const LabSetupAndLearning = () => {
                         <div className="col-12 col-md-4 labSetUpOptionsRight">
                             <img src="/img/ivr.webp" alt="" />
                         </div>
-                    </div>
+                    </div> */}
                     <div className="gridViewWithFlex">
                         <div className="gridViewWithFlexL d-flex flex-column align-items-start justify-content-between">
                             <div>
@@ -149,9 +149,9 @@ const LabSetupAndLearning = () => {
                         <span className='noteText'>Note - Grant eligibility and terms are subject to the World Stem Federation's guidelines and may vary by country.</span>
                         <div className="d-flex justify-content-center gap-5 align-items-center">
                             <button className="btn btn-outline" onClick={() => setModalActive(true)}>Check Eligibility</button>
-                            <button className='btn btn-secondary btn-primary-clr' onClick={() => setModalActive(true)}>Book a Demo</button>
+                            <button className='btn btn-secondary btn-primary-clr' onClick={() => setModalActive(true)}>Connect With Us</button>
                         </div>
-                        {/* <button className='btn btn-outline m-auto' onClick={() => setModalActive(true)}>Book a Demo</button> */}
+                        {/* <button className='btn btn-outline m-auto' onClick={() => setModalActive(true)}></button> */}
                     </div>
                 </div>
             </div>

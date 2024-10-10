@@ -14,7 +14,7 @@ export const Modal = ({ modalActive, setModalActive }) => {
     >
       <div className="form-section" onClick={(e) => e.stopPropagation()}>
         <div className="head">
-          <h3 className="form-title">Book a demo</h3>
+          <h3 className="form-title">Connect With Us</h3>
           <button
             className="btn-close"
             onClick={() => {

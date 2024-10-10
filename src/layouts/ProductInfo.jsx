@@ -34,7 +34,7 @@ export const ProductInfo = ({ cardData, productData }) => {
             className="btn btn-outline bg-transparent"
             onClick={() => setModalActive(true)}
           >
-            book a demo
+            Connect With Us
           </button>
         </div>
       </div>

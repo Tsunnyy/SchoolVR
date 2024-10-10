@@ -841,7 +841,7 @@ export const VrCards = () => {
               </p>
             </div>
             <button className="btn" onClick={() => setModalActive(true)}>
-              Book A Demo
+              
             </button>
           </div>
         </div> */}

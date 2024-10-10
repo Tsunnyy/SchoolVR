@@ -72,7 +72,7 @@ const Subjects = () => {
           <div className="successText successTextExtraMarginInLabPage text-center">
             <h4>Ready to provide your students with a world-class education?</h4>
             <p className='fontSemiBold'>Explore our comprehensive curriculum offerings, request a demo, and discover how SchoolVR can revolutionize your classrooms, no matter where you are in the world.</p>
-            <button className='btn btn-outline mx-auto mt-5' onClick={() => setModalActive(true)}>Book a Demo</button>
+            <button className='btn btn-outline mx-auto mt-5' onClick={() => setModalActive(true)}>Connect With Us</button>
           </div>
           {/* <hr className='my-5'/> */}
         </div>

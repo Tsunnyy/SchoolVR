@@ -54,7 +54,7 @@ const Grant = () => {
             <div className="col-sm-8 ps-0">
               <h4 className='pageHeadText'>Empowering Global Education</h4>
               <p className='pagePara my-5'>At SchoolVR, we believe that cost should never be a barrier to accessing transformative educational experiences. That's why we're proud to partner with the World Stem Federation to offer a generous grant program, making our cutting-edge VR technology more accessible to schools worldwide</p>
-              <button className='btn btn-outline'>Book a Demo</button>
+              <button className='btn btn-outline'></button>
             </div>
             <div className="col-sm-4 pe-0">
               <img src="/img/grant.png" alt="grant Image" />
@@ -63,7 +63,7 @@ const Grant = () => {
         </div>
       </div> */}
 
-      <PageHero heroImage="grant" btnText="Book A Demo" bgImage="layer1" paragraph="At SchoolVR, we believe that cost should never be a barrier to accessing transformative educational experiences. That's why we're proud to partner with the World Stem Federation to offer a generous grant program, making our cutting-edge VR technology more accessible to schools worldwide" title="Empowering Global Education" />
+      <PageHero heroImage="grant" btnText="Learn More" bgImage="layer1" paragraph="At SchoolVR, we believe that cost should never be a barrier to accessing transformative educational experiences. That's why we're proud to partner with the World Stem Federation to offer a generous grant program, making our cutting-edge VR technology more accessible to schools worldwide" title="Empowering Global Education" />
 
       <div className="unlockingOpportunities">
         <div className="padding-lr-class">

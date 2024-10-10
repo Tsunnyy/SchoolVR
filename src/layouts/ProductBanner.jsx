@@ -65,7 +65,7 @@ export const ProductBanner = (props) => {
               className="btn btn-transperent"
               onClick={() => setModalActive(true)}
             >
-              book a demo
+              Learn More
             </button>
           </div>
         </div>

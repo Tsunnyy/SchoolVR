@@ -187,9 +187,9 @@ const TrainingAndCertification = () => {
           <hr />
           <div className="successText mt-5 text-center">
             <h4 className='m-0'>Registration & Further Information</h4>
-            <p className='my-4'>Ready to empower your educators and IT staff with world-class training and certification, at no cost to your school? Visit our Training & Certification page to learn more about upcoming courses, registration details, and syllabus outlines.</p>
+            <p className='my-4'>Ready to empower your educators and IT staff with world-class training and certification, at no cost to your school? </p>
             <em>Note: The above syllabus actual content may vary. The syllabus is continuously refined in our training programs to reflect the latest advancements in educational technology and best practices.</em>
-            <button className='btn btn-outline m-auto mt-3' onClick={() => setModalActive(true)}>Book a Demo</button>
+            <button className='btn btn-outline m-auto mt-3' onClick={() => setModalActive(true)}>Connect With Us</button>
           </div>
         </div>
       </div>
