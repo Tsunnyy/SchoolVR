@@ -12,6 +12,46 @@ const LabSetupAndLearning = () => {
 
             <div className="labSetUpOptions">
                 <div className="padding-lr-class">
+
+                    <div class="timeline-container">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                {/* <div class="timeline-dot"></div> */}
+                                <div class="timeline-content">
+                                    <div class="timeline-title">Initial Consultation</div>
+                                    <div class="timeline-description">Meet with us online to explore how SchoolVR can meet your school's specific needs.</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                {/* <div class="timeline-dot"></div> */}
+                                <div class="timeline-content">
+                                    <div class="timeline-title">Demos & Grants</div>
+                                    <div class="timeline-description">Try SchoolVR with online/offline demos and explore available grants for licensing.</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                {/* <div class="timeline-dot"></div> */}
+                                <div class="timeline-content">
+                                    <div class="timeline-title">Procurement & Setup</div>
+                                    <div class="timeline-description">Receive the necessary VR hardware and set up the lab environment for smooth integration.</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                {/* <div class="timeline-dot"></div> */}
+                                <div class="timeline-content">
+                                    <div class="timeline-title">Training</div>
+                                    <div class="timeline-description">Educators get comprehensive training to effectively implement SchoolVR.</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                {/* <div class="timeline-dot"></div> */}
+                                <div class="timeline-content">
+                                    <div class="timeline-title">Ongoing Support</div>
+                                    <div class="timeline-description">Enjoy continuous updates and support for optimized learning experiences.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="row m-0 mb-5">
                         <div className="col-12 col-md-8 ps-0">
                             <div className="optionsInnerContent">

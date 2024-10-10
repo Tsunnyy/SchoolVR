@@ -117,7 +117,7 @@ export const Feature = () => {
           <div className="sliderMain" key={imdex}>
             <div className={`row m-0 newImgSlider ${slide.color}`} >
               <div className="col-12 col-md-6 ps-0 newImgSliderL">
-                <img src={`/img/ns${slide.id}.png`} alt={slide.title} className="img-fluid" />
+                <img src={`/img/ns${slide.id}.webp`} alt={slide.title} className="img-fluid" />
               </div>
               <div className="col-12 col-md-6 newImgSliderR">
                 <h2>{slide.title}</h2>
