@@ -230,7 +230,7 @@ export const VrCards = () => {
           <div className="d-grid keyHighlightPoints">
             <p class="experienceBox">
               <img src="/img/icon/ex1.svg" alt="Icon" />
-              <div class="d-grid"><span>2000 <em>+</em></span><b>Experiences</b></div>
+              <div class="d-grid"><span>2,000 <em>+</em></span><b>Experiences</b></div>
             </p>
             <p class="experienceBox">
               <img src="/img/icon/ex2.svg" alt="Icon" />
@@ -854,9 +854,134 @@ export const VrCards = () => {
         </div>
       </div>
 
-      <div className="schoolVrEcoSystemMain">
-        <div className="padding-lr-class">
-          <h2 className="text-center">SchoolVR Ecosystem</h2>
+      <div className="padding-lr-class">
+        <div className="schoolVrEcoSystemMain">
+
+          <div className="row m-0 ecoSystemMain justify-content-between align-items-center">
+            <div className="col-12 col-lg-4 ps-0 ecoSystem1">
+              <h2>SchoolVR Ecosystem</h2>
+              <h6>
+                SchoolVR offers a complete educational ecosystem, transforming how students learn, teachers instruct, and schools operate. Our platform seamlessly integrates various components to create a dynamic, engaging, and effective learning environment.
+              </h6>
+              <img src="/img/eco1.svg" alt="Icom" className="ecoImage" />
+            </div>
+            <div className="col-12 col-lg-7 ps-0 ecoSystem2">
+              <div className="ecoSystemInnerCard position-relative">
+                <h4>Core Learning Experience</h4>
+                <div className="ecoSystemGrid">
+                  <div className="ecoSystemGridInner">
+                    <img src="/img/cl1.svg" alt="Icon" />
+                    <div>
+                      <h5>Theoretical Labs</h5>
+                      <p>Explore complex topics in 3D, bridging theory and hands-on learning.</p>
+                    </div>
+                  </div>
+
+                  <div className="ecoSystemGridInner">
+                    <img src="/img/cl6.svg" alt="Icon" />
+                    <div>
+                      <h5>Practical Labs</h5>
+                      <p>Conduct safe virtual experiments, transcending traditional lab limitations.</p>
+                    </div>
+                  </div>
+
+                  <div className="ecoSystemGridInner">
+                    <img src="/img/cl4.svg" alt="Icon" />
+                    <div>
+                      <h5>Explanation Rooms</h5>
+                      <p>Immerse in subjects with interactive explanations for deeper understanding.</p>
+                    </div>
+                  </div>
+
+                  <div className="ecoSystemGridInner">
+                    <img src="/img/cl3.svg" alt="Icon" />
+                    <div>
+                      <h5>AI Tutors</h5>
+                      <p>Receive personalized guidance adapting to individual learning styles.</p>
+                    </div>
+                  </div>
+
+                  <div className="ecoSystemGridInner">
+                    <img src="/img/cl2.svg" alt="Icon" />
+                    <div>
+                      <h5>Interactive Quizzes</h5>
+                      <p>Engage with immediate feedback assessments for better retention.</p>
+                    </div>
+                  </div>
+
+                </div>
+                <img src="/img/eco2.svg" alt="Icom" className="ecoImage" />
+              </div>
+            </div>
+            <div className="col-12 col-lg-6 ps-0 pe-4 ecoSystem3">
+              <div className="ecoSystemInnerCard position-relative">
+                <h4>Platform Features</h4>
+                <div className="ecoSystemGrid">
+                  <div className="ecoSystemGridInner">
+                    <img src="/img/pf3.svg" alt="Icon" />
+                    <div>
+                      <h5>Diverse Content</h5>
+                      <p>Access 15+ curricula in 20+ languages, customizable to school needs.</p>
+                    </div>
+                  </div>
+
+                  <div className="ecoSystemGridInner">
+                    <img src="/img/pf1.svg" alt="Icon" />
+                    <div>
+                      <h5>Universal Compatibility</h5>
+                      <p>Compatible with all OpenXR headsets and accessible across devices.</p>
+                    </div>
+                  </div>
+
+                  <div className="ecoSystemGridInner">
+                    <img src="/img/pf2.svg" alt="Icon" />
+                    <div>
+                      <h5>Virtual Value</h5>
+                      <p>Save costs on physical labs while enhancing hands-on experiences.</p>
+                    </div>
+                  </div>
+
+                </div>
+                <img src="/img/eco3.svg" alt="Icom" className="ecoImage" />
+              </div>
+            </div>
+            <div className="col-12 col-lg-6 ps-4 pe-0 ecoSystem4">
+              <div className="ecoSystemInnerCard position-relative">
+                <h4>Engagement & Insights</h4>
+                <div className="ecoSystemGrid">
+                  <div className="ecoSystemGridInner">
+                    <img src="/img/ei3.svg" alt="Icon" />
+                    <div>
+                      <h5>Parental Dashboards</h5>
+                      <p>Access 15+ curricula in 20+ languages, customizable to school needs.</p>
+                    </div>
+                  </div>
+
+                  <div className="ecoSystemGridInner">
+                    <img src="/img/ei2.svg" alt="Icon" />
+                    <div>
+                      <h5>Analytics Dashboard</h5>
+                      <p>Compatible with all OpenXR headsets and accessible across devices.</p>
+                    </div>
+                  </div>
+
+                  <div className="ecoSystemGridInner">
+                    <img src="/img/ei1.svg" alt="Icon" />
+                    <div>
+                      <h5>Global Competitions</h5>
+                      <p>Participate in VR-based contests, fostering global academic excellence.</p>
+                    </div>
+                  </div>
+
+                </div>
+                <img src="/img/eco4.svg" alt="Icom" className="ecoImage" />
+              </div>
+            </div>
+          </div>
+
+          <h3> Access 24/7 assistance and updates for evolving educational needs.</h3>
+
+          {/* <h2 className="text-center">SchoolVR Ecosystem</h2>
           <p className="text-center pmarginClass">SchoolVR offers a complete educational ecosystem, transforming how students learn, teachers instruct, and schools operate. Our platform seamlessly integrates various components to create a dynamic, engaging, and effective learning environment.</p>
           <div className="ecoSystemGrid mb-5">
             {ecoSystem.map((val, index) => (
@@ -868,7 +993,7 @@ export const VrCards = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </>

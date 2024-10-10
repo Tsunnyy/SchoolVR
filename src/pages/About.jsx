@@ -230,7 +230,7 @@ const AbourUs = () => {
                         </div>
                         <div className="journeyTimeLineInner">
                             <div className="journeyTimeLineInnerR">
-                                <img src="/img/journey1.webp" alt="Surveys" />
+                                <img src="/img/journey4.webp" alt="Surveys" />
                             </div>
                             <div className="journeyTimeLineInnerL">
                                 <h2>Global Surveys & Insights: Shaping the Path Forward</h2>
@@ -243,12 +243,12 @@ const AbourUs = () => {
                                 <p>Virtual Reality emerged as the solution to revolutionize education, improving focus, retention, and student engagement. We also addressed VR safety, designing our modules for appropriate usage times and ensuring the content quality was so good it would feel as real as hands-on learning, avoiding any strain on students.</p>
                             </div>
                             <div className="journeyTimeLineInnerR">
-                                <img src="/img/journey2.webp" alt="Virtual Reality" />
+                                <img src="/img/journey5.webp" alt="Virtual Reality" />
                             </div>
                         </div>
                         <div className="journeyTimeLineInner">
                             <div className="journeyTimeLineInnerR">
-                                <img src="/img/journey3.webp" alt="Educators" />
+                                <img src="/img/journey6.webp" alt="Educators" />
                             </div>
                             <div className="journeyTimeLineInnerL">
                                 <h2>Educators at the Core: The Heart of SchoolVR’s Experience</h2>
@@ -261,12 +261,12 @@ const AbourUs = () => {
                                 <p>Unlike most platforms offering 360° videos, SchoolVR provides full interaction. Students can explore 3D models, making learning hands-on and immersive, which leads to better understanding and long-term retention.</p>
                             </div>
                             <div className="journeyTimeLineInnerR">
-                                <img src="/img/journey1.webp" alt="Interaction" />
+                                <img src="/img/journey7.webp" alt="Interaction" />
                             </div>
                         </div>
                         <div className="journeyTimeLineInner">
                             <div className="journeyTimeLineInnerR">
-                                <img src="/img/journey2.webp" alt="SchoolVR Today" />
+                                <img src="/img/journey8.webp" alt="SchoolVR Today" />
                             </div>
                             <div className="journeyTimeLineInnerL">
                                 <h2>SchoolVR Today: Leading the Future of Education</h2>

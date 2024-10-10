@@ -18,7 +18,7 @@ export const Lab = () => {
         <picture>
           <source
             media="(min-width:768px)"
-            srcSet="/img/students/new-stud.png"
+            srcSet="/img/students/new-stud.webp"
           />
           <img
             className="lab-image"

@@ -9,6 +9,7 @@ const LabSetupAndLearning = () => {
     return (
         <>
             <PageHero btnText="Book a Demo" bgImage="layer1" heroImage="lebsetup" title="Effortless Setup, Global Accessibility" paragraph="SchoolVR makes it easy for schools worldwide to embrace the future of education. Our comprehensive solutions cover everything from lab setup to licensing, ensuring a smooth and seamless transition to immersive learning." />
+
             <div className="labSetUpOptions">
                 <div className="padding-lr-class">
                     <div className="row m-0 mb-5">

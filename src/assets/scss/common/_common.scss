@@ -279,12 +279,40 @@ p.pagePara {
 }
 
 .schoolVrEcoSystemMain {
+  background: #F5FAFF;
+  border-radius: 20px;
+  padding: 60px 30px 40px;
+
+  h3 {
+    font-family: Gilroy-SemiBold;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26.4px;
+    text-align: center;
+    margin-top: 40px;
+    color: #000;
+  }
+
+  .ecoImage {
+    max-width: 108px;
+  }
+
   h2 {
     font-family: Gilroy-SemiBold;
     font-size: 30px;
     font-weight: 400;
     line-height: 36.75px;
     color: #000;
+  }
+
+  h6 {
+    font-family: Gilroy-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: justify;
+    color: #292D32;
+    margin: 20px 0 50px;
   }
 
   p {
@@ -299,24 +327,74 @@ p.pagePara {
     margin: 20px 0 30px;
   }
 
+  .ecoSystemInnerCard {
+    padding: 50px 30px 30px;
+    border-radius: 20px;
+
+    .ecoImage {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+  }
+
+  .ecoSystem2 {
+    .ecoSystemInnerCard {
+      background: #B9D778;
+    }
+  }
+
+  .ecoSystem3,
+  .ecoSystem4 {
+    margin-top: 40px;
+  }
+
+  .ecoSystem3 {
+    .ecoSystemInnerCard {
+      background: #DEB887;
+    }
+  }
+
+  .ecoSystem4 {
+    .ecoSystemInnerCard {
+      background: #C8B6FF;
+    }
+  }
+
+  h4 {
+    // border: 1px solid #c2c2c2;
+    padding: 17px 38px;
+    background: #FFFFFFCC;
+    backdrop-filter: blur(36.400001525878906px);
+    box-shadow: 0px 2.69px 36.9px 0px #292D321A;
+    font-family: Gilroy-SemiBold;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26.4px;
+    color: #292D32;
+    margin: 0;
+    width: fit-content;
+    border-radius: 10px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
   .ecoSystemGrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 35px;
   }
 
   .ecoSystemGridInner {
-    background: #F5FAFF;
-    padding: 15px;
-    border-radius: 20px;
     display: flex;
     align-items: center;
-    // justify-content: space-between;
-    gap: 15px;
+    gap: 16px;
 
     img {
-      max-width: 60px;
+      max-width: 40px;
     }
 
     h5 {
@@ -324,20 +402,29 @@ p.pagePara {
       font-size: 14px;
       font-weight: 400;
       line-height: 15.4px;
-      color: #292D32;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
+      color: #F7FFE7;
     }
 
     p {
-      font-family: Gilroy-SemiBold;
+      font-family: Gilroy-Medium;
       font-size: 12px;
       font-weight: 400;
       line-height: 13.2px;
-      color: #797979;
+      text-align: justify;
+      color: #446106;
       margin: 0;
     }
 
   }
+}
+
+.schoolVrEcoSystemMain .ecoSystem3 .ecoSystemGridInner p {
+  color: #724A17;
+}
+
+.schoolVrEcoSystemMain .ecoSystem4 .ecoSystemGridInner p {
+  color: #624EA1;
 }
 
 
@@ -519,8 +606,16 @@ p.pagePara {
       .journeyTimeLineInnerL {
         width: 70%;
         margin-left: auto;
-
       }
+
+      .journeyTimeLineInnerR {
+        img {
+          border-radius: 20px;
+          border: 4px solid #fff;
+          box-shadow: 0px 4px 13.9px 0px #C6830E;
+        }
+      }
+
 
       .journeyTimeLineInnerL:nth-child(2) {
         margin-right: auto;
@@ -649,6 +744,32 @@ p.pagePara {
   margin: 40px 0 50px;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ECC243;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  width: 107px;
+  border-radius: 26px;
+  height: 10px;
+  background: #fff;
+
+  .progress {
+    background: #ECC243;
+  }
+}
+
 .keyHighlightPoints {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -699,6 +820,7 @@ p.pagePara {
       font-weight: 400;
       line-height: 26px;
       letter-spacing: 10px;
+      text-transform: uppercase;
     }
 
     img {
@@ -1247,6 +1369,38 @@ header .explore-tray {
       justify-content: center;
       align-items: center;
 
+      a {
+        padding: 10px 30px;
+        border-radius: 10px;
+        background: transparent;
+        transition: .4s all ease;
+        position: relative;
+
+        &::after {
+          content: "Click to View";
+          font-family: Gilroy-SemiBold;
+          font-size: 12px;
+          font-style: italic;
+          font-weight: 400;
+          line-height: 14.56px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          bottom: -18px;
+          opacity: 0;
+          transition: .4s all ease;
+        }
+
+        &:hover {
+          background: #E1EBF3;
+        }
+
+        &:hover::after {
+          opacity: 1;
+        }
+      }
+
       &:nth-child(1),
       &:nth-child(2) {
         img {
@@ -1376,6 +1530,167 @@ header .explore-tray {
   color: #292D32;
 }
 
+.newImgSlider {
+  padding: 20px;
+  backdrop-filter: blur(40px);
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 0px #C1D0DC40;
+
+  &.green {
+    background: #B9D778;
+  }
+
+  &.blue {
+    background: #8ECAE6;
+  }
+
+  &.red {
+    background: #F2886E;
+  }
+
+  &.brown {
+    background: #DEB887;
+  }
+
+  &.purple {
+    background: #C8B6FF;
+  }
+
+  img {
+    box-shadow: 0px 4px 27.6px 0px #00000040 inset;
+    width: 100%;
+  }
+
+  h2 {
+    font-family: Gilroy-SemiBold;
+    font-size: 140px;
+    font-weight: 400;
+    line-height: 171.5px;
+  }
+
+  p {
+    font-family: Gilroy-SemiBold;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .newImgSliderR {
+    padding: 0 0 0 65px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+  }
+}
+
+.slick-dots {
+  display: none;
+}
+
+.slick-slider {
+
+  .slick-prev,
+  .slick-next {
+    right: 40px;
+    left: unset;
+    bottom: 0px;
+    top: unset;
+    // background: #FFFFFF99;
+    // backdrop-filter: blur(106.9000015258789px);
+    // box-shadow: 0px 0px 40px 0px #C1D0DC40;
+    padding: 20px;
+    color: #000;
+    z-index: 99;
+  }
+
+  .slick-prev {
+    right: 80px;
+  }
+
+  .slick-next::before {
+    content: "";
+    background: url(/img/icon/next.svg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+  }
+
+  .slick-prev::before {
+    content: "";
+    background: url(/img/icon/prev.svg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.playPauseButton {
+  background: #FFFFFF99;
+  backdrop-filter: blur(106.9000015258789px);
+  box-shadow: 0px 0px 40px 0px #C1D0DC40;
+  padding: 14px 30px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 127px;
+  width: 205px;
+  width: fit-content;
+  text-align: left;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  svg {
+    color: #ECC243;
+    font-size: 34px;
+    cursor: pointer;
+    width: fit-content;
+  }
+}
+
+.slick-dots li button {
+  display: none;
+}
+
+
+
+// .slick-dots li.slick-active button::before,
+// .slick-dots li.slick-active button {
+//   display: block;
+//   width: 107px;
+//   background: #fff;
+//   border-radius: 20px;
+//   padding: 0;
+//   height: 10px;
+//   position: absolute;
+//   bottom: 30px;
+//   left: 127px;
+// }
+
+// .slick-dots li.slick-active button::before {
+//   content: "";
+//   position: absolute;
+//   inset: 0;
+//   background: #ECC243;
+//   animation: bgColor 5s linear infinite;
+// }
+
+// @keyframes bgColor {
+//   0% {
+//     // background: transparent;
+//     width: 0;
+//   }
+
+//   100% {
+//     // background: #ECC243;
+//     width: 100%;
+//   }
+// }
+
 .cieProgram {
   background: #F6FBFF;
 
@@ -1423,8 +1738,25 @@ header .explore-tray {
       padding: 0;
       color: #292D32;
 
+      &:nth-child(1) {
+        .reachOuttoUsCardInnerHead {
+          background: #E0F8DC;
+        }
+      }
+
+      &:nth-child(2) {
+        .reachOuttoUsCardInnerHead {
+          background: #E5DCF8;
+        }
+      }
+
+      &:nth-child(3) {
+        .reachOuttoUsCardInnerHead {
+          background: #ECC243;
+        }
+      }
+
       .reachOuttoUsCardInnerHead {
-        background: #D3E5F3;
         padding: 20px;
         border-radius: 20px 20px 0 0;
 
@@ -2811,6 +3143,10 @@ header .explore-tray {
   }
 }
 
+// Timeline css
+
+// Timeline css
+
 @media (max-width: 1199px) {
   .padding-lr-class {
     padding-inline: 40px;
@@ -2860,12 +3196,36 @@ header .explore-tray {
   .joinUsSection .joinUsKeyPoints {
     padding: 80px;
   }
+
+  .keyHighlightPoints .experienceBox {
+    padding: 10px;
+  }
+
+  .keyHighlightPoints .experienceBox span {
+    font-size: 40px;
+  }
+
+  .keyHighlightPoints .experienceBox b {
+    font-size: 16px;
+    letter-spacing: 5px;
+  }
+
+
 }
 
 @media (max-width: 991px) {
   .supportResources .reachOuttoUsCard .reachOuttoUsCardInner {
     padding-right: 0;
     border: none;
+  }
+
+  .newImgSlider h2 {
+    font-size: 91px;
+    line-height: 77.5px;
+  }
+
+  .newImgSlider .newImgSliderR {
+    padding: 0 0 0 40px;
   }
 
   .offer-section {
@@ -2898,7 +3258,7 @@ header .explore-tray {
     padding: 70px 20px 20px;
   }
 
-  .pageInternalSectionMain .internalSectGrid .internalSectGridInner{
+  .pageInternalSectionMain .internalSectGrid .internalSectGridInner {
     flex-direction: column;
   }
 
@@ -3052,12 +3412,35 @@ header .explore-tray {
   .schoolVrEcoSystemMain .ecoSystemGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .ecoSystem3,
+  .ecoSystem4 {
+    padding: 0 !important;
+  }
+
+  .ecoSystem1 {
+    margin-bottom: 40px;
+  }
+
+  .schoolVrEcoSystemMain {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 767px) {
   .joinUsSection .joinUsKeyPoints .pageHeadText {
     font-size: 22px;
     line-height: 25px;
+  }
+
+  .keyHighlightPoints {
+    grid-template-columns: 1fr;
+  }
+
+  .newSubText {
+    font-size: 20px;
+    line-height: 20.75px;
+    margin: 30px 0 30px;
   }
 
   .aaoResearch {
@@ -3114,6 +3497,53 @@ header .explore-tray {
 
   .modal .early-bird.early-bird-new .offerText {
     font-size: 12px;
+  }
+
+  .newImgSlider .newImgSliderR {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .newImgSlider h2 {
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+  .newImgSlider p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .playPauseButton {
+    display: none;
+  }
+
+  .schoolVrEcoSystemMain {
+    padding: 10px;
+  }
+
+  .schoolVrEcoSystemMain h6 {
+    margin: 20px 0;
+  }
+
+  .schoolVrEcoSystemMain h4 {
+    padding: 10px;
+    font-size: 16px;
+    top: -20px;
+  }
+
+  .schoolVrEcoSystemMain .ecoSystemInnerCard .ecoImage {
+    display: none;
+  }
+
+  .schoolVrEcoSystemMain .ecoSystemInnerCard {
+    padding: 50px 15px 30px;
+  }
+
+  .schoolVrEcoSystemMain h3 {
+    font-size: 18px;
+    line-height: 20.4px;
+    margin-top: 20px;
   }
 
   .buyingOptionsForKids .buyingOptionsForKidsL h2 {
@@ -3511,6 +3941,8 @@ header .explore-tray {
       }
     }
   }
+
+
 
   .pageInternalSectionMain .buyingOptionsForKids {
     grid-template-columns: 1fr;

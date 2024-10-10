@@ -16,7 +16,7 @@ export const VrCardsForIndividual = () => {
           <div className="d-grid keyHighlightPoints">
             <p class="experienceBox">
               <img src="/img/icon/ex1.svg" alt="Icon" />
-              <div class="d-grid"><span>2000 <em>+</em></span><b>Experiences</b></div>
+              <div class="d-grid"><span>2,000 <em>+</em></span><b>Experiences</b></div>
             </p>
             <p class="experienceBox">
               <img src="/img/icon/ex2.svg" alt="Icon" />
@@ -40,45 +40,46 @@ export const VrCardsForIndividual = () => {
                 <img src="/img/icon/f1.svg" alt="" />
                 <div>
                   <h2>VR Labs</h2>
-                  <p>Conduct experiments and explore concepts in real-time virtual environments, providing hands-on practice without the constraints of traditional classrooms.</p>
+                  <p>Experience virtual labs that allow you to conduct experiments and explore concepts in real-time, providing hands-on practice without the constraints of traditional classrooms.</p>
                 </div>
               </div>
               <div className="internalSectGridInner">
                 <img src="/img/icon/f2.svg" alt="" />
                 <div>
                   <h2>AI Tutors</h2>
-                  <p>Access personalized guides that quickly resolve doubts, offer tailored assistance, and ensure a smooth, uninterrupted learning experience.</p>
+                  <p>SchoolVR’s AI Tutors act as personalized guides, quickly resolving student doubts, offering tailored assistance, and ensuring a smooth, uninterrupted learning experience.</p>
                 </div>
               </div>
               <div className="internalSectGridInner">
                 <img src="/img/icon/f3.svg" alt="" />
                 <div>
                   <h2>Interactive Quizzes</h2>
-                  <p>Engage with gamified assessments that evaluate understanding and knowledge retention in a dynamic virtual setting.</p>
+                  <p>SchoolVR’s interactive quizzes offer a gamified approach to assessment, engaging students while evaluating their understanding and knowledge retention in a dynamic virtual setting.</p>
                 </div>
               </div>
               <div className="internalSectGridInner">
                 <img src="/img/icon/f4.svg" alt="" />
                 <div>
-                  <h2>Analytics Dashboard</h2>
-                  <p>Track performance and identify areas for improvement through a robust platform that provides valuable insights for optimal learning outcomes.</p>
+                  <h2>Advanced Analytics</h2>
+                  <p>Our robust analytics platform provides valuable insights, enabling learners and educators to track performance and identify areas for improvement, ensuring optimal learning outcomes.</p>
                 </div>
               </div>
               <div className="internalSectGridInner">
                 <img src="/img/icon/f5.svg" alt="" />
                 <div>
                   <h2>Learners' Community</h2>
-                  <p>Connect with fellow students via text or voice to share knowledge, collaborate on subjects, and enhance your learning journey with peer support.</p>
+                  <p>Engage and learn together with fellow students in the SchoolVR community. Connect through text or voice, share knowledge, collaborate on subjects, and enhance your learning journey with peer support.</p>
                 </div>
               </div>
               <div className="internalSectGridInner">
                 <img src="/img/icon/f6.svg" alt="" />
                 <div>
                   <h2>Weekly Gamified Competitions</h2>
-                  <p>Participate in exciting weekly contests that test your knowledge, compete for prizes, and reinforce subject mastery in a fun, engaging way.</p>
+                  <p>Join exciting weekly competitions that make learning fun. Put your knowledge to the test in a gamified setting and compete with other learners for exciting prizes while reinforcing subject mastery.</p>
                 </div>
               </div>
             </div>
+
           </div>
 
           <PriceComponent />

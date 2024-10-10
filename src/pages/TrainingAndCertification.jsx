@@ -53,11 +53,12 @@ const TrainingAndCertification = () => {
                     <img src="/img/icon/star.svg" alt="star" />
                     <div>
                       <span>Syllabus Highlights</span>
-                      <p>Advanced pedagogical approaches for technology integration</p>
-                      <p>Designing & creating custom digital learning content</p>
-                      <p>Utilizing technology for differentiated instruction & personalized learning</p>
-                      <p>Exploring emerging trends & research in educational technology</p>
-                      <p>Collaborative project development using various tech tools</p>
+                      <p>Introduction to integrating technology into traditional classroom settings</p>
+                      <p>Basics of designing and creating digital learning content</p>
+                      <p>Leveraging simple tech tools for classroom management and student engagement</p>
+                      <p>Introduction to differentiated instruction using digital platforms</p>
+                      <p>Overview of current trends in educational technology</p>
+
                     </div>
                   </div>
                 </div>
@@ -78,11 +79,12 @@ const TrainingAndCertification = () => {
                     <img src="/img/icon/star.svg" alt="people" />
                     <div>
                       <span>Syllabus Highlights</span>
-                      <p>Advanced pedagogical approaches for technology integration</p>
-                      <p>Designing & creating custom digital learning content</p>
-                      <p>Utilizing technology for differentiated instruction & personalized learning</p>
-                      <p>Exploring emerging trends & research in educational technology</p>
-                      <p>Collaborative project development using various tech tools add text in p tag</p>
+                      <p>Intermediate strategies for integrating technology into advanced pedagogical models</p>
+                      <p>Creating interactive and dynamic digital content for student engagement</p>
+                      <p>Using data-driven tools to personalize learning and differentiate instruction</p>
+                      <p>In-depth exploration of emerging technologies and their classroom applications</p>
+                      <p>Collaborative digital project development and peer feedback using advanced tools</p>
+
                     </div>
                   </div>
                 </div>
@@ -103,15 +105,11 @@ const TrainingAndCertification = () => {
                     <img src="/img/icon/star.svg" alt="star" />
                     <div>
                       <span>Syllabus Highlights</span>
-                      <p>Advanced pedagogical approaches for technology integration</p>
-
-                      <p>Designing & creating custom digital learning content</p>
-
-                      <p>Utilizing technology for differentiated instruction & personalized learning</p>
-
-                      <p>Exploring emerging trends & research in educational technology</p>
-
-                      <p>Collaborative project development using various tech tools</p>
+                      <p>Leadership in tech-driven pedagogical innovation and curriculum design</p>
+                      <p>Developing sophisticated, multi-layered digital content for advanced learners</p>
+                      <p>Advanced techniques for personalized learning and differentiated instruction at scale</p>
+                      <p>Research-driven analysis of emerging educational technologies and future trends</p>
+                      <p>Leading collaborative tech integration projects, mentorship, and peer training initiatives</p>
                     </div>
                   </div>
                 </div>

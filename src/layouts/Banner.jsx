@@ -14,7 +14,6 @@ export const Banner = ({ setModalActive }) => {
             <source media="(min-width:768px)" srcSet={"/img/banner-b.webp"} />
             <img
               className=""
-              // src="/img/banner-m.png"
               src={"/img/banner-b.webp"}
               alt="bannerVR"
             />

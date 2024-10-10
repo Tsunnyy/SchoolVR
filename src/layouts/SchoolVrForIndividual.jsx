@@ -14,22 +14,9 @@ export const SchoolVrForIndividual = () => {
             <div className="col-sm-8 ps-0">
               <h4 className='pageHeadText pageHeadTextLight'>SchoolVR for <b>Individuals</b></h4>
               <p className='pagePara'>
-                SVI, or SchoolVR for Individuals, is a cutting-edge Virtual Reality
-                platform meticulously crafted for independent learners. Offering an
-                extensive spectrum of subjects encompassing Biology, Chemistry,
-                Physics, History, Space, and Geography, SVI opens up exciting
-                possibilities for students keen on exploring these domains. It serves
-                as an ideal platform for those with a curious mind, providing an
-                engaging and interactive approach to learning. SVI is designed to
-                break free from the constraints of traditional 2D videos and ebooks,
-                offering a significant upgrade in the learning experience. This
-                platform empowers students to embark on a journey of exploration and
-                education from the comfort of their homes. With SVI, learning becomes
-                an immersive and exciting adventure, making it an invaluable resource
-                for anyone seeking to expand their knowledge beyond the confines of
-                formal education.
+                SVI, or SchoolVR for Individuals, is a unique Virtual Reality platform designed for independent learners. It offers a wide range of subjects, including Biology, Chemistry, Physics, Space, Math, and Geography, providing students with an exciting and interactive way to explore these topics. With SVI, students gain access to the world’s highest-quality and most extensive VR educational content, taking their learning experience far beyond traditional 2D videos and ebooks. SVI allows learners to dive deep into subjects from the comfort of their homes, making education more immersive and engaging. It’s the perfect platform for anyone looking to expand their knowledge and curiosity outside of a formal classroom setting.
               </p>
-              <button className='btn btn-outline bg-transparent' onClick={() => { setModalActive(true); }} ariaLabel='Book a demo of SchoolVR for Schools'>Book a Demo</button>
+              <button className='btn btn-outline bg-transparent' onClick={() => { setModalActive(true); }} ariaLabel='Book a demo of SchoolVR for Schools'>Learn More</button>
             </div>
             <div className="col-sm-4 pe-0">
               <img src="/img/svi.webp" alt="SchoolVR for Individuals" />

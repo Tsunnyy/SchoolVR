@@ -130,7 +130,7 @@ export const Ivr = () => (
       </div>
       {/* <span class="line dark"></span> */}
       <div className="aaoResearch d-flex align-items-center">
-        <img src="/img/dr.png" alt="Icom" />
+        <img src="/img/dr.webp" alt="Icom" />
         <p>Major eye health organizations, such as the <b>American Academy of Ophthalmology (AAO)</b>, state that there is no evidence suggesting that VR causes damage to the eyes.</p>
       </div>
       <div className="ivr-section-list-class">

@@ -24,14 +24,14 @@ const Curriculum = () => {
             path: "/cambridge-sylabus-list"
         },
         {
-            region: "Common Core State Standards & Next",
-            curriculum: "Generation Science Standards",
+            region: "Common US Curriculum",
+            curriculum: "(CCSS & NGSS)",
             imgPath: "usa",
             path: "/us-sylabus-list"
         },
         {
-            region: "UK National Curriculum for England",
-            curriculum: "(British Curriculum)",
+            region: "UK National Curriculum",
+            curriculum: "(GCSE & A-Level)",
             imgPath: "uk",
             path: "/uk-sylabus-list"
         },

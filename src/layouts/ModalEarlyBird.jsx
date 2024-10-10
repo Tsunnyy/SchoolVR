@@ -22,7 +22,7 @@ export const ModalEarlyBird = ({ modalActive, setModalActive }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="early-bird early-bird-new">
-          <img src="/img/earlu.png" alt="" />
+          <img src="/img/earlu.webp" alt="" />
           {/* <div className="imgWithOfferText">
             <h3>Early Adopter <span className="aestrik">*</span></h3>
             <span className="offerText">Offer</span>
