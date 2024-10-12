@@ -40,17 +40,22 @@
 
   .book-text,
   .scope-text {
-    font-family: Gilroy-Bold;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 33.3px;
-    letter-spacing: 8px;
     margin: 11px 0 0;
     position: absolute;
-    color: #292D32;
     top: 40%;
-    text-transform: uppercase;
     text-align: center;
+    z-index: 99;
+
+    em {
+      font-family: Gilroy-Bold;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 33.3px;
+      letter-spacing: 8px;
+      color: #292D32;
+      text-transform: uppercase;
+      font-style: normal;
+    }
 
     .experienceBox {
       background: #C6B2F075;
@@ -171,6 +176,37 @@
 
   .lab-section .book-text,
   .lab-section .scope-text {
+    bottom: 0;
+    top: unset;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 215px;
+    text-align: center;
+  }
+
+  .lab-section .scope-text {
+    bottom: 80px;
+  }
+
+  .lab-section .book-text em,
+  .lab-section .scope-text em {
     display: none;
+  }
+
+  .lab-section .book-text .experienceBox,
+  .lab-section .scope-text .experienceBox {
+    gap: 15px;
+    padding: 10px 15px;
+  }
+
+  .lab-section .book-text .experienceBox span,
+  .lab-section .scope-text .experienceBox span {
+    font-size: 24px;
+  }
+
+  .lab-section .book-text .experienceBox b,
+  .lab-section .scope-text .experienceBox b {
+    font-size: 12px;
   }
 }

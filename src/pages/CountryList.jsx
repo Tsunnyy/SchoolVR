@@ -35,13 +35,12 @@ const CountryList = () => {
                 "Bahrain", "Iran", "Iraq", "Israel", "Jordan", "Kuwait", "Lebanon", "Oman", "Qatar", "Saudi Arabia", "Syria", "Turkey", "United Arab Emirates"
             ].sort()
         },
-
-        // {
-        //     continent: "North America",
-        //     countries: [
-        //         "Antigua and Barbuda", "Bahamas", "Barbados", "Canada", "Costa Rica", "Cuba", "Dominican Republic", "Grenada", "Jamaica", "Mexico", "Panama", "Trinidad and Tobago", "United States"
-        //     ].sort()
-        // }
+        {
+            continent: "Others",
+            countries: [
+                "Australia", "New Zealand", "Russia"
+            ].sort()
+        },
     ];
 
     const [searchTerm, setSearchTerm] = useState('');

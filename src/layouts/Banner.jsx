@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ModalEarlyBird } from "./ModalEarlyBird";
+// import CalendlyModal from "../components/CalendlyModal";
 
 export const Banner = ({ setModalActive }) => {
   const [offerActive, setOfferActive] = useState(true);
@@ -73,6 +74,7 @@ export const Banner = ({ setModalActive }) => {
         )}
         <ModalEarlyBird modalActive={earlyBird} setModalActive={setearlyBird} />
       </div>
+      {/* <CalendlyModal /> */}
       {/* <div className="hero-section full-height">
         <div className="hero-image">
           <img src="/img/elements/bag.webp" className="bag" alt="bag" />

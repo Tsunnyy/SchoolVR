@@ -135,6 +135,7 @@ const Grant = () => {
                         <div>
                           <h4>Location</h4>
                           <p>Your school must be located in one of the 110 eligible countries. </p>
+                          <a href="/countryList">View List</a>
                         </div>
                       </div>
                       <button className="btn btn-outline" onClick={() => setModalActive(true)}>

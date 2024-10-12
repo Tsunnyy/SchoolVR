@@ -24,7 +24,7 @@ export const VrCardsForIndividual = () => {
             </p>
             <p class="experienceBox">
               <img src="/img/icon/infinite-canvas.svg" alt="Icon" />
-              <div class="d-grid"><span>1,500</span><b>Quizzes</b></div>
+              <div class="d-grid"><span>1,500 <em>+</em></span><b>Quizzes</b></div>
             </p>
           </div>
 

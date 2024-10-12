@@ -36,75 +36,107 @@ export const VrCards = () => {
 
   let tabGrid = [
     {
-      "key": "Tech-Forward-Reputation",
+      "key": "Tech-Forward Reputation",
       "description": "Position your school at the forefront of educational innovation."
     },
     {
-      "key": "Global-Competition-Platform",
+      "key": "Global Competition Platform",
       "description": "Showcase your students' skills on a world stage."
     },
     {
-      "key": "Differentiated-Instruction",
+      "key": "Differentiated Instruction",
       "description": "Support diverse learning needs with personalized paths."
     },
     {
-      "key": "Enhanced-Learning-Outcomes",
+      "key": "Enhanced Learning Outcomes",
       "description": "Boost student achievement and engagement."
     },
     {
-      "key": "Future-Ready-Graduates",
+      "key": "Future-Ready Graduates",
       "description": "Develop essential 21st-century skills in your students."
+    },
+    {
+      "key": "Practical Labs",
+      "description": "Bring lab experiments to life in VR, saving costs and space."
     }
   ]
 
 
   let teacherTabGrid = [
     {
-      "key": "Enhanced Effectiveness",
-      "description": "Strategies and resources to improve teaching and learning outcomes."
+      "key": "Engage Students Easily",
+      "description": "Capture attention with immersive, interactive lessons."
     },
     {
-      "key": "Professional Development",
-      "description": "Opportunities for educators to grow and enhance their skills."
+      "key": "Simplify Complex Concepts",
+      "description": "Make abstract topics clear through 3D visualization."
     },
     {
-      "key": "Inspiring Student Engagement",
-      "description": "Techniques to captivate students and foster a love for learning."
+      "key": "Personalized Teaching Tools",
+      "description": "Tailor content to meet individual learning needs."
     },
     {
-      "key": "Personalized Instruction",
-      "description": "Track student progress and tailor learning experiences to individual needs."
+      "key": "Boost Student Participation",
+      "description": "Encourage active learning and participation with hands-on VR activities."
     },
     {
-      "key": "Global Educator Community",
-      "description": "Connect and collaborate with innovative teachers from around the world."
-    }
+      "key": "Data-Driven Insights",
+      "description": "Track student progress with detailed analytics and assessments."
+    },
+    {
+      "key": "Free Certification for Licensed Schools",
+      "description": "Gain World Stem Federation accredited certifications for Free, in the first year for all subject teachers."
+    },
+    // {
+    //   "key": "Enhanced Effectiveness",
+    //   "description": "Strategies and resources to improve teaching and learning outcomes."
+    // },
+    // {
+    //   "key": "Professional Development",
+    //   "description": "Opportunities for educators to grow and enhance their skills."
+    // },
+    // {
+    //   "key": "Inspiring Student Engagement",
+    //   "description": "Techniques to captivate students and foster a love for learning."
+    // },
+    // {
+    //   "key": "Personalized Instruction",
+    //   "description": "Track student progress and tailor learning experiences to individual needs."
+    // },
+    // {
+    //   "key": "Global Educator Community",
+    //   "description": "Connect and collaborate with innovative teachers from around the world."
+    // }
   ]
 
   let parentsTabGrid = [
     {
-      "key": "Real-Time-Progress-Tracking",
-      "description": "Monitor your child's learning journey through parent dashboards."
+      "key": "Real-Time Progress Tracking",
+      "description": "Monitor your child's learning journey with intuitive parent dashboards that provide up-to-date insights."
     },
     {
-      "key": "Future-Ready-Skills",
-      "description": "Equip your child with critical thinking, problem-solving, and creativity skills."
+      "key": "Future-Ready Skills",
+      "description": "Equip your child with critical thinking, problem-solving, and creativity skills essential for the 21st century."
     },
     {
-      "key": "Safe-Learning-Environment",
+      "key": "Safe Learning Environment",
       "description": [
-        "American Academy of Ophthalmology confirms VR safety for eyes.",
-        "Carefully designed session lengths align with current teaching modules."
+        "Ensure your child's safety with VR sessions approved by the American Academy of Ophthalmology. ",
+        "featuring carefully designed session lengths that align with current teaching modules."
       ]
     },
     {
       "key": "Personalized-Learning",
-      "description": "Support your child's unique learning style and abilities."
+      "description": "Support your child's unique learning style and abilities with tailored educational experiences that adapt to their needs."
     },
     {
-      "key": "Lifelong-Love-of-Learning",
-      "description": "Transform abstract concepts into tangible, exciting experiences."
+      "key": "Cost-Effective Learning",
+      "description": "Access high-quality, immersive education without the need for expensive physical resources or extra tutoring."
     }
+    // {
+    //   "key": "Lifelong-Love-of-Learning",
+    //   "description": "Transform abstract concepts into tangible, exciting experiences."
+    // }
   ]
 
   let studentTabGrid = [
@@ -238,7 +270,7 @@ export const VrCards = () => {
             </p>
             <p class="experienceBox">
               <img src="/img/icon/infinite-canvas.svg" alt="Icon" />
-              <div class="d-grid"><span>1,500</span><b>Quizzes</b></div>
+              <div class="d-grid"><span>1,500 <em>+</em></span><b>Quizzes</b></div>
             </p>
           </div>
 
@@ -305,7 +337,8 @@ export const VrCards = () => {
                         <img src="/img/icon/svs-6.svg" alt="svs-6" />
                         <div>
                           <h4>Topics</h4>
-                          <p>Our topics, aligned with the Cambridge syllabus, seamlessly adapt to ICSE and CBSE, ACCRA, UK, US, and many more ensuring a versatile and comprehensive learning experience for students.</p>
+                          {/* <p>Our topics, aligned with the Cambridge syllabus, seamlessly adapt to ICSE and CBSE, ACCRA, UK, US, and many more ensuring a versatile and comprehensive learning experience for students.</p> */}
+                          <p>Our topics are aligned with multiple curricula, with the flexibility to customize content to suit your specific needs. Some of the popular syllabi already mapped for seamless integration include Cambridge, UK, US, IB, ICSE, CBSE, ACCRA, MOE, and many more. This ensures a comprehensive learning experience tailored to students' current educational programs.</p>
                         </div>
                       </div>
                     </div>
@@ -462,13 +495,13 @@ export const VrCards = () => {
                         <div className="col-12 col-sm-6 ps-0">
                           <div className="d-flex gap-2 align-items-center keyPoints">
                             <p>90%</p>
-                            <span>improvement in test scores for VR learners</span>
+                            <span>improvement in test scores demonstrated by VR learners</span>
                           </div>
                         </div>
                         <div className="col-12 col-sm-6 pe-0">
                           <div className="d-flex gap-2 align-items-center keyPoints">
-                            <p>60%</p>
-                            <span>faster learning curve observed in students using VR simulations</span>
+                            <p>70%</p>
+                            <span>reduction in costs for physical lab equipment due to VR implementation</span>
                           </div>
                         </div>
                       </div>
@@ -538,13 +571,13 @@ export const VrCards = () => {
                         <div className="col-12 col-sm-6 ps-0">
                           <div className="d-flex gap-2 align-items-center keyPoints">
                             <p>90%</p>
-                            <span>improvement in test scores</span>
+                            <span>knowledge retention</span>
                           </div>
                         </div>
                         <div className="col-12 col-sm-6 pe-0">
                           <div className="d-flex gap-2 align-items-center keyPoints">
-                            {/* <p>90%</p> */}
-                            <span>Multifold increase in attention span</span>
+                            <p>3.75x</p>
+                            <span>more emotional connection to content</span>
                           </div>
                         </div>
                       </div>
@@ -570,23 +603,23 @@ export const VrCards = () => {
                         </div>
                       ))}
                     </div>
-                    {/* <div className="keyStatistics">
+                    <div className="keyStatistics">
                       <h5>Key Statistics</h5>
                       <div className="row m-0">
                         <div className="col-12 col-sm-6 ps-0">
                           <div className="d-flex gap-2 align-items-center keyPoints">
-                            <p>82%</p>
-                            <span>of teachers foresee a positive impact of VR on education</span>
+                            <p>95%</p>
+                            <span>report increased engagement in their child’s learning journey with VR</span>
                           </div>
                         </div>
                         <div className="col-12 col-sm-6 pe-0">
                           <div className="d-flex gap-2 align-items-center keyPoints">
-                            <p>90%</p>
-                            <span>report increased student attention and focus with VR</span>
+                            <p>3x</p>
+                            <span>more likely to see improvements in their child's understanding of complex subjects</span>
                           </div>
                         </div>
                       </div>
-                    </div> */}
+                    </div>
                   </div>
                   <div className="col-12 svsContentR col-sm-4 pe-0">
                     <img src="/img/parentTab.webp" alt="Image" />

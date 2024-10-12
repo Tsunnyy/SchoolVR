@@ -296,6 +296,10 @@
     opacity: 1;
   }
 
+  header .explore-tray.navbar-active {
+    padding: 15px 15px 150px;
+  }
+
   .feature-section-class .cardOptions {
     // grid-template-columns: 1fr;
     gap: 40px;

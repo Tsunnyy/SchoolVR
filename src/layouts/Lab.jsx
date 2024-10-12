@@ -27,7 +27,7 @@ export const Lab = () => {
           />
         </picture>
         <img className="book" src="/img/elements/book.webp" alt="book" />
-        <h5 className="book-text">Theoretical
+        <h5 className="book-text"><em>Theoretical</em>
           <p className="experienceBox">
             <img src="/img/icon/ex1.svg" alt="Icon" />
             <div className="d-grid">
@@ -37,7 +37,7 @@ export const Lab = () => {
           </p>
         </h5>
         <img className="scope" src="/img/elements/lab.webp" alt="scope" />
-        <h5 className="scope-text">Practical
+        <h5 className="scope-text"><em>Practical</em>
           <p className="experienceBox">
             <img src="/img/icon/ex2.svg" alt="Icon" />
             <div className="d-grid">

@@ -2,8 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import { EffectFade } from "swiper/modules";
+import { Pagination, EffectFade, Autoplay } from "swiper/modules";
 
 let productData = [
   {
@@ -68,7 +67,7 @@ export const Product = () => {
 
       <div className="product-item">
         <Swiper
-          modules={[Pagination, EffectFade]}
+          modules={[Pagination, EffectFade, Autoplay]}
           slidesPerView={1}
           speed={700}
           effect="fade"
@@ -76,7 +75,7 @@ export const Product = () => {
             crossFade: true,
           }}
           autoplay={{
-            delay: 14000,
+            delay: 15000,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -140,7 +139,7 @@ export const Product = () => {
                 </div>
                 <h4 className="section-title">{product.name}</h4>
                 <span className="section-sub-title">{product.content}</span>
-                <Link className="btn btn-outline" preventScrollReset={true} to={product.path}>
+                <Link className="btn btn-outline clr-golden-on-hover" preventScrollReset={true} to={product.path}>
                   Know More
                 </Link>
               </div>
