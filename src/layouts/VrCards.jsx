@@ -111,6 +111,13 @@ export const VrCards = () => {
 
   let parentsTabGrid = [
     {
+      "key": "Safe Learning Environment",
+      "description": [
+        "Ensure your child's safety with VR sessions approved by the American Academy of Ophthalmology. ",
+        "featuring carefully designed session lengths that align with current teaching modules."
+      ]
+    },
+    {
       "key": "Real-Time Progress Tracking",
       "description": "Monitor your child's learning journey with intuitive parent dashboards that provide up-to-date insights."
     },
@@ -119,24 +126,17 @@ export const VrCards = () => {
       "description": "Equip your child with critical thinking, problem-solving, and creativity skills essential for the 21st century."
     },
     {
-      "key": "Safe Learning Environment",
-      "description": [
-        "Ensure your child's safety with VR sessions approved by the American Academy of Ophthalmology. ",
-        "featuring carefully designed session lengths that align with current teaching modules."
-      ]
-    },
-    {
       "key": "Personalized-Learning",
       "description": "Support your child's unique learning style and abilities with tailored educational experiences that adapt to their needs."
     },
     {
       "key": "Cost-Effective Learning",
       "description": "Access high-quality, immersive education without the need for expensive physical resources or extra tutoring."
+    },
+    {
+      "key": "Lifelong Love for Learning",
+      "description": "Inspire your child's curiosity and passion for knowledge that extends beyond the classroom, setting the foundation for continuous growth and adaptability in an ever-changing world."
     }
-    // {
-    //   "key": "Lifelong-Love-of-Learning",
-    //   "description": "Transform abstract concepts into tangible, exciting experiences."
-    // }
   ]
 
   let studentTabGrid = [
@@ -366,8 +366,7 @@ export const VrCards = () => {
                   <img src="/img/icon/install_train.svg" alt="Icons" />
                   <div>
                     <h4>Installation & Training</h4>
-                    <p>Our dedicated team ensures a smooth and timely installation process. We also provide comprehensive training for teachers, equipping them to effectively utilize the platform and maximize the benefits of SchoolVR in the classroom.</p>
-                    {/* <p>Comprehensive teacher training is provided for effective utilization.</p> */}
+                    <p>Our dedicated team ensures a smooth and timely implementation process. We also provide comprehensive and certified training for teachers and the IT staff of the Schools, equipping them to effectively utilize the platform and optimize the benefits of SchoolVR for all stakeholders involved</p>
                   </div>
                 </div>
               </div>
@@ -986,7 +985,7 @@ export const VrCards = () => {
                     <img src="/img/ei3.svg" alt="Icon" />
                     <div>
                       <h5>Parental Dashboards</h5>
-                      <p>Access 15+ curricula in 20+ languages, customizable to school needs.</p>
+                      <p>Monitor your child's progress in real-time and facilitate greater parental involvement in education.</p>
                     </div>
                   </div>
 
@@ -994,7 +993,7 @@ export const VrCards = () => {
                     <img src="/img/ei2.svg" alt="Icon" />
                     <div>
                       <h5>Analytics Dashboard</h5>
-                      <p>Compatible with all OpenXR headsets and accessible across devices.</p>
+                      <p>Gain insights into student performance, facilitating personalized solutions and communications based on real-time data to achieve goals.</p>
                     </div>
                   </div>
 

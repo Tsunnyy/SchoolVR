@@ -175,7 +175,7 @@ export const PriceComponent = () => {
       <div className="buyingOptionsForKids mb-0">
         <div className="buyingOptionsForKidsL">
           <div className="d-flex gap-4 align-items-center">
-            <h2>Pricing Plan</h2>
+            <h2>Excited?</h2>
             {/* <select
               className="d-none-after-767"
               onChange={(e) => handleCurrencyChange(e.target.value)}

@@ -63,7 +63,7 @@ const CountryList = () => {
             <div className="padding-lr-class margin-top-100-class">
                 <div className="countryListPage">
                     <div className="d-flex gap-5 pt-5 pb-3 align-items-center">
-                        <h4 className='pageHeadText'>Eligible Country</h4>
+                        <h4 className='pageHeadText'>Eligible Countries</h4>
                         <input
                             type="text"
                             placeholder="Search for a country..."

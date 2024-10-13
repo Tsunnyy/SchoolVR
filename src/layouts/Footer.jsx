@@ -13,11 +13,11 @@ let quickLinks = [
     path: "/contactUs",
 
   },
-  {
-    id: 3,
-    name: "Blogs",
-    path: "/blogs",
-  },
+  // {
+  //   id: 3,
+  //   name: "Blogs",
+  //   path: "/blogs",
+  // },
   // {
   //   id: 4,
   //   name: "Careers",
@@ -81,7 +81,7 @@ let solutionsLinks = [
   },
   {
     id: 3,
-    name: "Lab Setup & Licensing Upcoming",
+    name: "Lab Setup & Licensing",
     path: "/lab-setup-and-learning",
   },
 ];
@@ -89,12 +89,12 @@ let solutionsLinks = [
 let programsLinks = [
   {
     id: 1,
-    name: "Curriculum",
+    name: "Curricula",
     path: "/curriculum",
   },
   {
     id: 2,
-    name: "Training & Certification",
+    name: "Training & Certifications",
     path: "/training-and-certification",
   },
   {
@@ -104,7 +104,7 @@ let programsLinks = [
   },
   {
     id: 4,
-    name: "Grant",
+    name: "Grants",
     path: "/grant",
   },
 ]

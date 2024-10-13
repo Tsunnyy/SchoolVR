@@ -38,8 +38,8 @@ const AbourUs = () => {
                     <div className="row m-0 align-items-center justify-content-between">
                         <div className="col-sm-7 ps-0">
                             <h4 className='pageHeadText'>About Us</h4>
-                            <h1>Pioneering the Future of Education and Esports</h1>
-                            <p className='pagePara'>At Brainistics Technologies, we're driven by a passion for innovation and a belief in the transformative power of technology. We're not just shaping the future of education but also redefining the landscape of competitive gaming. SchoolVR, our flagship product, emerged from a deep commitment to providing immersive and engaging learning experiences. We saw the potential of virtual reality to revolutionize education, and our team of educators, technologists, and visionaries worked tirelessly to make that vision a reality. But our journey doesn't end there. Through e-Sports Club, we're fostering a thriving community of gamers, providing platforms for them to showcase their skills, compete at the highest levels, and connect with fellow enthusiasts. We're harnessing the power of technology to create inclusive and accessible esports experiences, both online and offline.</p>
+                            <h1>Pioneering the Future of Education</h1>
+                            <p className='pagePara'>At Brainistics Technologies, we're driven by a passion for innovation and a belief in the transformative power of technology. We're not just shaping the future of education but also redefining how students engage with learning. SchoolVR, our flagship product, emerged from a deep commitment to providing immersive and interactive educational experiences. We saw the potential of virtual reality to revolutionize education, and our team of educators, technologists, and visionaries worked tirelessly to make that vision a reality. But our journey doesn’t end there. We continue to expand SchoolVR, harnessing the power of technology to create inclusive, accessible, affordable, sustainable and impactful learning environments both inside and outside the classroom.</p>
                         </div>
                         <div className="col-sm-4 pe-0">
                             <img src="/img/aboutus.webp" alt="About Image" />
@@ -52,8 +52,8 @@ const AbourUs = () => {
                 <img src="/img/layer.webp" className="absLayer" alt='Layer' />
                 <div className="padding-lr-class">
                     <div className="unleaseTextNew text-center">
-                        <h4>Unleashing the Power</h4>
-                        <h6>of Virtual Reality in Education</h6>
+                        <h4>Unleashing the Power of Virtual Reality in Education</h4>
+                        {/* <h6></h6> */}
                         <p>Education is the bedrock of human progress, the key to unlocking individual potential, and the cornerstone of a just and equitable world. At SchoolVR, we harness the unparalleled power of virtual reality to revolutionize learning, creating experiences far beyond the confines of traditional classrooms. Aligned with the UN's Sustainable Development Goal 4, we strive to ensure inclusive and quality education for all, leveraging VR to promote lifelong learning opportunities in ways never before imagined.</p>
                     </div>
                     <div className="d-grid ourMissionVissionCardMain">
@@ -69,44 +69,44 @@ const AbourUs = () => {
                                 <div className="col-12 p-0 d-grid gap-5">
                                     <div>
                                         <h5>Transcend Physical Limitations</h5>
-                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>Create immersive learning environments impossible in traditional settings.</p>
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>Create immersive learning environments impossible in traditional settings</p>
                                         <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>Enable students to interact with abstract concepts in tangible ways</p>
-                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>provide access to virtual resources and experiences regardless of geographical location.</p>
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>Provide access to virtual resources and experiences regardless of geographical location</p>
                                     </div>
 
                                     <div>
                                         <h5>Ignite Multisensory Learning</h5>
                                         <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>
-                                            Engage multiple senses to enhance understanding and retention.
+                                            Engage multiple senses to enhance understanding and retention
                                         </p>
                                         <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>
                                             Transform complex theories into interactive, explorable 3D models
                                         </p>
                                         <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>
-                                            foster deeper comprehension through hands-on virtual experiences.
+                                            Foster deeper comprehension through hands-on virtual experiences
                                         </p>
                                     </div>
 
                                     <div>
                                         <h5>Personalize Learning Journeys</h5>
-                                        <p> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>Adapt VR experiences to individual learning styles and paces. </p>
+                                        <p> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>Adapt VR experiences to individual learning styles and paces</p>
                                         <p> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>
                                             Offer real-time, AI-driven feedback and support in virtual environments
                                         </p>
                                         <p> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>
-                                            create safe spaces for trial, error, and experimentation without real-world consequences.
+                                            Create safe spaces for trial, error, and experimentation without real-world consequences
                                         </p>
                                     </div>
 
                                     <div>
                                         <h5>Empower Educators in the Virtual Realm</h5>
-                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>Equip teachers with tools to create and customize VR learning experiences.
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>Equip teachers with tools to create and customize VR learning experiences
                                         </p>
                                         <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>
                                             Transform instructors into guides of immersive, interactive lessons
                                         </p>
                                         <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>
-                                            foster a global community of VR-enabled innovative educators.
+                                            Foster a global community of VR-enabled innovative educators
                                         </p>
                                     </div>
 
@@ -131,43 +131,43 @@ const AbourUs = () => {
                                             Global VR spaces foster diverse collaboration and growth
                                         </p>
                                         <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>
-                                            shared virtual experiences promote intercultural understanding.
+                                            Shared virtual experiences promote intercultural understanding
                                         </p>
                                     </div>
 
                                     <div>
                                         <h5>Impossible Made Possible</h5>
-                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>Students explore realms beyond physical reach.
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>Students explore realms beyond physical reach
                                         </p>
                                         <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>
                                             Safe, scalable virtual laboratories enable complex experiments
                                         </p>
                                         <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>
-                                            Immersive 3D environments revolutionize design and engineering.
+                                            Immersive 3D environments revolutionize design and engineering
                                         </p>
                                     </div>
 
                                     <div>
                                         <h5>Nurturing Global Citizens</h5>
-                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>Interactive VR models illuminate complex global systems.
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>Interactive VR models illuminate complex global systems
                                         </p>
                                         <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>
                                             Immersive scenarios tackle real-world challenges
                                         </p>
                                         <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>
-                                            Learners to visualize and create sustainable future solutions.
+                                            Learners to visualize and create sustainable future solutions
                                         </p>
                                     </div>
 
                                     <div>
                                         <h5>Launching Pad for Future Innovators</h5>
-                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>VR unlocks and develops unique individual talents.
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>VR unlocks and develops unique individual talents
                                         </p>
                                         <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>
                                             Virtual training masters skills for emerging careers
                                         </p>
                                         <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2" /></svg>
-                                            Adaptable, lifelong learners thrive in evolving virtual spaces.
+                                            Adaptable, lifelong learners thrive in evolving virtual spaces
                                         </p>
                                     </div>
 

@@ -386,6 +386,7 @@ p.pagePara {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 37px 35px;
+    align-items: start;
   }
 
   .ecoSystemGridInner {
@@ -3050,7 +3051,7 @@ header .explore-tray {
   // }
 
   img {
-    height: 300px;
+    height: 320px;
     object-fit: contain;
   }
 
