@@ -4,9 +4,11 @@ import { About } from "../layouts/About";
 import { Form } from '../components/Form';
 import { MyContext } from '../mycontext';
 import { ModalEarlyBird } from '../layouts/ModalEarlyBird';
+import { CollaborationModal } from '../layouts/CollaborationModal';
 
 const PartnerwithUs = () => {
     const { setExtraClass, setModalActive } = useContext(MyContext);
+    const [colabModalActive, setColabModalActive] = useState(false);
     const [earlyBird, setearlyBird] = useState(false);
     return (
         <>
@@ -17,7 +19,7 @@ const PartnerwithUs = () => {
                         <div className="col-sm-7 ps-0">
                             <h4 className='pageHeadText'>Expand Your Reach, Transform Education</h4>
                             <p className='pagePara my-5'>Are you passionate about educational innovation and eager to make a difference in your community? SchoolVR is seeking dedicated partners to join our global network and bring the power of immersive learning to schools worldwide.</p>
-                            <button className='btn btn-outline' onClick={() => setModalActive(true)}>Submit Inquiry</button>
+                            <button className='btn btn-outline' onClick={() => setColabModalActive(true)}>Submit Inquiry</button>
                         </div>
                         <div className="col-sm-4 pe-0">
                             <img src="/img/partner.webp" alt="partner Image" />
@@ -215,6 +217,7 @@ const PartnerwithUs = () => {
                 </div>
             </div>
 
+            <CollaborationModal colabModalActive={colabModalActive} setColabModalActive={setColabModalActive} />
             <ModalEarlyBird modalActive={earlyBird} setModalActive={setearlyBird} />
             <About />
             <Footer />

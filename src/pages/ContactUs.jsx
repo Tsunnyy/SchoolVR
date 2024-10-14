@@ -4,10 +4,14 @@ import { About } from "../layouts/About";
 import PageHero from '../components/PageHero';
 import { MyContext } from "../mycontext";
 import { ModalEarlyBird } from '../layouts/ModalEarlyBird';
+import { CollaborationModal } from '../layouts/CollaborationModal';
+import { GeneralModal } from '../layouts/GeneralModal';
 
 const ContactUs = () => {
     const { setExtraClass, setModalActive } = useContext(MyContext);
     const [earlyBird, setearlyBird] = useState(false);
+    const [colabModalActive, setColabModalActive] = useState(false);
+    const [generalabModalActive, setGeneralabModalActive] = useState(false);
     return (
         <>
             <PageHero
@@ -34,7 +38,7 @@ const ContactUs = () => {
                         <p>Witness the magic of SchoolVR firsthand. Our team will guide you through a tailored demonstration, showcasing how our platform can empower your students and elevate your educational offerings.</p>
                         <button onClick={() => {
                             setModalActive(true);
-                        }} className='btn btn-outline'>Schedule a Demo</button>
+                        }} className='btn btn-outline'>Connect With Us</button>
                         {/* <hr />
                         <h4>Request a Consultation</h4>
                         <p>Have questions about implementation, curriculum alignment, or grant opportunities? Our experts are ready to provide personalized guidance and support</p>
@@ -50,7 +54,7 @@ const ContactUs = () => {
                         <h4>Collaboration Opportunities</h4>
                         <p>Interested in partnering with SchoolVR to bring immersive learning to more students? We're eager to explore mutually beneficial collaborations and impactful opportunities together.</p>
                         <button onClick={() => {
-                            setModalActive(true);
+                            setColabModalActive(true);
                         }} className='btn btn-outline'>Partner with Us</button>
                         {/* <hr />
                         <h4>General Inquiries</h4>
@@ -68,7 +72,7 @@ const ContactUs = () => {
                         <h4>Explore the Possibilities</h4>
                         <p>Are you curious about how VR can enhance your learning experience? Discover the exciting world of SchoolVR, unlock your full potential, and revolutionize the way you learn.</p>
                         <button onClick={() => {
-                            setModalActive(true);
+                            setGeneralabModalActive(true);
                         }} className='btn btn-outline'>Explore VR Learning</button>
                         {/* <hr />
                         <h4>Share Your Feedback</h4>
@@ -144,6 +148,8 @@ const ContactUs = () => {
                 <h3 className='text-center bottomText'>We're excited to hear from you and embark on this journey of educational innovation together!</h3>
             </div >
             <ModalEarlyBird modalActive={earlyBird} setModalActive={setearlyBird} />
+            <CollaborationModal colabModalActive={colabModalActive} setColabModalActive={setColabModalActive} />
+            <GeneralModal generalabModalActive={generalabModalActive} setGeneralabModalActive={setGeneralabModalActive} />
             <About />
             <Footer />
         </>

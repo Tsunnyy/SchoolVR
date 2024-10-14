@@ -420,6 +420,12 @@ p.pagePara {
   }
 }
 
+.newSelectSection select {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
 .schoolVrEcoSystemMain .ecoSystem3 .ecoSystemGridInner p {
   color: #724A17;
 }
@@ -2890,6 +2896,84 @@ header .explore-tray {
     border: none;
     outline: none;
   }
+}
+
+.custom-select-dropdown .custom-select-dropdown-inner__control,
+.custom-select-dropdown-inner__control.custom-select-dropdown-inner__control--menu-is-open {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: rgba(89, 89, 89, 0.16);
+  backdrop-filter: blur(2rem);
+}
+
+.custom-select-dropdown-inner__menu-portal {
+
+  .custom-select-dropdown-inner__menu {
+    margin-top: 3px;
+
+    .custom-select-dropdown-inner__menu-list {
+      padding: 0;
+    }
+  }
+}
+
+.checkBoxDiv {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+
+  .checkBoxOuterPart {
+    width: 29px;
+    height: 29px;
+    background: #7C7C7C33;
+    border-radius: 5px;
+    transition: .5s all ease-in-out;
+  }
+
+  input{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  label {
+    font-family: Gilroy-SemiBold;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #000;
+  }
+}
+
+.checkBoxOuterPart:has(input:checked) {
+  background: #ECC243;
+  /* Change background when checked */
+  border: 2px solid #FFFFFF;
+  /* Optional border */
+}
+
+.custom-select-dropdown-inner__menu-list {
+
+  .custom-select-dropdown-inner__option {
+    color: #000;
+    background: #fff;
+    font-family: Gilroy-SemiBold;
+  }
+
+  .custom-select-dropdown-inner__option:hover,
+  .custom-select-dropdown-inner__option:focus,
+  .custom-select-dropdown-inner__option.custom-select-dropdown-inner__option--is-selected {
+    background: #ECC243;
+    color: #fff;
+  }
+
+}
+
+.form-section.form-section-colob {
+  padding-inline: 5rem !important;
 }
 
 .about-section button.btn {
