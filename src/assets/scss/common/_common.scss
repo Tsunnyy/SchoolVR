@@ -3363,6 +3363,30 @@ header .explore-tray {
 
 // Timeline css
 
+
+.modal.noBgAndPadding .form-section {
+  background: transparent;
+  padding: 0 !important;
+  max-width: 100% !important;
+  border: none;
+  border-radius: 0;
+  backdrop-filter: none;
+
+  .btn-close {
+    padding: 0.1rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    position: absolute;
+    right: 300px;
+    top: 50px;
+    z-index: 99;
+    background: none;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
 @media (max-width: 1199px) {
   .padding-lr-class {
     padding-inline: 40px;

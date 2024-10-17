@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ModalEarlyBird } from "./ModalEarlyBird";
 import { Swiper } from 'swiper/react';
 import { SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, EffectFade, Autoplay } from 'swiper/modules';
 import { SchoolModal } from "./SchoolModal";
+import { CalendlyModal } from "../components/CalendlyModal";
 // import 'swiper/swiper-bundle.css'; 
 
 export const Banner = () => {
   const [offerActive, setOfferActive] = useState(true);
   const [earlyBird, setearlyBird] = useState(false);
   const [schoolModalActive, setSchoolModalActive] = useState(false);
+  const [calenActive, setCalenActive] = useState(false);
   const leftArrow = (
     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
       <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4">
@@ -27,6 +29,8 @@ export const Banner = () => {
       </g>
     </svg>
   );
+
+
 
   return (
     <>
@@ -76,7 +80,11 @@ export const Banner = () => {
                   >
                     Get in Touch
                   </button>
-                  <img src="/img/calen.svg" alt="calen" className="calenIcon" />
+                  <button className="nocss" onClick={() => {
+                    setCalenActive(true);
+                  }}>
+                    <img src="/img/calen.svg" alt="calen" className="calenIcon" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -150,7 +158,11 @@ export const Banner = () => {
                   >
                     Get in Touch
                   </button>
-                  <img src="/img/calen.svg" alt="calen" className="calenIcon" />
+                  <button className="nocss" onClick={() => {
+                    setCalenActive(true);
+                  }}>
+                    <img src="/img/calen.svg" alt="calen" className="calenIcon" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -223,7 +235,11 @@ export const Banner = () => {
                   >
                     Get in Touch
                   </button>
-                  <img src="/img/calen.svg" alt="calen" className="calenIcon" />
+                  <button className="nocss" onClick={() => {
+                    setCalenActive(true);
+                  }}>
+                    <img src="/img/calen.svg" alt="calen" className="calenIcon" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -295,7 +311,11 @@ export const Banner = () => {
                   >
                     Get in Touch
                   </button>
-                  <img src="/img/calen.svg" alt="calen" className="calenIcon" />
+                  <button className="nocss" onClick={() => {
+                    setCalenActive(true);
+                  }}>
+                    <img src="/img/calen.svg" alt="calen" className="calenIcon" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -344,8 +364,7 @@ export const Banner = () => {
         <div className="swiper-button-prev">{leftArrow}</div>
         <div className="swiper-button-next">{rightArrow}</div>
       </Swiper>
-
-
+      <CalendlyModal calenActive={calenActive} setCalenActive={setCalenActive} />
       <ModalEarlyBird modalActive={earlyBird} setModalActive={setearlyBird} />
       <SchoolModal schoolModalActive={schoolModalActive} setSchoolModalActive={setSchoolModalActive} />
     </>
