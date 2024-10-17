@@ -27,7 +27,7 @@
     .absImageBanner2 {
       width: 69px;
       height: 69px;
-      top: 80px;
+      top: 50px;
       right: 25%;
     }
   }
@@ -85,12 +85,28 @@
     display: grid;
     place-content: center;
 
-    picture {
-
-      img {
-        height: 320px;
-      }
+    .svsImgBanner {
+      max-width: 440px;
+      object-fit: contain;
+      position: absolute;
+      inset: 0;
+      margin: auto;
     }
+
+    .sviImgBanner {
+      max-height: 388px;
+      object-fit: contain;
+      position: absolute;
+      inset: 0;
+      margin: auto;
+    }
+
+    // picture {
+
+    //   img {
+    //     height: 320px;
+    //   }
+    // }
 
     .bag {
       max-width: 208px;

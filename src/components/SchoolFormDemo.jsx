@@ -393,10 +393,13 @@ export const SchoolFormDemo = () => {
         </label>
         <Select
           options={options}
-          onChange={(selected) => setForm((prev) => ({ ...prev, country: selected.value }))}
+          // onChange={(selected) => setForm((prev) => ({ ...prev, country: selected.value }))}
+          onChange={({ value }) => setForm((prev) => ({ ...prev, country: value }))}
+
           className="custom-select-dropdown"
           classNamePrefix={"custom-select-dropdown-inner"}
           id="country"
+          value={options.find(option => option.value === form.country)}
         />
         {error.country && <p className="form-error">{error.country}</p>}
       </div>

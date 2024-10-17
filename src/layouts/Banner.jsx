@@ -198,6 +198,7 @@ export const Banner = () => {
         <SwiperSlide>
           <div className="h-section full-height svs-new-banner">
             <div className="hero-image">
+              <img src="/img/svs.webp" className="svsImgBanner" alt="Image" />
               <picture>
                 <source media="(min-width:768px)" srcSet={"/img/banner-svs.webp"} />
                 <img
@@ -270,6 +271,7 @@ export const Banner = () => {
         <SwiperSlide>
           <div className="h-section full-height svi-banner">
             <div className="hero-image">
+              <img src="/img/svi.webp" className="sviImgBanner" alt="Image" />
               <picture>
                 <source media="(min-width:768px)" srcSet={"/img/banner-svi.webp"} />
                 <img

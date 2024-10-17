@@ -2758,10 +2758,12 @@ header .explore-tray {
         color: #000;
         font-family: Gilroy-Medium;
       }
-      .btn.btn-secondary{
+
+      .btn.btn-secondary {
         justify-content: space-between;
       }
-      svg{
+
+      svg {
         width: fit-content;
       }
     }
@@ -2913,7 +2915,8 @@ header .explore-tray {
   backdrop-filter: blur(2rem);
 }
 
-.fadeBg{
+.fadeBg {
+
   .custom-select-dropdown .custom-select-dropdown-inner__control,
   .custom-select-dropdown-inner__control.custom-select-dropdown-inner__control--menu-is-open {
     background-color: #f4f4f4;
@@ -2945,7 +2948,7 @@ header .explore-tray {
     transition: .5s all ease-in-out;
   }
 
-  input{
+  input {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -3644,6 +3647,61 @@ header .explore-tray {
   .joinUsSection .joinUsKeyPoints .pageHeadText {
     font-size: 22px;
     line-height: 25px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .home-page .h-section .hero-content .hero-title {
+    text-align: center;
+    font-size: 12px;
+    margin: 70px 0;
+  }
+
+  .home-page {
+
+    .h-section .absImageBanner2 {
+      width: 60px;
+      height: 60px;
+      top: -68px;
+      right: 39px;
+    }
+
+    .h-section .hero-image .sviImgBanner {
+      max-height: 250px;
+    }
+
+    .h-section.svi-banner .absImageBanner1 {
+      top: -41px;
+      left: 5%;
+    }
+
+    .h-section.svi-banner .absImageBanner2 {
+      top: -12px;
+      right: 20px;
+    }
+
+    .h-section .absImageBanner1 {
+      position: absolute;
+      width: 69px;
+      height: 69px;
+      top: -50px;
+      left: 15%;
+    }
+
+    .h-section .percentage {
+      width: 70px;
+      height: 70px;
+      font-size: 20px;
+      line-height: 20px;
+
+      span {
+        font-size: 10px;
+        line-height: 16px;
+      }
+    }
   }
 
   .timeline {
