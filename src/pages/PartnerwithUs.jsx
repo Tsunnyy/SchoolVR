@@ -5,6 +5,7 @@ import { Form } from '../components/Form';
 import { MyContext } from '../mycontext';
 import { ModalEarlyBird } from '../layouts/ModalEarlyBird';
 import { CollaborationModal } from '../layouts/CollaborationModal';
+import { ColabFormDemo } from '../components/ColabFormDemo';
 
 const PartnerwithUs = () => {
     const { setExtraClass, setModalActive } = useContext(MyContext);
@@ -210,7 +211,11 @@ const PartnerwithUs = () => {
                                 <div className="head">
                                     <h3 className="form-title">Get Involved</h3>
                                 </div>
-                                <Form />
+                                <div className="fadeBg">
+
+                                {/* <Form /> */}
+                                <ColabFormDemo/>
+                                </div>
                             </div>
                         </div>
                     </div>

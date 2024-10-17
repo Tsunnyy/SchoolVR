@@ -1,11 +1,13 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import PageHero from '../components/PageHero'
 import { Footer } from '../layouts/Footer'
 import { About } from "../layouts/About";
 import { MyContext } from '../mycontext';
+import { GrantModal } from '../layouts/GrantModal';
 
 const LabSetupAndLearning = () => {
     const { setModalActive } = useContext(MyContext);
+    const [grantModalActive, setGrantModalActive] = useState(false);
     return (
         <>
             <PageHero btnText="Learn More" bgImage="layer1" heroImage="lebsetup" title="Effortless Setup, Global Accessibility" paragraph="SchoolVR makes it easy for schools worldwide to embrace the future of education. Our comprehensive solutions cover everything from lab setup to licensing, ensuring a smooth and seamless transition to immersive learning." />
@@ -148,8 +150,8 @@ const LabSetupAndLearning = () => {
                         <p className='m-0'>Explore our licensing options, learn more about the grant program, and discover how SchoolVR can transform your educational landscape. Contact us today to request a demo or discuss your specific needs. We're here to support you every step of the way.</p>
                         <span className='noteText'>Note - Grant eligibility and terms are subject to the World Stem Federation's guidelines and may vary by country.</span>
                         <div className="d-flex justify-content-center gap-5 align-items-center">
-                            <button className="btn btn-outline" onClick={() => setModalActive(true)}>Check Eligibility</button>
-                            <button className='btn btn-secondary btn-primary-clr' onClick={() => setModalActive(true)}>Connect With Us</button>
+                            {/* <button className="btn btn-outline" onClick={() => setModalActive(true)}>Check Eligibility</button> */}
+                            <button className='btn btn-secondary btn-primary-clr' onClick={() => setGrantModalActive(true)}>Connect With Us</button>
                         </div>
                         {/* <button className='btn btn-outline m-auto' onClick={() => setModalActive(true)}></button> */}
                     </div>
@@ -157,7 +159,7 @@ const LabSetupAndLearning = () => {
             </div>
             <About />
             <Footer />
-
+            <GrantModal grantModalActive={grantModalActive} setGrantModalActive={setGrantModalActive} />
         </>
     )
 }

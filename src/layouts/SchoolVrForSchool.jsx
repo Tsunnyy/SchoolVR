@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Image } from "../components/Image";
 import { MyContext } from "../mycontext";
+import { SchoolModal } from "./SchoolModal";
 
 export const SchoolVrForSchool = () => {
   const { setModalActive } = useContext(MyContext);
+  const [schoolModalActive, setSchoolModalActive] = useState(false);
   return (
     <>
       <div className='aboutHeadSection position-relative'>
@@ -18,7 +20,7 @@ export const SchoolVrForSchool = () => {
                 Teachers benefit from detailed analytics that track student performance, allowing for personalized learning paths. Additionally, SVS includes an admin dashboard for principals to efficiently manage the platform and a dedicated app for parents, helping them monitor their child's progress and understand their strengths and weaknesses. This focus on interactivity, comprehensive features, and unmatched content sets SVS apart as a complete VR education ecosystem, aimed at enhancing student engagement and knowledge retention.
 
               </p>
-              <button className='btn btn-outline bg-transparent' onClick={() => setModalActive(true)} ariaLabel='Book a demo of SchoolVR for Schools'>Connect with Us</button>
+              <button className='btn btn-outline bg-transparent' onClick={() => setSchoolModalActive(true)} ariaLabel='Book a demo of SchoolVR for Schools'>Connect with Us</button>
             </div>
             <div className="col-sm-4 pe-0">
               <img src="/img/svs.webp" alt="SchoolVR for Schools interactive platform" />
@@ -26,6 +28,7 @@ export const SchoolVrForSchool = () => {
           </div>
         </div>
       </div>
+      <SchoolModal schoolModalActive={schoolModalActive} setSchoolModalActive={setSchoolModalActive} />
     </>
   );
 };

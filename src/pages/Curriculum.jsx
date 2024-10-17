@@ -5,10 +5,12 @@ import PageHero from '../components/PageHero';
 import { ModalEarlyBird } from '../layouts/ModalEarlyBird';
 import { MyContext } from '../mycontext';
 import { Link } from 'react-router-dom';
+import { SchoolModal } from '../layouts/SchoolModal';
 
 const Curriculum = () => {
     const { setExtraClass, setModalActive } = useContext(MyContext);
     const [earlyBird, setearlyBird] = useState(false);
+    const [schoolModalActive, setSchoolModalActive] = useState(false);
 
     const curricula = [
         {
@@ -107,7 +109,7 @@ const Curriculum = () => {
                         <div className="col-sm-7 ps-0">
                             <h4 className='pageHeadText'>Curriculum</h4>
                             <p className='pagePara my-5'>SchoolVR isn't just about captivating VR experiences; it's about seamlessly weaving cutting-edge technology into the fabric of education worldwide. We've meticulously mapped our content to an extensive array of internationally recognized educational boards and their corresponding syllabi, ensuring a smooth and enriching transition for schools across the globe.</p>
-                            <button onClick={() => setModalActive(true)} className='btn btn-secondary btn-primary-clr' > Know More</button>
+                            <button onClick={() => setSchoolModalActive(true)} className='btn btn-secondary btn-primary-clr' > Know More</button>
                         </div>
                         <div className="col-sm-4 pe-0">
                             <img src="/img/curriculum.webp" alt="curriculum Image" />
@@ -171,6 +173,7 @@ const Curriculum = () => {
 
             <About />
             <Footer />
+            <SchoolModal schoolModalActive={schoolModalActive} setSchoolModalActive={setSchoolModalActive} />
         </>
     )
 }

@@ -1,27 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Footer } from '../layouts/Footer'
 import { About } from "../layouts/About";
 import PageHero from '../components/PageHero';
+import { GeneralModal } from '../layouts/GeneralModal';
 
 const SupportCommunity = () => {
+    const [generalabModalActive, setGeneralabModalActive] = useState(false);
     return (
         <>
-            {/* <div className="aboutHeadSection contactUsMain position-relative">
+            <div className="aboutHeadSection contactUsMain position-relative">
                 <img src="/img/layers/layer1.webp" alt="Layer" className='layerImage' />
                 <div className="margin-top-100-class padding-lr-class">
                     <div className="row m-0 align-items-center justify-content-between">
-                        <div className="col-sm-7 ps-0">
+                        <div className="col-sm-8 ps-0">
                             <h4 className='pageHeadText'>We're Here to Help You Succeed</h4>
                             <p className='pagePara my-5'>At SchoolVR, we're committed to providing exceptional support and fostering a vibrant community where educators, students, and partners can connect, collaborate, and thrive. We understand that implementing new technology can be challenging, and we're here to guide you every step of the way.</p>
-                            <button className='btn btn-outline'></button>
+                            <button onClick={() => {
+                            setGeneralabModalActive(true);
+                        }} className='btn btn-outline'>Connect With Us</button>
                         </div>
-                        <div className="col-sm-5 pe-0">
+                        <div className="col-sm-4 pe-0">
                             <img src="/img/support.webp" alt="Support Image" />
                         </div>
                     </div>
                 </div>
-            </div> */}
-            <PageHero title="We're Here to Help You Succeed" bgImage="layer1" heroImage="support" btnText="Connect With Us" paragraph="At SchoolVR, we're committed to providing exceptional support and fostering a vibrant community where educators, students, and partners can connect, collaborate, and thrive. We understand that implementing new technology can be challenging, and we're here to guide you every step of the way." />
+            </div>
+            {/* <PageHero title="We're Here to Help You Succeed" bgImage="layer1" heroImage="support" btnText="Connect With Us" paragraph="At SchoolVR, we're committed to providing exceptional support and fostering a vibrant community where educators, students, and partners can connect, collaborate, and thrive. We understand that implementing new technology can be challenging, and we're here to guide you every step of the way." /> */}
             <div className="reachOuttoUs supportResources padding-lr-class">
                 <h3 className='text-center mb-5 reachOuttoUsTitle'>Comprehensive Support Resources</h3>
                 <div className="reachOuttoUsCard">
@@ -104,6 +108,7 @@ const SupportCommunity = () => {
             </div>
             <About />
             <Footer />
+            <GeneralModal generalabModalActive={generalabModalActive} setGeneralabModalActive={setGeneralabModalActive} />
         </>
     )
 }

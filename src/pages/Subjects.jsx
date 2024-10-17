@@ -1,10 +1,12 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Footer } from '../layouts/Footer'
 import { About } from "../layouts/About";
 import { MyContext } from '../mycontext';
+import { SchoolModal } from '../layouts/SchoolModal';
 
 const Subjects = () => {
   const { setModalActive } = useContext(MyContext);
+  const [schoolModalActive, setSchoolModalActive] = useState(false);
   return (
     <>
       <div className="aboutHeadSection contactUsMain position-relative">
@@ -72,13 +74,14 @@ const Subjects = () => {
           <div className="successText successTextExtraMarginInLabPage text-center">
             <h4>Ready to provide your students with a world-class education?</h4>
             <p className='fontSemiBold'>Explore our comprehensive curriculum offerings, request a demo, and discover how SchoolVR can revolutionize your classrooms, no matter where you are in the world.</p>
-            <button className='btn btn-outline mx-auto mt-5' onClick={() => setModalActive(true)}>Connect With Us</button>
+            <button className='btn btn-outline mx-auto mt-5' onClick={() => setSchoolModalActive(true)}>Connect With Us</button>
           </div>
           {/* <hr className='my-5'/> */}
         </div>
       </div>
       <About />
       <Footer />
+      <SchoolModal schoolModalActive={schoolModalActive} setSchoolModalActive={setSchoolModalActive} />
     </>
   )
 }

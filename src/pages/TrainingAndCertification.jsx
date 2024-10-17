@@ -1,10 +1,12 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Footer } from '../layouts/Footer'
 import { About } from "../layouts/About";
 import { MyContext } from '../mycontext';
+import { SchoolModal } from '../layouts/SchoolModal';
 
 const TrainingAndCertification = () => {
   const { setModalActive } = useContext(MyContext);
+  const [schoolModalActive, setSchoolModalActive] = useState(false);
   return (
     <>
       <div className='aboutHeadSection p-0 position-relative'>
@@ -115,7 +117,7 @@ const TrainingAndCertification = () => {
                 </div>
               </div>
             </div>
-            <button className='btn btn-outline m-auto my-5' onClick={() => setModalActive(true)}>Get in Touch</button>
+            <button className='btn btn-outline m-auto my-5' onClick={() => setSchoolModalActive(true)}>Get in Touch</button>
           </div>
 
         </div>
@@ -195,6 +197,7 @@ const TrainingAndCertification = () => {
       </div>
       <About />
       <Footer />
+      <SchoolModal schoolModalActive={schoolModalActive} setSchoolModalActive={setSchoolModalActive} />
     </>
   )
 }

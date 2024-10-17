@@ -6,12 +6,18 @@ import { MyContext } from "../mycontext";
 import { ModalEarlyBird } from '../layouts/ModalEarlyBird';
 import { CollaborationModal } from '../layouts/CollaborationModal';
 import { GeneralModal } from '../layouts/GeneralModal';
+import { SchoolModal } from '../layouts/SchoolModal';
+import { GrantModal } from '../layouts/GrantModal';
+import { WaitListModal } from '../layouts/WaitListModal';
 
 const ContactUs = () => {
     const { setExtraClass, setModalActive } = useContext(MyContext);
     const [earlyBird, setearlyBird] = useState(false);
     const [colabModalActive, setColabModalActive] = useState(false);
     const [generalabModalActive, setGeneralabModalActive] = useState(false);
+    const [schoolModalActive, setSchoolModalActive] = useState(false);
+    const [grantModalActive, setGrantModalActive] = useState(false);
+    const [waitlistModalActive, setWaitlistModalActive] = useState(false);
     return (
         <>
             <PageHero
@@ -27,6 +33,17 @@ const ContactUs = () => {
 
             <div className="reachOuttoUs padding-lr-class">
                 <h3 className='text-center mb-5 reachOuttoUsTitle'>Reach Out to Us</h3>
+                {/* <button onClick={() => {
+                    setSchoolModalActive(true);
+                }} className='btn btn-outline'>School Contact Form</button>
+
+                <button onClick={() => {
+                    setGrantModalActive(true);
+                }} className='btn btn-outline'>Grant Contact Form</button>
+
+                <button onClick={() => {
+                    setWaitlistModalActive(true);
+                }} className='btn btn-outline'>Join the waitlist</button> */}
                 <div className="reachOuttoUsCard reachOuttoUsCardWithPadding">
                     <div className="reachOuttoUsCardInner">
                         <div className="d-flex gap-4 mb-5 align-items-center">
@@ -37,7 +54,7 @@ const ContactUs = () => {
                         <h4>Schedule a Personalized Demo</h4>
                         <p>Witness the magic of SchoolVR firsthand. Our team will guide you through a tailored demonstration, showcasing how our platform can empower your students and elevate your educational offerings.</p>
                         <button onClick={() => {
-                            setModalActive(true);
+                            setSchoolModalActive(true);
                         }} className='btn btn-outline'>Connect With Us</button>
                         {/* <hr />
                         <h4>Request a Consultation</h4>
@@ -124,22 +141,22 @@ const ContactUs = () => {
                         </div>
                     </div> */}
                     {/* <div className="d-none-on-web"> */}
-                        <div className="d-flex gap-3 justify-content-center align-items-center socialIcons">
-                            <a href="https://www.facebook.com/profile.php?id=61558819645521&mibextid=qi2Omg&rdid=dgk90yyWyt6mm507&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fc4iTGogr5VjsYfxF%2F%3Fmibextid%3Dqi2Omg" target="_blank">
-                                <img src="/img/social/fbg.svg" alt="Facebook" />
-                            </a>
-                            <img src="/img/social/igg.svg" alt="Instagram" />
+                    <div className="d-flex gap-3 justify-content-center align-items-center socialIcons">
+                        <a href="https://www.facebook.com/profile.php?id=61558819645521&mibextid=qi2Omg&rdid=dgk90yyWyt6mm507&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fc4iTGogr5VjsYfxF%2F%3Fmibextid%3Dqi2Omg" target="_blank">
+                            <img src="/img/social/fbg.svg" alt="Facebook" />
+                        </a>
+                        <img src="/img/social/igg.svg" alt="Instagram" />
 
-                            <a href="https://www.linkedin.com/company/schoolvr/" target="_blank">
-                                <img src="/img/social/ldg.svg" alt="LinkedIn" />
-                            </a>
-                            <a href="https://x.com/School__VR?t=LNFaEqDFtoru3z4lXh3MjA&s=08" target="_blank">
-                                <img src="/img/social/xg.svg" alt="X" />
-                            </a>
-                            <a href="https://www.youtube.com/@SchoolVR" target="_blank">
-                                <img src="/img/social/ytg.svg" alt="YouTube" />
-                            </a>
-                        </div>
+                        <a href="https://www.linkedin.com/company/schoolvr/" target="_blank">
+                            <img src="/img/social/ldg.svg" alt="LinkedIn" />
+                        </a>
+                        <a href="https://x.com/School__VR?t=LNFaEqDFtoru3z4lXh3MjA&s=08" target="_blank">
+                            <img src="/img/social/xg.svg" alt="X" />
+                        </a>
+                        <a href="https://www.youtube.com/@SchoolVR" target="_blank">
+                            <img src="/img/social/ytg.svg" alt="YouTube" />
+                        </a>
+                    </div>
                     {/* </div> */}
                 </div>
 
@@ -150,6 +167,9 @@ const ContactUs = () => {
             <ModalEarlyBird modalActive={earlyBird} setModalActive={setearlyBird} />
             <CollaborationModal colabModalActive={colabModalActive} setColabModalActive={setColabModalActive} />
             <GeneralModal generalabModalActive={generalabModalActive} setGeneralabModalActive={setGeneralabModalActive} />
+            <SchoolModal schoolModalActive={schoolModalActive} setSchoolModalActive={setSchoolModalActive} />
+            <GrantModal grantModalActive={grantModalActive} setGrantModalActive={setGrantModalActive} />
+            <WaitListModal waitlistModalActive={waitlistModalActive} setWaitlistModalActive={setWaitlistModalActive} />
             <About />
             <Footer />
         </>

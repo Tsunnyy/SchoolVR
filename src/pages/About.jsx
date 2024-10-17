@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Footer } from '../layouts/Footer'
 import { About } from "../layouts/About";
 import PageHero from '../components/PageHero';
+import { SchoolModal } from '../layouts/SchoolModal';
 
 const AbourUs = () => {
+
+    const [schoolModalActive, setSchoolModalActive] = useState(false);
+
     const joinUsData = [
         {
             id: 1,
@@ -331,14 +335,20 @@ const AbourUs = () => {
                     <h4 className='pageHeadText text-center'>Take the First Step Today</h4>
                     <p className="pagePara text-center my-5">Request a demo, explore our licensing options, and discover the transformative potential of SchoolVR. Together, let's create a brighter future for education, where every student has the opportunity to reach their full potential.</p>
                     <div className="d-flex justify-content-center">
-                        <a href="#contact" className="btn btn-outline">
+                        <button
+                            className="btn btn-outline"
+                            onClick={() => {
+                                setSchoolModalActive(true);
+                            }}
+                        >
                             Get in Touch
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
             <About />
             <Footer />
+            <SchoolModal schoolModalActive={schoolModalActive} setSchoolModalActive={setSchoolModalActive} />
         </>
     )
 }

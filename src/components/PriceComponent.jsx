@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { MyContext } from "../mycontext";
+import { WaitListModal } from "../layouts/WaitListModal";
 
 // Exchange rates for different currencies
 const exchangeRates = {
@@ -42,6 +43,7 @@ export const PriceComponent = () => {
   const [pricing, setPricing] = useState(1);
   const [currency, setCurrency] = useState("USD"); // Default currency is USD
   const [country, setCountry] = useState(""); // User's country
+  const [waitlistModalActive, setWaitlistModalActive] = useState(false);
   // Function to format price with or without decimal points
   const formatPrice = (value) => {
     let roundedValue = Math.ceil(value / 10) * 10;
@@ -197,7 +199,7 @@ export const PriceComponent = () => {
           </div>
           <p className="text-start">Unlock the world’s highest-quality VR content with SVI at an incredibly affordable price. Gain access to the largest library of immersive educational experiences, covering a vast range of subjects.</p>
 
-          <button className="btn btn-outline  mt-5" onClick={() => setModalActive(true)}>Join The Waitlist</button>
+          <button className="btn btn-outline  mt-5" onClick={() => setWaitlistModalActive(true)}>Join The Waitlist</button>
 
           {/* <div className="d-none-on-web">
             <div className="d-flex justify-content-between align-items-center gap-2 marginBOn767">
@@ -389,6 +391,7 @@ export const PriceComponent = () => {
           tutors, quizzes, and a plethora of engaging features.
         </div>
       </div> */}
+      <WaitListModal waitlistModalActive={waitlistModalActive} setWaitlistModalActive={setWaitlistModalActive} />
     </>
   );
 };

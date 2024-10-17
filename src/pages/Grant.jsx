@@ -1,12 +1,15 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Footer } from '../layouts/Footer'
 import { About } from "../layouts/About";
 import PageHero from '../components/PageHero';
 import { MyContext } from '../mycontext';
 import { Faq } from '../layouts/Faq';
+import { GrantModal } from '../layouts/GrantModal';
 
 const Grant = () => {
   const { setModalActive } = useContext(MyContext);
+  const [grantModalActive, setGrantModalActive] = useState(false);
+
   let accordianData = [
     {
       id: 0,
@@ -47,24 +50,23 @@ const Grant = () => {
 
   return (
     <>
-      {/* <div className="aboutHeadSection contactUsMain">
+      <div className="aboutHeadSection contactUsMain">
         <img src="/img/layers/layer1.webp" alt="Layer" className='layerImage' />
         <div className="margin-top-100-class padding-lr-class">
           <div className="row m-0 align-items-center justify-content-between">
             <div className="col-sm-8 ps-0">
               <h4 className='pageHeadText'>Empowering Global Education</h4>
               <p className='pagePara my-5'>At SchoolVR, we believe that cost should never be a barrier to accessing transformative educational experiences. That's why we're proud to partner with the World Stem Federation to offer a generous grant program, making our cutting-edge VR technology more accessible to schools worldwide</p>
-              <button className='btn btn-outline'></button>
+              <button onClick={() => {
+                setGrantModalActive(true);
+              }} className='btn btn-outline'>Apply For Grant</button>
             </div>
             <div className="col-sm-4 pe-0">
-              <img src="/img/grant.png" alt="grant Image" />
+              <img src="/img/grant.webp" alt="grant Image" />
             </div>
           </div>
         </div>
-      </div> */}
-
-      <PageHero heroImage="grant" btnText="Learn More" bgImage="layer1" paragraph="At SchoolVR, we believe that cost should never be a barrier to accessing transformative educational experiences. That's why we're proud to partner with the World Stem Federation to offer a generous grant program, making our cutting-edge VR technology more accessible to schools worldwide" title="Empowering Global Education" />
-
+      </div>
       <div className="unlockingOpportunities">
         <div className="padding-lr-class">
           <h4 className='pageHeadText d-flex gap-3 align-items-center justify-content-center'><img src="/img/icon/lock.svg" alt="lock" /> Unlocking Opportunities</h4>
@@ -138,7 +140,7 @@ const Grant = () => {
                           <a href="/countryList">View List</a>
                         </div>
                       </div>
-                      <button className="btn btn-outline" onClick={() => setModalActive(true)}>
+                      <button className="btn btn-outline" onClick={() => setGrantModalActive(true)}>
                         Apply Now
                       </button>
                     </div>
@@ -172,7 +174,7 @@ const Grant = () => {
           </div>
 
           <div className="d-flex gap-3 align-items-center justify-content-center btn_group">
-            <button className='btn btn-secondary' onClick={() => setModalActive(true)}>Apply Now</button>
+            <button className='btn btn-secondary' onClick={() => setGrantModalActive(true)}>Apply Now</button>
             <a href='/countryList' className='btn btn-outline'>Check Eligibility</a>
           </div>
         </div>
@@ -180,6 +182,7 @@ const Grant = () => {
       <Faq accordianData={accordianData} />
       <About />
       <Footer />
+      <GrantModal grantModalActive={grantModalActive} setGrantModalActive={setGrantModalActive} />
     </>
   )
 }
