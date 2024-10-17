@@ -14,6 +14,16 @@ export const CalendlyModal = ({ calenActive, setCalenActive }) => {
             document.body.removeChild(script);
         };
     }, []);
+
+    useEffect(() => {
+        // Toggle body scroll
+        if (calenActive) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    }, [calenActive]);
+
     return (
         <div
             className="modal noBgAndPadding"
@@ -25,8 +35,13 @@ export const CalendlyModal = ({ calenActive, setCalenActive }) => {
             }}
             onClick={() => setCalenActive(false)}
         >
-            <div className="form-section form-section-colob position-relative" onClick={(e) => e.stopPropagation()}>
-                <div className="head">
+            <div className="form-section form-section-colob" onClick={(e) => e.stopPropagation()}>
+                <div className="position-relative">
+                    <div
+                        className="calendly-inline-widget"
+                        data-url="https://calendly.com/schoolvr001/30min?text_color=292d32&primary_color=ecc243"
+                        style={{ minWidth: '320px', height: '700px' }}
+                    />
                     <button
                         className="btn-close"
                         onClick={() => {
@@ -57,14 +72,11 @@ export const CalendlyModal = ({ calenActive, setCalenActive }) => {
                         </svg>
                     </button>
                 </div>
-                <div>
-                    <div
-                        className="calendly-inline-widget"
-                        data-url="https://calendly.com/schoolvr001/30min?text_color=292d32&primary_color=ecc243"
-                        style={{ minWidth: '320px', height: '700px' }}
-                    />
-                </div>
-
+                <button onClick={() => {
+                    setCalenActive(false);
+                }} className="closeCalen">
+                    Close Modal
+                </button>
             </div>
         </div>
     );

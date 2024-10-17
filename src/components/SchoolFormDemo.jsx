@@ -34,10 +34,15 @@ export const SchoolFormDemo = () => {
         break;
 
       case "phone":
-        value.trim() === ""
-          ? setError((prev) => ({ ...prev, phone: "Phone Number is required" }))
-          : setError((prev) => ({ ...prev, phone: "" }));
-        setForm((prev) => ({ ...prev, [name]: value }));
+        if (value.length < 10 || value.length > 10) {
+          setError((prevError) => ({
+            ...prevError,
+            phone: "Phone Number must be 10 characters long"
+          }));
+        } else {
+          setError((prevError) => ({ ...prevError, phone: "" }));
+        }
+        setForm((prevForm) => ({ ...prevForm, [name]: value }));
         break;
 
       case "email":
@@ -67,7 +72,7 @@ export const SchoolFormDemo = () => {
   };
 
   const validateRequiredFields = () => {
-    const requiredFields = ["schoolName", "personName", "designation", "country", "phone", "email", "message"];
+    const requiredFields = ["schoolName", "personName", "designation", "country", "email", "message"];
     let isValid = true;
     let newErrorState = {};
 
@@ -139,7 +144,7 @@ export const SchoolFormDemo = () => {
     { "code": "BW", "code3": "BWA", "name": "Botswana", "number": "072" },
     { "code": "BV", "code3": "BVT", "name": "Bouvet Island", "number": "074" },
     { "code": "BR", "code3": "BRA", "name": "Brazil", "number": "076" },
-    { "code": "IO", "code3": "IOT", "name": "British Indian Ocean Territory (the)", "number": "086" },
+    { "code": "IO", "code3": "IOT", "name": "British Indian Ocean Territory", "number": "086" },
     { "code": "BN", "code3": "BRN", "name": "Brunei Darussalam", "number": "096" },
     { "code": "BG", "code3": "BGR", "name": "Bulgaria", "number": "100" },
     { "code": "BF", "code3": "BFA", "name": "Burkina Faso", "number": "854" },
@@ -410,7 +415,7 @@ export const SchoolFormDemo = () => {
         onChange={handleChange}
       />
       <FormField
-        placeholder="Phone Number*"
+        placeholder="Phone Number"
         name="phone"
         value={form.phone}
         onChange={handleChange}

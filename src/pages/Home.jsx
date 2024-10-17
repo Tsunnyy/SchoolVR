@@ -9,6 +9,7 @@ import { About } from "../layouts/About";
 import { Modal } from "../layouts/Modal";
 import { Footer } from "../layouts/Footer";
 import { MyContext } from "../mycontext";
+import { BlogCarousel } from "../layouts/blogs/BlogCarousel";
 
 export const Home = () => {
   const { setExtraClass, setModalActive } = useContext(MyContext);
@@ -27,6 +28,7 @@ export const Home = () => {
         <div className="dark-gradient-wrap newFeatureClass">
           <Feature />
         </div>
+        <BlogCarousel />
         <About />
       </div>
       <Footer />

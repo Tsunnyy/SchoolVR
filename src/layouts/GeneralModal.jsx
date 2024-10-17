@@ -1,6 +1,15 @@
+import { useEffect } from "react";
 import { GeneralFormDemo } from "../components/GeneralFormDemo";
 
 export const GeneralModal = ({ generalabModalActive, setGeneralabModalActive }) => {
+  useEffect(() => {
+    // Toggle body scroll
+    if (generalabModalActive) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [generalabModalActive]);
   return (
     <div
       className="modal"

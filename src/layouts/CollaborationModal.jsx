@@ -1,7 +1,16 @@
+import { useEffect } from "react";
 import { ColabFormDemo } from "../components/ColabFormDemo";
 import { FormDemo } from "../components/FormDemo";
 
 export const CollaborationModal = ({ colabModalActive, setColabModalActive }) => {
+  useEffect(() => {
+    // Toggle body scroll
+    if (colabModalActive) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [colabModalActive]);
   return (
     <div
       className="modal"

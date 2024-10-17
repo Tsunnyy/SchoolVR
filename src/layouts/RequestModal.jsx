@@ -1,6 +1,15 @@
+import { useEffect } from "react";
 import { FormDemo } from "../components/FormDemo";
 
 export const RequestModal = ({ modalActiveCol, setModalActiveCol }) => {
+  useEffect(() => {
+    // Toggle body scroll
+    if (modalActiveCol) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [modalActiveCol]);
   return (
     <div
       className="modal"

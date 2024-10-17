@@ -1,6 +1,15 @@
+import { useEffect } from "react";
 import { GrantFormDemo } from "../components/GrantFormDemo";
 
 export const GrantModal = ({ grantModalActive, setGrantModalActive }) => {
+  useEffect(() => {
+    // Toggle body scroll
+    if (grantModalActive) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [grantModalActive]);
   return (
     <div
       className="modal"

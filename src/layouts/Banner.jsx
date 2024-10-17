@@ -38,22 +38,23 @@ export const Banner = () => {
       <Swiper
         className="bannerSwiper"
         modules={[Navigation, Pagination, EffectFade, Autoplay]}
-        spaceBetween={0}
-        slidesPerView={1}
         navigation={{
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         }}
+        spaceBetween={0}
+        slidesPerView={1}
         speed={700}
         effect="fade"
         fadeEffect={{
           crossFade: true,
         }}
         autoplay={{
-          delay: 50000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
+        loop={true}
       >
         <SwiperSlide>
           <div className="h-section full-height">

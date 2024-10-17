@@ -1,6 +1,15 @@
+import { useEffect } from "react";
 import { SchoolFormDemo } from "../components/SchoolFormDemo";
 
 export const SchoolModal = ({ schoolModalActive, setSchoolModalActive }) => {
+  useEffect(() => {
+    // Toggle body scroll
+    if (schoolModalActive) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [schoolModalActive]);
   return (
     <div
       className="modal"

@@ -1,6 +1,15 @@
+import { useEffect } from "react";
 import { WaitlistFormDemo } from "../components/WaitlistFormDemo";
 
 export const WaitListModal = ({ waitlistModalActive, setWaitlistModalActive }) => {
+  useEffect(() => {
+    // Toggle body scroll
+    if (waitlistModalActive) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [waitlistModalActive]);
   return (
     <div
       className="modal"

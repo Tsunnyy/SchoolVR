@@ -172,6 +172,28 @@
     }
   }
 
+  &.blogsPageSlider {
+    .swiper-button-next {
+      right: 0;
+      filter: brightness(1) invert(1);
+      display: none;
+    }
+
+    .swiper-button-prev {
+      left: 0;
+      filter: brightness(1) invert(1);
+      display: none;
+    }
+
+    .swiper-pagination {
+      bottom: 0;
+    }
+
+    .swiper {
+      padding: 0 0 60px;
+    }
+  }
+
   .swiper-button-next:after,
   .swiper-button-prev:after {
     display: none;

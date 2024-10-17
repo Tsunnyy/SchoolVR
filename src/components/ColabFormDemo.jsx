@@ -40,9 +40,14 @@ export const ColabFormDemo = () => {
         break;
 
       case "phone":
-        value.trim() === ""
-          ? setError((prevError) => ({ ...prevError, phone: "Phone Number is required" }))
-          : setError((prevError) => ({ ...prevError, phone: "" }));
+        if (value.length < 10 || value.length > 10) {
+          setError((prevError) => ({
+            ...prevError,
+            phone: "Phone Number must be 10 characters long"
+          }));
+        } else {
+          setError((prevError) => ({ ...prevError, phone: "" }));
+        }
         setForm((prevForm) => ({ ...prevForm, [name]: value }));
         break;
 
@@ -82,7 +87,7 @@ export const ColabFormDemo = () => {
   };
 
   const validateRequiredFields = () => {
-    const requiredFields = ["name", "email", "country", "phone", "partnershipType", "proposal"];
+    const requiredFields = ["name", "email", "country", "partnershipType", "proposal"];
     let isValid = true;
     let newErrorState = {};
 
@@ -182,7 +187,7 @@ export const ColabFormDemo = () => {
     { "code": "BW", "code3": "BWA", "name": "Botswana", "number": "072" },
     { "code": "BV", "code3": "BVT", "name": "Bouvet Island", "number": "074" },
     { "code": "BR", "code3": "BRA", "name": "Brazil", "number": "076" },
-    { "code": "IO", "code3": "IOT", "name": "British Indian Ocean Territory (the)", "number": "086" },
+    { "code": "IO", "code3": "IOT", "name": "British Indian Ocean Territory", "number": "086" },
     { "code": "BN", "code3": "BRN", "name": "Brunei Darussalam", "number": "096" },
     { "code": "BG", "code3": "BGR", "name": "Bulgaria", "number": "100" },
     { "code": "BF", "code3": "BFA", "name": "Burkina Faso", "number": "854" },
@@ -466,7 +471,7 @@ export const ColabFormDemo = () => {
         errorMessage={error.phone}
       />
       <FormField
-        placeholder="Website^"
+        placeholder="Website*"
         name="website"
         value={form.website}
         onChange={handleChange}

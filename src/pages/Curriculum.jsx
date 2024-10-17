@@ -71,7 +71,7 @@ const Curriculum = () => {
         {
             region: "Japan",
             curriculum: "Course of Study",
-            imgPath: "japan"
+            imgPath: "Japan"
         },
         {
             region: "Germany",
@@ -146,7 +146,7 @@ const Curriculum = () => {
                                     {commingSoon.map((val, index) => {
                                         return (
                                             <div className="commingSoonCountryInner d-flex gap-3 align-items-center" key={index}>
-                                                <img src={`/img/country/${val.imgPath}.svg`} alt={`${val.imgPath}`} />
+                                                <img src={`/img/country/${val.imgPath}.webp`} alt={`${val.imgPath}`} />
                                                 <div className='d-flex flex-column'>
                                                     <p>{val.region}</p>
                                                     <p>{val.curriculum}</p>
