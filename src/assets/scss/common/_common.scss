@@ -3819,7 +3819,7 @@ header .explore-tray {
   .home-page .h-section .hero-content .hero-title {
     text-align: center;
     font-size: 12px;
-    margin: 70px 0;
+    margin: 70px 0 40px;
   }
 
   .home-page {
@@ -4491,9 +4491,14 @@ header .explore-tray {
     margin-bottom: 15px;
   }
 
+  // .bannerSwiper .swiper-pagination,
   .ourJourneySectionMain::after,
   .d-none-after-767 {
     display: none;
+  }
+
+  .home-page .bannerSwiper .swiper-pagination {
+    bottom: 50px;
   }
 
   .buyingOptionsForKids .buyingOptionsForKidsL ul li {
