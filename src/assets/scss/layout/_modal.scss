@@ -177,6 +177,10 @@
     text-transform: uppercase;
     font-weight: 450;
     margin-bottom: 0;
+    span{
+      font-weight: lighter;
+      text-transform: lowercase;
+    }
   }
 
   .form-section {

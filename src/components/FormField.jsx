@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+
 export const FormField = ({
   type = "text",
   placeholder,
@@ -9,17 +10,28 @@ export const FormField = ({
   name,
   className,
 }) => {
+  // Function to extract text from placeholder
+  const extractText = (text) => {
+    const regex = /<b>(.*?)<\/b>/g;
+    const parts = text.split(regex);
+    return parts;
+  };
+
+  const [beforeBold, boldText, afterBold] = extractText(placeholder);
+
   return (
     <div className={"form-group " + className}>
-      {type == "textarea" ? (
+      {type === "textarea" ? (
         <div className="form-wrap">
           <label className="form-label" htmlFor={name}>
-            {placeholder}
+            {beforeBold}
+            {boldText && <span>{boldText}</span>}
+            {afterBold}
           </label>
 
           <textarea
             type={type}
-            placeholder={placeholder}
+            placeholder="Enter your message here..."
             className={`form-control ${extraclass ? extraclass : ""}`}
             onChange={onChange}
             value={value}
@@ -47,6 +59,7 @@ export const FormField = ({
     </div>
   );
 };
+
 FormField.propTypes = {
   type: PropTypes.string,
   placeholder: PropTypes.string.isRequired,

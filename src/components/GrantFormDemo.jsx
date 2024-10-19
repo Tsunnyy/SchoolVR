@@ -398,7 +398,7 @@ export const GrantFormDemo = () => {
         value={form.website}
         onChange={handleChange}
       />
-      <FormField type="textarea" placeholder="Message* (Why your institution should be selected for this funding, and your institution's commitment to advancing STEM education)" name="message" className="col-2" value={form.message} onChange={handleChange} errorMessage={error.message}/>
+      <FormField type="textarea" placeholder="Message* <b>(Why your institution should be selected for this funding, and your institution's commitment to advancing STEM education)</b>" name="message" className="col-2" value={form.message} onChange={handleChange} errorMessage={error.message}/>
       {/* <textarea value={form.message} onChange={handleChange} errorMessage={error.message} name="message" placeholder="Message* (Why your institution should be selected for this funding, and your institution's commitment to advancing STEM education)"></textarea> */}
       {/* className="col-2 form-control" */}
       {/* value={form.message} onChange={handleChange} errorMessage={error.message} name="message" */}
