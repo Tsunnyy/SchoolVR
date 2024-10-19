@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FormEarlyBird } from "../components/FormEarlyBird";
+import { GrantFormDemo } from "../components/GrantFormDemo";
 
 export const ModalEarlyBird = ({ modalActive, setModalActive }) => {
   const [step, setStep] = useState(1);
@@ -152,7 +153,8 @@ export const ModalEarlyBird = ({ modalActive, setModalActive }) => {
                 </svg>
               </button>
             </div>
-            <FormEarlyBird />
+            {/* <FormEarlyBird /> */}
+            <GrantFormDemo />
           </div>
         }
       </div>

@@ -151,7 +151,7 @@
           &:nth-child(2) {
             background: #C8B6FF33;
           }
-          
+
           &:nth-child(3) {
             background: #8EDAFE33;
           }
@@ -440,12 +440,13 @@
     height: 80vh;
   }
 
+  .h-section.grant-banner .hero-image .bag,
   .h-section .hero-image .bag {
     max-width: 120px;
   }
 
   .h-section .hero-image picture img {
     margin-top: 30px;
+    height: 110px;
   }
-
 }

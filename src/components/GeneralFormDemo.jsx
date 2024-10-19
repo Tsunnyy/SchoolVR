@@ -396,7 +396,7 @@ export const GeneralFormDemo = () => {
       </div>
       <FormField
         type="textarea"
-        placeholder="Mesage*"
+        placeholder="Message*"
         name="message"
         value={form.message}
         onChange={handleChange}

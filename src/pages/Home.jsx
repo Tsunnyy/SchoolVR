@@ -26,7 +26,7 @@ export const Home = () => {
           <Lab />
         </div>
         <div className="dark-gradient-wrap newFeatureClass">
-          <Feature />
+          <Feature isHomePage={true} />
         </div>
         <BlogCarousel />
         <About />

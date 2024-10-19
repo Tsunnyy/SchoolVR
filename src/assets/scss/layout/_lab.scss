@@ -110,6 +110,7 @@
     animation-duration: 14000ms;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    z-index: 99;
   }
 
   .scope {
@@ -122,6 +123,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-delay: -1s;
+    z-index: 99;
   }
 }
 

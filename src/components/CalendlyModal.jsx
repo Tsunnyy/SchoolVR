@@ -39,7 +39,8 @@ export const CalendlyModal = ({ calenActive, setCalenActive }) => {
                 <div className="position-relative">
                     <div
                         className="calendly-inline-widget"
-                        data-url="https://calendly.com/schoolvr001/30min?text_color=292d32&primary_color=ecc243"
+                        // url="https://calendly.com/abhishek-aonix/30min?text_color=292d32&primary_color=ecc243"
+                        data-url="https://calendly.com/abhishek-aonix/30min?text_color=292d32&primary_color=ecc243"
                         style={{ minWidth: '320px', height: '700px' }}
                     />
                     <button

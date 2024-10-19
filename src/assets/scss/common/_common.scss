@@ -3400,7 +3400,7 @@ header .explore-tray {
     right: 0;
     margin: auto;
     z-index: 99;
-    background: transparent;
+    background: #fff;
     transition: fit-content;
     height: fit-content;
     padding: 5px 10px;
@@ -3804,6 +3804,11 @@ header .explore-tray {
     height: 90%;
     margin-bottom: auto;
     overflow-y: auto;
+    width: 100%;
+  }
+
+  .modal.noBgAndPadding{
+    padding: 5px;
   }
 
   .blog-carousel p.desc {
@@ -4499,6 +4504,7 @@ header .explore-tray {
 
   .home-page .bannerSwiper .swiper-pagination {
     bottom: 50px;
+    display: none;
   }
 
   .buyingOptionsForKids .buyingOptionsForKidsL ul li {
